@@ -13,7 +13,7 @@
                      <ul>
                          {{ range $value.Pages }}
                              <li hugo-nav="{{ .RelPermalink}}">
-                                 <a href="{{ .Permalink}}">{{ .LinkTitle }}</a> - {{index (.Params.categories) 0}}
+                                 <a href="{{ .RelPermalink}}">{{ .LinkTitle }}</a> - {{index (.Params.categories) 0}}
                              </li>
                           {{ end }}
                       </ul>

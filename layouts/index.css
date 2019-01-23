@@ -284,6 +284,12 @@ nav li ul, nav li ol {
   font-size: 1em;
 
   color: #fff;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+   1px 1px 0 #000;  
+
 }
 
 .navbar-hero nav {
@@ -321,6 +327,12 @@ nav li ul, nav li ol {
             transform: translate3d(0, 0, 0);
 
     color: #fff;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;  
+    background-color: rgba(0, 0, 0, .50);
   }
   .masthead-hero {
     margin-bottom: -88px;
