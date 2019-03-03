@@ -23,7 +23,7 @@ disqusShortname = ""
 googleAnalytics = ""
 
 # Get last modified date for content from Git?
-enableGitInfo = true
+enableGitInfo = false
 
 [outputs]
   home = [ "HTML", "CSS", "RSS" ]
