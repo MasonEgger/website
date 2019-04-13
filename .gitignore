@@ -1,2 +1,3 @@
 my_site/public/*
 **/*.tar.gz
+**/.DS_Store
