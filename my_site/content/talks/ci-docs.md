@@ -13,6 +13,8 @@ repo & learn how to automatically build & publish beautiful docs on every
 commit. Viewers will leave with a new mindset on how to handle documentation,
 tooling for this process, & an easy-to-implement method to achieve this.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ftnVllssoI8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 This talk was given at [PyTexas 2019](https://www.pytexas.org/2019/) and will
 be given at [Texas Linux Fest 2019](https://2019.texaslinuxfest.org/)
 
