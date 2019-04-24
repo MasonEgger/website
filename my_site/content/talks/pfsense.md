@@ -1,5 +1,5 @@
 ---
-title: "pfSense - A Begginer's Guide to a Sensible Firewall"
+title: "pfSense - A Beginner's Guide to a Sensible Firewall"
 hero_image: "portrait.jpg"
 date: 2016-07-08
 tags: ["pfsense", "freebsd", "networking", "network security"]
