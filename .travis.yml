@@ -3,6 +3,9 @@ services:
     - 'docker'
 before_script: 'make build-docker'
 script: 'make package'
+branches:
+    only:
+    - master
 before_deploy:
     # Set up git user name and tag this commit
     - git config --local user.name "Mason Egger"
