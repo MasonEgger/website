@@ -90,6 +90,12 @@ enableGitInfo = false
     link = "//github.com/Zelgius"
     text = "Github"
 
+  [[params.social]]
+    icon = "file"
+    icon_pack = "far"
+    link = "//masonegger.com/docs/resume.pdf"
+    text = "Resume"
+
 # Taxonomies.
 [taxonomies]
    tag = "tags"
