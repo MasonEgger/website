@@ -64,9 +64,9 @@ even published a post through my employeer HomeAway. However, I recently
 learned that Medium is starting a [membership program](https://medium.com/membership)
  where you will have to pay to get full access to the site. As someone who 
 founded [UnlockedEdu](https://unlockededu.org)(see my projects section) and
-doesn't believe that knowledge should be hidden behind a pay wall, this pissed
-me off. I had been putting off updating my website and moving forward, but I
-do believe the Medium situation was the straw that broke the camels back. I
+doesn't believe that knowledge should be hidden behind a pay wall, this just
+didn't sit right with me. I had been putting off updating my website and moving forward, but I
+do believe the Medium situation was the straw that broke the camel's back. I
 will still have to publish there due to work (when I write public blogs) but I
 will write a post with a link to the blog. I don't think I can republish it
 under this site since it is technically the property of my company (No
