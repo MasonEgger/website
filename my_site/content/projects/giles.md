@@ -1,5 +1,6 @@
 ---
 title: "Giles"
+type: "Project"
 hero_image: "portrait.jpg"
 tags: ["python", "rest"]
 categories: ["project"]

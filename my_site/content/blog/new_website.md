@@ -1,5 +1,6 @@
 ---
 title: "New Website!"
+type: "Blog"
 hero_image: "portrait.jpg"
 date: 2019-01-20
 tags: ["hugo", "website"]

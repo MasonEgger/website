@@ -1,7 +1,7 @@
 <div class="recent-post-container">
 {{ range (.Data.Pages.ByDate).Reverse }}
       <div class="recent-post">
-        <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+        <h1><a href="{{ .RelPermalink }}">{{ .Type}}: {{ .Title }}</a></h1>
         {{ partial "post_metadata" (dict "content" . "is_list" 0) }}
         <p>{{ .Description }}</p>
       </div>
