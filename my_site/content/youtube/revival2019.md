@@ -1,5 +1,6 @@
 ---
 title: "Revival of My YouTube Channel"
+type: "YouTube"
 hero_image: "portrait.jpg"
 date: 2019-01-01
 description: "After a almost two year hiatus, I'm getting the band back
