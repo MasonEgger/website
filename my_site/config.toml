@@ -39,7 +39,7 @@ enableGitInfo = false
 [params]
   # Your details.
   name = "Mason Egger"
-  bio = "SRE, Python Developer, Educator, YouTuber,  Writer, Musician."
+  bio = "Software Engineer, Pythonista, Educator, YouTuber, Writer, Musician."
 
   avatar = "mmeg.png"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
 
@@ -59,7 +59,7 @@ enableGitInfo = false
   comment_count = true
 
   # Enable native social sharing buttons?
-  sharing = false
+  sharing = true
 
   # Privacy pack
   #   Show a cookie consent message to visitors
