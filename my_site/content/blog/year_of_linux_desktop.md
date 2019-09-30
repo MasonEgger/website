@@ -2,7 +2,7 @@
 title: "Year-of-the-Linux-Desktop.exe"
 type: "Blog"
 hero_image: "portrait.jpg"
-date: 2019-09-18
+date: 2019-09-30
 tags: ["windows", "linux", "vscode", "wsl", "programming"]
 categories: ["blog"]
 description: "After decades of trying to ignore or straight up bashing Linux, 
