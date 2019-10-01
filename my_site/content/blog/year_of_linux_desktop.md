@@ -310,7 +310,7 @@ I have been using this workflow for the past three months and haven't needed to 
 my Linux partition since. One of the major downsides currently is WSL has pretty poor support
 for Docker, but the WSL2 has already corrected this and is winding its way through the Windows
 Insider Beta process. While not having docker has been somewhat of a challenge, when I need it
-I standup a Digital Ocean droplet with it installed and use the `Remote: SSH` plugin instead.
+I standup a DigitalOcean droplet with it installed and use the `Remote: SSH` plugin instead.
 
 I'm so impressed with this that when asked what type of laptop I want for my new job, which
 I start October 1, 2019, I requested a Windows laptop instead of a Mac. I have no doubt that
