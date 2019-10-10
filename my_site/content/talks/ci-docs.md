@@ -24,7 +24,7 @@ This talk was given at:
 * [PyOhio 2019](https://www.pyohio.org/2019/presentations/109)
 * [PyLatam 2019](https://www.pylatam.org/en/full-schedule/building-docs-like-code-continuous-integration/)
 
-[Presentation Slides](/docs/pytexas2019.pdf)
+[Presentation Slides](/docs/building-docs.pdf)
 
 **Note, I typically tweak my slides a bit before each talk. These slides may
 not be the _exact_ talk you saw, but they are pretty close.**
