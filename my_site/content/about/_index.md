@@ -11,15 +11,21 @@ _I'm terrible at having to write bios for talks that I want to present, so I'm
 putting it here just to keep everything together. If you need a bio for me, 
 please take this one_.
 
-Mason Egger is a Site Reliability Engineer at HomeAway, where he works on the
-internal PaaS that hosts all of HomeAway's websites, data streaming, and
-tooling. He is an avid programmer, musician, educator, and writer/blogger at
-[masonegger.com](https://www.masonegger.com). In his spare time he enjoys
-camping, kayaking, and exploring new places.
+Mason is currently a Devloper Advocate at DigitalOcean who specializes in
+cloud infrastructure, distributed systems, and Python. Prior to his work
+at DigitalOcean he was an SRE helping build and maintain a highly available
+hybrid multicloud PaaS. He is an avid  programmer, musician, educator, and 
+writer/blogger at [masonegger.com](https://www.masonegger.com). In his
+spare time he enjoys reading, camping, kayaking, and exploring new places.
 
 
 # Longer, More Robust Biography
-I am currently a Senior Site Reliability Engineer for the Cloud Platform Team
+I am currently a Developer Advocate at DigitalOcean.
+
+## Previous Roles
+
+### HomeAway/Vrbo - Expedia Group.
+While at Vrbo I was a Senior Site Reliability Engineer for the Cloud Platform Team
 at HomeAway (a member of Expedia Group) in Austin, Texas. My team and I build
 and maintain a Platform as a Service for all HomeAway developers.
 We are currently running tens of thousands of containers running on hundreds of
