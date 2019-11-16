@@ -11,7 +11,7 @@ _I'm terrible at having to write bios for talks that I want to present, so I'm
 putting it here just to keep everything together. If you need a bio for me, 
 please take this one_.
 
-Mason is currently a Devloper Advocate at DigitalOcean who specializes in
+Mason is currently a Developer Advocate at DigitalOcean who specializes in
 cloud infrastructure, distributed systems, and Python. Prior to his work
 at DigitalOcean he was an SRE helping build and maintain a highly available
 hybrid multicloud PaaS. He is an avid  programmer, musician, educator, and 
