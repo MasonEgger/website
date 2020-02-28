@@ -16,4 +16,3 @@ deploy:
     provider: releases
     api_key: $GITHUB_TOKEN
     file: website.tar.gz
-    skip_cleanup: true
