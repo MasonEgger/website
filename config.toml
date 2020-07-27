@@ -39,7 +39,7 @@ enableGitInfo = false
 [params]
   # Your details.
   name = "Mason Egger"
-  bio = "Devloper Advocate, Pythonista, DevOps, Educator, YouTuber, Writer, Musician."
+  bio = "Devloper Advocate, Pythonista, DevOps, Educator, Streamer, Writer, Musician."
 
   avatar = "mmeg.png"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
 
