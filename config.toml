@@ -7,7 +7,7 @@ title = "Mason Egger"
 
 # Your copyright notice - appears in site footer.
 # To display a copyright symbol, type `&copy;`.
-copyright = "&copy; Mason Egger 2019"
+copyright = "&copy; Mason Egger 2020"
 
 theme = "../.."
 enableEmoji = true
@@ -73,10 +73,10 @@ enableGitInfo = false
   #  text = "Instagram"
 
   [[params.social]]
-    icon = "linkedin"
+    icon = "github"
     icon_pack = "fa"
-    link = "//linkedin.com/in/mason-egger"
-    text = "LinkedIn"
+    link = "//github.com/Zelgius"
+    text = "Github"
 
   [[params.social]]
     icon = "twitter"
@@ -85,10 +85,16 @@ enableGitInfo = false
     text = "Twitter"
 
   [[params.social]]
-    icon = "github"
+    icon = "twitch"
     icon_pack = "fa"
-    link = "//github.com/Zelgius"
-    text = "Github"
+    link = "//www.twitch.tv/codingwithmason"
+    text = "Twitch"
+
+  [[params.social]]
+    icon = "linkedin"
+    icon_pack = "fa"
+    link = "//linkedin.com/in/mason-egger"
+    text = "LinkedIn"
 
   [[params.social]]
     icon = "file"

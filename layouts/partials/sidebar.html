@@ -22,8 +22,8 @@
       </li>
       {{ end }}
 <br>
-      Top 7 Tags:
-        {{ range first 7 .Site.Taxonomies.tags.ByCount }}
+      Top 5 Tags:
+        {{ range first 5 .Site.Taxonomies.tags.ByCount }}
 			{{ $name := .Name }}
 			{{ $count := .Count }}
             <!-- If I ever feel like making the tags pages more verbose I'll go here, but until them, whomp

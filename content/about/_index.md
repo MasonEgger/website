@@ -36,7 +36,7 @@ I have worked as both a software/systems engineer and systems administrator.
 I am passionate about Python, Education, Security, Privacy, all things Open
 Source (technologies, communities, oddly licenses...) just to name a few. I
 currently volunteer teaching AP Computer Science A at a local high school in
-Austin 3 times a week. I am the founder of [UnlockedEdu](https://unlockededu.org/),
+Austin 3 times a week. I am the founder of [UnlockedEdu](http://unlockededu.org/),
 an Open Source project dedicated to creating open educational resources, such
 as curriculums, worksheet generators, etc.
 
