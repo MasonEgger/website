@@ -1,9 +1,8 @@
 ---
 title: "Teaching"
 hero_image: "portrait.jpg"
-nometadata: true
-noshare: true
-nocomments: true
+date: 0000-01-02
+description: "Here is a list of all of the courses that I've taught over the years."
 ---
 
 I've always had a passion for teaching. I feel this comes from being raised

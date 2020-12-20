@@ -4,15 +4,16 @@
 		<div class="page_container">
 			<section class="page_content">
 				{{ partial "masthead_nav.html" . }}
-                {{ partial "section_intros.html" . }}
-                
-      
-                <h2><a href="/reading">Reading</a></h2>
-                <p>These are the voyages of the start trek enterprise</p>
-
-                <h2><a href="/teaching">Teaching</a></h2>
-                <p>These are the voyages of the start trek enterprise</p>
-     
+				{{ partial "section_intros.html" . }}
+				<div class="recent-post-container">
+					{{ range (.Data.Pages.ByDate) }}
+					<div class="recent-post">
+						<h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+						<p>{{ .Description }}</p>
+						<p><a href="{{ .RelPermalink }}">View Page</a></p>
+					</div>
+					{{ end }}
+				</div>
 			</section>
 		</div>
 	</article>
