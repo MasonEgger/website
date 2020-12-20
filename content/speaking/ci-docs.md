@@ -2,7 +2,7 @@
 title: "Building Docs like Code: Continuous Integration for Documentation"
 type: "Conference Talk"
 hero_image: "portrait.jpg"
-date: 2019-10-04
+date: 2020-04-22
 tags: ["python", "mkdocs", "continuous-integration", "documentation"]
 categories: ["talk"]
 description: "This talk discusses why developers dislike writing documentation,
@@ -10,12 +10,12 @@ what we can do to address this, and provides a ready to go pipeline for
 automating your documtation"
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4SwdVMKhbn4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Project documentation is easy to neglect. Keep your docs inside your source
 repo & learn how to automatically build & publish beautiful docs on every
 commit. Viewers will leave with a new mindset on how to handle documentation,
 tooling for this process, & an easy-to-implement method to achieve this.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4SwdVMKhbn4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 This talk was given at:
 

@@ -11,6 +11,10 @@ services, how SLxs can define and guide what to monitor, and how to implement
 reliability targets and error budgets; all told by fabled Springfield wisdom"
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pkiEs3ax5uQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Introduction
+
 Building services is important, but what happens after they are built and 
 running in production? How do we establish trust with our customers that our 
 service will actually be available? Who creates these definitions and how do we 
@@ -25,7 +29,7 @@ acceptable error rates, and what happens when they are breached.
 
 This talk was given at:
 
-    * Open Source Summit 2020
+    * [Open Source Summit 2020](https://www.youtube.com/watch?v=pkiEs3ax5uQ)
     * [Chicago Python User Group Meetup](https://www.youtube.com/watch?v=mXKOv0wlrg8)
 
 [Presentation Slides](/docs/simpsons-sre.pdf)    

@@ -2,7 +2,7 @@
 title: "There's a Snake in the Birdhouse! Building a Python Culture at Vrbo"
 type: "Conference Talk"
 hero_image: "portrait.jpg"
-date: 2020-07-25
+date: 2020-10-25
 tags: ["python", "evangelism"]
 categories: ["talk"]
 description: "We all love Python, but not everyone is fortunate enough to use it
@@ -11,6 +11,10 @@ description: "We all love Python, but not everyone is fortunate enough to use it
  from my experiences—both successes and mistakes—and with a solid plan for 
  implementing Python at their job. "
 ---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MR85hLdc1wk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Introduction
 
 It’s no surprise why many of us are so enamored with Python. Its simplicity, 
 accessibility, and community make it a prime choice for many projects. However, 
@@ -24,9 +28,9 @@ be a supported language within my company’s ecosystem.
 
 This talk was given at:
 
-    * PyTexas 2020
+    * [PyTexas 2020](https://www.youtube.com/watch?v=MR85hLdc1wk)
     * PyBay 2020
-    * PyOhio 2020
-    * EuroPython 2020
+    * [PyOhio 2020](https://www.youtube.com/watch?v=zTFRXHOOy3A)
+    * [EuroPython 2020](https://www.youtube.com/watch?v=OOoGjznwhJU)
 
 [Presentation Slides](/docs/snake-birdhouse.pdf)    

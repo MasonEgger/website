@@ -143,6 +143,7 @@ So what all did I do this year? Here are the stats for my accomplishments of 202
         * Open Source Summit - [SLIs, SLAs, SLD’OHs! Learning About Service Uptime from Homer Simpson](https://www.youtube.com/watch?v=pkiEs3ax5uQ)
         * PyOhio - [There's a Snake in the Birdhouse! Building a Python Culture at Vrbo](https://www.youtube.com/watch?v=zTFRXHOOy3A)
         * EuroPython - [There's a Snake in the Birdhouse! Building a Python Culture at Vrbo](https://www.youtube.com/watch?v=OOoGjznwhJU)
+        * PyBay - There's a Snake in the Birdhouse! Building a Python Culture at Vrbo
         * PyTexas - [There's a Snake in the Birdhouse! Building a Python Culture at Vrbo](https://www.youtube.com/watch?v=MR85hLdc1wk)
         * PyTexas - [How to Build and Deploy Your First Python Slackbot on DigitalOcean's App Platform](https://www.youtube.com/watch?v=FdXS-NpxtSo)
     * Presented at the following meetups:
@@ -157,7 +158,7 @@ So what all did I do this year? Here are the stats for my accomplishments of 202
         * [Securing Your Droplet](https://www.digitalocean.com/community/tech_talks/securing-your-droplet)
         * [Top 10 Security Practices for Protectiong Your Infrastructure](https://www.digitalocean.com/community/tech_talks/top-10-security-practices-for-protecting-yourself-and-your-infrastructure)
         * [Command-line Your Way to PaaS Productivity With DigitalOcean App Platform](https://www.digitalocean.com/community/tech_talks/command-line-your-way-to-paas-productivity-with-app-platform)
-        * [Utilizing Security Features in SSH](https://www.digitalocean.com/community/tech_talks/command-line-your-way-to-paas-productivity-with-app-platform)
+        * [Utilizing Security Features in SSH](https://www.digitalocean.com/community/tech_talks/utilizing-security-features-in-ssh)
     * Multiple livestreams on my Twitch channel [Coding With Mason](https://twitch.tv/codingwithmason)
    
 
