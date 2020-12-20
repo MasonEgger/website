@@ -34,14 +34,7 @@ nodes in datacenters in multiple datacenters around the world.
 
 I have worked as both a software/systems engineer and systems administrator.
 I am passionate about Python, Education, Security, Privacy, all things Open
-Source (technologies, communities, oddly licenses...) just to name a few. I
-currently volunteer teaching AP Computer Science A at a local high school in
-Austin 3 times a week. I am the founder of [UnlockedEdu](http://unlockededu.org/),
-an Open Source project dedicated to creating open educational resources, such
-as curriculums, worksheet generators, etc.
+Source (technologies, communities, oddly licenses...) just to name a few.
 
 I'm a graduate of Texas State University, receiving dual degrees in Computer
-Science (BS) and Music (BA). I'm currently a graduate student at Georgia Tech,
-in the Online Masters of Science in Computer Science (OMSCS) program.
-
-(will fill in more later when I feel like talking about myself)
+Science (BS) and Music (BA).

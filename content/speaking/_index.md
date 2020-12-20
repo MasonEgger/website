@@ -13,6 +13,9 @@ so speaking at conferences is a good reason for me to travel.
 You can find my talks of all types (conferences, webinars, university talks)
 and corresponding resources below.
 
-I've spoken many times spanning 4 states, 2 countries, and 1 continent.
+Stats:
+    * 5 states
+    * 2 countries
+    * 1 continent.
 
 ---

@@ -39,7 +39,7 @@ enableGitInfo = false
 [params]
   # Your details.
   name = "Mason Egger"
-  bio = "Devloper Advocate, Pythonista, DevOps, Educator, Streamer, Writer, Musician."
+  bio = "On my business card, I am a Developer Advocate.  In my mind, I am an engineer. But in my heart, I am a teacher"
 
   avatar = "mmeg.png"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
 
@@ -83,6 +83,12 @@ enableGitInfo = false
     icon_pack = "fa"
     link = "//twitter.com/masonegger"
     text = "Twitter"
+
+  [[params.social]]
+    icon = "youtube"
+    icon_pack = "fa"
+    link = "//www.youtube.com/MasonEgger"
+    text = "YouTube"
 
   [[params.social]]
     icon = "twitch"
