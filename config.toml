@@ -7,7 +7,7 @@ title = "Mason Egger"
 
 # Your copyright notice - appears in site footer.
 # To display a copyright symbol, type `&copy;`.
-copyright = "&copy; Mason Egger 2020"
+copyright = "&copy; Mason Egger 2016 - 2021"
 
 theme = "../.."
 enableEmoji = true

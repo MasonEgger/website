@@ -1,10 +1,10 @@
 <article class="post" itemscope itemtype="http://schema.org/Article">
   <div class="post-container">
     <h1 itemprop="name">{{ .Title }}</h1>
-    
-    
+
+
     {{ if not .Params.nometadata }}
-      {{ partial "post_metadata" (dict "content" . "is_list" 0) }}
+    {{ partial "post_metadata" (dict "content" . "is_list" 0) }}
     {{ end }}
 
     <div class="post-style" itemprop="articleBody">
@@ -13,16 +13,24 @@
       {{ .Content }}
     </div>
 
+    <hr>
+    <em>
+      <p>Like this content? Follow me (<a href="https://twitter.com/masonegger">@masonegger</a>) on <a
+          href="https://twitter.com/masonegger">Twitter</a> or join me on <a
+          href="https://www.twitch.tv/codingwithmason">Twitch</a> for
+        live coding and discussions on my channel <a href="https://twitter.com/masonegger">CodingWithMason</a>.
+      </p>
+    </em>
     {{ if not .Params.notags }}
-      {{ partial "tags_internal.html" . }}
+    {{ partial "tags_internal.html" . }}
     {{ end }}
 
     {{ if not .Params.noshare }}
-      {{ partial "share.html" . }}
+    {{ partial "share.html" . }}
     {{ end }}
 
     {{ if not .Params.nocomments }}
-      {{ partial "disqus.html" . }}
+    {{ partial "disqus.html" . }}
     {{ end }}
 
   </div>

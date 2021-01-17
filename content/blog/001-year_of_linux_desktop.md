@@ -1,10 +1,10 @@
 ---
 title: "Year-of-the-Linux-Desktop.exe"
-type: "Blog"
+type: "Tutorial"
 hero_image: "portrait.jpg"
 date: 2019-09-30
 tags: ["windows", "linux", "vscode", "wsl", "programming"]
-categories: ["blog"]
+categories: ["tutorial"]
 description: "After decades of trying to ignore or straight up bashing Linux, 
 Microsoft has finally embraced the loveable penguin. So much so that it ships a
 Linux kernel on your Windows OS by default! What does this mean for the sake of

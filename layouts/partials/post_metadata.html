@@ -4,13 +4,14 @@
 
   <span class="post-date">
     {{ if ne $.Params.Lastmod $.Params.Date }}
-        {{ i18n "last_updated" }}
+    {{ i18n "last_updated" }}
     {{ end }}
+
     <time datetime="{{ $.Date }}" itemprop="datePublished dateModified">
       {{ $.Lastmod.Format $.Site.Params.date_format }}
     </time>
-    <br>
-    Content Type: {{ $.Type}}
+    - {{ $.Type}}
+
   </span>
 
 </div>
