@@ -6,6 +6,6 @@ noshare: true
 nocomments: true
 ---
 
-Here's all the other things I do in no particular order.
+Here's all the other things I do and like in no particular order.
 
 
