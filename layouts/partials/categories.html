@@ -1,0 +1,27 @@
+<div id="main" role="main">
+    {{ partial "sidebar.html" . }}
+    <article class="page">
+        <div class="page_container">
+            <section class="page_content">
+                {{ partial "masthead_nav.html" . }}
+                <br>
+                <h1>Categories</h1>
+
+                <ul id="all-taxonomies">
+                    {{ range $key, $value := .Site.Taxonomies.categories }}
+                    <li><a id="{{ $key }}"> {{ $key }}</a></li>
+                    <ul>
+                        {{ range $value.Pages }}
+                        <li hugo-nav="{{ .RelPermalink}}">
+                            <a href="{{ .RelPermalink}}">{{ .LinkTitle }}</a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                    {{ end }}
+                </ul>
+
+                </ul>
+            </section>
+        </div>
+    </article>
+</div>

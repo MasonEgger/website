@@ -1,6 +1,7 @@
 ---
 title: "Using Signals to Clean Up My Mess in Django"
 type: "TIL"
+hero_image: "portrait.jpg"
 tags: ["python", "rest", "django"]
 categories: ["til"]
 date: 2020-08-12

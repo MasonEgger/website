@@ -277,11 +277,12 @@ nav li ul, nav li ol {
 
 .navbar-hero {
   height: 30px;
+  
 }
 
 .navbar-hero nav, .navbar-hero a {
   font-family: "Merriweather";
-  font-size: 1em;
+  font-size: 1.05em;
 
   color: #fff;
   text-shadow:
