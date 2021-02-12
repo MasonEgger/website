@@ -1,6 +1,6 @@
 ---
 title: "TIL - Today I Learned"
-hero_image: "portrait.jpg"
+hero_image: "gen2-banner-full.png"
 nometadata: true
 noshare: true
 nocomments: true
