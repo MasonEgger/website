@@ -42,7 +42,7 @@ Absolutely. I've witnessed it. I've been denied opportunities because of where I
 * "I don't want to hire students from XYZ University, their program isn't good."
 * "We don't hire engineers from your University. (Said to me by a recruiter at a job fair on my university campus)
 
-This saddens me to no end. But it's a reality that we need to talk about. This came up as recently as two weeks ago when someone posted the interview criteria that ex-Googlers created while they were working at Twitter. A process, btw, that is disgustingly discriminatory. (Thanks to Leslie Miley for posting this)
+This saddens me to no end. But it's a reality that we need to talk about. This came up as recently as two weeks ago when someone posted the interview criteria that ex-Googlers created while they were working at Twitter. A process, btw, that is disgustingly discriminatory. (Thanks to [Leslie Miley](https://twitter.com/shaft/status/1355696154990628864) for posting this)
 
 ![Ex-Googlers resume review process at Twitter](/img/blogs/006-interviews/resumes.jpg)
 
