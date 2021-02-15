@@ -44,7 +44,7 @@ Absolutely. I've witnessed it. I've been denied opportunities because of where I
 
 This saddens me to no end. But it's a reality that we need to talk about. This came up as recently as two weeks ago when someone posted the interview criteria that ex-Googlers created while they were working at Twitter. A process, btw, that is disgustingly discriminatory. (Thanks to Leslie Miley for posting this)
 
-![Ex-Googlers resume review process at Twitter](/img/blogs/006-interviews/resume.jpg)
+![Ex-Googlers resume review process at Twitter](/img/blogs/006-interviews/resumes.jpg)
 
 I could go on but I'm literally getting upset writing this. So long story short: Yes these people exist. Yes it's completely unfair. Call it out when you see it, speak up in your company for fair interviewing practices (I'll go into this more later in the article) and don't repeat their mistakes. 
  
