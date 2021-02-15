@@ -3,7 +3,7 @@ title: "Tech Industry Interviews are Bullshit. Let's Make Them Better"
 type: "Blog"
 hero_image: "gen2-banner-full.png"
 date: 2021-02-15
-tags: ["interview", "technical interview", "coding", "jobs", "career"]
+tags: ["interview", "technical interview", "coding", "jobs", "career", "rant"]
 categories: ["blog"]
 description: "If you ask almost any programmer what their least favorite part of the industry is, they'll likely say interviewing. The Tech industry has transformed what should be a simple process into an unholy nightmare. When a majority of your industry says it _loathes_ the interview process, perhaps we should examine it more and attempt to make it better."
 ---
