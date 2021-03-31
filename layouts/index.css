@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 16px;
+  font-size: 18px;
 
   box-sizing: border-box;
 
@@ -16,17 +16,17 @@ html {
 }
 @media (min-width: 48em) {
   html {
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 @media (min-width: 64em) {
   html {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media (min-width: 80em) {
   html {
-    font-size: 19px;
+    font-size: 22px;
   }
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section {
