@@ -15,9 +15,9 @@ Mason is currently a Developer Advocate at DigitalOcean who specializes in
 cloud infrastructure, distributed systems, and Python. Prior to his work
 at DigitalOcean he was an SRE helping build and maintain a highly available
 hybrid multicloud PaaS. He is an avid  programmer, speaker, educator, and 
-writer/blogger. He is a maintainer of the DigitalOcean terraform provider
-and contributes to random open source projects here and there. In his spare 
-time he enjoys reading, camping, kayaking, and exploring new places.
+writer. He is an organizer of PyTexas and actively contributes to open source 
+projects. In his spare time he enjoys reading, camping, kayaking, 
+and exploring new places.
 
 
 # Longer, More Robust Biography
