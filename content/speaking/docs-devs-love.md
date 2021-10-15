@@ -14,7 +14,7 @@ Think of that feeling you get when you follow an online tutorial or documentatio
 
 This talk was given at:
 
-    * PyGotham 2021
+* PyGotham 2021
     
 
 [Presentation Slides](/docs/docs-devs-love.pdf)    

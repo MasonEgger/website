@@ -14,7 +14,7 @@ description: "Remote work can be challenging. In this talk I'll discuss differen
 
 This talk was given at:
 
-    * Python Web Conference 2021
+* Python Web Conference 2021
     
 
 [Presentation Slides](/docs/year-without-pants.pdf)    
