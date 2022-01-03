@@ -8,17 +8,15 @@
     {{ end }}
 
     <div class="post-style" itemprop="articleBody">
-      {{ .Description }}
-
+      <i>{{ .Description }}</i>
+      <hr>
       {{ .Content }}
     </div>
 
     <hr>
     <em>
       <p>Like this content? Follow me (<a href="https://twitter.com/masonegger">@masonegger</a>) on <a
-          href="https://twitter.com/masonegger">Twitter</a> or join me on <a
-          href="https://www.twitch.tv/codingwithmason">Twitch</a> for
-        live coding and discussions on my channel <a href="https://twitter.com/masonegger">CodingWithMason</a>.
+          href="https://twitter.com/masonegger">Twitter</a>.
       </p>
     </em>
     {{ if not .Params.notags }}
