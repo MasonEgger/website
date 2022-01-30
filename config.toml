@@ -107,7 +107,7 @@ enableGitInfo = false
   [[params.social]]
     icon = "file"
     icon_pack = "far"
-    link = "//masonegger.com/docs/resume.pdf"
+    link = "//mason.dev/docs/resume.pdf"
     text = "Resume"
 
 # Taxonomies.
