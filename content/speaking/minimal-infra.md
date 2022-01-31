@@ -23,6 +23,6 @@ Cloud infrastructure can be complex, making figuring out which products and serv
 
 ### Resources
 * Ready-to-deploy code can be found on [GitHub](https://github.com/do-community/terraform-sample-digitalocean-architectures)
-* New to Terraform? Learn how to use it using this [GitHub Repo](https://github.com/Zelgius/Infrastructure-As-Code-Intro)
+* New to Terraform? Learn how to use it using this [GitHub Repo](https://github.com/MasonEgger/Infrastructure-As-Code-Intro)
 
 [DigitalOcean Tech Talk Page](https://www.digitalocean.com/community/tech_talks/building-a-minimal-production-ready-infrastructure-on-digitalocean)
