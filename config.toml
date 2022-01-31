@@ -107,11 +107,7 @@ enableGitInfo = false
   [[params.social]]
     icon = "file"
     icon_pack = "far"
-<<<<<<< HEAD
-    link = "//mason.dev/docs/Mason_Egger_Resume_Jan_2022.pdf"
-=======
-    link = "//mason.dev/docs/resume.pdf"
->>>>>>> ea68e826d86b86841cc2926e336e9fa64270c6b2
+    link = "/docs/Mason_Egger_Resume_Jan_2022.pdf"
     text = "Resume"
 
 # Taxonomies.
