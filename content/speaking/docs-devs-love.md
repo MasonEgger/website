@@ -2,7 +2,7 @@
 title: "Write Docs Devs Love: Ten Tricks to Level Up Your Tech Writing"
 type: "Conference Talk"
 hero_image: "gen2-banner-full.png"
-date: 2021-04-28
+date: 2022-04-28
 tags: ["writing", "technical writing", "documentation", "community"]
 categories: ["talk"]
 description: "You're read good tutorials, you've read bad tutorials. In this talk I'll discuss 10 tips and tricks to level up your technical writing."
