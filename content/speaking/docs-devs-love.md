@@ -2,7 +2,7 @@
 title: "Write Docs Devs Love: Ten Tricks to Level Up Your Tech Writing"
 type: "Conference Talk"
 hero_image: "gen2-banner-full.png"
-date: 2021-09-07
+date: 2021-04-28
 tags: ["writing", "technical writing", "documentation", "community"]
 categories: ["talk"]
 description: "You're read good tutorials, you've read bad tutorials. In this talk I'll discuss 10 tips and tricks to level up your technical writing."
@@ -14,6 +14,7 @@ Think of that feeling you get when you follow an online tutorial or documentatio
 
 This talk was given at:
 
+* PyCon US 2022
 * [PyGotham 2021](https://www.youtube.com/watch?v=-4JwlAI-1L0)
     
 
