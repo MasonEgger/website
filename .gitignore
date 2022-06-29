@@ -1,3 +1,6 @@
 public/*
 **/*.tar.gz
 **/.DS_Store
+hugo
+.hugo*
+
