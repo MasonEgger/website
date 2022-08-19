@@ -107,7 +107,7 @@ enableGitInfo = false
   [[params.social]]
     icon = "file"
     icon_pack = "far"
-    link = "/docs/Mason_Egger_Resume_Feb_2022.pdf"
+    link = "/docs/Mason_Egger_Resume_Aug_2022.pdf"
     text = "Resume"
 
 # Taxonomies.
