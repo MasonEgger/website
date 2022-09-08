@@ -20,5 +20,5 @@ This talk was given at:
 * DigitalOcean Deploy - Full Talk
 
 [Lightning Talk](/docs/synth-data-lightning.pdf)  
-[Full Talk](/docs/synthetic-data.pdf)
-[DigitalOcean Deploy Slides](/docs/synthetic-data-deploy.pdf)
+[Full Talk](/docs/synthetic-data.pdf)  
+[DigitalOcean Deploy Slides](/docs/synthetic-data-deploy.pdf)  
