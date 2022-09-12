@@ -22,3 +22,5 @@ This talk was given at:
 [Lightning Talk](/docs/synth-data-lightning.pdf)  
 [Full Talk](/docs/synthetic-data.pdf)  
 [DigitalOcean Deploy Slides](/docs/synthetic-data-deploy.pdf)  
+
+[![Relational DB Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19Jl-1BXYD_KBVVZ-FFlI94DjO49XcbDR#scrollTo=a057f4bc)
