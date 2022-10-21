@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://mason.dev/'
 languageCode = 'en-us'
 title = 'Mason Egger'
 theme = 'megger'
