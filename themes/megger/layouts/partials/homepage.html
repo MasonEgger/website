@@ -1,0 +1,26 @@
+
+<div class="col-md-8 px-5">
+    <h1 class="mb-4 fst-italic border-bottom">
+      Recent Articles
+    </h3>
+    {{ $paginator := .Paginate ((.Site.RegularPages.ByDate).Reverse)}}
+
+    {{ range $paginator.Pages }}
+    <article class="recent-post">
+        {{ if eq .Type "TIL" }}
+          <h1>{{ .Title }}</h1>
+          {{ partial "post_metadata" (dict "content" . "is_list" 0) }}
+          <p>{{ .Content }}</p>
+        {{ else }}
+        <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+        {{ partial "post_metadata" (dict "content" . "is_list" 0) }}
+        <p>{{ .Description }}</p>
+        {{ end }}
+    </article>
+    {{ end }}
+    {{ template "_internal/pagination.html" . }}
+
+  </div>
+
+ {{- partial "sidebar.html" . -}}
+

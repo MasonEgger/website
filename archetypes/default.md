@@ -1,8 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-hero_image: "hero.jpg"
 date: {{ .Date }}
+updated: {{ .Date }}
 draft: true
 ---
 
-## Header

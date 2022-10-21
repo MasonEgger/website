@@ -1,0 +1,41 @@
+<div class="col-md-4">
+    <div class="position-sticky" style="top: 2rem;">
+      <div class="p-4 mb-3 bg-light rounded">
+        <h1 class="fst-italic">About</h1>
+        <p class="mb-0">{{ $.Site.Params.bio }}</p>
+      </div>
+
+      <div class="p-4">
+          <h2 class="fst-italic">Social Links</h2>
+          <ol class="list-unstyled">
+              {{ range $.Site.Params.Social }}
+              <li>
+                  <a href="{{ .link | safeURL }}" class="social-links" target="_blank">
+                    <i class="fa fa-{{ .icon }}"></i>
+                    {{ .text }}
+                 </a>
+              </li>
+                {{ end }}
+          </ol>
+      </div>
+
+      <div class="p-4">
+        <h2 class="fst-italic">Top 5 Tags</h2>
+        <ol class="list-unstyled mb-0"></ol>
+        {{ range first 5 .Site.Taxonomies.tags.ByCount }}
+			    {{ $name := .Name }}
+			    {{ $count := .Count }}
+            <!-- If I ever feel like making the tags pages more verbose I'll go here, but until them, whomp
+			<span class="tag"><a href="{{ "tags" | absURL }}/{{ $name | urlize }}">{{ $name }} ({{ $count }})</a></span>-->
+		      <li><a href="/tags/index.html#{{ $name }}">{{ $name }} ({{ $count }})</a></li>
+	
+        {{ end }}
+      </ol>
+	  <a href="/tags"><strong>More tags</strong></a>
+      </div>
+
+      <a class="twitter-timeline" data-width="500" data-height="700" href="https://twitter.com/masonegger?ref_src=twsrc%5Etfw">Tweets by masonegger</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+    </div>
+  </div>

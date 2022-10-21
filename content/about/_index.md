@@ -21,7 +21,7 @@ kayaking, and exploring new places.
 
 
 # Longer, More Robust Biography
-I am currently a Developer Advocate at DigitalOcean.
+I am currently the Lead Developer Advocate at [Gretel](https://gretel.ai).
 
 ## Previous Roles
 
