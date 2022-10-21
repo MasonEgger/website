@@ -15,8 +15,12 @@ This talk was given at:
 
 * PyCon US 2022 - Lightning Talk
 * PyRVA 6/8/2022 - Full Talk
-
-    
+* PyOhio - [Thunder (15 min) Talk](https://www.youtube.com/watch?v=TZOA_wMHiPw&t=2s)
+* PyCon Latam 8/26/2022 - Full Talk
+* DigitalOcean Deploy - Full Talk
 
 [Lightning Talk](/docs/synth-data-lightning.pdf)  
-[Full Talk](/docs/synthetic-data.pdf)
+[Full Talk](/docs/synthetic-data.pdf)  
+[DigitalOcean Deploy Slides](/docs/synthetic-data-deploy.pdf)  
+
+[![Relational DB Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19Jl-1BXYD_KBVVZ-FFlI94DjO49XcbDR#scrollTo=a057f4bc)
