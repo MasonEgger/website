@@ -1,6 +1,6 @@
 ---
 title: "Redirecting Web Traffic Using Flask"
-type: "Blog"
+type: "Tutorial"
 hero_image: "gen2-banner-full.png"
 date: 2021-04-15
 tags: ["python", "web", "microservices"]

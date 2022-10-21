@@ -114,6 +114,11 @@ h6 {
     height: 250px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 main>.container {
     padding: 60px 15px 0;
     background-color: white;
