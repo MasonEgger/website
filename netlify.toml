@@ -1,0 +1,10 @@
+[[redirects]]
+from = "https://masonegger.com/*"
+to = "https://mason.dev/:splat"
+status = 301
+force = true
+[[redirects]]
+from = "https://www.masonegger.com/*"
+to = "https://mason.dev/:splat"
+status = 301
+force = true
