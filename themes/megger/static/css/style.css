@@ -136,6 +136,12 @@ main>.container {
 
 }
 
+@media (max-width: 768px) {
+    .content {
+        padding: 25px;
+    }
+}
+
 .navbar,
 .footer {
     background-color: #003b6f;
