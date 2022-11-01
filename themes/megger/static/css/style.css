@@ -147,6 +147,7 @@ img {
     color: white;
 }
 
+.navbar-brand:hover,
 .nav-link:hover {
     color: skyblue;
 }
