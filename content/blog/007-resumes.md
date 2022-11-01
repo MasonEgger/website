@@ -4,7 +4,7 @@ type: "Blog"
 hero_image: "gen2-banner-full.png"
 date: 2021-03-31
 tags: ["resumes", "career", "tech industry"]
-categories: ["blog"]
+category: blog
 description: "Drafting a resume can be a nerve wracking experience. While there are many resources available for creating a resume, I still see the same mistakes year after year on resumes. In this post I'll discuss my philosophy regarding resumes and some tips on how to make yours better."
 ---
 

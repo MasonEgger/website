@@ -2,7 +2,7 @@
 title: "Teaching"
 hero_image: "portrait.jpg"
 date: 0000-01-02
-description: "Here is a list of all of the courses that I've taught over the years."
+description: "Here is a list of all of the courses that I've taught over the years at various institutions. If you are a former student please reach out! I'd love to hear how you are doing."
 ---
 
 I've always had a passion for teaching. I feel this comes from being raised

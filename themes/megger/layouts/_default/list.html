@@ -1,6 +1,8 @@
 {{ define "main" }}
-    <h1 class="text-center pt-2"> {{.Title }} </h1>
+   
     <div class="container col-sm-12 col-md-10 col-lg-8">
+       <h1 class="text-center pt-2"> {{.Title }} </h1>
+       <hr>
         {{ .Content }}
         {{ range (.Data.Pages.ByDate).Reverse }}
               <div class="recent-post">

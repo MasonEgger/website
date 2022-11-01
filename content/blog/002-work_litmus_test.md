@@ -4,7 +4,7 @@ type: "Blog"
 hero_image: "portrait.jpg"
 date: 2020-11-20
 tags: ["career", "self care", "work/life balance"]
-categories: ["blog"]
+category: blog
 description: "Over the past five years working in tech I've developed a sort of litmus test that I perform every morning to gauge how I currently feel about my job and how my career is progressing. And I do it all with a morning playlist."
 ---
 

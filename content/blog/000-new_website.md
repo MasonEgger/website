@@ -4,7 +4,7 @@ type: "Blog"
 hero_image: "portrait.jpg"
 date: 2019-01-20
 tags: ["hugo", "website"]
-categories: ["blog"]
+categories: "blog"
 description: "Every few years I grow tired of my website and build a new one.
 More often than not, it is actually me trying to simplify something that I
 made more complicated than it needed to be. After listening to friends and 

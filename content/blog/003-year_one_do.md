@@ -4,7 +4,7 @@ type: "Blog"
 hero_image: "sammy-holiday.jpg"
 date: 2020-12-18
 tags: ["digitalocean", "devrel", "developer advocate", "recap", "community", "career"]
-categories: ["blog"]
+category: blog
 description: "Another year come and gone, and what an adventure it was but I'm happy to say I have successfully completed my first year at DigitalOcean. Come, gather round and listen to the tale of a career change, being a Developer Advocate amidst a global pandemic, and everything else 2020 had to throw at me."
 ---
 

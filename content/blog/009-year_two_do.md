@@ -4,7 +4,7 @@ type: "Blog"
 hero_image: "sammy-holiday.jpg"
 date: 2022-01-03
 tags: ["digitalocean", "devrel", "developer advocate", "recap", "community", "career"]
-categories: ["blog"]
+category: blog
 description: "This year was definitely a year of extremes. From the highest of highs to the lowest of lows, this year will not be forgotten anytime soon. You know the drill, grab a hot beverage, a blanket, and gather round as I recap the year that was 2021."
 ---
 

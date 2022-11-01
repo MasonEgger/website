@@ -4,7 +4,7 @@ type: "Blog"
 hero_image: "portrait.jpg"
 date: 2021-01-17
 tags: ["python", "django", "flask", "web development"]
-categories: ["blog"]
+category: blog
 description: "As a Python developer, I love both Flask and Django. But how do I choose which one to use?  Over the years I've developed a very simple test that
 helps me decide if I'm going to use Flask or Django for my projects."
 ---
