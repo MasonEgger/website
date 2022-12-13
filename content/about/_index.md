@@ -13,7 +13,7 @@ please take this one_.
 
 Mason is currently the Lead Developer Advocate at Gretel.ai who specializes 
 building community, developer-focused educational content, synthetic data, 
-and Python. Prior to my work at Gretel he was a Developer Advocate at DigitalOcean
+and Python. Prior to his work at Gretel he was a Developer Advocate at DigitalOcean
 specializing in Infrastructure-as-a-Service technologies. His engineering experience
 includes time as an SRE helping build and maintain a highly available hybrid 
 multi-cloud PaaS. He's an avid programmer, speaker, educator, and writer/blogger. 
