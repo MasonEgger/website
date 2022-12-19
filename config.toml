@@ -65,7 +65,7 @@ pygmentsCodeFences = true
   [[params.social]]
     icon = "file"
     icon_pack = "far"
-    link = "/docs/Mason_Egger_Resume_Sep_2022.pdf"
+    link = "/docs/Mason_Egger_Resume_Dec_2022.pdf"
     text = "Resume"
 
 # Taxonomies.
