@@ -11,14 +11,15 @@ _I'm terrible at having to write bios for talks that I want to present, so I'm
 putting it here just to keep everything together. If you need a bio for me, 
 please take this one_.
 
-Mason is currently the Lead Developer Advocate at Gretel where he specializes in 
-synthetic data, data privacy, and Python. Prior to his role at Gretel, he was a 
-Developer Advocate at DigitalOcean and an SRE helping build and maintain a highly
-available hybrid multi-cloud PaaS. He is an avid programmer, speaker, educator, and
-writer. He is an organizer of PyTexas, President of the PyTexas Foundation, and actively
+Mason is currently the Lead Developer Advocate at Gretel.ai who specializes 
+building community, developer-focused educational content, synthetic data, 
+and Python. Prior to his work at Gretel he was a Developer Advocate at DigitalOcean
+specializing in Infrastructure-as-a-Service technologies. His engineering experience
+includes time as an SRE helping build and maintain a highly available hybrid 
+multi-cloud PaaS. He's an avid programmer, speaker, educator, and writer/blogger. 
+He is an organizer of PyTexas, President of the PyTexas Foundation, and actively
 contributes to open source projects. In his spare time, he enjoys reading, camping, 
 kayaking, and exploring new places.
-
 
 # Longer, More Robust Biography
 I am currently the Lead Developer Advocate at [Gretel](https://gretel.ai).
