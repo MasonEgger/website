@@ -7,11 +7,11 @@
         {{ range (.Data.Pages.ByDate).Reverse }}
               <div class="recent-post">
                 {{ if eq .Type "TIL" }}
-                  <h1>{{ .Title }}</h1>
+                  <h2 class="post-title">{{ .Title }}</h2>
                   {{ partial "post_metadata" (dict "content" . "is_list" 0) }}
                   <p>{{ .Content }}</p>
                 {{ else }}
-                <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+                <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
                 {{ partial "post_metadata" (dict "content" . "is_list" 0) }}
                 <p>{{ .Description }}</p>
                 {{ end }}
