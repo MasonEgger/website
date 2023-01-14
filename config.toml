@@ -5,6 +5,8 @@ theme = 'megger'
 
 copyright = "&copy; Mason Egger 2016 - 2022"
 
+googleAnalytics = "G-885F33V7K6"
+
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
