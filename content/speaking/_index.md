@@ -4,6 +4,7 @@ hero_image: "gen2-banner-full.png"
 nometadata: true
 noshare: true
 nocomments: true
+description: "Mason Egger's public speaking engagements."
 ---
 
 Public speaking is something I'm very passionate about. I love being able to

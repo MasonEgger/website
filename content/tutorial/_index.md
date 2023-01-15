@@ -4,6 +4,7 @@ hero_image: "gen2-banner-full.png"
 nometadata: true
 noshare: true
 nocomments: true
+description: "Tutorials Mason Egger has written."
 ---
 
 These are technical tutorials on various topics that interest me or problems

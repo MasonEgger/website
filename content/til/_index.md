@@ -4,6 +4,7 @@ hero_image: "gen2-banner-full.png"
 nometadata: true
 noshare: true
 nocomments: true
+description: "Mason Egger's microblog"
 ---
 
 Everyday's a day to learn something new.

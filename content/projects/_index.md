@@ -4,6 +4,7 @@ hero_image: "gen2-banner-full.png"
 nometadata: true
 noshare: true
 nocomments: true
+description: "Here are the projects I tinker on in my spare time."
 ---
 
 Like most engineers, I  tinker in my spare time. Sometimes these are little
