@@ -36,7 +36,6 @@ pygmentsCodeFences = true
 
   description = "The works and writings of Mason Egger"
   images = ['/img/mmeg.png']
-  title = "Mason Egger's Website"
 
   [[params.social]]
     icon = "github"
