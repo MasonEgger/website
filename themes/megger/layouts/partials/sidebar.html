@@ -21,7 +21,7 @@
 
       <div class="p-4">
         <h2 class="fst-italic">Top 5 Tags</h2>
-        <ol class="list-unstyled mb-0"></ol>
+        <ol class="list-unstyled mb-0">
         {{ range first 5 .Site.Taxonomies.tags.ByCount }}
 			    {{ $name := .Name }}
 			    {{ $count := .Count }}
