@@ -34,6 +34,10 @@ pygmentsCodeFences = true
   # Enable native social sharing buttons?
   sharing = true
 
+  description = "The works and writings of Mason Egger"
+  images = ['/img/mmeg.png']
+  title = "Mason Egger's Website"
+
   [[params.social]]
     icon = "github"
     icon_pack = "fa"
