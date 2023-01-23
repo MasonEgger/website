@@ -12,9 +12,10 @@ _I'm terrible at having to write bios for talks that I want to present, so I'm
 putting it here just to keep everything together. If you need a bio for me, 
 please take this one_.
 
-Mason is currently the Lead Developer Advocate at Gretel.ai who specializes 
-building community, developer-focused educational content, synthetic data, 
-and Python. Prior to his work at Gretel he was a Developer Advocate at DigitalOcean
+Mason is currently Sr. Technical Curriculum Developer at Temporal.io who specializes 
+building community, developer-focused educational content, distributed systems, 
+and Python. Prior to his work at Temporal he launched Developer Relations at Gretel.ai
+as the Lead Developer Advocate, and was a Developer Advocate at DigitalOcean
 specializing in Infrastructure-as-a-Service technologies. His engineering experience
 includes time as an SRE helping build and maintain a highly available hybrid 
 multi-cloud PaaS. He's an avid programmer, speaker, educator, and writer/blogger. 
@@ -23,9 +24,13 @@ contributes to open source projects. In his spare time, he enjoys reading, campi
 kayaking, and exploring new places.
 
 # Longer, More Robust Biography
-I am currently the Lead Developer Advocate at [Gretel](https://gretel.ai).
+I am currently a Sr. Technical Curriculum Developer at [Temporal](https://temporal.io/)
 
 ## Previous Roles
+
+### Lead Developer Advocate - Gretel.ai
+
+### Sr. Developer Advocate - DigitalOcea
 
 ### HomeAway/Vrbo - Expedia Group.
 While at Vrbo I was a Senior Site Reliability Engineer for the Cloud Platform Team
