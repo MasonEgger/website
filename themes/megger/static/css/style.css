@@ -198,3 +198,23 @@ p {
     text-decoration: none;
     color: darkblue;
 }
+
+.command code::before {
+    color: #00f2c3;
+    content: "$ ";
+}
+
+.steam code::before {
+    color: #00f2c3;
+    content: "Steam> ";
+}
+
+.highlight .copy-btn {
+    float: right;
+    cursor: pointer;
+}
+
+.command .line,
+.steam .line {
+    display: inherit;
+}
