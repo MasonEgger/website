@@ -204,11 +204,17 @@ p {
     content: "$ ";
 }
 
+.steam code::before {
+    color: #00f2c3;
+    content: "Steam> ";
+}
+
 .highlight .copy-btn {
     float: right;
     cursor: pointer;
 }
 
-.command .line {
+.command .line,
+.steam .line {
     display: inherit;
 }
