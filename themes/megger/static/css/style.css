@@ -198,3 +198,17 @@ p {
     text-decoration: none;
     color: darkblue;
 }
+
+.command code::before {
+    color: #00f2c3;
+    content: "$ ";
+}
+
+.highlight .copy-btn {
+    float: right;
+    cursor: pointer;
+}
+
+.command .line {
+    display: inherit;
+}
