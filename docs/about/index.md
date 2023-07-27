@@ -23,7 +23,7 @@ He is an organizer of PyTexas, President of the PyTexas Foundation, and actively
 contributes to open source projects. In his spare time, he enjoys reading, camping, 
 kayaking, and exploring new places.
 
-## [Resume](../static/docs/Mason_Egger_Resume_Dec_2022.pdf)
+## [Resume](../static/docs/MasonEgger-resume.pdf)
 Click on the link above for my resume
 
 ## Longer, More Robust Biography
