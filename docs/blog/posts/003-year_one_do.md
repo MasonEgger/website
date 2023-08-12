@@ -156,7 +156,7 @@ So what all did I do this year? Here are the stats for my accomplishments of 202
         * PyTexas - [There's a Snake in the Birdhouse! Building a Python Culture at Vrbo](https://www.youtube.com/watch?v=MR85hLdc1wk)
         * PyTexas - [How to Build and Deploy Your First Python Slackbot on DigitalOcean's App Platform](https://www.youtube.com/watch?v=FdXS-NpxtSo)
     * Presented at the following meetups:
-        * Chicago Python - [SLIs, SLAs, SLD’OHs! Learning About Service Uptime from Homer Simpson]([SLIs, SLAs, SLD’OHs! Learning About Service Uptime from Homer Simpson](https://www.youtube.com/watch?v=pkiEs3ax5uQ))
+        * Chicago Python - [SLIs, SLAs, SLD’OHs! Learning About Service Uptime from Homer Simpson](https://www.youtube.com/watch?v=pkiEs3ax5uQ)
         * IndyPy - [Infarstructure as Code using Terraform Workshop](https://www.youtube.com/watch?v=OzM1WQXiOC4)
         * Evening of Python Coding - [Mkdocs Intro](https://www.youtube.com/watch?v=dBd59NZ0MM8)
         * One Valley - [Strategies for Building Cloud Infrastructure](https://www.youtube.com/watch?v=O5Pnf1_xH4Y)
