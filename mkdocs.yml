@@ -3,6 +3,7 @@ site_author: Mason Egger
 theme:
   name: material
   logo: static/img/mmeg.png
+  favicon: static/img/favicon.png
   custom_dir: overrides
   features:
     - announce.dismiss
@@ -98,6 +99,8 @@ nav:
 
 plugins:
   - search
+  - tags:
+      tags_file: tags.md
   - blog:
       blog_dir: blog
       blog_toc: true

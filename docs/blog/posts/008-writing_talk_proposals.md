@@ -1,13 +1,13 @@
 ---
 date: 2022-01-30
-categories: 
+categories:
     - Career
+tags: 
     - Conferences
     - Speaking
     - CFPs
 authors:
     - masonegger
-
 ---
 
 # How I Write Conference Talk Proposals
@@ -24,7 +24,10 @@ In this post, I'll cover how I approach writing CFPs. Having not only spoken at 
 A common mistake I see people make when they first decide to speak is to jump straight into brainstorming a topic that they want to talk about. This isn't a bad way to approach this, but people often struggle to think of a topic for one big reason: they can't visualize their audience. Are you giving your talk to a room full of C-Suite individuals? Students? DevOps Engineers? Determining your audience and their skill level will guide you to topics that may be of interest to them.
 
 For Example:
-I enjoy talking to the Python community and DevOps/SRE communities. Which almost immediately disqualifies talks about JavaScript frameworks[^1] from my list of possible topics. This may seem simple. You may be asking yourself, "Why even write this?" But you'd be surprised how many people I've helped with CFPs who I unstuck after asking "Well, who do you want to present to? Who is your audience?"
+I enjoy talking to the Python community and DevOps/SRE communities. Which almost immediately disqualifies talks about JavaScript frameworks(1) from my list of possible topics. This may seem simple. You may be asking yourself, "Why even write this?" But you'd be surprised how many people I've helped with CFPs who I unstuck after asking "Well, who do you want to present to? Who is your audience?"
+{ .annotate }
+
+1. But not entirely, maybe you want to introduce, say, the Python community to this amazing JavaScript Framework. Go for it! Just be sure to show your audience how they can utilize it. 
 
 Once I have determined my target audience(s), I then think about topics.
 
@@ -41,7 +44,10 @@ If I have multiple audiences in mind, I will briefly explore the overlap between
 
 For Example: Python and DevOps have a good amount of overlap. I could explore topics such as using and/or extending Ansible, a Python-based DevOps tool. I could explore topics around simplifying the deployment of Python applications. The overlap here isn’t to hard to find. These talks are likely to be good candidates for both Python and DevOps conferences. But I don’t have to do this. Maybe I want to write a talk that’s solely about Python fundamentals. Great! I just would’t submit it to the DevOps conferences.
 
-On the flip side, finding overlap can be nearly impossible. Say I’m interested in CSS and Kubernetes [^2]. Trying to find a talk that is applicable and interesting to both communities isn’t impossible, but you may spend more time trying to find it than you want.
+On the flip side, finding overlap can be nearly impossible. Say I’m interested in CSS and Kubernetes(1). Trying to find a talk that is applicable and interesting to both communities isn’t impossible, but you may spend more time trying to find it than you want.
+{ .annotate }
+
+1. An odd pair, but not completely unheard of.
 
 While it is important to focus on topics the community might find useful, it is just as important to focus on topics that you actually want to speak about. Excitement and engagement is contagious, and if you are excited about a topic then your audience will be too. There’s few things worse than listening to someone give a talk about something they aren’t interested in.
 
@@ -62,7 +68,11 @@ _Audience level_ is the level of expertise you expect the average audience membe
 
 _Difficulty level_ is the knowledge level at which you target the talk on this specific topic. This is different from audience level because you have direct control over this. When writing my talks, I always keep difficulty level in mind to ensure that I don't sway too far off course. This can help me keep from going too in-depth on a beginner talk to keeping me from spending too much time on basic concepts in an advanced talk. Some topics are complex by their very nature. Don't worry, you can give different-level talks on the same core topic. 
 
-Example: The Python GIL[^3] [^4]
+Example: The Python GIL(1),(2)
+{ .annotate }
+
+1. There are three things in life that are constant: Death, Change, and there will be a talk on the GIL at PyCon this year.
+2. For those of you that don't know, the GIL is the Global Interpreter Lock, and it is the thing responsible for Python not being able to run on more than one CPU core, blocking true parallelism. It's also the thing that stops you from having to track down wacky-ass race conditions and other _super fun_ bugs that disappear and reappear due to the nature of concurrency, so maybe don't look a gift horse in the mouth, ok?
 
 * Beginner level talk - "What is the GIL and why you should care"
 * Intermediate level talk - "How I Got Around The GIL by doing X"
@@ -76,7 +86,11 @@ Also, note how there is an _All Level_ category. While some conferences will use
 ### _"Aren't Audience Level and Difficulty Level extremely similar?"_
 Yes. They ask a lot of the same questions, they just have a different focus. You can often use one to help craft the other. Knowing the difficulty level you want to speak at somewhat mandates the audience level and vice-versa. **Even in my process, I don't explicitly write down the difficulty level of my talks, just the audience level.** I have, however, thought a lot about both. So while they are incredibly similar, they are distinct enough to think of them separately. 
 
-Finally, let's talk about _tool level_. This is very subjective as many people will disagree with what is considered a beginner tool or not. However, there are many tools that obviously fit into a category. No one on Earth has ever said that Kubernetes is a beginner-friendly tool.[^5] So, while your opinions on this may vary, it is good to understand your topic's _perceived_ skill level. I find it easy to just have the following levels:
+Finally, let's talk about _tool level_. This is very subjective as many people will disagree with what is considered a beginner tool or not. However, there are many tools that obviously fit into a category. No one on Earth has ever said that Kubernetes is a beginner-friendly tool.(1) So, while your opinions on this may vary, it is good to understand your topic's _perceived_ skill level. I find it easy to just have the following levels:
+{ .annotate }
+
+1. And if you have, I call bullshit.
+
 
 * Beginner
 * Intermediate
@@ -85,12 +99,21 @@ Finally, let's talk about _tool level_. This is very subjective as many people w
 This primarily helps me understand how much work and care I need to take when writing the talk. Say I want to give a Kubernetes talk at the beginner level. Kubernetes isn't typically considered a beginner tool, so bringing it to a level that a beginner can understand may prove challenging. As you saw above in my audience level section, you can talk about anything at any level. Keeping tool level in mind also stops me from writing Advanced Advanced proposals. 
 
 ### Your Topic Doesn't Have to Be Complex
-A mistake I made very early in my speaking career was trying to write _obscenely_ complex talks on edge case topics. The first proposal I ever wrote for a Python conference was about building python packages as `RPMs` so you could utilize the CentOS package manager to handle both system and Python packages. This talk never got selected, and rightfully so[^6]. The proposal was overly complex and an extreme fringe niche. That isn't to say that complex or unique ideas won't get accepted, but they should represent an interesting problem or a use case that a subset of the community will experience. My talk was neither. 
+A mistake I made very early in my speaking career was trying to write _obscenely_ complex talks on edge case topics. The first proposal I ever wrote for a Python conference was about building python packages as `RPMs` so you could utilize the CentOS package manager to handle both system and Python packages. This talk never got selected, and rightfully so.(1) The proposal was overly complex and an extreme fringe niche. That isn't to say that complex or unique ideas won't get accepted, but they should represent an interesting problem or a use case that a subset of the community will experience. My talk was neither. 
+{ .annotate }
 
-From an organizer's point of view, complex talks can be difficult to schedule. We have to think of our attendees as a whole. Very few conferences consist of solely advanced engineers. A lot of beginners attend conferences as well. Therefore, we have to strike an even balance of talks. This tends to have us scheduling mostly beginner/intro talks[^7], followed by intermediate talks, and then a handful of advanced talks. So, complex and advanced talks will have fewer slots allocated to them, reducing the chance of your niche talk being selected.
+1. It's my talk, so I can shit on it. While it was an interesting problem, it would have appealed to, like, two people.
+
+From an organizer's point of view, complex talks can be difficult to schedule. We have to think of our attendees as a whole. Very few conferences consist of solely advanced engineers. A lot of beginners attend conferences as well. Therefore, we have to strike an even balance of talks. This tends to have us scheduling mostly beginner/intro talks(1), followed by intermediate talks, and then a handful of advanced talks. So, complex and advanced talks will have fewer slots allocated to them, reducing the chance of your niche talk being selected.
+{ .annotate }
+
+1. Note here that intro talk doesn't necessarily mean beginner. It means that it is an introduction to a topic. The topic itself could be advanced. What it isn't is a rare one-off use case on a rarely used feature in an advanced library.
 
 ### Your Topic Doesn't Have to Be Technical
-Another common misconception I see is that talks have to be technical. This couldn't be further from the truth[^8]. Talks on community, soft skills, non-technical skills such as leadership, program management, etc., are all great options.
+Another common misconception I see is that talks have to be technical. This couldn't be further from the truth(1). Talks on community, soft skills, non-technical skills such as leadership, program management, etc., are all great options.
+{ .annotate }
+
+1. In fact, some of my favorite conference talks have had nothing to do with programming at all.
 
 Now that I've thought about who I’m speaking to, what I want to speak about, and the tool level I want to hit  I turn to my personal process for writing my CFP.
 
@@ -172,9 +195,14 @@ For example:
 * SSH Can Do That?: All the things you didn't know about SSH
 * A Year Without Pants: Successful Strategies for Remote Work
 
-However, I don't constrain myself to this format. It is my favorite, but sometimes it just doesn't work. But titles should be entertaining and engaging. Attendees have to choose from a wide array of talks that they are given very little information on. Having a good title will attract them to your talk. And remember, the conference organizers and talk selection committee are also your audience. Another one of my talk titles is "The Enters and Exits of Context Managers." From the outside looking in, this talk is a bit confusing. It does explain that you're going to be learning about Context Managers, but with a little joke. The joke here is that `__enter__` and `__exit__` are ways to create a Context Manager in Python. This is a play on the phrase "The ins and outs" by changing it up with synonyms that fit _perfectly_.[^9]
+However, I don't constrain myself to this format. It is my favorite, but sometimes it just doesn't work. But titles should be entertaining and engaging. Attendees have to choose from a wide array of talks that they are given very little information on. Having a good title will attract them to your talk. And remember, the conference organizers and talk selection committee are also your audience. Another one of my talk titles is "The Enters and Exits of Context Managers." From the outside looking in, this talk is a bit confusing. It does explain that you're going to be learning about Context Managers, but with a little joke. The joke here is that `__enter__` and `__exit__` are ways to create a Context Manager in Python. This is a play on the phrase "The ins and outs" by changing it up with synonyms that fit _perfectly_.(1)
 
-Another tip I have for titles is to make them Iambic[^10]. If you don't know what this is, I highly recommend you [look it up](https://nosweatshakespeare.com/sonnets/iambic-pentameter). The tl;dr is that, in English, it is pleasing to hear words that follow a short syllable followed by a long syllable. It's rhythmic and oh so complex. 
+1. As someone who enjoys clever wordplay, I'm still proud of myself for this talk title. I consider it one of my crown achievements.
+
+Another tip I have for titles is to make them Iambic(1). If you don't know what this is, I highly recommend you [look it up](https://nosweatshakespeare.com/sonnets/iambic-pentameter). The tl;dr is that, in English, it is pleasing to hear words that follow a short syllable followed by a long syllable. It's rhythmic and oh so complex. 
+{ .annotate }
+
+1. AP English for the win. 
 
 If you are writing a paper in a language other than English, I would recommend looking into what speech patterns are pleasing in that language.
 
@@ -222,7 +250,10 @@ and/or learn from this talk?
 
 Should be 3 things
 ```
-Audience Takeaways are one of the most _vital_ parts of a CFP, and you'll rarely see a CFP ask for this[^11]. It isn't enough to tell people what your talk about, but _what they are getting out of your talk_. Single-track conferences are rare. There are usually at least two or more talks happening simultaneously. Let the viewer know what to expect from your talk so they can choose the correct talk for them.
+Audience Takeaways are one of the most _vital_ parts of a CFP, and you'll rarely see a CFP ask for this(1). It isn't enough to tell people what your talk about, but _what they are getting out of your talk_. Single-track conferences are rare. There are usually at least two or more talks happening simultaneously. Let the viewer know what to expect from your talk so they can choose the correct talk for them.
+{ .annotate }
+
+1. And kudos to the ones that do.
 
 In this section, I write three bullet points of takeaways I want attendees to get out of my talk. And three is a hard stop for me. If you've never heard of [The Rule of Three](https://en.wikipedia.org/wiki/Rule_of_three_(writing)) you should read up on it. The tl;dr is that trios of things are more satisfying and effective than other numbers. There's some deep psychology around it that I can't explain, but it works. 
 
@@ -264,7 +295,10 @@ Etc.
 ```
 A lot of CFPs will have a section for "Anything else." This is a great section to put extra requirements you'll need for your talk. These could be anything from an extra monitor to a laser pointer. If you need special accommodations, such as a lower podium or equipment, be sure to fill this in. The conference will likely already have the items you need, but it is always good to be explicit in your requirements.
 
-Many people will often put here why they are qualified to speak on this topic. I'm personally not a fan of this, but I understand why people do it. If you want to put this in your CFPs, go ahead. A tip I would say is to never say that you are "the most qualified person to speak on this." I never put this. There is always someone more qualified to speak on this topic than me[^12]. If I put my qualifications here, I explain why I'm qualified to speak on this overall. Also, **don't put identifying information in here**. Conference organizers are trying hard to keep the selection process fair and anonymous.
+Many people will often put here why they are qualified to speak on this topic. I'm personally not a fan of this, but I understand why people do it. If you want to put this in your CFPs, go ahead. A tip I would say is to never say that you are "the most qualified person to speak on this." I never put this. There is always someone more qualified to speak on this topic than me.(1) If I put my qualifications here, I explain why I'm qualified to speak on this overall. Also, **don't put identifying information in here**. Conference organizers are trying hard to keep the selection process fair and anonymous.
+{ .annotate }
+
+1. That being said, if you are the most qualified person to speak on this, you can put it. I say this because I have a lot of friends who often speak on their own open-source projects, and they are, in fact, the most qualified person to speak on this topic. However, for the sake of anonymity, maybe still avoid this. If you say, "I wrote this library, hence I'm the most qualified to speak," I probably will be able to figure out who you are. And we're trying to maintain fairness in our CFP selection process. 
 
 ## My Yearly Process
 Because my job expects a certain level of speaking engagements from me every year, I have a process around writing talks. Every year in late Q4, when most of the company is wrapping up and preparing to go on winter break, I sit down and write all of my conference talks for the next year. The past few years, I have written anywhere between 5-8 talks for the upcoming year. This doesn't mean that if a great idea strikes me, I won't write a paper about it. I do this so when a conference opens up that I want to speak at, I don't have to stop what I'm doing to write a proposal. The current audiences that I'm looking to speak to are the Python and DevOps communities. So I try to write talks that I think those communities will find interesting. That doesn't mean that the talks focus on a Python topic. I am somewhat known in speaking circles for talking about documentation and technical writing. These talks are relevant to both communities, so it's a win-win for me. In the past few years, I have started writing more specific talks focused on individual technologies. I usually write 2-3 of these specific talks a year, and then the rest of my talks will be broad enough that I can give them at any conference. These broader talks focus on documentation, "soft" skills, and community building. 
@@ -272,7 +306,10 @@ Because my job expects a certain level of speaking engagements from me every yea
 ### How Do You Feel About Giving a Talk More Than Once?
 There is a big debate around if/when you should give a talk more than once. I take a rather selfish stance here and say, if I spend so much time and effort writing it, you bet I'm going to give it more than once. However, I do have some rules around it. 
 
-First, I won't give a talk more than twice virtually. The first year I started  speaking, which was 2019, I gave my [Building Docs Like Code: Continuous Integration for Documentation](../../speaking/building-docs-like-code-continuous-integration-for-documentation) talk six times at various regional Python conferences. We must remind ourselves that very few people go and search out random conference talks on YouTube[^13]. Giving the same talk at different regional conferences means getting it in front of more people who more than likely would not have seen it otherwise. With the accessibility of virtual conferences, more people can attend, and I find this as a reason to not over-saturate the virtual conference market with these talks. 
+First, I won't give a talk more than twice virtually. The first year I started  speaking, which was 2019, I gave my [Building Docs Like Code: Continuous Integration for Documentation](../../speaking/building-docs-like-code-continuous-integration-for-documentation) talk six times at various regional Python conferences. We must remind ourselves that very few people go and search out random conference talks on YouTube.(1) Giving the same talk at different regional conferences means getting it in front of more people who more than likely would not have seen it otherwise. With the accessibility of virtual conferences, more people can attend, and I find this as a reason to not over-saturate the virtual conference market with these talks. 
+{ .annotate }
+
+1. Don't believe me? Go look at the views.
 
 Second, when I'm tired of a talk, I stop giving it. My Docs Like Code talk was fantastic. I loved writing it; I loved presenting it. After six conferences and  a handful of meetups, I'm tired of giving it. I may write version 2.0 in the future, but that talk is purposefully retired for now.
 
@@ -284,30 +321,3 @@ didn't win out against other talks.
 
 The only way to get better at anything is to practice, fail, and try again until you succeed. If you don't get selected, keep at it! It took me three years of submitting papers to conferences to finally start getting accepted. You'll get there eventually, and I look forward to watching your talk
 when you do. 
-
-[^1]: But not entirely, maybe you want to introduce, say, the Python community to this amazing JavaScript Framework. Go for it! Just be sure to show your audience how they can utilize it. 
-
-[^2]: An odd pair, but not completely unheard of.
-
-[^3]: There are three things in life that are constant: Death, Change, and there will be a talk on the GIL at PyCon this year.
-
-[^4]: For those of you that don't know, the GIL is the Global Interpreter Lock, and it is the thing responsible for Python not being able to run on more than one CPU core, blocking true parallelism. It's also the thing that stops you from having to track down wacky-ass race conditions and other _super fun_ bugs that disappear and reappear due to the nature of concurrency, so maybe don't look a gift horse in the mouth, ok?
-
-[^5]: And if you have, I call bullshit.
-
-[^6]: It's my talk, so I can shit on it. While it was an interesting problem, it would have appealed to, like, two people.
-
-[^7]: Note here that intro talk doesn't necessarily mean beginner. It means that it is an introduction to a topic. The topic itself could be advanced. What it isn't is a rare one-off use case on a rarely used feature in an advanced library.
-
-[^8]: In fact, some of my favorite conference talks have had nothing to do with programming at all.
-
-[^9]: As someone who enjoys clever wordplay, I'm still proud of myself for this talk title. I consider it one of my crown achievements.
-
-[^10]: AP English for the win. 
-
-[^11]: And kudos to the ones that do.
-
-[^12]: That being said, if you are the most qualified person to speak on this, you can put it. I say this because I have a lot of friends who often speak on their own open-source projects, and they are, in fact, the most qualified person to speak on this topic. However, for the sake of anonymity, maybe still avoid this. If you say, "I wrote this library, hence I'm the most qualified to speak," I probably will be able to figure out who you are. And we're trying to maintain fairness in our CFP selection process. 
-
-[^13]: Don't believe me? Go look at the views.
-

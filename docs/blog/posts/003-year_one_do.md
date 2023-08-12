@@ -1,12 +1,13 @@
 ---
 date: 2020-12-18
-categories: 
+categories:
+    - Career
+    - Recap
+tags: 
     - DigitalOcean
     - Developer Relations
     - Developer Advocate
-    - Recap
     - Community
-    - Career
 authors:
     - masonegger
 ---

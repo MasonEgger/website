@@ -1,7 +1,8 @@
 ---
 date: 2020-11-20
-categories: 
+categories:
     - Career
+tags: 
     - Self Care
     - Work/Life Balance
 authors:

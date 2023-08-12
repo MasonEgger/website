@@ -1,6 +1,8 @@
 ---
 date: 2021-01-17
 categories:
+    - Programming
+tags:
     - Python
     - Django
     - Flask

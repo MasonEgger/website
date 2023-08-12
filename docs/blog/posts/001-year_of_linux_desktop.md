@@ -1,6 +1,8 @@
 ---
 date: 2019-09-30
-categories: 
+categories:
+    - Programming
+tags: 
     - Windows
     - Linux
     - VSCode
