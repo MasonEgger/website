@@ -129,9 +129,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/MasonEgger
     - icon: fontawesome/regular/file
-      link: static/docs/Mason_Egger_Resume_Dec_2022.pdf
-
-extra:
+      link: static/docs/MasonEgger-resume.pdf
   analytics:
     provider: google
     property: G-885F33V7K6
