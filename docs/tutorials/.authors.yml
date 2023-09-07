@@ -1,4 +1,5 @@
-masonegger:
-  name: Mason Egger
-  description: Developer, Educator, Community Organizer
-  avatar: https://github.com/masonegger.png
+authors:
+  masonegger:
+    name: Mason Egger
+    description: Developer, Educator, Community Organizer
+    avatar: https://github.com/masonegger.png
