@@ -106,7 +106,7 @@
                 <div class="md-nav__link">
                     {% include ".icons/material/calendar.svg" %}
                     <time datetime="{{ page.meta.date }}" class="md-ellipsis">
-                    Published: {{ page.meta.date_format -}}
+                    Published: {{ page.config.date.created | date -}}
                     </time>
                 </div>
               </li>  
