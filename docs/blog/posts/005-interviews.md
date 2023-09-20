@@ -69,7 +69,7 @@ Not at all. People tend to remember past bad experiences and that is exactly wha
 3. The answer is 17. 12 to sing the different parts and 5 extras in case any of them run after the egg. Usually the mean platypus attention span can be calculated by taking the sum of the number of platypuses divided by the average length of an egg. This can range from 53.12mm for a medium sized egg to 59.675mm for an extra large egg. For the sake of brevity I won't go into the math of converting platypuses to millimeters. 
 
 ## "Well Then, If You Don't Like It What's The Better Option?"
-I mentioned it above but I'll repeat **Ask questions that are relevant to the job you're interviewing the candidate for.** If you are interviewing someone for a job to work on the front page of your website, they probably don't need to know how to build a binary tree from scratch. And I'm sure if that odd case ever did actually come up they would do what _every_ engineer[^6] does, _**They'll Google It**_. It's as if everyone believes their workplace is this [XKCD comic](https://xkcd.com/1168/). 
+I mentioned it above but I'll repeat **Ask questions that are relevant to the job you're interviewing the candidate for.** If you are interviewing someone for a job to work on the front page of your website, they probably don't need to know how to build a binary tree from scratch. And I'm sure if that odd case ever did actually come up they would do what _every_ engineer(1) does, _**They'll Google It**_. It's as if everyone believes their workplace is this [XKCD comic](https://xkcd.com/1168/). 
 { .annotate}
 
 1. Including you, snobby person currently interviewing the candidate.
