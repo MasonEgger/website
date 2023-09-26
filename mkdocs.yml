@@ -1,14 +1,19 @@
 site_name: Mason Egger
 site_author: Mason Egger
+repo_url: https://github.com/masonegger/website
+repo_name: masonegger/website
+extra_css:
+  - stylesheets/extra.css
 theme:
   name: material
   logo: static/img/mmeg.png
   favicon: static/img/favicon.png
   custom_dir: overrides
+  locale: en
   features:
     - announce.dismiss
-    - content.action.edit
-    - content.action.view
+    # - content.action.edit
+    # - content.action.view
     - content.code.annotate
     - content.code.copy
     - content.code.select
@@ -30,10 +35,9 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
-    # - toc.integrate
+    - toc.integrate
   palette:
-    primary: blue
-    accent: teal
+    - scheme: mme
 copyright: Copyright &copy; 2018-2023 - Mason Egger
 
 markdown_extensions:
@@ -133,3 +137,10 @@ extra:
   analytics:
     provider: google
     property: G-885F33V7K6
+
+# Color Scheme
+# 606C38
+# 283618
+# FEFAE0
+# DDA15E
+# BC6C25

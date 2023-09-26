@@ -23,8 +23,7 @@ He is an organizer of PyTexas, President of the PyTexas Foundation, and actively
 contributes to open source projects. In his spare time, he enjoys reading, camping, 
 kayaking, and exploring new places.
 
-## [Resume](../static/docs/MasonEgger-resume.pdf)
-Click on the link above for my resume
+## [My Resume](../static/docs/MasonEgger-resume.pdf) {.mme-button .mme-button--primary}
 
 ## Longer, More Robust Biography
 I am currently a Sr. Technical Curriculum Developer at [Temporal](https://temporal.io/)
