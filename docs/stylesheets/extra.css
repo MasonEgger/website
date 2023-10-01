@@ -32,6 +32,10 @@
     color: var(--md-primary-bg-color);
 }
 
+.md-typeset table:not([class]) {
+    background-color: unset;
+}
+
 .md-nav--lifted>.md-nav__list>.md-nav__item--active>.md-nav__link {
     background: var(--md-primary-fg-color);
     box-shadow: 0 0 .4rem .4rem var(--md-primary-fg-color);
