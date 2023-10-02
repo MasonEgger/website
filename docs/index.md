@@ -53,3 +53,5 @@ These are the pieces that do well or people tell me they have enjoyed.
     [:octicons-arrow-right-24: Book a Meeting](https://calendly.com/masonegger)
 
 </div>
+
+<a rel="me" style="display: none;" href="https://fosstodon.org/@masonegger">Mastodon</a>
