@@ -66,6 +66,15 @@
     color: var(--md-accent-bg-color);
 }
 
+.md-annotation__index:before,
+.md-annotation__index:after {
+    background-color: #DDA15E;
+    -webkit-mask-image: var(--md-annotation-icon);
+    mask-image: var(--md-annotation-icon);
+    transform: scale(1.0001);
+    transition: background-color .25s, transform .25s;
+}
+
 .mme-container {
     background: linear-gradient(to right, var(--md-primary-fg-color--transparent), var(--md-accent-fg-color--transparent));
     display: flex;
