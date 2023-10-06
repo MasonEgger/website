@@ -1,15 +1,16 @@
 [data-md-color-scheme="mme"] {
     --md-primary-fg-color: #FEFAE0;
-    --md-default-fg-color: #FEFAE0;
+    --md-default-fg-color: #283618;
     --md-primary-fg-color--light: #606C38;
     --md-default-fg-color--light: #606C38;
     --md-primary-fg-color--dark: #283618;
     --md-default-fg-color--dark: #283618;
     --md-primary-bg-color: #283618;
-    --md-default-bg-color: #283618;
+    --md-default-bg-color: #FEFAE0;
     --md-accent-fg-color: #BC6C25;
     --md-accent-bg-color: #FEFAE0;
     --md-primary-bg-color--transparent: #FFFFFF;
+    --md-typeset-a-color: #BC6C25;
 }
 
 .md-container {
@@ -47,6 +48,13 @@
     z-index: 1;
 }
 
+/* set the search icon color */
+.md-search__input+.md-search__icon {
+    color: var(--md-primary-fg-color);
+}
+
+
+
 .md-nav--secondary .md-nav__title {
     background: unset;
     box-shadow: unset;
@@ -62,7 +70,7 @@
 }
 
 .md-header {
-    background-color: var(--md-default-bg-color);
+    background-color: var(--md-primary-bg-color);
     color: var(--md-accent-bg-color);
 }
 
