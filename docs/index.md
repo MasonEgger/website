@@ -13,7 +13,7 @@ _On my business card, I am a Sr. Technical Curriculum Developer. In my mind, I a
 
 I'm Mason Egger, a technical educator, software developer, and community organizer. 
 I'm currently on the Developer Education team at [Temporal](https://temporal.io),
-an orgaizer and board member of [PyTexas](https://pytexas.org), and the Deputy
+an organizer and board member of [PyTexas](https://pytexas.org), and the Deputy
 Provice Governor for Provice 9 of the [Phi Mu Alpha Sinfonia](https://sinfonia.org) fraternity.
 
 ## Featured Content
