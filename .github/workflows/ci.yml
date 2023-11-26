@@ -19,7 +19,7 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: apt install libcairo2
+      - run: sudo apt install libcairo2
       - run: pip install -r requirements.txt
       - run: mkdocs build
       - name: Push
