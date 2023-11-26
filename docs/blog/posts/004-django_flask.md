@@ -1,4 +1,6 @@
 ---
+title: "Django or Flask: How Do I Choose Which To Use?"
+description: A quick little test to see if I want to use Flask or Django.
 date: 2021-01-17
 categories:
     - Programming

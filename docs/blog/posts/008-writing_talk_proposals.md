@@ -1,4 +1,6 @@
 ---
+title: How I Write Conference Talk Proposals
+description: My process for writing conference talk proposals.
 date: 2022-01-30
 categories:
     - Career

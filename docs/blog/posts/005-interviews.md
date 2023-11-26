@@ -1,4 +1,6 @@
 ---
+title: Tech Industry Interviews are Bullshit. Let's Make Them Better
+description: We all hate them. Why are they like this?
 date: 2021-02-15
 categories:
     - Career

@@ -1,4 +1,6 @@
 ---
+title: "Exploring New Waters: A Year One DigitalOcean Recap"
+description: A recap of my first year at DigitalOcean.
 date: 2020-12-18
 categories:
     - Career

@@ -1,4 +1,6 @@
 ---
+title: Year of the Linux Desktop
+description: WSL is a powerful tool. Learn how to install it.
 date: 2019-09-30
 categories:
     - Programming

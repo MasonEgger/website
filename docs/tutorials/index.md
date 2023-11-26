@@ -1,3 +1,7 @@
+---
+title: Tutorials
+description: A collection of various tutorials I've written
+---
 # Tutorials
 
 These are technical tutorials on various topics that interest me or problems

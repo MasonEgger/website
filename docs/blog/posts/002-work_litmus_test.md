@@ -1,4 +1,6 @@
 ---
+title: My Personal Job Litmus Test
+description: This is how I figure out my feelings about my current role.
 date: 2020-11-20
 categories:
     - Career

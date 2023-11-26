@@ -1,4 +1,6 @@
 ---
+title: New Website!
+description: Every few years I grow tired of my website and build a new one. Here's what I did this time.
 date: 2019-01-20
 categories:
     - Programming

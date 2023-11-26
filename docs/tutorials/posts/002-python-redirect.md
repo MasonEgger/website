@@ -1,4 +1,6 @@
 ---
+title: Redirecting Web Traffic Using Flask
+description: A tiny Flask App to redirect traffic that comes into a given URL
 date: 2021-04-15
 categories:
     - Python

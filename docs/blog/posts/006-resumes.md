@@ -1,4 +1,6 @@
 ---
+title: Random Musings About Resumes
+description: My thoughts on what I like and don't like to see on resumes.
 date: 2021-03-31
 categories:
     - Resumes

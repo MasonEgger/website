@@ -1,4 +1,6 @@
 ---
+title: "Swimming with the Sharks: Year 2 DO"
+description: A Recap of My Second Year at DigitalOcean.
 date: 2022-01-03
 categories:
     - Career
