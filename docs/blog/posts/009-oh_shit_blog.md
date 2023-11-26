@@ -1,4 +1,6 @@
 ---
+title: Oh Shit, I Haven't Blogged in a While
+description: Buckle up, I'm going to catch up on two years of blogging in this post.
 date: 2023-11-27
 categories:
     - Career

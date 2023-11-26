@@ -19,7 +19,8 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
+      - run: apt install libcairo2
+      - run: pip install -r requirements.txt
       - run: mkdocs build
       - name: Push
         uses: s0/git-publish-subdir-action@develop

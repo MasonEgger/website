@@ -5,3 +5,4 @@ hugo
 .hugo*
 venv/*
 site/*
+.cache/*
