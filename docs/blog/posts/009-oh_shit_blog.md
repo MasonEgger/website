@@ -44,20 +44,28 @@ quickly and decisions were being made that I wasn't fond of. On top of that,
 DigitalOcean is pretty notorious for underpaying. They trade on people's love
 of the brand and the pride of working there(1). Due to this a few other things
 I decided to venture out DigitalOcean and explore other opportunities. I found
-myself at a new, [Gretel](https://gretel.ai). Early stage startups are interesting
+myself at a new company, [Gretel](https://gretel.ai). Early stage startups are interesting
 because they can pivot on a dime. I thought I was joining a company focusing on
 data privacy for backend developers. Within a few weeks of my arrival they either
 pivoted to generative AI for Data Science or were already there and there was
 a communication failure during the interview process. That being said, their 
 product was already a generative AI model, I just think their customer profiles
 shifted and instead of focusing on data privacy for tooling, it was more centered 
-around data privacy for Generative AI. Either way, it was not what I signed on for. 
+around data privacy for generative AI. Either way, it was not what I signed on for. 
 While AI is interesting to me, I have absolutely zero desire to work in it.
+While at Gretel I was met with many challenges. I gave it my best try, however, 
+our visions on Developer Relations never coalesced which ended with me leaving the
+company to pursue other options. I wish them nothing but the best(2). Their 
+product is actually _super fucking cool_ and will definitely change the industry, 
+but AI is not my passion. DevOps and Backend Engineering is.
 { .annotate }
 
 1. At least this was the case for me. If you ask them internally they're proud
 that they pay within a percentage of other companies that they deem acceptable.
 Long story short, it's not acceptable and leads to turnover.
+
+2. One day I'll write a blog about how to know when a job isn't a good fit
+and when to leave. That kind of content would have helped me here a lot.
 
 Also around this time myself and some other organizers hosted the 
 [PyTexas 2022 Conference](https://pytexas.org). This was my first year as 
@@ -66,22 +74,9 @@ stressful time as we were chasing the easing of Covid restrictions up until
 the day of the conference. We had made the decision to go back in-person in March
 2022 and to say it was challenging would be an understatement. Either way, I'm
 proud of the conference we delivered. This did result in me being elected to the
-PyTexas Foundation Board where I have served as President since(1).
-{ .annotate }
+PyTexas Foundation Board where I have served as President since.
 
-While at Gretel I was met with many challenges. I gave it my best try, however, 
-our visions on Developer Relations never coalesced which ended with me leaving the
-company to pursue other options. I wish them nothing but the best(2). Their 
-product is actually _super fucking cool_ and will definitely change the industry, 
-but AI is not my passion. DevOps and Backend Engineering is.
-{ .annotate }
-
-1. If I could do that why the fuck would I be working for _anyone_.
-
-2. One day I'll write a blog about how to know when a job isn't a good fit
-and when to leave. That kind of content would have helped me here a lot.
-
-I was only at this job for nine months. I learned a ton about an industry I knew
+I was only at Gretel for nine months. I learned a ton about an industry I knew
 little about, met many awesome people, and overall had a good time. I view this
 as a little detour in my career. 
 
