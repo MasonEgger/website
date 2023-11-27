@@ -5,7 +5,6 @@ date: 2023-11-27
 categories:
     - Career
     - Recap
-    - Rant
 tags: 
     - Blogging
     - Life
