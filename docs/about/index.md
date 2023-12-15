@@ -12,7 +12,7 @@ _I'm terrible at having to write bios for talks that I want to present, so I'm
 putting it here just to keep everything together. If you need a bio for me, 
 please take this one_.
 
-Mason is currently Sr. Technical Curriculum Developer at Temporal.io who specializes 
+Mason is currently a Sr. Technical Curriculum Developer at Temporal.io who specializes in
 building community, developer-focused educational content, distributed systems, 
 and Python. Prior to his work at Temporal he launched Developer Relations at Gretel.ai
 as the Lead Developer Advocate, and was a Developer Advocate at DigitalOcean
