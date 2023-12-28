@@ -1,6 +1,10 @@
 ---
 title: Mason Egger
 template: home.html
+social:
+    cards_layout_options:
+        title: Coder, Teacher, Author, Community Organizer
+description: On my business card, I am a Sr. Technical Curriculum Developer. In my mind, I am an engineer. But in my heart, I am a teacher.
 ---
 
 # Mason Egger
@@ -14,7 +18,7 @@ _On my business card, I am a Sr. Technical Curriculum Developer. In my mind, I a
 I'm Mason Egger, a technical educator, software developer, and community organizer. 
 I'm currently on the Developer Education team at [Temporal](https://temporal.io),
 an organizer and board member of [PyTexas](https://pytexas.org), and the Deputy
-Provice Governor for Provice 9 of the [Phi Mu Alpha Sinfonia](https://sinfonia.org) fraternity.
+Province Governor for Province 9 of the [Phi Mu Alpha Sinfonia](https://sinfonia.org) fraternity.
 
 ## Featured Content
 These are the pieces that do well or people tell me they have enjoyed.
