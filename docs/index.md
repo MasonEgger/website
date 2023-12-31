@@ -20,6 +20,13 @@ I'm currently on the Developer Education team at [Temporal](https://temporal.io)
 an organizer and board member of [PyTexas](https://pytexas.org), and the Deputy
 Province Governor for Province 9 of the [Phi Mu Alpha Sinfonia](https://sinfonia.org) fraternity.
 
+## Recent Content
+The most recent content I've published.
+
+* [2023 Is Dead! Long Live 2024!](blog/posts/010-2023-recap.md)
+* [Oh Shit, I Haven't Blogged in a While](blog/posts/009-oh_shit_blog.md)
+
+
 ## Featured Content
 These are the pieces that do well or people tell me they have enjoyed.
 
