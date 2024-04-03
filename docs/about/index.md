@@ -12,16 +12,13 @@ _I'm terrible at having to write bios for talks that I want to present, so I'm
 putting it here just to keep everything together. If you need a bio for me, 
 please take this one_.
 
-Mason is currently a Sr. Technical Curriculum Developer at Temporal.io who specializes in
-building community, developer-focused educational content, distributed systems, 
-and Python. Prior to his work at Temporal he launched Developer Relations at Gretel.ai
-as the Lead Developer Advocate, and was a Developer Advocate at DigitalOcean
-specializing in Infrastructure-as-a-Service technologies. His engineering experience
-includes time as an SRE helping build and maintain a highly available hybrid 
-multi-cloud PaaS. He's an avid programmer, speaker, educator, and writer/blogger. 
-He is an organizer of PyTexas, President of the PyTexas Foundation, and actively
-contributes to open source projects. In his spare time, he enjoys reading, camping, 
-kayaking, and exploring new places.
+Mason is currently a Sr. Technical Curriculum Developer at Temporal Technologies who 
+specializes building community, developer-focused educational content, distributed 
+systems, and Python. Prior to his work at Temporal he launched Developer Relations at 
+Gretel.ai as the Lead Developer Advocate, and was a Developer Advocate at DigitalOcean 
+specializing in Infrastructure-as-a-Service technologies. He’s an avid programmer, 
+speaker, educator, and writer/blogger. He is an organizer of PyTexas, President of the 
+PyTexas Foundation, and actively contributes to open source projects.
 
 ## [My Resume](../static/docs/MasonEgger-resume.pdf) {.mme-button .mme-button--primary}
 
