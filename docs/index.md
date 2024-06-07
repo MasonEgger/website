@@ -17,7 +17,7 @@ _On my business card, I am a Sr. Technical Curriculum Developer. In my mind, I a
 
 I'm Mason Egger, a technical educator, software developer, and community organizer. 
 I'm currently on the Developer Education team at [Temporal](https://temporal.io),
-an organizer and board member of [PyTexas](https://pytexas.org), and the Deputy
+an organizer and president of the [PyTexas Foundation](https://pytexas.org), and the Deputy
 Province Governor for Province 9 of the [Phi Mu Alpha Sinfonia](https://sinfonia.org) fraternity.
 
 ## Recent Content
@@ -42,17 +42,18 @@ These are the pieces that do well or people tell me they have enjoyed.
 
     ---
 
-    Join me April 19 - 21, 2024 in Austin Texas for the 18th annual PyTexas Conference
+    Join me April 11 - 13, 2025 in Austin Texas for the 18th annual PyTexas Conference
 
-    [:octicons-arrow-right-24: PyTexas Website](https://pytexas.org)
+    [:octicons-arrow-right-24: PyTexas Website](https://pytexas.org/2025)
 
 -   :fontawesome-solid-book:{ .lg .middle } __Take My Temporal Courses__
 
     ---
 
-    I am the author of Temporal 101 and 102 in Java and Python
+    I am the author of may Temporal based courses in Java and Python
 
-    [:octicons-arrow-right-24: Get Started](https://temporal.talentlms.com/index)
+    [:octicons-arrow-right-24: Get Started](https://learn.temporal.io/courses/)
+    
 
 
 -   :material-calendar:{ .lg .middle } __Book a Meeting__
