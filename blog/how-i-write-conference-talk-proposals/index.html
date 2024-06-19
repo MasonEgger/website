@@ -1886,19 +1886,20 @@ I enjoy talking to the Python community and DevOps/SRE communities. Which almost
 </ul>
 <p><em>Audience level</em> is the level of expertise you expect the average audience member to have. Audience level can be more of a "minimum requirements" level than a cap. You may want to institute basic prerequisites for your talk so people know what to expect before going in. For example, if I'm giving a talk on little-known SSH features, I would expect the audience to have a basic understanding of *Nix like systems and maybe even that they have used SSH in the past. Having a set idea of your desired audience will help you know where to start your talk. If my audience were beginners, I might start by introducing SSH. If I know they're more advanced, maybe I can skip past that part or cover it quickly. This doesn't mean that intermediate and advanced developers won't benefit from a beginner talk on an unfamiliar topic, of course. You'd be surprised how often more experienced developers attend beginner-focused talks to stay sharp.</p>
 <p><em>Difficulty level</em> is the knowledge level at which you target the talk on this specific topic. This is different from audience level because you have direct control over this. When writing my talks, I always keep difficulty level in mind to ensure that I don't sway too far off course. This can help me keep from going too in-depth on a beginner talk to keeping me from spending too much time on basic concepts in an advanced talk. Some topics are complex by their very nature. Don't worry, you can give different-level talks on the same core topic. </p>
-<p class="annotate">Example: The Python GIL(1),(2)</p>
+<p class="annotate"><strong>Example</strong>: The Python GIL(1),(2)</p>
 <ol>
 <li>There are three things in life that are constant: Death, Change, and there will be a talk on the GIL at PyCon this year.</li>
-<li>
-<p>For those of you that don't know, the GIL is the Global Interpreter Lock, and it is the thing responsible for Python not being able to run on more than one CPU core, blocking true parallelism. It's also the thing that stops you from having to track down wacky-ass race conditions and other <em>super fun</em> bugs that disappear and reappear due to the nature of concurrency, so maybe don't look a gift horse in the mouth, ok?</p>
-</li>
-<li>
-<p>Beginner level talk - "What is the GIL and why you should care"</p>
-</li>
+<li>For those of you that don't know, the GIL is the Global Interpreter Lock, and it is the thing responsible for Python not being able to run on more than one CPU core, blocking true parallelism. It's also the thing that stops you from having to track down wacky-ass race conditions and other <em>super fun</em> bugs that disappear and reappear due to the nature of concurrency, so maybe don't look a gift horse in the mouth, ok?  </li>
+</ol>
+<!-- adding this dummy paragraph because the annotate from above merges the two lists -->
+<p></p>
+
+<ul>
+<li>Beginner level talk - "What is the GIL and why you should care"</li>
 <li>Intermediate level talk - "How I Got Around The GIL by doing X"</li>
 <li>Advanced level talk - "A Deep Dive Into Garbage Collection and the GIL"</li>
 <li>All level talk - "How Python Core Developers are approaching removing GIL"</li>
-</ol>
+</ul>
 <p>As you can see, you can fit any topic to any level. Sometimes I have varying slides in my deck that I hide/unhide depending on the audience level.</p>
 <p>Also, note how there is an <em>All Level</em> category. While some conferences will use these interchangeably, that doesn't mean that they are. Advanced developers sitting in a beginner talk about the basics of Python Strings may not benefit from that talk. However, a talk about how to build a community around your Open Source project is likely to be enjoyed by everyone of all levels. </p>
 <h3 id="arent-audience-level-and-difficulty-level-extremely-similar"><em>"Aren't Audience Level and Difficulty Level extremely similar?"</em><a class="headerlink" href="#arent-audience-level-and-difficulty-level-extremely-similar" title="Permanent link">&para;</a></h3>
