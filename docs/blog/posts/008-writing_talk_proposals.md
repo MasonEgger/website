@@ -70,11 +70,14 @@ _Audience level_ is the level of expertise you expect the average audience membe
 
 _Difficulty level_ is the knowledge level at which you target the talk on this specific topic. This is different from audience level because you have direct control over this. When writing my talks, I always keep difficulty level in mind to ensure that I don't sway too far off course. This can help me keep from going too in-depth on a beginner talk to keeping me from spending too much time on basic concepts in an advanced talk. Some topics are complex by their very nature. Don't worry, you can give different-level talks on the same core topic. 
 
-Example: The Python GIL(1),(2)
+**Example**: The Python GIL(1),(2)
 { .annotate }
 
 1. There are three things in life that are constant: Death, Change, and there will be a talk on the GIL at PyCon this year.
-2. For those of you that don't know, the GIL is the Global Interpreter Lock, and it is the thing responsible for Python not being able to run on more than one CPU core, blocking true parallelism. It's also the thing that stops you from having to track down wacky-ass race conditions and other _super fun_ bugs that disappear and reappear due to the nature of concurrency, so maybe don't look a gift horse in the mouth, ok?
+2. For those of you that don't know, the GIL is the Global Interpreter Lock, and it is the thing responsible for Python not being able to run on more than one CPU core, blocking true parallelism. It's also the thing that stops you from having to track down wacky-ass race conditions and other _super fun_ bugs that disappear and reappear due to the nature of concurrency, so maybe don't look a gift horse in the mouth, ok?  
+
+<!-- adding this dummy paragraph because the annotate from above merges the two lists -->
+<p></p>
 
 * Beginner level talk - "What is the GIL and why you should care"
 * Intermediate level talk - "How I Got Around The GIL by doing X"
