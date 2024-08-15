@@ -291,7 +291,7 @@ solutions. Want to learn new language? Write your solutions in that language(1).
 
 1. This is actually what I do. When I was in high school I was on a competitive programming team and did leet style programs. When I learn a new language I actually pick up some of these old problems that I already know the answer to and implement them in the language that I am learning. 
 
-Now I don't recommend staying in leet code forever. I occasionally do one for 
+I don't recommend staying in leet code forever. I occasionally do one for 
 a brain teaser, and I do try [Advent of Code](https://adventofcode.com/) every
 year. They have a specific purpose, and are not a silver bullet(1).
 { .annotate }
@@ -300,7 +300,11 @@ year. They have a specific purpose, and are not a silver bullet(1).
 
 #### Work on a Side Project
 
-This is one of the best ways to get exposure to new tools
+This is one of the best ways to get exposure to new tools. Pick a tool/framework 
+that you want to learn and build something with it. Or even pick a tool that you
+use at work. It's totally fine to practice skills you currently use at your job
+at home, just build your own things with them. This allows you to play around with
+it, try new features, break things, and just have fun. 
 
 #### Read a Book
 
