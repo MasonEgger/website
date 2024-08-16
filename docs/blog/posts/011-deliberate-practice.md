@@ -1,7 +1,7 @@
 ---
 title: You Don't Get Better Without Deliberate Practice
 description: "Musicians practice, doctors study, tradespeople fix things around the house. So why do software engineers think they don't need to practice? Reality check, they do."
-date: 2024-08-10
+date: 2024-08-19
 categories:
     - Career
     - Goals
@@ -258,14 +258,14 @@ $$
 p=ht
 $$
 
-where $p$ is promotion, which is determined by the product of the number of hours
+where $p$ is getting a promotion, which is determined by the product of the number of hours
 you work $h$ and the number of tasks $t$ you finish(1).
 { .annotate }
 
 1. Oooooh. Pretty math plugin for markdown. Me likey.
 
 Bottom line, I _highly_ recommend you _don't_ dedicate your practice time to
-doing more work for your employer. It never ends well.
+doing more work for your employer. It never ends equitably.
 
 ### Work for Yourself
 
@@ -308,9 +308,55 @@ it, try new features, break things, and just have fun.
 
 #### Read a Book
 
-Bet you weren't expecting that one were ya? 
+Bet you weren't expecting that one were you? Books are a great source of knowledge,
+inspiration, and wisdom. Practice isn't solely hands on keyboard. Practice can
+take many forms. So read a book. You may retort with "Well what about blog posts or Reddit
+or SubStack?" and those are fine too, but there is something to be had for reading
+a book from a publisher. The publisher vetted that book and its contents. They
+paid for technical review, copy editing, developmental editing, and a lot more.
+They put their reputation on the line saying "We stand by the contents of this
+book enough that we want to distribute it." So ya, I put a little more faith in
+books from established publishers. 
+
+It should also be noted that you don't _have_ to read about a new technology. 
+Books on leadership, time management, _marketing_(1), **anything outside your
+direct area of work** will help you understand the challenges of the business
+more. If you're looking to advance in your career, you can't just know about your
+job. The higher you climb, the more knowledge about the business as a whole is
+required.
+{ .annotate }
+
+1. The amount of engineers who scoff at marketing(1) is directly equivalent to the number of failed startups in the world. "Build it and they will come" is horseshit. 
+    { .annotate}
+
+    1. That was me. I was one. I learned my lesson.
+
+But I'll go even further. Don't like reading books about work or tech? Fine. Read \
+some fiction. Just :clap: read :clap: for :clap: the :clap: love :clap: of :clap: 
+God :clap:. Reading is so good for you. It's so good for your brain. Adults don't 
+read enough. Read.(1)
+{ .annotate }
+
+1. And now I've convinced myself to write a blog post about this topic. So be ready.
 
 #### Join a Community
+
+One of the fatal flaws I see people fall in to is not caring about their professional
+network. The tech industry is a _small world_. If you haven't experienced this
+phenomenon yet, give it a minute. You'll start a new job and your coworker may
+be the cousin of your ex-boss. If you don't think people go through your LinkedIn,
+check connections, and ask mutuals about you then I've got some ocean front property
+in Arizona I'd like to sell you(1).  So nurture your professional network. Go to
+a local meetup, conference, social event. Keep in touch with previous coworkers.
+If you're feeling really confident, give a presentation at an event. Communities
+are a great way to stay up to date on the latest trends in tech, as well as make
+connections who you one day may want to work with. And heck, you may just make 
+some friends along the way(2).
+{ .annotate}
+
+1. Growing up in the south, folksy sayings are my vernacular. Sometimes they come from ones I've actually heard, sometimes I make them up on the spot. Every. Single. Job. I've ever worked has always said they want a book of my phrases. Every one. This particular one comes to us from the wonderful lyrics of the King of Country Music, George Strait. If you don't get it, or aren't familiar with the geography of the United States, Arizona is landlocked. It means you're gullable. This was a particular favorite of my mothers.
+
+2. Some of my best friends I met at a conference. We get together every year and hang out, eat BBQ, and catch up. If I ever need professional advice, or hell even a job, I know I can reach out to them. 
 
 ## Parting Thoughts
 As I was leaving the private trombone lesson mentioned earlier, the lesson teacher
