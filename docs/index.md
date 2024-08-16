@@ -23,6 +23,7 @@ Province Governor for Province 9 of the [Phi Mu Alpha Sinfonia](https://sinfonia
 ## Recent Content
 The most recent content I've published.
 
+* [You Don't Get Better Without Deliberate Practice](blog/posts/011-deliberate-practice.md)
 * [2023 Is Dead! Long Live 2024!](blog/posts/010-2023-recap.md)
 * [Oh Shit, I Haven't Blogged in a While](blog/posts/009-oh_shit_blog.md)
 
