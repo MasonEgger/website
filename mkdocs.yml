@@ -90,6 +90,8 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.arithmatex:
+      generic: true
 
 nav:
   - Home: index.md
@@ -153,6 +155,9 @@ extra:
   analytics:
     provider: google
     property: G-885F33V7K6
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 # Color Scheme
 # 606C38
