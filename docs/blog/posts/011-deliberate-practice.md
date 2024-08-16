@@ -1,7 +1,7 @@
 ---
 title: You Don't Get Better Without Deliberate Practice
 description: "Musicians practice, doctors study, tradespeople fix things around the house. So why do software engineers think they don't need to practice? Reality check, they do."
-date: 2024-08-19
+date: 2024-08-16
 categories:
     - Career
     - Goals
@@ -203,7 +203,7 @@ week to deliberate practice, but decide to fill it by just doing more work for
 your employer.
 
 First, your employer isn't going to reward you for it. They may say they
-will, but in reality they wont. Not fairly at least. I took this route at the 
+will, but in reality they won't. Not fairly at least. I took this route at the 
 beginning of my career. I put in extra hours to help get a massively over-scoped
 project to ship on time. At performance review time I received a top review, one
 of only five engineers across the entire 2500 person company to receive one. My reward
@@ -331,7 +331,7 @@ required.
 
     1. That was me. I was one. I learned my lesson.
 
-But I'll go even further. Don't like reading books about work or tech? Fine. Read \
+But I'll go even further. Don't like reading books about work or tech? Fine. Read
 some fiction. Just :clap: read :clap: for :clap: the :clap: love :clap: of :clap: 
 God :clap:. Reading is so good for you. It's so good for your brain. Adults don't 
 read enough. Read.(1)
