@@ -51,7 +51,7 @@ These are the pieces that do well or people tell me they have enjoyed.
 
     ---
 
-    I am the author of may Temporal based courses in Java and Python
+    I am the author of many Temporal based courses in Java and Python
 
     [:octicons-arrow-right-24: Get Started](https://learn.temporal.io/courses/)
     
@@ -61,7 +61,7 @@ These are the pieces that do well or people tell me they have enjoyed.
 
     ---
 
-    Want to chat? Book some time on my calendar. All I ask if you give me 24 hours to prepare
+    Want to chat? Book some time on my calendar. All I ask is you give me 24 hours to prepare
 
     [:octicons-arrow-right-24: Book a Meeting](https://calendly.com/masonegger)
 
