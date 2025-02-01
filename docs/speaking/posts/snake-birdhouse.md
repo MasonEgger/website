@@ -2,6 +2,8 @@
 date: 2020-10-25
 authors:
     - masonegger
+categories:
+    - Conference Talk
 ---
 
 # There's a Snake in the Birdhouse! Building a Python Culture at Vrbo

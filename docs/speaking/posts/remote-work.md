@@ -2,6 +2,8 @@
 date: 2021-03-21
 authors:
     - masonegger
+categories:
+    - Conference Talk
 ---
 
 # A Year Without Pants: Strategies for Successful Remote Work

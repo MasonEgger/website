@@ -2,6 +2,8 @@
 date: 2022-02-22
 authors:
     - masonegger
+categories:
+    - Webinars
 ---
 
 # DigitalOcean Tech Talks

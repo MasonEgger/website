@@ -2,6 +2,8 @@
 date: 2020-04-22
 authors:
     - masonegger
+categories:
+    - Conference Talk
 ---
 
 # Building Docs like Code: Continuous Integration for Documentation

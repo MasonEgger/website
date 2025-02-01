@@ -2,6 +2,8 @@
 date: 2016-07-08
 authors:
     - masonegger
+categories:
+    - Conference Talk
 ---
 
 # pfSense - A Beginner's Guide to a Sensible Firewall

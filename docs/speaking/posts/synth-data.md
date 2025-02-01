@@ -2,6 +2,8 @@
 date: 2022-06-08
 authors:
     - masonegger
+categories:
+    - Conference Talk
 ---
 
 # I Can't Believe It's Not Real Data! An Intro to Synthetic Data

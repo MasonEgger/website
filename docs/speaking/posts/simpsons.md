@@ -2,6 +2,8 @@
 date: 2020-06-30
 authors:
     - masonegger
+categories:
+    - Conference Talk
 ---
 
 # SLI's, SLA's and SL'D'OHS! Learning about Service Uptime from Homer Simpsons

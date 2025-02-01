@@ -1,7 +1,9 @@
 ---
-date: 2022-04-28
+date: 2022-05-19
 authors:
     - masonegger
+categories:
+    - Conference Talk
 ---
 
 # Write Docs Devs Love: Ten Tricks to Level Up Your Tech Writing
@@ -18,6 +20,7 @@ Think of that feeling you get when you follow an online tutorial or documentatio
 
 This talk was given at:
 
+* [PyCon US 2024 - Documentation Summit](https://www.youtube.com/watch?v=9WobKoE9OPI)
 * [PyCon US 2022](https://www.youtube.com/watch?v=9WobKoE9OPI)
 * [PyGotham 2021](https://www.youtube.com/watch?v=-4JwlAI-1L0)
     
