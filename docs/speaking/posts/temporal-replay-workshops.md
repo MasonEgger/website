@@ -3,7 +3,7 @@ date: 2024-09-18
 authors:
     - masonegger
 categories:
-    - Workshops
+    - Workshop
 ---
 
 # Temporal Replay Workshops

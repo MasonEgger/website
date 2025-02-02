@@ -3,7 +3,7 @@ date: 2024-04-19
 authors:
     - masonegger
 categories:
-    - Workshops
+    - Workshop
 ---
 
 # Python 102: Beyond the Basics
