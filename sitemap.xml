@@ -281,7 +281,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mason.dev/speaking/category/workshops/</loc>
+         <loc>https://mason.dev/speaking/category/workshop/</loc>
          <lastmod>2025-02-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -296,7 +296,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mason.dev/speaking/category/webinars/</loc>
+         <loc>https://mason.dev/speaking/category/webinar/</loc>
          <lastmod>2025-02-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
