@@ -1,8 +1,8 @@
 public/*
 **/*.tar.gz
 **/.DS_Store
-hugo
-.hugo*
 venv/*
+.venv/*
 site/*
 .cache/*
+website.egg-info/*
