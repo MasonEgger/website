@@ -1936,12 +1936,14 @@
 <li>An Ubuntu 20.04 server with a non-root user setup. Use this <a href="https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04">tutorial</a> for initial server setup, except name your user <code>days</code>. I personally use a DigitalOcean server to host my game. However, cloud hosting for your server can be expensive. You may be better off building the server locally with an old PC. <strong>Note</strong>: This server would do well to have at least 12GB of RAM and 4 CPUs. You may need more depending on your configuration and how many players you wish to support.</li>
 <li>A copy of 7 Days to Die. You can purchase the game on the <a href="https://store.steampowered.com/app/251570/7_Days_to_Die/">Steam Store</a></li>
 </ul>
-<p>!!! success "Tested Ubuntu Versions
-    This tutorial has been successfully tested against the followng Ubuntu versions:</p>
-<div class="language-text highlight"><pre><span></span><code>    * 24.04
-    * 22.04
-    * 20.04
+<div class="admonition success">
+<p class="admonition-title">Tested Ubuntu Versions</p>
+<p>This tutorial has been successfully tested against the followng Ubuntu versions:</p>
+<div class="language-text highlight"><pre><span></span><code>* 24.04
+* 22.04
+* 20.04
 </code></pre></div>
+</div>
 <h2 id="step-1-installing-the-game">Step 1 - Installing the Game<a class="headerlink" href="#step-1-installing-the-game" title="Permanent link">&para;</a></h2>
 <p>First thing you'll need to do is gain access to your server. If it's a local machine you can simply login via the UI or if it's a server, you should ssh in. Login as your non-root user 7d2d and update the server to the latest version so you have the most recent packages.</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>upgrade<span class="w"> </span>-y
