@@ -249,12 +249,14 @@ Include prerequisites
 As mentioned above, having a set level for the difficulty of the talk will  help you scope the content. I covered how to think about audience level in-depth above in the [section](#talk_levels). You should also explicitly write down any prerequisite knowledge you expect the audience to have coming into your talk. Sometimes there is a place to share this in the CFP submission, but if there isn't, it is still useful for scoping the talk. 
 
 ### _Audiece Takeaways_
+
 ```
 What will the audience take away 
 and/or learn from this talk? 
 
 Should be 3 things
 ```
+
 Audience Takeaways are one of the most _vital_ parts of a CFP, and you'll rarely see a CFP ask for this(1). It isn't enough to tell people what your talk about, but _what they are getting out of your talk_. Single-track conferences are rare. There are usually at least two or more talks happening simultaneously. Let the viewer know what to expect from your talk so they can choose the correct talk for them.
 { .annotate }
 
