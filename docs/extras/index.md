@@ -17,10 +17,6 @@ If you find it useful too then that's alright too. lol :stuck_out_tongue_closed_
 * [*Always be quitting* - Julio Merino](https://jmmv.dev/2021/04/always-be-quitting.html)
 * [*How to help a student get unstuck*](https://offbyone.us/posts/how-to-help-a-student-get-unstuck/)
 
-### Threads
-
-* [*How Do Toxic Leaders Get So Far?* - John Cutler](https://twitter.com/johncutlefish/status/1421552704887746560)
-
 ### Books
 
 * [*Cash Flow for Creators: How to Transform Your Art Into a Career*](https://www.tiltedwindmillpress.com/product/c4c/)
