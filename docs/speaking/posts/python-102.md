@@ -34,7 +34,7 @@ repository and as Jupyter Notebooks in Google Colab.
 
 * [Google Colab Drive](https://drive.google.com/drive/u/0/folders/1GQGgucy2lomEbEXRdxozWiBI9xpqE5DD)
 * [GitHub Repo](https://github.com/MasonEgger-Edu/python-102)
-* [Slides](../assets/docs/python-102-slides.pdf)
+* [Slides](https://www.pytexas.org/2024/assets/docs/python-102-slides.pdf)
 
 ## Delivery
 
