@@ -9,9 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
         with:
-          python-version: 3.12
+          version: "latest"
+      - name: Set up Python
+        run: uv python install 3.12
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
       - uses: actions/cache@v3
         with:
@@ -20,8 +23,10 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: sudo apt install libcairo2
-      - run: pip install -r requirements.txt
-      - run: mkdocs build
+      - name: Install dependencies
+        run: uv sync
+      - name: Build site
+        run: uv run mkdocs build
       - name: Push
         uses: s0/git-publish-subdir-action@develop
         env:

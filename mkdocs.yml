@@ -99,8 +99,8 @@ nav:
   - Tutorials: tutorials/index.md
   - Speaking: speaking/index.md
   - Uses: uses/index.md
-  - About: about/index.md
-  - Now: now/index.md
+  - Bio: bio/index.md
+#  - Now: now/index.md
   - Extras: extras/index.md
 
 plugins:
