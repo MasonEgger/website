@@ -39,7 +39,7 @@ theme:
     - toc.integrate
   palette:
     - scheme: mme
-copyright: Copyright &copy; 2018-2023 - Mason Egger
+copyright: Copyright &copy; 2018-2025 - Mason Egger
 
 markdown_extensions:
   - pymdownx.superfences:
@@ -95,24 +95,21 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Blog: blog/index.md
+  - Tutorials: tutorials/index.md
+  - Speaking: speaking/index.md
+  - Uses: uses/index.md
   - About: about/index.md
-  - Blog: 
-    - blog/index.md
-  - Tutorials: 
-    - tutorials/index.md
-  - Speaking: 
-    - speaking/index.md
+  - Now: now/index.md
   - Extras: extras/index.md
 
 plugins:
   - search
   - social:
-      cards_layout: default
       cards_layout_options:
         background_color: "#FEFAE0"
         color: "#283618"
-  - tags:
-      tags_file: tags.md
+  - tags
   - blog:
       blog_dir: blog
       blog_toc: true

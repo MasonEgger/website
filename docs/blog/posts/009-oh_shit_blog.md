@@ -26,7 +26,7 @@ to write. 2022 was an interesting year but I do believe that it was around
 this point that my burnout from DevRel started to settle in.
 { .annotate }
 
-1. It was about [How I Write Conference Talk Proposals](../how-i-write-conference-talk-proposals)
+1. It was about [How I Write Conference Talk Proposals](./008-writing_talk_proposals.md)
 
 ## So What Happened?
 
