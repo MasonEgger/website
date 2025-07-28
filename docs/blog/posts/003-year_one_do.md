@@ -21,7 +21,7 @@ Another year come and gone, and what an adventure it was but I'm happy to say I 
 <!-- more -->
 
 So this blog post is a few months late. I wanted to post it on the anniversary
-of my first day at DigitalOcean, however between [Hacktoberfest](https://hacktoberfest.digitalocean.com/), [deploy by DigitalOcean](https://www.digitalocean.com/deploy/), and the launch of [App Platform](https://www.digitalocean.com/blog/introducing-digitalocean-app-platform-reimagining-paas-to-make-it-simpler-for-you-to-build-deploy-and-scale-apps/) October and November were _very_ busy for me. However,
+of my first day at DigitalOcean, however between [Hacktoberfest](https://hacktoberfest.digitalocean.com/), [deploy by DigitalOcean](https://www.digitalocean.com/deploy/), and the launch of [App Platform](https://www.digitalocean.com/blog/introducing-digitalocean-app-platform-reimagining-paas-to-make-it-simpler-for-you-to-build-deploy-and-scale-apps) October and November were _very_ busy for me. However,
 now that things have calmed down I can finally sit down and reflect on my first
 year at DigitalOcean as a Developer Advocate. 
 
@@ -184,7 +184,7 @@ to just enjoy being in the moment. I finally found a company that feels like hom
 shares my values, and allows me to do the kind of work that I want to do. 
 They also support me by allowing me to further my career with courses and professional
 development. Next year I'm going to be participating in Stephanie Morillo's 
-[DevRel CMS](https://www.devrelcms.com/) next year, I'm working on a book 
+DevRel CMS next year, I'm working on a book 
 proposal and experimenting with Zines. 2020 may have been challenging but for me,
 it was a good year to reset and introspect, preparing and motivating me to make
 2021 a phenomenal year. 

@@ -44,7 +44,7 @@ So what all did I do this year? Here are the stats for my accomplishments of 202
 
 * Code:
     * Updated PyTexas Website [pytexas.org](https://pytexas.org)
-    * Prepare Technical Demos for numerous Tech Talks [MasonEgger-Demos](https://github.com/MasonEgger-Demos)
+    * Prepare Technical Demos for numerous Tech Talks [MasonEgger-Edu](https://github.com/MasonEgger-Edu)
     * [Hacktoberfest Repo Label/Topic Manager Improvements](https://github.com/do-community/hacktoberfest-repo-topic-apply)
     * Education Tool for setting up a lab-type environment using Droplets [DigitalOcean Classroom](https://github.com/MasonEgger/digitalocean-classroom)
 * Content:

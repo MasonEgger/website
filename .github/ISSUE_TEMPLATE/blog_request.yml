@@ -1,0 +1,68 @@
+name: Blog Post Request
+description: Suggest a topic for me to write about
+title: "[Blog Request]: "
+labels: ["blog-request", "content"]
+assignees:
+  - masonegger
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a blog post topic! I'm is always looking for interesting things to write about.
+
+  - type: input
+    id: topic
+    attributes:
+      label: Suggested Topic
+      description: What would you like me to write about?
+      placeholder: A guide to..., My experience with..., How to...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Content Category
+      description: What category would this blog post fit into?
+      options:
+        - Programming/Technical
+        - Career Development
+        - Industry Commentary
+        - Tutorial/How-to
+        - Personal Experience
+        - Conference/Speaking
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why This Topic?
+      description: What makes this topic interesting or valuable? Why should Mason write about it?
+      placeholder: This topic would be valuable because...
+    validations:
+      required: true
+
+  - type: textarea
+    id: audience
+    attributes:
+      label: Target Audience
+      description: Who would benefit from reading about this topic?
+      placeholder: This would help developers who..., people starting out in..., etc.
+    validations:
+      required: false
+
+  - type: textarea
+    id: outline
+    attributes:
+      label: Suggested Outline or Key Points
+      description: Are there specific aspects or points you'd like to see covered?
+      placeholder: |
+        - Introduction to...
+        - Key concepts like...
+        - Common pitfalls...
+        - Best practices...
+    validations:
+      required: false

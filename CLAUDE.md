@@ -4,64 +4,107 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a personal website for Mason Egger built with [MkDocs](https://mkdocs.org/) using a modified [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) theme. The site is deployed to Netlify.
+This is a personal website for Mason Egger built with [MkDocs](https://www.mkdocs.org/) using a modified [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) theme. The site is deployed to Netlify.
 
 ## Development Commands
 
-### Environment Setup
+### Using `just` (Recommended)
+The project uses `just` as a task runner. Key commands:
 
+```bash
+# Install dependencies
+just install
+
+# Start development server with hot reload
+just serve
+
+# Build the site
+just build
+
+# Check all links in the site
+just link-check
+
+# Validate MkDocs configuration
+just validate
+
+# Run all quality checks (build + link check)
+just check
+
+# Create a new blog post
+just new-blog "Your Blog Title Here"
+
+# Clean generated files and cache
+just clean
+
+# Show available commands
+just help
+```
+
+### Direct Commands
 ```bash
 # Install dependencies using uv
 uv sync
 
-# Alternative: Install dependencies directly from pyproject.toml
-uv pip install -e .
-```
-
-### Development Server
-
-```bash
 # Start the development server
 uv run mkdocs serve
-```
 
-### Building the Site
-
-```bash
 # Build the site to the ./site directory
 uv run mkdocs build
 ```
 
-## Project Structure
+## Architecture & Structure
 
-- `docs/` - Contains all the website content
-  - `blog/` - Blog posts
-  - `tutorials/` - Tutorial content
-  - `speaking/` - Speaking engagements
-  - `about/` - About page
-  - `static/` - Static assets like images and PDFs
-  - `stylesheets/` - Custom CSS
-  - `javascripts/` - Custom JavaScript
+### Content Organization
+The site content is organized into distinct sections, each using its own instance of the MkDocs Material blog plugin:
 
-- `overrides/` - Custom theme overrides for MkDocs Material
+- `docs/blog/posts/` - Personal blog posts (numbered 000-011+)
+- `docs/tutorials/posts/` - Technical tutorials
+- `docs/speaking/posts/` - Conference talks and presentations
+- `docs/speaking/docs/` - PDF slides for download
+- `docs/static/` - Images and other static assets
 
-- `mkdocs.yml` - Main configuration file for MkDocs
+### Theme Customization
+The site uses a custom color scheme and theme overrides:
 
-## Content Management
+- **Color Palette**: Nature-inspired with cream (`#FEFAE0`), dark green (`#283618`), and burnt orange (`#BC6C25`)
+- **Overrides** in `/overrides/`:
+  - `home.html` - Removes sidebars on homepage
+  - `blog.html`, `blog-post.html` - Custom blog layouts
+  - `partials/post.html` - Post component customization
+- **Custom CSS** in `docs/stylesheets/extra.css` - Defines hero sections, buttons, and color scheme
 
-New content should be added to the appropriate directory within `docs/`:
+### Plugin Configuration
+The `mkdocs.yml` configures multiple blog instances with different settings:
+- Blog: Standard blog with categories and tags
+- Tutorials: Tutorial posts with their own archive
+- Speaking: Conference talks with associated PDFs
 
-- Blog posts go in `docs/blog/posts/`
-- Tutorials go in `docs/tutorials/posts/`
-- Speaking engagements go in `docs/speaking/posts/`
+### Content Features
+- **Post Metadata**: Each post should include title, description, date, categories, tags, and authors
+- **Excerpts**: Use `<!-- more -->` to define post excerpts
+- **Draft Support**: Set `draft: true` in post metadata to hide from publication
+- **RSS Feeds**: Automatically generated for all content types
+- **Social Cards**: Auto-generated with custom colors for social media sharing
 
-The site uses the MkDocs Material blog plugin with custom configurations for each content type.
-
-## Markdown Syntax
-
-- All content is written in Markdown and uses the extensions made available by the Mkdocs Material project. 
-- Always check the `mkdocs.yml` to ensure the appropriate plugin and markdown extensions are enabled before writing content using them.
+### Markdown Extensions
+The site supports advanced Markdown features:
+- Code blocks with syntax highlighting and line numbers
+- Mermaid diagrams
+- Admonitions (callout boxes)
+- Mathematical notation (MathJax)
+- Tabbed content
+- Task lists
 
 ## Deployment
 
-The site is automatically deployed to Netlify when changes are pushed to the main branch.
+The site automatically deploys to Netlify when changes are pushed to the main branch. GitHub Actions builds the site and publishes to a `site` branch.
+
+## Working with Content
+
+When creating new content:
+1. Use the appropriate directory for the content type
+2. Include all required metadata in the frontmatter
+3. Follow existing naming conventions (e.g., numbered blog posts)
+4. Store images in `docs/static/img/blog/[post-name]/`
+5. Use relative paths for internal links
+6. Run `just check` before committing to validate build and links

@@ -16,7 +16,7 @@ In this tutorial we'll use Flask and DigitalOcean's App Platform to redirect tra
 <!-- more -->
 
 ## The Issue
-I came about trying to solve this problem because I wanted to create a permanent link to my Discord server so people could join. Discord currently allows this kind of link to be created but it's a shortened bitly type link that isn't easy to remember. I wanted to be able to tell people "Hey, go to [discord.mason.dev](https://discord.mason.dev) to join my server" and they would be taken to this bitly type link, thus joining my server. 
+I came about trying to solve this problem because I wanted to create a permanent link to my Discord server so people could join. Discord currently allows this kind of link to be created but it's a shortened bitly type link that isn't easy to remember. I wanted to be able to tell people "Hey, go to discord.mason.dev to join my server" and they would be taken to this bitly type link, thus joining my server. 
 
 ## Possible Solutions
 A simple solution to this would be simply to just use Nginx and perform a 301 redirect. I initially thought about doing this but it posed a few issues. The first was I knew I was going to deploy this application to DigitalOcean's App Platform and I was feeling _suuuuuper_ lazy and didn't want to write a Dockerfile. Let's be honest. This had nothing to do with App Platform. I was just being lazy. The second was I felt this was too simple. Everyone's done this a million times. I wanted to solve the problem in Python (I had delusions of adding more functionality to this app, silly Mason) so I was going to solve it in Python. 

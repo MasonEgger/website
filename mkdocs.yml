@@ -100,8 +100,13 @@ nav:
   - Speaking: speaking/index.md
   - Uses: uses/index.md
   - Bio: bio/index.md
-#  - Now: now/index.md
   - Extras: extras/index.md
+
+not_in_nav: |
+  now/index.md
+
+draft_docs: |
+  _unpublished.md # A md file ending in _unpublished.md
 
 plugins:
   - search

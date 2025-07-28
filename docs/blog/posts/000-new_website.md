@@ -73,7 +73,7 @@ with TinyMCE. I started a [Medium blog](https://medium.com/@masonegger) and
 even published a post through my employeer HomeAway. However, I recently
 learned that Medium is starting a [membership program](https://medium.com/membership)
  where you will have to pay to get full access to the site. As someone who 
-founded [UnlockedEdu](https://unlockededu.org)(see my projects section) and
+founded UnlockedEdu(1) and
 doesn't believe that knowledge should be hidden behind a pay wall, this just
 didn't sit right with me. I had been putting off updating my website and moving forward, but I
 do believe the Medium situation was the straw that broke the camel's back. I
@@ -82,10 +82,13 @@ will write a post with a link to the blog. I don't think I can republish it
 under this site since it is technically the property of my company (No
 animosity in this statement at _all_, I love my job and my company. It's just
 how it is).
+{ .annotate }
+
+1. A now defunct project where I aimed to make open education resources. I still believe in this, but this project never really took off.
 
 ## The New Site
 Low and behold, a new site was born. It's the site you're reading this blog on.
-After the intial "what the hell is this?" phase with Hugo I've come to enjoy
+After the initial "what the hell is this?" phase with Hugo I've come to enjoy
 it. The template that I chose was a good starting point, and I have spent more
 time modifying the template than actually writing the initial content of this
 site, but I'm happy with the result. Once I get the deployment of this site

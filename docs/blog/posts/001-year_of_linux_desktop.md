@@ -28,7 +28,7 @@ department at Texas State University, starting in the summer of 2012. My boss wa
 _The *nix Dude_. You know who I'm talking about. Socks with sandals, utility
 clothing (pockets in pockets for pockets), and of course, a glorious beard
 that would make Albus Dumbledore proud. He pretty much personified the
-_*nix Guy_ from the classic [Dilbert comic](https://dilbert.com/strip/1995-06-24).
+_*nix Guy_ from the classic [Dilbert comic](https://web.archive.org/web/20200314010928/dilbert.com/strip/1995-06-24).
 Between him and a few select others I was constantly told about how this year
 would finally be the year Linux became popular on the desktop and how it would
 signal the end of Microsoft's dominance on the PC. I then decided to try Ubuntu
