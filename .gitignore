@@ -6,3 +6,4 @@ venv/*
 site/*
 .cache/*
 website.egg-info/*
+.lycheecache

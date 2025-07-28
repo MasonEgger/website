@@ -2,3 +2,4 @@ localhost:8000
 overrides/*
 # DigitalOcean's blog seems to be 404ing, then redirecting to the blog, which breaks lychee. This is...interesting behavior
 https://www.digitalocean.com/blog/introducing-digitalocean-app-platform-reimagining-paas-to-make-it-simpler-for-you-to-build-deploy-and-scale-apps
+https://claude.ai

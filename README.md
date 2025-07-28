@@ -29,7 +29,7 @@ Run `just help` to see all available commands. Key commands include:
 ## Contributing
 
 ### Request a Blog Post
-Have an idea for a blog post? [Request a topic](.github/ISSUE_TEMPLATE/blog-post-request.md) using my issue template.
+Have an idea for a blog post? [Request a topic](https://github.com/MasonEgger/website/issues/new?template=blog_request.yml) using my issue template.
 
 ### Report Issues
-Found a bug or broken link? [Report an issue](.github/ISSUE_TEMPLATE/bug_report.md) using my bug report template.
+Found a bug or broken link? [Report an issue](https://github.com/MasonEgger/website/issues/new?template=bug_report.yml) using my bug report template.
