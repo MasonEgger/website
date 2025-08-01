@@ -611,6 +611,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Content Creation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#writing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Writing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#video" class="md-nav__link">
+    <span class="md-ellipsis">
+      Video
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -701,7 +725,7 @@ I'm indecisive and change what I use often, so this may also change frequently.<
 <p class="annotate"><strong>3 Monitors</strong> - 2 Dells and an LG. I don't know the specs. They're all 27 inches or larger. I didn't buy them. I collect monitors as I traverse remote jobs. No one ever wants them back. They're my little trophies. But 3 is a must for full productivity. One for the IDE, one for my terminal to test, one for a browser for research(1). </p>
 <ol>
 <li>And for those of you who don't full screen your apps on a Mac, you terrify me. </li>
-<li><a href="https://www.daskeyboard.com/daskeyboard-4-ultimate/">Das Keyboard Model 4 Ultimate</a> - Clicky blue switches all the way! And yes, the keycaps are blank.</li>
+<li><a href="https://www.daskeyboard.com/daskeyboard-4-ultimate/">Das Keyboard Model 4 Ultimate</a> - Keyboard on my desktop. Clicky blue switches all the way! And yes, the keycaps are blank.</li>
 </ol>
 </li>
 </ul>
@@ -709,23 +733,24 @@ I'm indecisive and change what I use often, so this may also change frequently.<
 <p>I write code daily in many languages, usually Python and Java, but also Go, TypeScript, lately Ruby, and the occasional C#. 
 These are the tools I use on the daily. </p>
 <ul>
-<li><a href="https://code.visualstudio.com/">VSCode</a> - Tried and true. Only IDE I use. Having to switch between coding and writing (done in Markdown), I use this for everything.</li>
-<li><a href="https://www.cursor.com/">Cursor</a> - AI-powered code editor, mostly used for vibe coding one off scripts. Not having the best luck with it for long running projects.</li>
-<li><a href="https://iterm2.com/">iTerm2</a> - MacOS Terminal Replacement.</li>
-<li><a href="https://www.byobu.org/">Byobu</a> - Open source text-based window manager for my terminal. </li>
+<li><a href="https://code.visualstudio.com/">VSCode</a> - Tried and true. Only IDE I use. </li>
 <li>
-<p class="annotate"><a href="https://claude.ai/">Claude.ai</a>  and <a href="https://www.anthropic.com/claude-code">Claude Code</a> - My go to AI tool(1). I use it daily. Coding, writing, ideas, stupid jokes, Claude does it all!</p>
+<p class="annotate"><a href="https://www.anthropic.com/claude-code">Claude Code</a> - Over the past month, I have gone from casual user to <strong>power user</strong>(1). The more I ask my friends how they are using it, the more I've realized I'm the power user in the group.</p>
 <ol>
 <li>I put this shit on everything.</li>
 </ol>
 </li>
+<li>
+<p><a href="https://iterm2.com/">iTerm2</a> and <a href="https://apps.microsoft.com/detail/9n0dx20hk701?hl=en-US&amp;gl=US">Windows Terminal</a>- Different terminals for different OSes. Trying <a href="https://ghostty.org/">Ghostty</a> is on my list of things to do.</p>
+</li>
+<li><a href="https://github.com/tmux/tmux/wiki">tmux</a> - Terminal multiplexer. Vital for running multiple Claude Code sessions at once.</li>
 </ul>
 <h2 id="productivity">Productivity<a class="headerlink" href="#productivity" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p class="annotate"><a href="https://obsidian.md/">Obsidian</a> - Knowledge base and note-taking application, daily journal(1).</p>
 <ol>
-<li>When I remember to journal.... :grimace:</li>
+<li>When I remember to journal.... <img alt="😬" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f62c.svg" title=":grimacing:" /></li>
 </ol>
 </li>
 <li>
@@ -741,11 +766,44 @@ These are the tools I use on the daily. </p>
 </li>
 </ul>
 <h2 id="content-creation">Content Creation<a class="headerlink" href="#content-creation" title="Permanent link">&para;</a></h2>
+<h3 id="writing">Writing<a class="headerlink" href="#writing" title="Permanent link">&para;</a></h3>
+<p>I spend the majority of my time writing.
+Over the years, I've tried many tools and continue to try more.
+These are what I'm currently using, but check back often as this list may change.</p>
 <ul>
-<li><a href="">Microphone here</a> - Dynamic XLR microphone</li>
-<li><a href="">Focusrite Scarlett 2i2 Audio Interface</a> - USB interface for XLR microphones</li>
-<li><a href="">Camera info</a> - Camera info</li>
+<li><a href="https://code.visualstudio.com/">VSCode</a> - I write exclusively in Markdown.
+When I have to write in another format, I write Markdown and convert it later.
+VSCode has such a rich plugin ecosystem I can switch between coding and writing seamlessly.</li>
+<li><a href="https://vale.sh/"><code>vale</code></a> - A command-line tool that allows you to define a style guide and lint your content against it.</li>
+<li>
+<p class="annotate"><a href="https://github.com/lycheeverse/lychee"><code>lychee</code></a> A command-line tool that checks for broken links. This is part of my CI and keeps my various sites up to date, makes sure I don't forget to add links(1), and finds link rot.</p>
+<ol>
+<li>When writing, I will often add Markdown syntax for a link like so <code>"[link](#)</code> when I want to add a link but come back and add them later. <code>lychee</code> helps me catch that. </li>
+</ol>
+</li>
+<li>
+<p class="annotate"><a href="https://www.anthropic.com/claude-code">Claude Code</a> - Oh no! 
+He uses AI tools to write?
+<strong><em>Burn him!</em></strong> (1)
+Claude is a great editor.
+I don't use Claude to write content(2), but paired with <code>vale</code>, I have one hell of an editor.</p>
+<ol>
+<li>This is a <em>whole</em> blog post in itself.</li>
+<li><em>Yet</em>, again, <strong>that</strong> is a whole fucking blog post.</li>
+</ol>
+</li>
+</ul>
+<h3 id="video">Video<a class="headerlink" href="#video" title="Permanent link">&para;</a></h3>
+<p>I don't create professional video content as often anymore, but I do have a setup for when I need to.</p>
+<ul>
+<li><a href="https://rode.com/en-us/products/nt1">Microphone here</a> - Large-diaphragm condenser microphone.</li>
+<li><a href="https://us.focusrite.com/products/scarlett-2i2">Focusrite Scarlett 2i2 Audio Interface</a> - USB interface for XLR microphones</li>
+<li><a href="https://electronics.sony.com/imaging/interchangeable-lens-cameras/aps-c/p/ilczve10-b">Sony ZV-E10 Camera</a> - Mirror-less camera for vlogging. </li>
 <li><a href="https://www.telestream.net/screenflow/overview.htm">ScreenFlow</a> - Video editing and screen recording software. <strong>Mac only</strong></li>
+<li><a href="https://www.elgato.com/us/en/p/cam-link-4k">Elgato Cam Link 4k</a> - Capture device for camera to record directly to my computer.</li>
+<li><a href="https://www.elgato.com/us/en/p/key-light">Elgato Key Light</a> - I have two of these to avoid casting a shadow. They can be a little finicky but overall they've been reliable.</li>
+<li><a href="https://www.elgato.com/us/en/p/green-screen">Elgato Green Screen</a> - Solid product. Just a great green screen, although I've been told I need a blue screen because of my hair color.</li>
+<li><a href="https://glidegear.net/products/glide-gear-tmp-100-ipad-smartphone-video-teleprompter">Glide Gear TMP100 Teleprompter</a> - Teleprompter for highly scripted videos.</li>
 </ul>
 
 
