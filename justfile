@@ -43,7 +43,7 @@ validate:
 # Create a new blog post with template
 new-blog TITLE:
     #!/usr/bin/env bash
-    claude --allowedTools "Read, Write" -p 'Create a new blog post draft in the appropriate place with the appropriate frontmatter, naming format, with the title "{{TITLE}}". Add your best guess for tags and categories based on the title. The categories and tags sections can't be blank, so if you can't think of something, put DRAFT as the option. You are not to write ANY content. Just set things up for me. This blog will start off unpublished, so set `draft: true` in the frontmatter.'
+    ~/.claude/local/claude --allowedTools "Read, Write" -p 'Create a new blog post draft in the appropriate place with the appropriate frontmatter, naming format, with the title "{{TITLE}}". Add your best guess for tags and categories based on the title. The categories and tags sections can't be blank, so if you can't think of something, put DRAFT as the option. You are not to write ANY content. Just set things up for me. This blog will start off unpublished, so set `draft: true` in the frontmatter.'
 
 # Show help for common workflows
 help:
