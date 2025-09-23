@@ -176,7 +176,7 @@ You will create these packages later in the tutorial.
 The <code>pyproject.toml</code> is complete and will need no more revisions. You can review the complete file and copy the code here
 </summary>
 
-[pyproject.toml](https://github.com/temporal-community/tutorial-temporal-ai-agent/blob/main/pyproject.tom)
+[pyproject.toml](https://github.com/temporal-community/tutorial-temporal-ai-agent/blob/main/pyproject.toml)
 
 ```ini
 [project]
@@ -4469,7 +4469,7 @@ Hover your cursor over the code block to reveal the copy-code option.
 <br />
 <br />
 
-[workflows/agent_goal_workflow.py](https://github.com/temporal-community/tutorial-temporal-ai-agent/blob/main/workflows/workflows/agent_goal_workflow.py)
+[workflows/agent_goal_workflow.py](https://github.com/temporal-community/tutorial-temporal-ai-agent/blob/main/workflows/agent_goal_workflow.py)
 
 ```python
 from collections import deque
