@@ -153,7 +153,12 @@ Highly unlikely.
 But will I still be _using_ Temporal a decade from now?
 No doubt in my mind.
 This is by far the most amazing tech I've ever worked with, and has a permanent place in my stack. 
-Because of this, I found 
+Because of this, I found myself wanting to learn more.
+To see real world use cases.
+To see what people are _actually_ building with Temporal, and help them do it.
+After looking around the company, the Solutions Architect role seemed like a perfect fit to do this.
+I get to learn about the nuances of Temporal, teach people how to use it, and help them be successful. 
+Sounds like exactly what I want to do with my career at this time.
 { .annotate }
 
 1. And let's be real, no one expects me to.
