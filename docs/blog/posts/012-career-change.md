@@ -176,7 +176,7 @@ I was a young, dumb, headstrong engineer who didn't see the purpose of Marketing
 
 Turns out, that was _exactly_ what I needed.
 I got to see what it actually takes to make a company successful.
-Engineers often get stuck in the "Build it and the will come" mentality, which is 100% grass fed organic horse shit.
+Engineers often get stuck in the "Build it and they will come" mentality, which is 100% grass fed organic horse shit.
 That's not how the world works.
 Show me a startup that believes that and I'll show you a startup with limited growth potential that'll be dead in the water in less than five years unless they correct course.
 
