@@ -25,17 +25,19 @@ On 9/1/2025 I was officially transferred from the Developer Relations team in Ma
 For those of you who know me, this may seem like a wild deviation, and in a way it is. 
 I definitely didn't have "career change" on my bingo card when I started this year, but here we are.
 I'm making this announcement a month out after having given myself time to onboard into my new role, as well as take some _very much needed_ PTO(1).
+{ .annotate }
+
+1. Disney World!!!!
 
 But I want to make a few things clear.
 I have not left Temporal, nor do I want to.
 Temporal is an _amazing_ company to work for.
 It's easily in the top 2 jobs I've had and it's closing in on best job.
-It's also the job I've been at the longest(2).
+It's also the job I've been at the longest(1).
 So, without further ado, let's pay attention to that man behind the curtain and examine what led me to this decision.
 { .annotate }
 
-1. Disney World!!!!
-2. So long as you don't count my time working at Texas State University, which doesn't really count because I worked there while I was a student, and being a Lab Instructor with an on-campus office while doing my undergrad was absolutely fantastic.
+1. So long as you don't count my time working at Texas State University, which doesn't really count because I worked there while I was a student, and being a Lab Instructor with an on-campus office while doing my undergrad was absolutely fantastic.
 
 ## What This Move Isn't
 
@@ -141,7 +143,7 @@ Now that I've explained what didn't impact this choice, here's what actually did
 
 I'll be frank, I don't plan on working at Temporal for the rest of my career(1).
 The era of staying at a job for 40+ years went out the door two generations ago.
-My dad is about to retire from his job after 43 years as the same job, in the same role(2).
+My dad is about to retire after 43 years at the same job, in the same role(2).
 That's not how tech works.
 We're _expected_ to move on after a short amount of time.
 Now I don't currently have any plans to leave Temporal.
@@ -214,7 +216,7 @@ So here's to moving ever so closer back towards engineering.
 So many people have asked "Well what does this mean for your career?" or "What do you plan on doing in five years?" or some variation on this theme.
 And I have one answer, and I'll share it now for all to hear:
 
-> Fuck if I know. - _Mason Egger, when being asked what to this job shift means for his career_
+> Fuck if I know. - _Mason Egger, when being asked what this job shift means for his career_
 
 I honestly have no idea what comes next.
 And that's _exhilarating_!
@@ -229,14 +231,14 @@ She was amazing for the reasons you wouldn't expect.
 Unlike my prior Sunday School teachers, who was the preacher's wife or other members associated with the church in some way, this teacher was an accomplished professional outside of the chapel(1).
 She started her career as a chemist, and worked at a power company.
 Then she got bored, and decided to become an EMS.
-After than, she became a teacher of all the new EMS in the area.
+After that, she became a teacher of all the new EMS in the area.
 And by the time I was graduating, she was studying to become an RN.
 She carries _multiple_ degrees, is a specialist in _many_ fields, and essentially showed me that you're never to late to flip the table and start over again. 
 Why did she do this?
 Because she got bored.
 She had learned everything she wanted, accomplished everything she wanted to do, and then decided "It's time to do something new."
 And that has always stuck with me.
-It's not that didn't like my time in Engineering or DevRel, but that time has come to an end.
+It's not that I didn't like my time in Engineering or DevRel, but that time has come to an end.
 Does it mean I'll never make it back to those roles?
 Who knows?
 But when it's time for my next move, I'm sure I'll remember my Sunday school lessons at Trinity Lutheran Church(2).
