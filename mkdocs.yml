@@ -112,8 +112,8 @@ plugins:
   - search
   - social:
       cards_layout_options:
-        background_color: "#FEFAE0"
-        color: "#283618"
+        background_color: "#FEFDFB"
+        color: "#2C4A3A"
   - tags
   - blog:
       blog_dir: blog
@@ -167,9 +167,11 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
-# Color Scheme
-# 606C38
-# 283618
-# FEFAE0
-# DDA15E
-# BC6C25
+# Color Scheme - Hunter Green Earth Tones
+# Hunter Green: #2C4A3A (Primary text)
+# Warm White: #FEFDFB (Background)
+# Terracotta: #C65D3B (CTAs/Links)
+# Sage Green: #8B9D83 (Secondary accents)
+# Warm Gray: #5A5A5A (Secondary text)
+# Light Sage: #F3F5F1 (Card backgrounds)
+# Warm Beige: #F5F2E8 (Hero sections)

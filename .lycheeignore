@@ -3,5 +3,6 @@ overrides/*
 # DigitalOcean's blog seems to be 404ing, then redirecting to the blog, which breaks lychee. This is...interesting behavior
 https://www.digitalocean.com/blog/introducing-digitalocean-app-platform-reimagining-paas-to-make-it-simpler-for-you-to-build-deploy-and-scale-apps
 https://claude.ai
-https://electronics.sony.com/* # Works, just blocked by crawlers
+# Works, just blocked by crawlers
+https://electronics.sony.com/
 https://platform.openai.com/
