@@ -372,12 +372,13 @@
    ============================================ */
 
 .content-list {
-    list-style: none;
+    list-style: none !important;
     padding: 0;
     margin: 2rem 0;
 }
 
 .content-list li {
+    list-style: none !important;
     background: var(--light-sage);
     padding: 1.25rem 1.5rem;
     margin-bottom: 1rem;

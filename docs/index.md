@@ -4,7 +4,7 @@ template: home.html
 social:
     cards_layout_options:
         title: Coder, Teacher, Author, Community Organizer
-description: On my business card, I am a Sr. Technical Curriculum Developer. In my mind, I am an engineer. But in my heart, I am a teacher.
+description: On my business card, I am a Sr. Solutions Architect. In my mind, I am an engineer. But in my heart, I am a teacher.
 ---
 
 <div class="hero-section" markdown>
@@ -13,11 +13,11 @@ description: On my business card, I am a Sr. Technical Curriculum Developer. In 
 
 # Mason Egger
 
-<p class="tagline">On my business card, I am a Sr. Technical Curriculum Developer.<br>In my mind, I am an engineer. But in my heart, I am a teacher.</p>
+<p class="tagline">On my business card, I am a Sr. Solutions Architect.<br>In my mind, I am an engineer. But in my heart, I am a teacher.</p>
 
 <div class="subtitle" markdown>
 
-I'm a technical educator, software developer, and community organizer currently on the Developer Education team at [Temporal](https://temporal.io). I serve as an organizer and president of the [PyTexas Foundation](https://pytexas.org), and as Deputy Province Governor for Province 9 of the [Phi Mu Alpha Sinfonia](https://sinfonia.org) fraternity.
+I'm a technical educator, software developer, and community organizer currently on the Commercial Solutions Architecture team at [Temporal](https://temporal.io). I serve as an organizer and president of the [PyTexas Foundation](https://pytexas.org), conference chair of the [PyTexas Conference](https://pytexas.org/2026), and organizer of the [PyTexas Meetup](https://pytexas.org/meetup)
 
 </div>
 
@@ -35,15 +35,15 @@ I'm a technical educator, software developer, and community organizer currently 
 
     ---
 
-    Join me April 11 - 13, 2025 in Austin Texas for the 18th annual PyTexas Conference
+    Join me April 17 - 19, 2026 in Austin Texas for the 20th annual PyTexas Conference
 
-    [:octicons-arrow-right-24: PyTexas Website](https://pytexas.org/2025)
+    [:octicons-arrow-right-24: PyTexas Website](https://pytexas.org/2026)
 
 -   :fontawesome-solid-book:{ .lg .middle } __Take My Temporal Courses__
 
     ---
 
-    I am the author of many Temporal based courses in Java and Python
+    I am the author of many Temporal based courses in various programming languages.
 
     [:octicons-arrow-right-24: Get Started](https://learn.temporal.io/courses/)
 
@@ -90,4 +90,3 @@ These are the pieces that do well or people tell me they have enjoyed.
 
 </div>
 
-<a rel="me" style="display: none;" href="https://fosstodon.org/@masonegger">Mastodon</a>
