@@ -116,6 +116,7 @@ plugins:
         color: "#2C4A3A"
   - tags
   - blog:
+      pagination: false
       blog_dir: blog
       blog_toc: true
       post_url_format: "{slug}"
