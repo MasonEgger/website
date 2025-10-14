@@ -236,8 +236,8 @@
 
 .hero-section {
     background: linear-gradient(135deg, var(--warm-beige) 0%, var(--warm-white) 100%);
-    padding: 6rem 2rem;
-    margin: -2rem 0 4rem 0;
+    padding: 3rem 2rem;
+    margin: -2rem 0 2rem 0;
     text-align: center;
     border-bottom: 2px solid var(--light-sage);
 }
@@ -288,7 +288,7 @@
 
 .content-section {
     max-width: 1200px;
-    margin: 4rem auto;
+    margin: 2rem auto;
     padding: 0 2rem;
 }
 
@@ -488,7 +488,7 @@
 
 @media screen and (max-width: 768px) {
     .hero-section {
-        padding: 4rem 1.5rem;
+        padding: 2.5rem 1.5rem;
     }
 
     .hero-section h1 {
@@ -505,7 +505,7 @@
     }
 
     .content-section {
-        margin: 3rem auto;
+        margin: 1.5rem auto;
         padding: 0 1.5rem;
     }
 

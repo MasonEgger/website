@@ -27,36 +27,6 @@ I'm a technical educator, software developer, and community organizer currently 
 
 <div class="content-section" markdown>
 
-## Recent Content
-
-<ul class="content-list" markdown>
-<li markdown>[Here I Go Changing Careers Again](blog/posts/012-career-change.md)</li>
-<li markdown>[You Don't Get Better Without Deliberate Practice](blog/posts/011-deliberate-practice.md)</li>
-<li markdown>[2023 Is Dead! Long Live 2024!](blog/posts/010-2023-recap.md)</li>
-</ul>
-
-</div>
-
----
-
-<div class="content-section" markdown>
-
-## Featured Content
-
-These are the pieces that do well or people tell me they have enjoyed.
-
-<ul class="content-list" markdown>
-<li markdown>[How To Build a 7 Days To Die Server on Ubuntu](tutorials/posts/001-7d2d.md)</li>
-<li markdown>[How I Write Conference Talk Proposals](blog/posts/008-writing_talk_proposals.md)</li>
-<li markdown>[Tech Industry Interviews are Bullshit. Let's Make Them Better](blog/posts/005-interviews.md)</li>
-</ul>
-
-</div>
-
----
-
-<div class="content-section" markdown>
-
 ## What I'm Working On
 
 <div class="grid cards" markdown>
@@ -87,6 +57,36 @@ These are the pieces that do well or people tell me they have enjoyed.
     [:octicons-arrow-right-24: Book a Meeting](https://calendly.com/masonegger)
 
 </div>
+
+</div>
+
+---
+
+<div class="content-section" markdown>
+
+## Recent Content
+
+<ul class="content-list" markdown>
+<li markdown>[Here I Go Changing Careers Again](blog/posts/012-career-change.md)</li>
+<li markdown>[You Don't Get Better Without Deliberate Practice](blog/posts/011-deliberate-practice.md)</li>
+<li markdown>[2023 Is Dead! Long Live 2024!](blog/posts/010-2023-recap.md)</li>
+</ul>
+
+</div>
+
+---
+
+<div class="content-section" markdown>
+
+## Featured Content
+
+These are the pieces that do well or people tell me they have enjoyed.
+
+<ul class="content-list" markdown>
+<li markdown>[How To Build a 7 Days To Die Server on Ubuntu](tutorials/posts/001-7d2d.md)</li>
+<li markdown>[How I Write Conference Talk Proposals](blog/posts/008-writing_talk_proposals.md)</li>
+<li markdown>[Tech Industry Interviews are Bullshit. Let's Make Them Better](blog/posts/005-interviews.md)</li>
+</ul>
 
 </div>
 
