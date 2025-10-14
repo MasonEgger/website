@@ -7,3 +7,4 @@ site/*
 .cache/*
 website.egg-info/*
 .lycheecache
+commit-msg.md
