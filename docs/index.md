@@ -67,9 +67,9 @@ I'm a technical educator, software developer, and community organizer currently 
 ## Recent Content
 
 <ul class="content-list" markdown>
+<li markdown>[Reflections on Becoming a PSF Fellow](blog/posts/013-psf-fellow)</li>
 <li markdown>[Here I Go Changing Careers Again](blog/posts/012-career-change.md)</li>
 <li markdown>[You Don't Get Better Without Deliberate Practice](blog/posts/011-deliberate-practice.md)</li>
-<li markdown>[2023 Is Dead! Long Live 2024!](blog/posts/010-2023-recap.md)</li>
 </ul>
 
 </div>

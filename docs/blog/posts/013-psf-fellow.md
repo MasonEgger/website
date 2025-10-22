@@ -110,7 +110,7 @@ I was much more experienced now, so I felt less like a fish out of water.
 I took tutorials, went to the keynotes, and even chatted with more people.
 I remember going by the PSF booth and chatting with them, and learning about the various tiers of membership, core contributors, and fellows.
 I felt much more immersed in the Python experience, and even learned there were mini Python regional conferences that happened all around the world!
-I immediately looked up to see when the next [PyTexas Conference](https://pytexas.org/2026f) was, but I had just missed it, and would have to wait a full year to go.
+I immediately looked up to see when the next [PyTexas Conference](https://pytexas.org/2026) was, but I had just missed it, and would have to wait a full year to go.
 However, this inspired me to speak.
 I wrote what I consider my first serious talk, [Building Docs like Code: Continuous Integration for Documentation](../../speaking/posts/ci-docs.md)
 At the time, I was focusing on making documentation better at work(1).
