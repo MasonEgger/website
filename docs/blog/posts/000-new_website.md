@@ -26,7 +26,7 @@ My first website was HTML made in Dreamweaver for part of my undergraduate
 Music Technology class. In this class we covered a short section on what was 
 called "web development", then more music related technologies such as Finale 
 and ProTools. I purchased my domain 
-[masonegger.com](https://www.masonegger.com) and deployed the site. Shortly
+[masonegger.com](https://masonegger.com) and deployed the site. Shortly
 after that I decided to pursue Computer Science in college (that story is
 _long_ and I'll probably write a blog post on that later). After a few years
 and rough iterations of my basic HTML site I decided to learn Django. I worked
