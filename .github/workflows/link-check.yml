@@ -14,10 +14,27 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install system dependencies
+        run: sudo apt install libcairo2 zlib1g-dev libjpeg-dev
+
+      - name: Install Python dependencies
+        run: uv sync
+
+      - name: Build site
+        run: uv run mkdocs build
+
       - name: Link Checker
         uses: lycheeverse/lychee-action@v2.2.0
         with:
-          # Check all markdown, HTML, and other text files
+          # Check all markdown, HTML, and other text files including built site
           args: >
             --verbose
             --no-progress
@@ -27,6 +44,7 @@ jobs:
             "**/*.yml"
             "**/*.yaml"
             "docs/**/*.md"
+            "site/**/*.html"
           fail: true
           
       - name: Upload results
