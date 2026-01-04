@@ -3,7 +3,6 @@ title: "Reflections on Becoming a PSF Fellow"
 description: "My thoughts on being named a PSF Fellow, and the journey that led me here."
 date: 2025-10-22
 categories:
-    - Python
     - Personal
     - Community
 tags:

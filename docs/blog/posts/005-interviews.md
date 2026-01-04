@@ -5,7 +5,7 @@ date: 2021-02-15
 categories:
     - Career
     - Rant
-    - Programming
+    - Software Engineering
 tags:
     - Interviews
 ---

@@ -5,11 +5,10 @@ date: 2022-01-03
 categories:
     - Career
     - Recap
-tags: 
+tags:
     - DigitalOcean
     - Developer Relations
     - Developer Advocate
-    - Community
 authors:
     - masonegger
 ---

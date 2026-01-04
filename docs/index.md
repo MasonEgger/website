@@ -23,6 +23,39 @@ I'm a technical educator, software developer, and community organizer currently 
 
 </div>
 
+
+<div class="two-column-container" markdown>
+
+<div class="content-column" markdown>
+
+## Recent Content
+
+My most recent writings.
+
+<ul class="content-list" markdown>
+<li markdown>[Claude Code as My Daily Driver](blog/posts/014-claude-code.md)</li>
+<li markdown>[Reflections on Becoming a PSF Fellow](blog/posts/013-psf-fellow.md)</li>
+<li markdown>[Here I Go Changing Careers Again](blog/posts/012-career-change.md)</li>
+</ul>
+
+</div>
+
+<div class="content-column" markdown>
+
+## Featured Content
+
+Writings y'all tell me you like.
+
+<ul class="content-list" markdown>
+<li markdown>[How To Build a 7 Days To Die Server on Ubuntu](tutorials/posts/001-7d2d.md)</li>
+<li markdown>[How I Write Conference Talk Proposals](blog/posts/008-writing_talk_proposals.md)</li>
+<li markdown>[You Don't Get Better Without Deliberate Practice](blog/posts/011-deliberate-practice.md)</li>
+</ul>
+
+</div>
+
+</div>
+
 ---
 
 <div class="content-section" markdown>
@@ -57,36 +90,6 @@ I'm a technical educator, software developer, and community organizer currently 
     [:octicons-arrow-right-24: Book a Meeting](https://calendly.com/masonegger)
 
 </div>
-
-</div>
-
----
-
-<div class="content-section" markdown>
-
-## Recent Content
-
-<ul class="content-list" markdown>
-<li markdown>[Reflections on Becoming a PSF Fellow](blog/posts/013-psf-fellow.md)</li>
-<li markdown>[Here I Go Changing Careers Again](blog/posts/012-career-change.md)</li>
-<li markdown>[You Don't Get Better Without Deliberate Practice](blog/posts/011-deliberate-practice.md)</li>
-</ul>
-
-</div>
-
----
-
-<div class="content-section" markdown>
-
-## Featured Content
-
-These are the pieces that do well or people tell me they have enjoyed.
-
-<ul class="content-list" markdown>
-<li markdown>[How To Build a 7 Days To Die Server on Ubuntu](tutorials/posts/001-7d2d.md)</li>
-<li markdown>[How I Write Conference Talk Proposals](blog/posts/008-writing_talk_proposals.md)</li>
-<li markdown>[Tech Industry Interviews are Bullshit. Let's Make Them Better](blog/posts/005-interviews.md)</li>
-</ul>
 
 </div>
 

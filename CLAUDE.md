@@ -73,6 +73,15 @@ The site uses a custom color scheme and theme overrides:
   - `partials/post.html` - Post component customization
 - **Custom CSS** in `docs/stylesheets/extra.css` - Defines hero sections, buttons, and color scheme
 
+### Homepage Layout
+The homepage (`docs/index.md`) uses custom CSS classes for layout:
+
+- `.hero-section` - Compact hero with profile image, name, tagline, and bio
+- `.two-column-container` - Flexbox container for side-by-side sections on large screens, stacks vertically on mobile (≤768px)
+- `.content-column` - Child of two-column-container, used for Recent Content and Featured Content sections
+- `.content-section` - Standard full-width content section (used for "What I'm Working On")
+- `.content-list` - Styled list items with terracotta left border
+
 ### Plugin Configuration
 The `mkdocs.yml` configures multiple blog instances with different settings:
 - Blog: Standard blog with categories and tags
