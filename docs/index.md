@@ -33,7 +33,6 @@ I'm a technical educator, software developer, and community organizer currently 
 My most recent writings.
 
 <ul class="content-list" markdown>
-<li markdown>[Claude Code as My Daily Driver](blog/posts/014-claude-code.md)</li>
 <li markdown>[Reflections on Becoming a PSF Fellow](blog/posts/013-psf-fellow.md)</li>
 <li markdown>[Here I Go Changing Careers Again](blog/posts/012-career-change.md)</li>
 </ul>
