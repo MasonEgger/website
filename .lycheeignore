@@ -7,3 +7,6 @@ https://claude.ai
 # Works, just blocked by crawlers
 https://electronics.sony.com/
 https://platform.openai.com/
+# Blocks automated requests (403 Forbidden)
+https://medium.com/
+https://www.forbes.com/

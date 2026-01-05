@@ -23,7 +23,7 @@ serve-port PORT="8001":
 
 # Check all links using lychee with caching (avoids 429 errors)
 link-check:
-    lychee --cache --verbose .
+    lychee --cache --verbose --max-concurrency 8 .
 
 # Clean generated files and cache
 clean:
