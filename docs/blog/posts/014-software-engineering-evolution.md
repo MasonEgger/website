@@ -5,6 +5,7 @@ date: 2026-01-20
 categories:
     - Software Engineering
     - AI
+    - Brain Dump Ramblings on AI Series
 tags:
     - LLMs
 authors:
@@ -273,11 +274,77 @@ And it would be an absolute shame if you went full ostrich and buried your head 
 
 1. But you better hope it doesn't! Or that you have your 401k in gold bars under your bed because if the AI bubble pops the economy goes with it :sob:
 
+## Evolving Into a **Real** Engineering Discipline
+
+For years many have argued if software engineering is a _real_ engineering vocation(1).
+There are many facets to this debate, but one of the primary ones was that software engineering focused too much on the implementation details, and resembled something more of a craft.
+The rationale for comparing this to a craft was that success depends heavily on individual skill, intuition, and accumulated experience rather than applying established formulas.
+For example, a mechanical engineer doesn't machine every part that goes into their design for an engine.
+{ .annotate }
+
+1. There is _sooooooo_ much history here I will not be explaining it all. If you're curious, look it up. There's a lot.
+
+However, with the advent of AI and the implementation of software becoming automated away, I believe software engineering is starting to look more like a traditional engineering discipline.
+
+The "craft" layer is actively being abstracted away as we speak.
+Just as CAD and CNC abstracted away manual drafting and machining for mechanical engineers, AI is doing the same for code.
+Software engineers won't manually be writing the code for much longer.
+
+When code generation becomes abundant, constraints become the focus.
+So often we put things off, make compromises on designs, accumulate technical debt for the sake of speed.
+Speed is no longer an issue anymore.
+This may very well be the end of technical debt.
+Or at least, human created technical debt.
+Will there be AI technical debt?
+Absolutely.
+And we'll solve for that as well.
+
+Verification now becomes paramount.
+We can't blindly trust the AI code(1).
+We must define and understand correctness, and how to ensure it.
+This is very much a traditional engineering discipline.
+{ .annotate }
+
+1. No matter what some influencers say.
+
+Lastly, the science, the theory is no longer optional.
+It's essential.
+Algorithms matter.
+Designing a distributed system?
+Better understand CAP theorem, consensus protocols, various failure modes and more.
+All of the theory that computer science undergrads learned and _never_ used in their day job isn't just academic anymore.
+It's their fast pass to getting ahead with AI(1).
+{ .annotate }
+
+1. But only for a short while. Don't think others won't catch up.
+
+## Proof It's Already Happening
+
+And you may think I'm blowing smoke out of my ass, but I'm so happy to say that as I was writing this, I _already_ saw an example of this in the wild(1).
+I follow the development of [Ghostty](https://ghostty.org/) on Twitter because it's interesting, and its creator, Mitchell Hashimoto, made a post about someone who used AI tools to do an analysis of Ghostty to find a bug.
+This user had no experience with the programming language the tool was written in, the operating system they were using it on, how terminals are even built, **BUT** they knew how to drive AI and had an engineering mindset.
+They applied their skills and were able to use AI to understand the problem, write a script, and submit a patch that fixed **4 real crashing cases**.
+All with **zero knowledge of the code base prior**.
+{ .annotate }
+
+1. Thank you very much Mitchell Hashimoto.
+
+![Image of Mitchell Hashimoto's Tweet, link below](img/014-software-engineering/tweet.png){ width="600" }
+
+_source: [Mitchell Hashimoto's Twitter](https://xcancel.com/mitchellh/status/2006114026191769924)(1)_
+{ .annotate }
+
+1. Funnily enough, Mitchell also rants about AI slop on his [Twitter](https://xcancel.com/mitchellh/status/2010457189350047769) as well. So it's a give and take.🤣
+
+This is the sign of a mature engineering discipline.
+Implementation is removed.
+Critical thinking, an engineering mindset, and the right tool solved the problem.
+
 ## Preparing for the Aftershocks
 
 The Big Bang was arguably a good thing for humanity.
 Without it, we'd probably not be here.
-However, with any large scale violent supernova explosion event, there's going to be aftershocks.
+However, with any large scale violent supernova explosion, there's going to be aftershocks.
 And those are coming for us all now.
 
 AI is going to make people quicker and more efficient at their work.
@@ -299,4 +366,9 @@ But the person who knows how to use AI might, if you don't.
 
 ---
 
-*This is Part 1 of a three-part series. In [Part 2: Code is Now Cheap, Don't Devalue Yourself](014-2-code-is-cheap.md), I'll explore what this shift means for software engineers and how to navigate it.*
+!!! abstract "Part 1 of 3 of my `Brain Dump Ramblings on AI` blog series"
+
+    Check out the other parts of this series:
+
+    * Part 2 - **[Code is Cheap, Don't Devalue Yourself](015-code-is-cheap.md)** discusses AI and it's impact on the software engineering discipline.
+    * Part 3 - **[TBD](#)** documents my journey with Claude Code and my tips and tricks for getting started.
