@@ -11,12 +11,12 @@ tags:
 authors:
     - masonegger
 ---
-
-Software engineering is drastically different than it was in the early days of the discipline.
-Computers are smaller, languages have changed, we have the internet.
-But the advent of LLMs has brought about a Big Bang level event.
-Like it or not, one thing's for certain.
-We're witnessing evolution in real time.
+Change is inevitable.
+Technology advances, new tools emerge, productivity increases.
+The wheel keeps turning.
+The emergence of LLMs has had a Big Bang level impact on many industries, suddenly and almost violently changing what we know and how we think about everyday aspects of our life seemingly overnight.
+Love it or hate it, one thing's for certain.
+We're witnessing the evolution of software engineering in real time.
 And it's time to stop pretending like we aren't.
 
 <!-- more -->
@@ -62,7 +62,7 @@ And then, perhaps seemingly overnight, a device became available that could fit 
 The HP-35, named for its 35 keys (1), made this book obsolete.
 While the price tag may have dissuaded people initially, eventually they became cheap enough that anyone could afford one.
 And then we put a calculator in the pocket of every person on the planet via their phone(2).
-Being able to calculate the logarithms in your head became a parlor trick, and eventually not even taught in school(3).
+Being able to calculate logarithms in your head became a parlor trick, and eventually not even taught in school(3).
 With this step forward in technology, a skill set that some held, and maybe even prided themselves in, became obsolete.
 It was no longer needed.
 Sure they could still use it, but the advantage it brought evaporated.
