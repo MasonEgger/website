@@ -1,9 +1,9 @@
 ---
-title: "Software Engineering is No Longer About Writing Code"
-description: "And let's be honest, it never truly was."
-date: 2026-01-01
+title: "We're Witnessing the Evolution of Software Engineering"
+description: "And it's time to stop pretending like we aren't."
+date: 2026-01-20
 categories:
-    - Software Engineering 
+    - Software Engineering
     - AI
 tags:
     - LLMs
@@ -11,11 +11,12 @@ authors:
     - masonegger
 ---
 
-For years a heated debate has been waged over a simple question: "Is software engineering a _real_ engineering vocation?"
-People on both sides adamantly defend their point of view.
-Regardless of what side you're on, the advent of LLMs and code generation has made one thing clear.
-Software engineering is no longer about writing code. 
-And let's be honest, it never truly was.
+Software engineering is drastically different than it was in the early days of the discipline.
+Computers are smaller, languages have changed, we have the internet.
+But the advent of LLMs has brought about a Big Bang level event.
+Like it or not, one thing's for certain.
+We're witnessing evolution in real time.
+And it's time to stop pretending like we aren't.
 
 <!-- more -->
 
@@ -28,7 +29,7 @@ Do I now have a painting of a hallucinogenic view of Austin, TX from the vantage
 You bet your ass.
 But every now and then you come across some fun stuff.
 One of my favorite things is to look at antique books, especially school books(2).
-Recently I came across a book of logarithms. 
+Recently I came across a book of logarithms.
 Not a book teaching logarithms, a book with a table of logarithms that you could look up the answer to a specific logarithm given certain parameters.
 { .annotate }
 
@@ -46,13 +47,13 @@ In hindsight it makes sense, but digital calculators were commonplace by the tim
 1. And I'm still kicking myself for not buying it.
 
 Regardless of how I felt flipping through the pages of this curious antique on a random Saturday afternoon, it got me thinking.
-At some time, _this_ was useful. 
+At some time, _this_ was useful.
 There were people whose professions depended on this book.
 There are likely countless structures, such as roads, bridges, dams, that a book like this was consulted when designing it.
 People in this profession may have even memorized common logarithms that they worked with on a regular basis.
-Or they learned how to calculate them in their head quickly. 
+Or they learned how to calculate them in their head quickly.
 Maybe they even prided themselves on this ability.
-They were faster than others because they didn't have to go flip through pages in a book every time they needed a calculation. 
+They were faster than others because they didn't have to go flip through pages in a book every time they needed a calculation.
 And then, perhaps seemingly overnight, a device became available that could fit in your pocket that could do all of this for you.
 
 ![Image of the HP-35 Pocket Calculator ad from HP History website](img/014-software-engineering/hp35.png)
@@ -69,85 +70,63 @@ And this probably scared the shit out of people.
 They had been doing something their entire life, they were valued for the speed and precision that they brought, and then suddenly the aspect that gave them a sense of pride was vanquished by a machine.
 { .annotate }
 
-1. We just don't market like they did in the 70s. "Well Bob what should we call it?" "I don't know Frank, how many keys does it have?" It was a golden age. 
-2. Anyone else have a math teacher in school tell them "You won't have a calculator in your pocket everywhere you go!"? Joke's on them, we do. 
+1. We just don't market like they did in the 70s. "Well Bob what should we call it?" "I don't know Frank, how many keys does it have?" It was a golden age.
+2. Anyone else have a math teacher in school tell them "You won't have a calculator in your pocket everywhere you go!"? Joke's on them, we do.
 3. I sure as shit don't know how to _manually_ calculate one.
 
-And this isn't the only time this happened. 
+And this isn't the only time this happened.
 Let's look at a story directly from the software engineering field.
 
 ## Dorothy Vaughan and the IBM
 
 If you haven't seen the movie or read the book [Hidden Figures](https://en.wikipedia.org/wiki/Hidden_Figures) yet, I highly recommend it.
-It tells the story of the African American women "Computers" whose job it was to do the calculations for NASA during the Space Race (late 1950s - 1960s).
-This was before computers as we know them(1) came to be.
-The term "Computers" here was actually a job that someone did, where they would perform the advanced mathematical operations of various engineering fields by hand(2).
-Because that's what they did.
-They computed things.
-They may have had specialized mechanical calculators, and some computers were available in the world, but not at the scale you may be thinking.
-At this time computers were the size of a room, and had less power than a TI-84 calculator.
-So these calculations had to be computed by hand.
-And I bet you that they used a logarithm reference like the one mentioned above.
-{ .annotate }
+It tells the story of the African American women "Computers" at NASA during the Space Race whose job it was to perform the calculations by hand.
 
-1. You know, that thing you're reading this blog on.
-2. I'm about to overload the shit out of this term and I can't think of a better way to do it. Big C Computer means the human Computer, little c computer means the thing you think means computer. Good luck.
-
-But as the space race heated up, NASA looked for a faster way to perform these computations. 
-This manifested in the form of the IBM 7090. 
+But as the space race heated up, NASA looked for a faster way to perform these computations.
+This manifested in the form of the IBM 7090.
 The IBM could perform over 200,000 calculations per second, way more than a room full of human computers could ever hope to achieve.
-But Dorothy didn't balk at this. 
-She didn't stick up her nose and say things like "That's slop," or point out every time it made a mistake.
-She recognized the potential and the reality of the situation. 
-If the machine today could perform X operations per second, what could it do in a year?
-A decade? 
-Because technology rarely regresses(1).
-{ .annotate }
-
-1. And when it does, it's usually not a **good** thing. Typical causes of human scale technology regressions tend to be cataclysmic events, such as meteors, great floods, solar storms, burning of the Library of Alexandria, you get the picture. So while we may foolishly hope that "Maybe things will go back to the way they were before," we often don't think about what it would cost for us to get there. 
-
+But Dorothy didn't balk at this.
+She didn't stick up her nose and say "That's slop," or point out every time it made a mistake.
+She recognized the potential and the reality of the situation.
 So she made a choice(1).
-She chose to learn how to program in FORTRAN, and then taught those skills to the other Computers she supervised. 
+She chose to learn how to program in FORTRAN, and then taught those skills to the other Computers she supervised.
 And those who were the most successful picking up this new skill weren't those who were the quickest at arithmetic, or could use a slide rule the fastest, or had the logarithms memorized, but instead, it was the person who understood _what_ needed to be computed and _why_.
-Skills that were paramount one day weren't so much the next. 
+Skills that were paramount one day weren't so much the next.
 { .annotate }
 
-1. One which cemented her name in the history books and has me writing about her in my blog post some 70+ years later. 
+1. One which cemented her name in the history books and has me writing about her in my blog post some 70+ years later.
 
-It wasn't the implementation, the raw arithmetic, that was actually the difficult part. 
-It was the design. 
-The logic. 
-The ability to see the completed picture and architect a solution. 
-Because if that was simple, the machine would have done that too. 
+It wasn't the implementation, the raw arithmetic, that was actually the difficult part.
+It was the design.
+The logic.
+The ability to see the completed picture and architect a solution.
+Because if that was simple, the machine would have done that too.
 
 ## The Crucial Element
 
 In both scenarios above, there is a crucial theme that emerges.
-It's that expertise and domain knowledge are what bring value, not raw implementation. 
+It's that expertise and domain knowledge are what bring value, not raw implementation.
 The mathematician who memorized various logarithms didn't _just_ sit around all day calculating them(1).
-They were typically doing this as part of other engineering work. 
+They were typically doing this as part of other engineering work.
 The knowledge alone was not valuable, it was the engineer's wisdom of how to use it that gave their role value.
 Same with the Computers who were programming the IBM.
-It would not have been possible for them to write the programs if they did not first understand the mathematics behind what they were doing. 
+It would not have been possible for them to write the programs if they did not first understand the mathematics behind what they were doing.
 These folks adapted to the new tools that were introduced, and became more productive.
 Yes there was some overhead in learning the new tooling, but that's life.
-There was overhead in you learning how to walk too.
-Probably a lot of falling on your face.
-But once you got the hang of it, you achieved a much more efficient way of moving yourself through your environment.
-The same concept applies here. 
-Because the alternative isn't great.
-The alternative is to be left behind.
+This won't be the first new tool you'll have to learn in your career, and it sure as shit won't be the last.
+And let's be real, the alternative isn't great.
+Because the alternative is to be left behind.
 To become obsolete.
 { .annotate }
 
 1. Although it is funny to envision someone just sitting in the corner doing this for no reason.
 
-## Witnessing Abstraction
+## The Broken Abstraction Cycle
 
 The two examples above aren't isolated incidents.
 They are a phenomenon that has been happening throughout human history since its inception.
 It is the abstraction of a process, leading to the simplification of work, and the next step of the evolution of an industry.
-Let's bring this back to our field, software engineering. 
+Let's bring this back to our field, software engineering.
 
 The software engineering field is littered with abstractions.
 Programming a computer started out by actually programming the physical bits of the machine.
@@ -161,16 +140,16 @@ And we have made things slightly simpler.
 But the major leaps became smaller.
 And when we do make massive leaps, such as WYSIWYG editors, no or low code solutions, or anything that does make writing code more palatable to the masses, these tools are generally mocked.
 You'll hear things like **"That's not _real_ programming."** or **"You're not a real programmer if you use X language."**
-Once we figured out the modern form of memorizing logarithmic tables, ie knowing how to code, was **insanely profitable** we started doing it. 
+Once we figured out the modern form of memorizing logarithmic tables, ie knowing how to code, was **insanely profitable** we started doing it.
 And then, we took things the _other_ direction!
 We started making our abstraction layers **more** complex!
-Don't believe me? 
+Don't believe me?
 How many load bearing YAML files do you have in your infrastructure right now?
 Did replacing that monolith with 47 microservices really simplify things?
 If I ask you to describe your JavaScript build process, can you do so without sobbing?
 Instead of focusing on making things more human readable, more accessible, we optimized for scale at the cost of simplicity.
 We architected for _cool_ instead of practical(1).
-Don't get me wrong, these new tools and processes did help large enterprises like Google, Amazon, Netflix, etc. manage the massive scale they were handling. 
+Don't get me wrong, these new tools and processes did help large enterprises like Google, Amazon, Netflix, etc. manage the massive scale they were handling.
 But then we _pushed_ them on every developer who **didn't need them**.
 Small startups with three engineers and an angel investor were more worried about multi-region replication than getting a product that their users could actually use(2).
 Complexity became _cool_.
@@ -179,33 +158,33 @@ Complexity became _cool_.
 1. I call this "Resume Driven Development" but that's an _entirely_ different blog topic.
 2. If you look up "Premature Optimization" in the dictionary, it redirects to Kubernetes.
 
-And why did we do this? 
+And why did we do this?
 
 ![Mr. Krabs gif saying "Hello, I like money"](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExczl6OWRlMHp6N2Jzb2U2MWVzNGE2N3BtOTJvN3NrZXA5eGplaGFmYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SOmjomEnNHsrK/giphy.gif)
 
 Because it was lucrative to do so!
 Software engineering salaries are some of the highest paying undergraduate jobs you can get.
 Being a programmer was marketed as an instant ticket to middle class.
-We saw enrollment in Computer Science programs at universities across the world skyrocket. 
+We saw enrollment in Computer Science programs at universities across the world skyrocket.
 And when they couldn't produce programmers at the speed the industry required, we created alternative certification programs in the form of programming bootcamps.
 _Give me six weeks of your time and I'll get you a six figure job!_
 And everyone jumped at this opportunity!
 Who the hell wouldn't?
 In _this_ economy?!?
-But somewhere along the way, we started justifying our paychecks with complexity. 
+But somewhere along the way, we started justifying our paychecks with complexity.
 "My job _should_ be hard! Look how much I get paid!"
 We had to protect ourselves.
 And then we started gatekeeping.
 We made tech interviews this unholy gauntlet of whiteboard coding and obscure syntax trivia that had absolutely _nothing_ to do with the actual job(1).
 We created a hazing ritual and called it hiring.
-We got so tied up in our own hubris, we stopped our abstraction journey. 
+We got so tied up in our own hubris, we stopped our abstraction journey.
 We never made the next major step.
 Until recently.
 { .annotate }
 
 1. Been shouting about this for years. Read my [blog](005-interviews.md)
 
-## Nature Abhors a Vacuum 
+## Nature Abhors a Vacuum
 
 So we had a simplicity vacuum.
 We kept abstracting things into more convoluted things.
@@ -213,10 +192,10 @@ New text formats, new languages, new programming models, new paradigms.
 And the evidence we were going in circles was **SO OBVIOUS!**
 
 What was this evidence?
-The fact that everything new and shiny was just a slight rehash on something old. 
-Serverless functions? 
-Do you mean Perl and `cgi/bin`? 
-Service discovery? 
+The fact that everything new and shiny was just a slight rehash on something old.
+Serverless functions?
+Do you mean Perl and `cgi/bin`?
+Service discovery?
 You mean dynamic DNS with some extra bits?
 Oh look Laravel is popular(1).
 MVC coming back!
@@ -227,9 +206,9 @@ The list goes on and on and on and we kept re-inventing the wheel telling oursel
 
 > "Well Mason if it's so simple why don't you tell us what we were supposed to do." - probably you, as you're reading this blog right now.
 
-Isn't it obvious? 
+Isn't it obvious?
 Why are we still writing for computers?
-Why aren't we just speaking to them the same way I'm speaking to you now? 
+Why aren't we just speaking to them the same way I'm speaking to you now?
 Why is human language not the primary programming language?
 And before you take a deep breath and come at me with your big voice, stop.
 There's no need.
@@ -242,17 +221,17 @@ AI.
 
 ## So How Is This Different from `INSERT_OTHER_TOOL`?
 
-I know what you're thinking. 
+I know what you're thinking.
 We've seen tools that were supposed to "be the end of programming" before right?
 We tolerated the CASE tools of the 1980s, we learned worse programming languages to use 4GLs, we drag-and-dropped our share of boxes, tiles, widgets, buttons, forms, etc in the visual programming.
 We've been sold snake oil on this time and time again so if you're wary(1), I don't blame you.
 But trust me when I say, this time it's different.
 { .annotate }
 
-1. As any rational person should be. 
+1. As any rational person should be.
 
 The fundamental flaw with all of these previous attempts was they were all essentially deterministic template systems.
-Their functionality was bound to what they were explicitly programmed to do. 
+Their functionality was bound to what they were explicitly programmed to do.
 There was no reasoning, no adaptation, no extending.
 They were static, finite, and limited.
 
@@ -267,7 +246,7 @@ It can explain why it made a choice to use a function, or how to compile the cod
 Want it to explain the code to you like you're five, or like you're a senior engineer?
 It adapts to you and your needs.
 
-Now, could this all still go belly up tomorrow? 
+Now, could this all still go belly up tomorrow?
 Sure.
 Anything is possible(1).
 But the trajectory on this feels different.
@@ -281,7 +260,7 @@ Now think about how many people _aren't_ shouting about it from the rooftops.
 It's not vaporware.
 You have to look through the bullshit online from both sides.
 Some people are claiming that AI is the second coming of Christ and others are saying it produces more slop than a pig farm.
-Neither of these types of folks can be taken seriously. 
+Neither of these types of folks can be taken seriously.
 But look around.
 Ask your colleagues, your trusted friends what they think.
 Look for small blogs from people without a lot of followers.
@@ -289,224 +268,35 @@ These folks have nothing to gain, and are just sharing their experiences.
 I'm not going to tell you AI is perfect.
 It sure as shit isn't.
 But this is the most exciting thing to happen in our industry since the internet.
-And it would be an absolute shame if you went full ostrich and buried your head in the sand during this absolutely exhilarating time. 
+And it would be an absolute shame if you went full ostrich and buried your head in the sand during this absolutely exhilarating time.
 { .annotate }
 
 1. But you better hope it doesn't! Or that you have your 401k in gold bars under your bed because if the AI bubble pops the economy goes with it :sob:
 
-## Code is Cheap
+## Preparing for the Aftershocks
 
-Like it or not, we're experiencing the _exact same_ moment Dorothy Vaughan and her Computers experienced at NASA.
-A new technology has entered the scene, and it's about to change programming forever.
-It's a faster programmer than you.
-It knows more programming languages, syntax, algorithms, design patterns than you(2). 
-It has more energy than you. 
-{ .annotate }
-1. Remember those LeetCode questions we all love so much? Done for. No more trying to figure out how to get the fucking wolf, chicken, and grain across the river. 
+The Big Bang was arguably a good thing for humanity.
+Without it, we'd probably not be here.
+However, with any large scale violent supernova explosion event, there's going to be aftershocks.
+And those are coming for us all now.
 
-And you know what?
-**Who gives a shit?**
-Are you jealous of your car because it can carry more weight than you can?
-No?
-Then why are you worried about some machine that generates code?
-You still have to guide it.
-You still have to tell it what to do and what to build.
-The value of software engineering is _not_ the code, it's the product.
-
-But you may ask "What about the hallucinations? What about the incorrect code?"
-Yeah, AI hallucinates.
-It will sometimes get things wrong.
-It will even lie to you so convincingly you'll think it's a sociopath(1).
-But regardless of that, your existing guardrails _should_ catch most of this.
-You know, those things called tests, linters, type checkers, etc.
-AI works best when it has guardrails, and it can even run those for you!
-So if you're worried, don't be!
-I'm sure your fully implemented, functioning, up to date quality assurance pipelines will catch the issues(2).
+AI is going to make people quicker and more efficient at their work.
+What took a team of 10 six months now takes a team of 4 with AI a few weeks.
+This is _most definitely_ going to lead to job loss.
+Smart companies will just ship more, but most companies forget there's a quarter that exists after this one, and will sacrifice long term strategy for short term profits(1).
 { .annotate }
 
-1. You used to just have to be bad at hiring to get people like this in your org. Now, you can purchase it for a premium and run it on GPUs. 
-2. If you're feeling uncomfortable right now, that's on you, not the AI. Get your shit together.
+1. Because I know that's my favorite thing to do, provide shareholder value!
 
-And what about the flip side?
-Do you write code perfectly the first time, every single time?
-No, you don't(1).
-Do you think that other engineering disciplines' tools execute perfectly every single time?
-At the end of the day, you're still responsible for the code you push to production.
-Whether you write it, the intern writes it, or AI writes it.
-{ .annotate }
+Do I think we're heading to a post-work all AI task force?
+Nah, no one trusts it that much.
+And the companies that do will be out of business quick.
+But AI adoption will continue to increase.
+So be ready.
 
-1. And if you try to tell me you do you're lying to me, and you're lying to yourself. 
+Because AI isn't going to take your job. 
+But the person who knows how to use AI might, if you don't.
 
-But if it takes you a day to write a 10,000 line application and it takes AI 45 seconds and then you an hour to review it, the math is obvious.
-Hell, if it takes you a day and the AI an hour, the **math is still obvious**.
-The reward **far** outweighs the risk.
+---
 
-So why are people so terrified right now?
-Because just like the engineer in our first story, they valued the knowledge of the implementation more than the wisdom of the design.
-And to be fair, you have every right to be terrified right now.
-For many years we told people "Just learn how to code and you'll have a good, middle class life". 
-Code is no longer the bottleneck. 
-**Code is cheaper than it ever has been, and the most expensive it ever will be again.**
-The career of clocking in, writing code, and clocking out is coming to an end very quickly. 
-This isn't to say code won't be written.
-This isn't to say code won't need to be reviewed.
-But who, or I guess, _what_ is doing the writing and verification is rapidly changing.
-
-
-## The `Is Software Engineering REALLY Engineering Debate`
-
-For years many have argued if software engineering is a _real_ engineering vocation(1).
-There are many facets to this debate, but one of the primary ones was that software engineering focused too much on the implementation details, and resembled something more of a craft.
-The rationale for comparing this to a craft was that success depends heavily on individual skill, intuition, and accumulated experience rather than applying established formulas.
-For example, a mechanical engineer doesn't machine every part that goes into their design for an engine. 
-{ .annotate }
-
-1. There is _sooooooo_ much history here I will not be explaining it all. If you're curious, look it up. There's a lot.
-
-However, with the advent of AI and the implementation of software becoming automated away, I believe software engineering is starting to look more like a traditional engineering discipline. 
-
-The "craft" layer is actively being abstracted away as we speak.
-Just as CAD and CNC abstracted away manual drafting and machining for mechanical engineers, AI is doing the same for code.
-Software engineers won't manually be writing the code for much longer.
-
-When code generation becomes abundant, constraints become the focus.
-So often we put things off, make compromises on designs, accumulate technical debt for the sake of speed.
-Speed is no longer an issue anymore.
-This may very well be the end of technical debt. 
-Or at least, human created technical debt.
-Will there be AI technical debt?
-Absolutely.
-And we'll solve for that as well.
-
-Verification now becomes paramount.
-We can't blindly trust the AI code(1).
-We must define and understand correctness, and how to ensure it. 
-This is very much a traditional engineering discipline.
-{ .annotate }
-
-1. No matter what some influencers say. 
-
-Lastly, the science, the theory is no longer optional.
-It's essential. 
-Algorithms matter.
-Designing a distributed system? 
-Better understand CAP theorem, consensus protocols, various failure modes and more.
-All of the theory that computer science undergrads learned and _never_ used in their day job isn't just academic anymore.
-It's their fast pass to getting ahead with AI(1).
-{ .annotate }
-
-1. But only for a short while. Don't think others won't catch up.
-
-And you may think I'm blowing smoke out of my ass, but I'm so happy to say that as I was writing this, I _already_ saw an example of this in the wild(1).
-I follow the development of [Ghostty](https://ghostty.org/) on Twitter because it's interesting, and its creator, Mitchell Hashimoto, made a post about someone who used AI tools to do an analysis of Ghostty to find a bug.
-This user had no experience with the programming language the tool was written in, the operating system they were using it on, how terminals are even built, **BUT** they knew how to drive AI and had an engineering mindset.
-They applied their skills and were able to use AI to understand the problem, write a script, and submit a patch that fixed **4 real crashing cases**.
-All with **zero knowledge of the code base prior**.
-{ .annotate }
-
-1. Thank you very much Mitchell Hashimoto.
-
-![Image of Mitchell Hashimoto's Tweet, link below](img/014-software-engineering/tweet.png){ width="600" }
-
-_source: [Mitchell Hashimoto's Twitter](https://xcancel.com/mitchellh/status/2006114026191769924)_
-
-This is the sign of a mature engineering discipline.
-Implementation is removed.
-Critical thinking, an engineering mindset, and the right tool solved the problem.
-
-## A Fork in the Road
-
-So where does that leave _all_ of us, the software engineers? 
-The programmers? 
-The coders?
-It leaves us with a choice.
-The same choice Dorothy Vaughan had.
-Do you rise to the challenge, and learn the new paradigm?
-Or do you cling to the past and let yourself slowly become irrelevant?
-
-This isn't me being hyperbolic.
-I absolutely believe this. 
-And if you would have talked to me a year ago and presented me with this argument, I would have said you were full of shit.
-That's how _fast_ this space is moving.
-That's how _good_ this technology has gotten.
-And it's not slowing down.
-
-Here's my predictions on where the space is going, and this is me being conservative with the timelines:
-
-* Within the next 2 years, the majority of code will be written by AI.
-* Within the next 5 years, all of it will be.
-* 10 years down the road, handwriting code will be viewed the same as calculating derivatives in Calculus class. 
-    You have to do it by hand to learn the concepts, but once you get into the "real world" you'll never do it that way again(1).
-    { .annotate }
-
-    1. There's so much to be said about how this is going to impact the way we teach, hire, and structure work not only in this industry, but all industries. And that is _waaaay_ too much for this blog.  
-
-You may think this is wild.
-You may think I'm bat shit crazy.
-That's fine.
-I've watched some of the most brilliant programmers I know go from skeptics to avid users.
-Hell, even Linus Torvalds, creator of Linux and programming wizard, recently admitted in a [PR](https://github.com/torvalds/AudioNoise/commit/93a72563cba609a414297b558cb46ddd3ce9d6b5) that he vibe coded a noise reduction tool and AI wrote the code better than he could. 
-
-Sure there will be hold outs.
-There will be those companies that say they won't do it.
-Some will cite the environment, some will cite security, some will cite ethics(1).
-They'll ship features 10000x slower than their competitors.
-And we all know how the market will react to that.
-{ .annotate }
-
-1. All of which are perfectly valid reasons. But in the end, it won't matter. The road to hell is paved with good intentions.
-
-Sure, some people will still write code by hand, likely as a hobby or for a small side gig.
-But people will not be getting paid to be programmers anymore. 
-They'll be getting paid to be software engineers.
-
-## The Path Forward
-
-So, I'm not going to sit here and lie to you and tell you this shift is going to be easy.
-Because it's not.
-We are experiencing the largest shift that our industry has ever seen.
-Skills that you spent years, maybe even a lifetime to learn and master are being trivialized and devalued in real time.
-It's a hard pill to swallow(1).
-{ .annotate }
-
-1. And if you're struggling with this, know you're not alone. The entire industry is collectively losing its shit right now.
-
-But there is one thing you don't have time to do right now, and that's panic.
-
-Seriously.
-Take a breath.
-You don't have to learn all of this tomorrow.
-You don't have to suddenly be an AI wizard by next month.
-This is a marathon, not a sprint.
-Everyone who appears to be creating sixteen startups with AI in fourteen seconds started at the exact point you are at now(1).
-The people who will succeed and come out of this on the other side aren't the ones who are running around frantically trying to keep up with every new tool, every new release, and reading every _fucking_ blog post that comes out.
-They'll pick up a tool, and learn how to make their life better with it.
-And when they're ready, they'll pick up another.
-{ .annotate }
-
-1. Or is a bullshit grifter, and there are a **lot** of those in this space right now.
-
-That being said, you **do** have to start.
-This isn't optional anymore.
-Your "Oh let's just wait and see what happens" window is **fucking over**.
-If you're still on the fence, you're being left behind.
-There's still time to catch up, but every day you wait, someone else pulls ahead of you.
-
-I'm not going to claim I have all the answers.
-I'm just like you, figuring this shit out as I go along.
-I started using Claude Code six months ago, and it has _dramatically_ changed my life.
-Not a little.
-Not a smidge.
-A whole **fucking** lot.
-
-And I'm going to document that for y'all.
-You'll find my first (of hopefully many) blogs on what I've learned using Claude Code these last six months for software engineering.
-I use it for _so much more_, but I'm going to keep it scoped to programming for now.
-
-[Read my Claude Code Blog (coming soon)](#){ .md-button .button-primary}
-
-So I wish you luck.
-Trust me, you're going to love this.
-It's going to open up a whole world of possibilities for you. 
-Just don't delay.
-Because at the end of the day, the future belongs to those who show up for it.
+*This is Part 1 of a three-part series. In [Part 2: Code is Now Cheap, Don't Devalue Yourself](014-2-code-is-cheap.md), I'll explore what this shift means for software engineers and how to navigate it.*
