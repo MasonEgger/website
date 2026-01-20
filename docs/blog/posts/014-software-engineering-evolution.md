@@ -366,6 +366,8 @@ But the person who knows how to use AI might, if you don't.
 
 ---
 
+_How does this affect software engineering right now? Check out the second blog in this series [Code is Cheap, Don't Devalue Yourself](015-code-is-cheap.md)._
+
 !!! abstract "Part 1 of 3 of my `Brain Dump Ramblings on AI` blog series"
 
     Check out the other parts of this series:

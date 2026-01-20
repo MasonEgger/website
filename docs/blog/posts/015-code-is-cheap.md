@@ -1,6 +1,6 @@
 ---
 title: "Code is Now Cheap, Don't Devalue Yourself"
-description: "And this is also as expensive as code will ever be again."
+description: "In respect to adopting AI, as my grandmother would say, it's time to shit or get off the pot."
 date: 2026-01-20
 categories:
     - Software Engineering
@@ -12,10 +12,11 @@ authors:
     - masonegger
 ---
 
-AI is taking the world by storm.
-Agents are writing non-trivial percentages of production code basis to systems you are using every day now.
+AI is taking the world by storm, and no place more heavily than the software engineering industry.
+Agents are writing non-trivial percentages of production code bases to systems you are using every day now.
 What was once a scarce resource, code, is now cheaper than it's ever been.
-
+What it means to be a software engineer is changing fast, and those that don't adapt risk being left behind.
+So, in respect to adopting AI, as my grandmother would say, it's time to shit or get off the pot.
 
 <!-- more -->
 
@@ -66,7 +67,7 @@ Then why are you worried about some machine that generates code?
 You still have to guide it.
 You still have to tell it what to do and what to build.
 The value of software engineering is _not_ the code, it's the product.
-And that's where I think software engineers have lost there way over recent years.
+And that's where I think software engineers have lost their way over recent years.
 The job of a software engineer is **not** to write code.
 It is to solve problems.
 To create a product that customers pay for so the company can in return give you a salary.
@@ -91,7 +92,7 @@ Code is no longer the bottleneck.
 But if it takes you a day to write a 10,000 line application and it takes AI an hour to implement and then it takes you an hour to review it, the math is obvious.
 The reward **far** outweighs the risk.
 
-## "But What About All The Mistakes AI Makes?"
+## "But what about all the mistakes AI mkes?"
 
 Yeah, AI hallucinates.
 It will sometimes get things wrong.
@@ -111,7 +112,7 @@ I'm sure your fully implemented, functioning, up to date quality assurance pipel
 And what about the flip side?
 Do you write code perfectly the first time, every single time?
 No, you don't(1).
-People sit here and expect to be able to one shot an application with AI when they couldn't do that. 
+People sit here and expect to be able to one shot an application with AI when they couldn't even do that. 
 { .annotate }
 
 1. And if you try to tell me you do you're lying to me, and you're lying to yourself.
@@ -177,7 +178,81 @@ They'll be building products and solving problems.
 
 > "Computer science is no more about computers than astronomy is about telescopes." - _Edsger W. Dijkstra_
 
-## The End of an Archetype
+## "Ok, but if I'm not writing code, then what the _hell_ am I supposed to do?!?"
+
+Ok, if software engineers aren't going to write the code, does that mean we're all out of a job?
+Nope.
+Not even close.
+AI has to be directed.
+It has to be given a task.
+The more detailed instructions you gi ve it, the better it will perform.
+If you give it vague instructions, prepare for the slop.
+And what's more important, the user _must be an expert in the field using it_.
+This is the part people seem to be missing(1).
+Sure someone who has never programmed a day in their life can ask AI to write a toy application to do something, and it may work at first.
+But that application is going to be a _nightmare_ to maintain, it'll be riddled with bugs, and it'll never see production.
+That's the thing with AI, you only get the speed up if you know what you're doing in the first place.
+Because you can **spot the bullshit** when it makes mistakes.
+{ .annotate }
+
+1. Or ignoring. Whichever one fits their narrative better.
+
+So software engineering isn't going anywhere, what the job looks like is changing.
+Basically every software engineer just got promoted to software architect.
+Congrats!
+Instead of writing the code, we're going to move into an architecting, planning, orchestration and verification role.
+We may need to step in sometimes and write some highly specific code, or tweak a few things here and there that it would be quicker for us to do rather than prompt AI again.
+But what will really matter will be the design, the architecture, the integration points, the product vision, essentially the layer above the implementation.
+It will be crucial to develop more product sense, and possibly a few other skills along the way.
+The days of going heads down, banging out code, and completely ignoring the rest of the org and company are done(1). 
+We'll be expected to care about the whole picture(2).
+{ .annotate }
+
+1. RIP to the "brilliant asshole" who everyone put up with because they were a wizard programmer but sucked at everything else. That isn't going to fly anymore.
+2. Hooray! You get to pay attention to those KPIs, OKRs, RCAs, and all the other three letter acryonyms! But don't worry, you have AI to help you.
+
+Don't believe me?
+It's already happening.
+Meta's product managers are [vibe coding prototypes](https://www.businessinsider.com/meta-vibe-coding-build-prototype-apps-mark-zuckerberg-2025-11) instead of waiting for an engineering team to validate something.
+[Claude CoWork](https://support.claude.com/en/articles/13345190-getting-started-with-cowork) (Claude Code Agentic framework, but for your desktop) was [designed and built in 10 days](https://www.linkedin.com/posts/subhedar_we-built-claude-cowork-in-10-days-using-claude-activity-7416998780123680769-fcXh/) using Claude Code.
+LinkedIn is piloting replacing product managers with [product builders who do programming, design, and product work](https://www.lennysnewsletter.com/p/why-linkedin-is-replacing-pms).
+This is the kind of development that is possible when AI coding is embraced.
+
+Now, this does mean some potentially _weird_ shit is going to happen to the job market.
+And to be fair, it's already happening.
+My prediction is this is going to go one of a few ways.
+
+### The Company that Drinks Too Much from the Well of AI Bullshit
+
+
+
+### The Company that Shuns AI
+
+Here is the story of the company that chooses to shun AI, either by slow rolling its adoption or banning it all together.
+This company will be viewed as courageous by some, stupid by others. 
+It will embrace this as part of its identity and own it.
+This will attract individuals to apply at the company, either those who don't want to learn AI or can't find success using AI.
+Now, some very fine people will go to work at this company, but this posture will also bring trouble.
+For it will attract the "brilliant assholes".
+
+These are the folks who can write 20x the code as their colleagues, but no one can stand to work with or be around.
+They don't contribute to strategy, they are offensive and have HR complaints, they don't mentor new employees, but their output has defined their career and it's high enough that they are tolerated.
+In an AI driven org, where everyone is outputting as much as they are, their behavior is no longer tolerated, and they are shown the door.
+So the only place of refuge they will have will be places like this company, which proudly shuns AI.
+There will be a high concentration of these "brilliant assholes" here, which will make working at this company a living hell for many of the employees.
+This will lead to a high turnover rate and a decrease in efficiency.
+
+Now, 
+A competitor who didn't shun AI and hopefully used their functioning brain will enter the space, and slowly eat away at their market share. 
+Eventually the company will be forced to decide to either adopt AI to catch up, or they'll continue on their course to their eventual demise. 
+
+### The Company that Uses Their Functioning Brain
+What used to take a team of ten engineers six months now may take a team of four ai-assisted engineers six weeks(1).
+
+{ .annotate }
+
+1. Or less. If you read the stories online it's often less. We will hit a limit on this eventually. 
+
 
 ## The Path Forward
 
@@ -211,6 +286,24 @@ Your "Oh let's just wait and see what happens" window is **fucking over**.
 If you're still on the fence, you're being left behind.
 There's still time to catch up, but every day you wait, someone else pulls ahead of you.
 
+Maybe you may feel this is unfair(1).
+That you've been cheated.
+And you know what, maybe you have.
+I'm with you.
+It sucks. 
+I'm lucky.
+At the time I'm writing this, I just turned 33.
+I've been in this industry about 11 years.
+I've learned a lot, but I don't feel like my entire life is being pulled out from underneath me.
+But on the flip side, I have a lot of years left in this industry.
+And there's a lot of change that will happen.
+{ .annotate }
+
+1. When I was a little kid, and something wouldn't go my way I would tell my Mom "That's not fair!" and she would reply with "Life's not fair." and honestly, that may have prepared me for life more than anything else ever could. 
+
+So pick yourself up, dust yourself off, and start all over again.
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/20ViFpURIDk?si=N6XGHes9WytdosSs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 I'm not going to claim I have all the answers.
 I'm just like you, figuring this shit out as I go along.
 I started using Claude Code six months ago, and it has _dramatically_ changed my life.
@@ -219,7 +312,7 @@ Not a smidge.
 A whole **fucking** lot.
 
 And I'm going to document that for y'all.
-You'll find my first (of hopefully many) blogs on what I've learned using Claude Code these last six months for software engineering.
+You'll find my first (of hopefully many) blogs linked below on what I've learned using Claude Code these last six months for software engineering.
 I use it for _so much more_, but I'm going to keep it scoped to programming for now.
 
 So I wish you luck.
@@ -229,6 +322,8 @@ Just don't delay.
 Because at the end of the day, the future belongs to those who show up for it.
 
 ---
+
+_Curious about my personal AI journey, how I got started, and all my tips and tricks? Check out Part 3 of this blog series [TBD](#)._
 
 !!! abstract "Part 2 of 3 of my `Brain Dump Ramblings on AI` blog series"
 
