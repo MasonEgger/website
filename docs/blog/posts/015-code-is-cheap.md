@@ -92,7 +92,7 @@ Code is no longer the bottleneck.
 But if it takes you a day to write a 10,000 line application and it takes AI an hour to implement and then it takes you an hour to review it, the math is obvious.
 The reward **far** outweighs the risk.
 
-## "But what about all the mistakes AI mkes?"
+## "But what about all the mistakes AI makes?"
 
 Yeah, AI hallucinates.
 It will sometimes get things wrong.
@@ -185,7 +185,7 @@ Nope.
 Not even close.
 AI has to be directed.
 It has to be given a task.
-The more detailed instructions you gi ve it, the better it will perform.
+The more detailed instructions you give it, the better it will perform.
 If you give it vague instructions, prepare for the slop.
 And what's more important, the user _must be an expert in the field using it_.
 This is the part people seem to be missing(1).
@@ -209,7 +209,7 @@ We'll be expected to care about the whole picture(2).
 { .annotate }
 
 1. RIP to the "brilliant asshole" who everyone put up with because they were a wizard programmer but sucked at everything else. That isn't going to fly anymore.
-2. Hooray! You get to pay attention to those KPIs, OKRs, RCAs, and all the other three letter acryonyms! But don't worry, you have AI to help you.
+2. Hooray! You get to pay attention to those KPIs, OKRs, RCAs, and all the other three letter acronyms! But don't worry, you have AI to help you.
 
 Don't believe me?
 It's already happening.
@@ -220,39 +220,18 @@ This is the kind of development that is possible when AI coding is embraced.
 
 Now, this does mean some potentially _weird_ shit is going to happen to the job market.
 And to be fair, it's already happening.
-My prediction is this is going to go one of a few ways.
-
-### The Company that Drinks Too Much from the Well of AI Bullshit
-
-
-
-### The Company that Shuns AI
-
-Here is the story of the company that chooses to shun AI, either by slow rolling its adoption or banning it all together.
-This company will be viewed as courageous by some, stupid by others. 
-It will embrace this as part of its identity and own it.
-This will attract individuals to apply at the company, either those who don't want to learn AI or can't find success using AI.
-Now, some very fine people will go to work at this company, but this posture will also bring trouble.
-For it will attract the "brilliant assholes".
-
-These are the folks who can write 20x the code as their colleagues, but no one can stand to work with or be around.
-They don't contribute to strategy, they are offensive and have HR complaints, they don't mentor new employees, but their output has defined their career and it's high enough that they are tolerated.
-In an AI driven org, where everyone is outputting as much as they are, their behavior is no longer tolerated, and they are shown the door.
-So the only place of refuge they will have will be places like this company, which proudly shuns AI.
-There will be a high concentration of these "brilliant assholes" here, which will make working at this company a living hell for many of the employees.
-This will lead to a high turnover rate and a decrease in efficiency.
-
-Now, 
-A competitor who didn't shun AI and hopefully used their functioning brain will enter the space, and slowly eat away at their market share. 
-Eventually the company will be forced to decide to either adopt AI to catch up, or they'll continue on their course to their eventual demise. 
-
-### The Company that Uses Their Functioning Brain
-What used to take a team of ten engineers six months now may take a team of four ai-assisted engineers six weeks(1).
-
+Large tech companies are openly saying they're laying people off because they don't need the size of the staff they used to.
+What used to take a team of ten engineers six months now takes a team of four AI assisted engineers a few weeks.
+This constriction will happen for a while.
+And it's likely to go too far.
+People will have too much confidence in how much they can hand off to AI(1).
+Then they'll back off and re-hire.
+But that doesn't help you if you wind up on the layoff list.
+So the only thing you can do at this point in time is to learn and prepare.
+Because it's going to be a _weird_ ride for a bit.
 { .annotate }
 
-1. Or less. If you read the stories online it's often less. We will hit a limit on this eventually. 
-
+1. These people will be the loudest about this, and their failure will be public and humiliating.
 
 ## The Path Forward
 
@@ -287,21 +266,15 @@ If you're still on the fence, you're being left behind.
 There's still time to catch up, but every day you wait, someone else pulls ahead of you.
 
 Maybe you may feel this is unfair(1).
-That you've been cheated.
+That you've been cheated or somehow screwed over by this.
 And you know what, maybe you have.
-I'm with you.
-It sucks. 
-I'm lucky.
-At the time I'm writing this, I just turned 33.
-I've been in this industry about 11 years.
-I've learned a lot, but I don't feel like my entire life is being pulled out from underneath me.
-But on the flip side, I have a lot of years left in this industry.
-And there's a lot of change that will happen.
+And it's fine to feel that way.
+But that's not what's going to pay the bills. 
+So pick yourself up, dust yourself off, and start all over again.
 { .annotate }
 
-1. When I was a little kid, and something wouldn't go my way I would tell my Mom "That's not fair!" and she would reply with "Life's not fair." and honestly, that may have prepared me for life more than anything else ever could. 
+1. When I was a little kid, and something wouldn't go my way I would tell my Mom "That's not fair!" and she would reply with "Life's not fair." and honestly, that may have prepared me for life more than anything else ever could. Maybe a little harsh for a four year old, but I turned out alright.
 
-So pick yourself up, dust yourself off, and start all over again.
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/20ViFpURIDk?si=N6XGHes9WytdosSs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 I'm not going to claim I have all the answers.
