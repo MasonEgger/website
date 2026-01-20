@@ -1,6 +1,6 @@
 ---
 title: "Code is Now Cheap, Don't Devalue Yourself"
-description: "In respect to adopting AI, as my grandmother would say, it's time to shit or get off the pot."
+description: "In respect to adopting AI, as my great-grandmother would say, it's time to shit or get off the pot."
 date: 2026-01-20
 categories:
     - Software Engineering
@@ -221,7 +221,7 @@ This is the kind of development that is possible when AI coding is embraced.
 Now, this does mean some potentially _weird_ shit is going to happen to the job market.
 And to be fair, it's already happening.
 Large tech companies are openly saying they're laying people off because they don't need the size of the staff they used to.
-What used to take a team of ten engineers six months now takes a team of four AI assisted engineers a few weeks.
+If a handful of engineers utilizing AI can match or even outperform the output of a full team, companies are going to act on that.
 This constriction will happen for a while.
 And it's likely to go too far.
 People will have too much confidence in how much they can hand off to AI(1).
@@ -261,7 +261,7 @@ And when they're ready, they'll pick up another.
 
 That being said, you **do** have to start.
 This isn't optional anymore.
-Your "Oh let's just wait and see what happens" window is **fucking over**.
+This "Oh let's just wait and see what happens" mentality is **over**.
 If you're still on the fence, you're being left behind.
 There's still time to catch up, but every day you wait, someone else pulls ahead of you.
 
