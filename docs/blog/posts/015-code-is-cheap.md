@@ -16,7 +16,7 @@ AI is taking the world by storm, and no place more heavily than the software eng
 Agents are writing non-trivial percentages of production code bases to systems you are using every day now.
 What was once a scarce resource, code, is now cheaper than it's ever been.
 What it means to be a software engineer is changing fast, and those that don't adapt risk being left behind.
-So, in respect to adopting AI, as my grandmother would say, it's time to shit or get off the pot.
+So, in respect to adopting AI, as my great-grandmother would say, it's time to shit or get off the pot.
 
 <!-- more -->
 
@@ -123,6 +123,20 @@ At the end of the day, **you're still responsible for the code you push to produ
 Shocking right?
 It's like we all forgot that when AI started writing code.
 Like we aren't supposed to review it, or that because a robot wrote it we are now magically absolved of the consequences.
+
+This is my personal philosophy(1) on AI generated code.
+I use AI to write the vast majority of my code currently.
+But I review every single line of code it writes.
+I don't accept a change unless I understand what it's doing and why it's needed.
+Because by the time it becomes a pull request, it is no longer "AI code".
+It's my code.
+My name is on the pull request.
+I am responsible for it.
+Blindly accepting AI code and then just yeeting it over the wall for someone else to review is an absolute asshole thing to do.
+It shows complete contempt for that person's time, and a lack of pride in your own work.
+{ .annotate }
+
+1. And honestly, this is the only way we'll defeat slop and actually succeed with AI.
 
 So ya, AI makes mistakes.
 So do you. 
