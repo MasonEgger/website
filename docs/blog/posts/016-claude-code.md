@@ -35,7 +35,7 @@ The claims then (as they are now) were that this would "replace all Software Eng
 And for good reason.
 Output of the early LLMs was questionable to say the least.
 But as time has gone on, results got better and it became more difficult to ignore.
-And as any curious person trying to avoid work on a Tuesday(1), I downloaded Claude Code(2) and tried it out.
+And like any curious person trying to avoid work on a Tuesday(1), I downloaded Claude Code(2) and tried it out.
 From that moment, I was hooked.
 I've always been a CLI person, and this was the UX I was looking for.
 My productivity skyrocketed.
@@ -53,22 +53,24 @@ Now I finally have the core process solidified enough that I can share what I've
 3. Most ran away screaming, but a few were interested.
 4. And I look forward to Anthropic dropping a new feature the day after I publish this and rendering it obsolete. Seriously. They've done that to me like twice already.
 
+Oh, and my manager asked me to.
+So there's that.
+
 
 ## Your Mileage May Vary
 
 Before going any further, I will say that this is what has been successful **for me**.
-If you go on Twitter(1) you'll see 465,279,346,727,844,684,918,549,865 posts(2) about AI, how it just destroyed some industry, and how if you use it _just this special way_ you'll become Supreme Overlord of Ganymede(3).
+If you go on Twitter you'll see 465,279,346,727,844,684,918,549,865 posts(1) about AI, how it just destroyed some industry, and how if you use it _just this special way_ you'll become Supreme Overlord of Ganymede(2).
 It's a **lot** to keep up with and everyone has their own process for getting AI to accomplish their goals.
 And that's great!
-I'm writing this blog to share what I've learned through my journey using CC for half a year, following certain trends, ignoring others, and most importantly of all, because my manager asked me to(4).
+I'm writing this blog to share what I've learned through my journey using CC for half a year, following certain trends, ignoring others, and most importantly of all, because my manager asked me to(3).
 If your favorite tip or trick isn't mentioned in here, it doesn't mean it isn't good.
 Given the firehose of AI information out there, there is a 99% chance I just haven't seen it yet.
 { .annotate }
 
-1. Sorry, never going to call it X.
-2. Plus or minus 74,569,411.
-3. Jupiter's largest moon. Also the largest moon in the solar system for our Jeopardy fans out there.
-4. And of course, to add to the clutter. Here's to being the 465,279,346,727,844,684,918,549,866th post!
+1. Plus or minus 74,569,411.
+2. Jupiter's largest moon. Also the largest moon in the solar system for our Jeopardy fans out there.
+3. And of course, to add to the clutter. Here's to being the 465,279,346,727,844,684,918,549,866th post!
 
 So I hope you learn something from this! If not, I promise to make it entertaining at least.
 
@@ -78,7 +80,11 @@ Over the last several months I've consumed countless blogs, tweets, documentatio
 This goes beyond just features of CC, and focuses more on "How should one use AI?"
 While I've tried many, many things, I keep coming back to a set of core principles that yield the best results for me.
     
-### AI augments, it doesn't replace
+### AI Augments, It Doesn't Replace
+
+This first principle applies to how I view AI.
+You may think this as unnecessary or silly, but I assure you, how you view your tools in your mind directly impacts your instincts on when you decide to reach for them.
+So this is how I think about AI.
 
 AI is not an intern.
 It is not an
