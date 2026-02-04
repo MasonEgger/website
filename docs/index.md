@@ -17,7 +17,7 @@ description: On my business card, I am a Sr. Solutions Architect. In my mind, I 
 
 <div class="subtitle" markdown>
 
-I'm a technical educator, software developer, and community organizer currently on the Commercial Solutions Architecture team at [Temporal](https://temporal.io). I serve as an organizer and president of the [PyTexas Foundation](https://pytexas.org), conference chair of the [PyTexas Conference](https://pytexas.org/2026), and organizer of the [PyTexas Meetup](https://pytexas.org/meetup)
+I'm a technical educator, software developer, and community organizer currently on the Commercial Solutions Architecture team at [Temporal](https://temporal.io). I serve as an organizer and president of the [PyTexas Foundation](https://pytexas.org), conference chair of the [PyTexas Conference](https://pytexas.org/2026), organizer of the [PyTexas Meetup](https://pytexas.org/meetup), and am a [PSF Fellow](https://www.python.org/psf/fellows-roster/)
 
 </div>
 
@@ -28,13 +28,14 @@ I'm a technical educator, software developer, and community organizer currently 
 
 <div class="content-column" markdown>
 
-## Recent Content
+## Recent Series
 
-My most recent writings.
+My recent **Brain Dump Ramblings on AI** series
 
 <ul class="content-list" markdown>
-<li markdown>[Reflections on Becoming a PSF Fellow](blog/posts/013-psf-fellow.md)</li>
-<li markdown>[Here I Go Changing Careers Again](blog/posts/012-career-change.md)</li>
+<li markdown>[Part 1: We're Witnessing the Evolution of Software Engineering](blog/posts/014-software-engineering-evolution.md)</li>
+<li markdown>Part 2: Coming 2/5</li>
+<li markdown>Part 3: Coming 2/6</li>
 </ul>
 
 </div>
