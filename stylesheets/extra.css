@@ -554,6 +554,25 @@
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
+
+}
+
+/* Fix TOC display on mobile/tablet when sidebar is collapsed */
+@media screen and (max-width: 76.1875em) {
+    .md-nav--secondary .md-nav__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .md-nav--secondary .md-nav__item {
+        display: block;
+        width: 100%;
+    }
+
+    .md-nav--secondary .md-nav__link {
+        display: block;
+        padding: 0.4rem 0;
+    }
 }
 
 /* ============================================
