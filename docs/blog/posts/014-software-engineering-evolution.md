@@ -1,7 +1,7 @@
 ---
 title: "We're Witnessing the Evolution of Software Engineering"
 description: "And it's time to stop pretending like we aren't."
-date: 2026-01-20
+date: 2026-02-04
 categories:
     - Software Engineering
     - AI
@@ -366,11 +366,5 @@ But the person who knows how to use AI might, if you don't.
 
 ---
 
-_How does this affect software engineering right now? Check out the second blog in this series [Code is Cheap, Don't Devalue Yourself](015-code-is-cheap.md)._
+_How does this affect software engineering right now? Come back tomorrow and read the next blog._
 
-!!! abstract "Part 1 of 3 of my `Brain Dump Ramblings on AI` blog series"
-
-    Check out the other parts of this series:
-
-    * Part 2 - **[Code is Cheap, Don't Devalue Yourself](015-code-is-cheap.md)** discusses AI and it's impact on the software engineering discipline.
-    * Part 3 - **[TBD](#)** documents my journey with Claude Code and my tips and tricks for getting started.

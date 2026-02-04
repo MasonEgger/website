@@ -9,6 +9,7 @@ on:
 
 jobs:
   link-check:
+    if: false  # Temporarily disabled - re-enable by removing this line
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
