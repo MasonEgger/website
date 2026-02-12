@@ -104,6 +104,20 @@ The site supports advanced Markdown features:
 - Tabbed content
 - Task lists
 
+## Troubleshooting & Gotchas
+
+### CSS Overrides
+Material theme CSS has high specificity. When custom styles don't apply, you may need `!important` to override (e.g., `.content-list` list-style rules).
+
+### Template Inheritance
+Custom templates follow this chain: `blog.html` → `main.html` → `base.html` (Material theme). When modifying one template, check related templates for consistency.
+
+### Plugin Configuration & Templates
+Template features must match plugin configuration. For example, if `pagination: false` is set in `mkdocs.yml` for a blog plugin, any template trying to use pagination macros will fail. The Jinja2 context only includes variables for enabled plugin features.
+
+### Testing Changes
+Always run `just serve` after any modification (CSS, templates, config) to catch cascading issues early. Template errors often only surface at build time.
+
 ## Deployment
 
 The site automatically deploys to Netlify when changes are pushed to the main branch. GitHub Actions builds the site and publishes to a `site` branch.

@@ -35,7 +35,7 @@ My recent **Brain Dump Ramblings on AI** series
 <ul class="content-list" markdown>
 <li markdown>[Part 1: We're Witnessing the Evolution of Software Engineering](blog/posts/014-software-engineering-evolution.md)</li>
 <li markdown>[Part 2: Code is Now Cheap, Don't Devalue Yourself](blog/posts/015-code-is-cheap.md)</li>
-<li markdown>Part 3: Coming 2/6</li>
+<li markdown>[Part 3: Claude Code as My Daily Driver](blog/posts/016-claude-code.md)</li>
 </ul>
 
 </div>

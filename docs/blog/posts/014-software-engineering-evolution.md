@@ -373,4 +373,4 @@ _How does this affect software engineering right now? Check out Part 2 of this b
     Check out the other parts of this series:
 
     * Part 2 - **[Code is Cheap, Don't Devalue Yourself](015-code-is-cheap.md)** discusses AI and it's impact on the software engineering discipline.
-    * Part 3 - **Coming Soon** - My journey with Claude Code and my tips and tricks for getting started.
+    * Part 3 - **[Claude Code as My Daily Driver](016-claude-code.md)** - My journey with Claude Code and my tips and tricks for getting started.
