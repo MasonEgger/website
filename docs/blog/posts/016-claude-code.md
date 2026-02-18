@@ -396,7 +396,16 @@ I can then define a Python Skill with these preferences, which CC will then auto
 The structure of the Skill is just directories with Markdown.
 You provide a **short** top level `SKILL.md` with instructions, then various resources it can read when it needs to load more context around a specific task.
 The top level `SKILL.md` should have the prime directives(1) for the Skill.
-So in my [Python Skill](https://github.com/MasonEgger/homedir/blob/main/.claude/skills/python/SKILL.md) I give it core requirements it **MUST** follow, then I provide it a list of references given certain scenarios (toolchain, writing a CLI, docstrings).
+These are things like you must do type hints, docstrings on all public interface, absolute imports.
+Then there's a `Reference Files` section` that contains information on more specific Python topics. 
+I have a reference for how I want CLI scripts built, what my toolchain is, how documentation should be written etc.
+Why not just put these in the `SKILL.md` and call it day?
+Because that is needlessly loading information that CC may not need to work on this specific task.
+CC reads the `SKILL.md` file and sees the links to the references with descriptions.
+It then determines which of _those_ files it should read based on its understanding of the task it's currently working on.
+You can see this in my [Python Skill](https://github.com/MasonEgger/homedir/blob/main/.claude/skills/python/SKILL.md).
+
+Skills don't just contain reference materials though.
 You can also provide `scripts/`, which are executable files that CC can use while working with this skill.
 Have a specific template you want it to follow?
 Or some examples for it to follow?
