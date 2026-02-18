@@ -284,12 +284,12 @@ Lies in your `CLAUDE.md` will make it into your code.
 
 1. Yes! You should track this in a VCS!
 
-Now if the project is established I will still run `/init`.
-This will cause Claude to scan the project and get an idea of what's going on.
-I use this as an opportunity to not only setup CC for success, but also to get an understanding of the project myself.
+Even if the project is already established, I still run `/init`.
+This causes Claude to scan the project and understand what's going on.
+I use this as an opportunity to not only set up CC for success, but also to get an understanding of the project myself.
 I tend to critique this run of `/init` more, mostly because practices have already been established and I don't want to mess anything up.
 
-Now once the `/init` is done in either type of project and a `CLAUDE.md` is created, I will still manually edit it from time to time.
+Once `/init` is done and a `CLAUDE.md` is created, I still manually edit it from time to time.
 Sometimes Claude just doesn't get it, or leaves out something I think is important.
 Or my code is so bad it got confused and now I need to clean it up, because an off-label use case of `/init` is to use it to critique your code.
 
@@ -363,12 +363,13 @@ That's a lot of duplicated work.
 What if you change your mind on variable naming convention?
 Now you have to update them everywhere.
 What I really want is to load those rules when you're _actually_ writing Python, either automatically or by me triggering them.
-I was just starting to get into this use case when CC introduced skills.
+I was just starting to get into this use case when CC introduced Skills.
 
 Commands are my primary way of interacting with CC.
-I used to tweak them a lot, but now I'm pretty settled in my setup.
-**Use commands as hotkeys to common tasks and build workflows around them.**
-You can view my commands on my [GitHub](https://github.com/MasonEgger/homedir/tree/main/.claude/commands)
+They run all of my workflows, and every time I come up with a new repeatable workflow my first instinct is to create a custom Command for it.
+Treat commands like hotkeys.
+Programmable tasks to accomplish a certain thing.
+You can view my ever changing list of commands on my [GitHub](https://github.com/MasonEgger/homedir/tree/main/.claude/commands)
 
 ???+ Warning "Commands have merged with Skills" 
 
@@ -411,9 +412,6 @@ Have a specific template you want it to follow?
 Or some examples for it to follow?
 Add those to the Skill as well. 
 The Skill is a container for what "correct" looks like to you and tools to help CC get there.
-{ .annotate }
-
-1. I always wanted a reason to use that phrase in a blog. Yay!
 
 Now of course, this thing still misses sometimes.
 Skills don't always get invoked(1). 
@@ -1286,8 +1284,7 @@ But product adoption happens on my timeline, not Anthropic's.
 Do I feel left out on this?
 Honestly, no.
 Because for all these features, I am still producing at the rate I want, and I never see anyone gain any real serious ground by adopting them.
-I have a friend who uses vanilla claude code. 
-CLI and prompts.
+I have a friend who uses Claude Code with just CLI and prompts.
 And his output and quality are vastly superior to mine.
 At the end of the day, a Stradivarius in the hands of a beginner is just a piece of wood.
 
