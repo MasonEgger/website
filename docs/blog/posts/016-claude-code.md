@@ -61,17 +61,15 @@ Fair point.
 Many people see posts online of people touting their productivity gains via AI but no one shares their work.
 So here's what I've contributed to and built since I started using CC.
 
-* A Claude Project to help me navigate and plan out an exercise regimen and diet after getting a scary health diagnosis in the beginning of 2025 that basically required me to either change my lifestyle or get to dying.
-    * Claude was able
-* Knowledge Base via Obsidian
-    * This one I obviously can't link to as it's my personal knowledge base, but I used CC to organize my Obsidian vaults into a format I actually use. I also record myself ranting about my day and have it fill in my daily journal entry with the transcript.
-    * Also an [MCP Server](https://github.com/napcs/mcp-knowledge-base) I want to try.
 * [`fountain-py`](https://github.com/MasonEgger/fountain-py/tree/init-version)
     * My first AI project. A Python library to parse [Fountain](https://fountain.io/) syntax.
 * A [`homedir` repo](https://github.com/MasonEgger/homedir)
     * I have long wanted to automate setting up my personal environment using Ansible. CC did it for me super quick.
     * I also love writing Python CLI tools. Now CC does that and installs them.
     * I'm constantly iterating on this repo, and this is where all my `.claude` files are.
+* Knowledge Base via Obsidian
+    * This one I obviously can't link to as it's my personal knowledge base, but I used CC to organize my Obsidian vaults into a format I actually use. I also record myself ranting about my day and have it fill in my daily journal entry with the transcript.
+    * Also an [MCP Server](https://github.com/napcs/mcp-knowledge-base) I want to try.
 * Temporal Course Ports - [Temporal 101 in Ruby](https://learn.temporal.io/courses/temporal_101/ruby/)
     * Porting courses at Temporal from one programming language to another is tedious. You have to learn the language, learn the subtle differences, change words from function to method or vice versa to sound idiomatic. With proper guidance, CC could do this in a fraction of the time
     * Other ports are in progress, and will be released soon
@@ -174,11 +172,10 @@ When I want to resume working on a project, I just re-attach the session.
 And that's it.
 I don't use any AI task management tools like Beads or Gastown(1).
 I don't use OpenCode or another harness.
-This isn't for any deep reason, it's mostly that I don't find much value in switching between different provide models(2).
+This isn't for any deep reason, it's mostly that I don't find much value in switching between different provide models.
 { .annotate }
 
 1. The opinion on these is very mixed, and until I find myself absolutely needing them I wont add them.
-2. The way I see it, the model races very much mimic a Formula 1 race right now. One pulls ahead by an inch, then another pulls ahead by an inch. Back and forth over and over. If the latest Anthropic model isn't "The best model on the market" right now, I really don't care. It will be in a few months.
 
 I've always been a minimalistic tool user, and my CC setup is no exception. 
 
@@ -244,7 +241,7 @@ Either way, it is 100% worth experimenting with until your CC experience is wher
 It will save you a ton of constantly re-explaining your core principles(1).
 { .annotate }
 
-1. A please, steal mine and use it. I took it from Harper Reed. Hooray Open Source!
+1. And please, steal mine and use it. I took it from Harper Reed. Hooray Open Source!
 
 ### Project
 
@@ -463,7 +460,7 @@ So many features and I guarantee you I missed some.
 Your `.claude` directory is looking more complex than your actual project.
 Luckily, there is a way to organize all of this, and that's with Plugins.
 
-[Plugins](https://code.claude.com/docs/en/plugins) are a collection of relates Skills, Agents, Commands, MCP Servers, Hooks, resources, and more.
+[Plugins](https://code.claude.com/docs/en/plugins) are a collection of related Skills, Agents, Commands, MCP Servers, Hooks, resources, and more.
 It also provides namespacing for your command, something like `/dev:python`.
 Currently I haven't organized anything into a plugin, but I'm thinking about it.
 
@@ -492,7 +489,7 @@ And while I get the desire to shift blame onto an inanimate object that cant' de
 There is no "AI Code" vs. "Human Code".
 There is just Human code(1).
 While AI may have _generated_ the code, at some point a human was involved to provoke it.
-Opus 4.6 didn't wake up one morning, yarn, stretch, and say "I'm going to rewrite the entire universe in Rust!".
+Opus 4.6 didn't wake up one morning, yawn, stretch, and say "I'm going to rewrite the entire universe in Rust!".
 Someone had to start that process.
 And if you _start_ that process, you're **responsible** for it.
 { .annotate }
@@ -513,9 +510,18 @@ It's the same with AI code.
 
 Once the code becomes a pull request, it ceases being AI code and starts becoming _your_ code.
 It's your name on the merge, release, feature, etc..
-You are responsible for it.
+You are responsible for it(1).
 Doesn't matter who or what wrote it, it's yours.
 Own it.
+{ .annotate }
+
+1. Back to the $500 button from [Part 2: Code is Cheap, Don't Devalue Yourself](015-code-is-cheap.md). Your value isn't in pushing the button, it's in knowing which damn button to push! AI can push a lot of buttons really fast, but it is your job to know which ones.
+
+But what happens if you **don't** do this?
+You start to rack up a cognitive debt.
+The more you let AI just cook without you reviewing or intervening, the less you will understand about the project.
+Why does this matter?
+Because if you can't reason about the mental model of your code, you will struggle to figure out where to take the project next, as Simon Willison recently wrote about on his [blog](https://simonwillison.net/2026/Feb/15/cognitive-debt/).
 
 It's for this reason that I _always_ review any code that AI produces.
 **If I don't understand it, it doesn't get committed.**
@@ -523,7 +529,7 @@ It's my name.
 We often forget that **software has consequences**.
 My colleagues trust that I produce good work.
 My open source communities trust that I don't provide them with buggy or worse vulnerable code.
-In this quickly accelerating world AI generated code, don't tarnish your reputation because you're being lazy.
+In this quickly accelerating world of AI generated code, don't tarnish your reputation because you're being lazy.
 
 ### Rules for Thee, Not for Me
 
@@ -588,7 +594,7 @@ Essentially, the longer you chat with an AI, the worse the performance gets, so 
 
 Now the way I handle context is similar to an SRE adage "Cattle, not Pets".
 
-My philoshophy is simple. 
+My philosophy is simple. 
 I use one session per task.
 I review the code, and ensure functionality was achieved.
 I update relevant context files like the local `CLAUDE.md` using `/init`.
@@ -602,26 +608,12 @@ Then I use `/clear` to clear the entire context window, and start with the next 
 Every task is a new beginning.
 A new chance to get it right or fuck it all up.
 And whether it's successful or not will depend if I properly maintained the history and roadmap **external to the agent**.
-This true crux of it.
+This is the true crux of it.
 While different tools have gotten a **lot** better at maintaining context, it wasn't always that way.
 And regressions can happen.
 Like most backend engineers, I reserve the right to fire my tools at any point.
 While I'm loving CC now, that doesn't mean I wont eventually try out Codex.
 If my history is locked in a tool, I'm locked in as well.
-
-"But what about compaction? It's gotten a lot better since you started."
-True, and while the auto-compaction has gotten a _lot_ better over the last six months, I still don't trust it as far as I can throw my 110 chocolate chonk of a labrador(1).
-So much so that when I see the warning appear that compaction is near, I start paying extra attention to the outputs as I no longer trust them.
-And 9 times out of 10, if I see it start to compact, I actually stop the process and revert the entire session(2).
-{ .annotate }
-
-1. He used to _love_ getting thrown onto my bed as a baby. Now his fat ass can't figure out why daddy can't pick him up and throw him like I could when he was 10lbs. Daddy's back hurts Loki, jump up yourself.
-2. I use `git` as my rewind mechanism. Every task is a commit, and if I don't like it I revert.
-
-I actually see compaction as a code smell.
-It means I didn't break the task down into small enough chunks. 
-For me, 95% of the time I can perform a single task within the scope of a fresh context window.
-And for that other 5%, I either refactor the plan to break it down more or switch to a model with a larger context window for that task.
 
 So I don't baby my context window.
 I just nuke it after every task and start over.
@@ -634,17 +626,63 @@ This, in-turn, leads to better performance _regardless_ if the compaction gets b
 I'm no longer dependent on the tool or the model.
 I control the context window.
 
-### Prompts are Code, and should be documented as such
+### Prompts are Code, and Should Be Documented as Such
 
+No surprise, if you're familiar with my work, that I think shit should be documented and documented well.
+I chose to die on this hill years ago.
+I have my burial plot picked out(1).
 
-    * If I don't understand it, it doesn't get committed
+Let's dive a little deeper into what a prompt is.
+Prompts are text you provide to the AI to achieve a task.
+They have inputs, outputs, and side effects.
+They can be buggy, inefficient, or elegant.
+A bad prompt produces slop, while a good prompt produces working, maintainable code.
+Sound familiar?
+That's because prompts **are the code now.**
+It's the new abstraction layer we're all learning to speak.
+Good prompts should be versioned, reviewed, and iterated on just like everything else.
+Why do you think I like my custom commands so much? 
+When I tweak a Command and it improves, I update it and commit it.
+
+So documenting prompts, I believe, is just as important as documenting the code.
+Why?
+Because documenting your code is something you do for the user.
+Historically, however, we've been **REALLY BAD** about documenting stuff for the implementer.
+And documenting your prompts does this.
+It captures the history of the project.
+How often do you look at a legacy codebase and just go "WHY?!?!"
+{ .annotate }
+
+1. It's nice. Under an oak tree. And my headstone will read "Use the oxford comma you fools".
+
+![Sheldon cooper reading a paper and yelling WHY gif](img/016-claude-code/why.gif)
+
+Well now, if the implementation is being done via agents, we have a much better way of at least stitching together the conversations that were being had and why things are the way they are.
+But this does beg the question, how _does_ one document prompts?
+
+Every tool has some way of exporting sessions, but I don't think that's enough.
+I take it one step further and actually have a template for this that I have AI use to create a similar report after every session.
+This template contains a recap of key actions, the main prompts and commands, cost, efficiency insights, possible process improvements, and any other interesting observations or highlights.
+I then store these sessions in `.ai-sessions/` in the code repository and commit them.
+Now I have a history.
+I can use AI to look over them and generate some lessons learned and update its memory and context.
+
 
 ## Finally, the Damn Workflow
 
+![Get on with it Monty Python gif](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2sxcHBnNjkyb3N1MGRrNGQyaTVkanpleHB4cWp6YmlncGs4dW53OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oGAM2NfiX50ac/giphy.gif)
+
+Ok ok, let's talk about how I _actually_ use CC on a daily basis.
+And the answer is simpler than you think.
+Like, three steps simple.
+
 ## The BPE Loop
 
-The BPE Loop is probably not new, or something I invented.
+The Brainstorm, Plan, Execute Loop(1) is probably not new, or something I invented.
 I discovered it in [Harper Reed's Blog](https://harper.blog/2025/05/08/basic-claude-code/) during the early days of my CC adventure and have since iterated on it until I got it where I wanted it.
+{ .annotate }
+
+1. BPE for short
 
 The mechanics of the loop are straightforward:
 
@@ -663,7 +701,25 @@ flowchart LR
     D -->|Yes| E[Done]
 ```
 
-Now you may look at this and say "Damn that's a lot of process" for a fix that may take you five minutes.
+Look familiar?
+It should, it's basically fucking [Waterfall](https://www.atlassian.com/agile/project-management/waterfall-methodology).
+Now before you lose your lunch, hear me out.
+Waterfall often gets a bad rap in the software engineering world because the process is so _miserably_ slow.
+It's actually funny that we hate it, when other engineering disciplines use something similar all the time.
+We can easily rewrite code to meet new requirements and not burn a fortune doing so.
+Ever seen a bridge built using Agile?
+No you have not.
+But AI _greatly_ accelerates this.
+We can update a spec in a few minutes.
+Regenerate the plan if it's not working correctly.
+The issues with Waterfall that people disliked are a non-issue in the age of AI.
+This is another indicator that our industry is maturing(1).
+{ .annotate }
+
+1. A topic I discussed in length in the first part of this series [Part 1: We're Witnessing the Evolution of Software Engineering](014-software-engineering-evolution.md).
+
+
+You may look at this and say "Damn that's a lot of process" for a fix that may take you five minutes.
 True, and I don't use this for _everything_.
 
 | Task | Prompts | BPE Loop |
@@ -673,62 +729,562 @@ True, and I don't use this for _everything_.
 | One off change or small task on existing project | ✅ | ❌ |
 
 Each of these stages is a Command I've implemented, stored in my global `.claude/` directory so they're accessible in every session.
+You can see them defined [in my GitHub](https://github.com/MasonEgger/homedir/tree/main/.claude/commands/app-dev).
 
+### Brainstorm - `/app-dev:brainstorm`
 
-### Greenfield Project
+The first step in the process is to brainstorm.
+What am I trying to build?
+What tools do I want to use?
+What did I not consider?
+The [brainstorm command](https://github.com/MasonEgger/homedir/blob/main/.claude/commands/app-dev/brainstorm.md) basically plays 20 questions with me.
+I give it the details I have for an application to build, and then we focus in on what I want the app to do, features I may have forgotten, implementation details, etc.
 
-The fun thing about programming with CC is you _finally_ get to build all the shit you've been wanting to build forever.
-So this means you'll find yourself in a lot more greenfield projects than you normally would if you were just using this for work.
+??? abstract "`brainstorm` Command"
 
+    ```md
+    # Brainstorm Command
 
+    Ask me one question at a time so we can develop a thorough, step-by-step spec for this idea. Each question should build on my previous answers, and our end goal is to have a detailed specification I can hand off to a developer who will implement using good TDD practices.
 
-* High Level Diagram of My Flow
-    * Brainstorm
-    * Plan
-        * Claude is a better prompt engineer than you
-    * Todo
-* Execute Loop
-    * Guardrails
-    * Clear Context
-    * Session summary
-    * Update `CLAUDE.md`
-### Existing Project
-        * Gather context and create CLAUDE.md
-        * `/add-dir`
-        * Plan
-            * Sometimes my plan command, sometimes Claude plan mode
-        * Same execute loop as above
+    Let's do this iteratively and dig into every relevant detail. Remember, only one question at a time.
 
+    ## Critical Focus Areas
 
+    **TDD Implementation Ready**: Ensure the spec includes requirements for YOUR application logic that can be converted into failing tests first. Focus on business rules, data validation, error handling, and custom algorithms that YOU will implement - not framework or library behavior. Think about what application-specific behaviors need verification.
 
+    **Component Boundaries**: Identify clear, testable components that can be implemented independently and then integrated together. Each component should have well-defined inputs, outputs, and responsibilities.
 
+    **Global Claude Config Integration**: Follow the established development patterns and preferences from the user's global Claude configuration (found in ~/.claude/CLAUDE.md and related files). Respect their preferred tools, coding standards, and project structure approaches.
 
-## What I Don't Optimize For
+    Focus on getting the technical details and component boundaries clear enough that the resulting spec can be broken down into implementable, testable steps that follow the user's established development workflow.
 
-### Squeezing every bit of context I can 
-            * I handle this differently
-### Cost
-            * Work plan FTW
-            * Claude $100 Max plan gets me FAR
-            * It's never that expensive anyway
+    The goal of this is NOT to implement the application or write a bunch of code, but to create a specification file that you will use later to create a plan. I will review this after and make manual changes. You may write _some_ code to illustrate specific points, but do not focus on that. Instead focus on making the specification usable for you to consume and plan with later. 
 
+    Once we are done, save the spec as @spec.md
 
+    Here's the idea:
+    ```
+
+This process can take a **looooong** time. 
+If you look in my `ai-sessions/` directories in repos I've used this on, you'll see from the session documentation that these can take anywhere from half an hour to a few hours, depending on how complex the problem is and how long it takes me to consider its suggestions.
+This isn't the AI churning away for a few hours on its own.
+This is a dialogue and sometimes it brings up _very cogent points_ that I need to consider.
+
+However, there is a hidden trap in a step like this, which is scope creep.
+I often start planning out an idea and the brainstorming is churning along and then it asks a very useful question about a feature I hadn't considered.
+I like the idea so we add it in, and now we're discussing that feature and it brings up _another_ totally valid point that adds _more_ complexity.
+It's easy to trip down this rabbit hole and wind up with an application with **way** more features than you intended.
+Lately I've taken to telling it "Yes that's a good feature, put it in a future features section and let's focus on the MVP."
+This seems to fix the scope creep issue. 
+
+Now once you're done with this step CC will put all your responses together and create a specification file `spec.md`.
+This process can actually take several minutes.
+I've often taken a break and come back to the spec file being written. 
+I let it write it out and we're done right?
+
+![Dwight Shrute from the office gif "Let me put it this way....no"](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXB4Nmh2czNtcHo1bTl0cDRuaWp3bWxxNTJpOGIwNW55MnptMDI5dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/daPCSjwus6UR2JxRX1/giphy.gif)
+
+Nope!
+Not in the slightest.
+It's time to **review** the specification.
+I meticulously comb through every line and make sure it is what I expected and want.
+If it's wrong, I _manually_ change it.
+It is **crucial** that this file is accurate.
+This is the foundation of everything that will come after.
+Any mistake here will be amplified and propagated across the entire project.
+The upfront time here is worth it. 
+Otherwise you're going to be chasing bugs around the entire time.
+
+Finally, I use a [`/meta:session-summary`](https://github.com/MasonEgger/homedir/blob/main/.claude/commands/meta/session-summary.md) command to summarize what happened and create a record.
+This command creates a session summary of what just happened and stores it in the `.ai-sessions/` directory of the code repo.
+Next I use `/git:commit-msg` to create the commit message.
+I commit `spec.md` and the sessions summary to git and finally run `/clear` to wipe the context window.
+Now it's time to plan.
+
+### Plan - `/app-dev:plan`
+
+The next step is the planning stage. 
+This command ingests the spec file we created and creates two markdown files as a result, `plan.md` and `todo.md`.
+What is the difference between a plan and a spec?
+`spec.md` details _what_ needs to be implemented.
+`plan.md` specifies _how_ the implementation should be done.
+And `todo.md` file details _what_ has actually been implemented. 
+
+Now `todo.md` isn't anything special(1).
+It's simply a todo list to keep track of what is being worked on.
+You may be wondering "Why not just use the todolist functionality built in to CC?"
+And that's a good question, one we'll cover more in the next section.
+{ .annotate }
+
+1. Sorry `todo.md`. You're special to me 💙
+
+But the _true_ magic of this command is what happens in `plan.md`.
+When I first started my CC journey(1) I was given probably the best advice I've received regarding AI so far from my good friend [Moshe Zadka](https://www.linkedin.com/in/moshezadka/). 
+{ .annotate }
+
+1. Like day 1. I was at PyCon US and sat down with Moshe to get him to "teach me the secrets of Claude"
+
+> "Claude is a better prompt engineer than you. Ask Claude how Claude would have Claude do it." - Moshe Zadka
+
+This advice was mind blowing, and as it turns out, 100% right.
+And then when I started exploring workflows and stumbled across the BPE loop, the plan stage did exactly this.
+**It breaks down the spec into bite sized chunks, then asks Claude to come up with the prompts to achieve each stage.**
+
+??? abstract "`plan` Command"
+
+        # Plan Command
+
+        Draft a detailed, step-by-step blueprint for building this project. Then, once you have a solid plan, break it down into small, iterative chunks that build on each other. Look at these chunks and then go another round to break it into small steps. Review the results and make sure that the steps are small enough to be implemented safely with strong testing, but big enough to move the project forward. Iterate until you feel that the steps are right sized for this project.
+
+        From here you should have the foundation to provide a series of prompts for a code-generation LLM that will implement each step in a test-driven manner. Prioritize best practices, incremental progress, and early testing, ensuring no big jumps in complexity at any stage. Make sure that each prompt builds on the previous prompts, and ends with wiring things together. There should be no hanging or orphaned code that isn't integrated into a previous step.
+
+        ## Testing Guidelines for Generated Prompts
+
+        When specifying tests in RED phases, focus ONLY on application logic:
+
+        **DO test:**
+        - Business logic you're implementing
+        - Data validation rules you define
+        - Error handling you add
+        - Custom algorithms or calculations
+        - Integration between YOUR components
+
+        **DO NOT test:**
+        - Framework functionality (e.g., "Django can connect to database")
+        - Third-party library behavior (e.g., "requests library makes HTTP calls")
+        - Language features (e.g., "Python dicts work correctly")
+        - Configuration loading (unless complex custom logic)
+        - Trivial code (simple getters, setters, pass-through methods)
+
+        **Examples:**
+        - ❌ BAD: "Test that Django User model can be created" (tests Django)
+        - ✅ GOOD: "Test that custom password validator rejects weak passwords" (tests YOUR logic)
+        - ❌ BAD: "Test that database connection works" (tests framework)
+        - ✅ GOOD: "Test that user registration creates audit log entry" (tests YOUR logic)
+
+        ## Critical Requirements for Execute-Plan Compatibility
+
+        **Each prompt must be structured as numbered sub-steps that execute-plan can follow sequentially:**
+
+        ### Format for Each Step Prompt:
+        ```
+        ### Step X: [Descriptive Title]
+
+        **NOTE**: [Any important context about existing implementation]
+
+        ```text
+        [Prompt for code-generation LLM with numbered instructions]:
+
+        1. RED: Write [specific type] tests first:
+        - Create/modify [exact file path]:
+            - Test [specific scenario 1]
+            - Test [specific scenario 2]
+            - Test [specific edge case]
+
+        Example RED phase (GOOD):
+        1. RED: Write validation tests first:
+            - Create tests/test_user_validation.py:
+                - Test that custom password validator rejects passwords without special chars
+                - Test that email validator rejects disposable email domains
+                - Test that username validator blocks profanity
+
+        Example RED phase (BAD - Don't do this):
+        1. RED: Write model tests first:
+            - Create tests/test_models.py:
+                - Test that User model can be created  ← Testing Django, not your code
+                - Test that database saves User correctly  ← Testing Django ORM
+                - Test that email field stores email  ← Testing Django field behavior
+
+        2. Document [specific component]:
+            - Create/update [exact file path]
+            - Document [specific behavior/rules]
+            - Include [specific examples/configurations]
+
+        3. GREEN: Write MINIMAL code to make tests pass:
+            - Create [exact file path]
+            - Implement [specific functionality]
+            - Use [specific patterns/libraries]
+            - Just enough to pass tests
+
+        4. RED: Add integration tests:
+            - Test [specific integration scenario]
+            - Test [specific error conditions]
+
+        5. GREEN: Wire up integration minimally
+
+        6. REFACTOR: Improve [specific aspects]
+
+        7. Update documentation with [specific updates]
+
+        8. Verify meaningful test coverage of YOUR application logic and run `just check`
+        ```
+
+        ## Prompt Generation Requirements
+
+        1. **Executable Instructions**: Each numbered sub-step must be a specific instruction that execute-plan can follow exactly, not general guidance
+
+        2. **File Path Specificity**: Every prompt must specify exact file paths (e.g., "tests/test_activities/test_validation.py", not "test files")
+
+        3. **Test Scenario Detail**: Each RED phase must list specific test scenarios to implement, not generic "write tests"
+
+        4. **TDD Structure**: Every prompt must follow RED-GREEN-REFACTOR with clear phases
+
+        5. **Sequential Dependencies**: Each prompt builds on previous prompts with no orphaned code
+
+        6. **Integration Requirements**: Each prompt ends with wiring the new code into existing systems
+
+        Make sure and separate each prompt section. Use markdown. Each prompt should be tagged as text using code tags. The goal is to output prompts that execute-plan can follow step-by-step, but context and architectural decisions are important as well.
+
+        ## Output Format
+
+        Store the plan in @plan.md with:
+        - Current Status section showing implementation progress
+        - Each step as a detailed prompt with numbered sub-instructions
+        - Implementation Guidelines section
+        - Success Metrics section
+
+        Also create a @todo.md that:
+        - Mirrors the plan.md structure with checkboxes
+        - Tracks completion of each numbered sub-step
+        - Can be updated by execute-plan as work progresses
+
+        The spec is in the file called @spec.md
+
+So CC takes the spec, decomposes the requirements to atomic units of implementation that MUST follow test-driven development, writes the prompts to achieve this, and then stores this in `plan.md` so it can be implemented later.
+It pairs this plan with `todo.md`, which mirrors every step in `plan.md` to ensure we always have a checkpoint in the development process.
+
+Now do you think I review these files?
+
+![Spongebob and Patrick thinking gif](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjhubXhwNjdjMmVoZmQwZjlhcjVwenozeG0wZXgzbXVpaXRmbGs3eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lKXEBR8m1jWso/giphy.gif)
+
+**Of course!**(1)
+Always 👏 review 👏 everything!👏
+"But you said that Claude is better at prompting than you are why review them?"
+That's actually a great question.
+I review these files _not_ because I think I can write better prompts than Claude(2).
+It review them because if I missed anything in the spec, it will become **glaringly apparent** in `plan.md`.
+The prompt will ask for things to be done that just don't make sense. 
+**OR** it will expose holes in my skills, `CLAUDE.md` files, and other sources I asked it to look from.
+{ .annotate }
+
+1. If you aren't seeing the pattern here yet pay closer attention. 
+2. Although I am guilty of tweaking them. I can't help myself. 
+
+For example, if I see in the prompt that it's trying to implement code in `__init__.py`, which is a **bad** practice and should be avoided, I know then that it didn't load my Python Skill, because I explicitly call this out as an anti-pattern(1).
+If I catch this, I know that it'll be rampant in the rest of the plan.
+I then may decide to just delete those details from the plan itself, or I may manually load my Python Skill and have CC go back over the spec file and make sure the specifications are to my standards.
+And then if they are, I rerun the plan command and explicitly tell it to mind my standards(2).
+So yes, check the plan.
+It'll save you at least $20 in alcohol after CC keeps doing something you ask it not to and you opt to crack open the liquor cabinet(3).
+{ .annotate }
+
+1. This is kind of akin to the professor who's been teaching for 30 years and has the most **hyper specific rules** in their syllabus. It's because at one point someone did that thing and pissed them off and now it's a rule. Same with putting this in `__init__.py`.
+2. In a perfect world they would just always load correctly, but if this is the worst thing that happens to me while using the magic box that accelerates me 50000000% I'll take it. 
+3. Remember kids, don't drink and vibe!
+
+Once you're satisfied, create a session summary, commit the code, and clear that context window!
+It's time to let CC implement the application.
+
+### Execute - `/app-dev:execute-plan`
+
+And now we've arrived at the climax, the actual implementation of the project.
+It took a while to get here, but now the hard part is over.
+If you did the previous two steps properly, then having AI actually implement the project should be easy.
+
+This phase of the BPE Loop is actually the only part that consistently loops.
+I use my `execute-plan` command, which in turn will read the `todo.md` to determine what step in the plan is next, read the last session from `.ai-sessions/` for any relevant lessons learned that need to be carried over, read `plan.md` to get the prompt that needs to be executed, and begin execution.
+And that's it.
+Let it cook.
+
+??? abstract "`execute-plan` command
+
+    ```md
+    # Execute Plan Command
+
+    1. Read @plan.md and @todo.md
+        - These files complement each other. @todo.md should track the current state of the implementation of @plan.md
+    2. Check to see if a directory named @.ai-sessions` exists
+    1. If the directory doesn't exist, do nothing
+    2. If the directory exists, list the files and find the most recent session summary and read it. This is a summary of the previous session and will contain detailed information about what work was completed, and lessons learned in the las session.
+    3. Open @todo.md and select the first unchecked item to work on.
+    4. **CRITICAL**: Open @plan.md and locate the specific step being implemented
+        - Find the detailed numbered prompts for this step (e.g., "1. RED: Write tests...", "2. GREEN: Implement...")
+        - Follow these prompts EXACTLY in the specified order
+        - Do NOT deviate from the file paths, test scenarios, or implementation approach specified
+    5. If you have any questions about the task at hand, ask the user.
+    6. Implement the plan for this item as specified in @plan.md:
+        - **Follow the exact numbered sub-steps** in the plan.md prompt
+        - **Use the specific file paths** mentioned in the prompts
+        - **Implement the exact test scenarios** described
+        - Follow strict TDD procedures (RED-GREEN-REFACTOR as specified)
+        - Write robust, well-documented code
+        - Focus tests on YOUR application logic, not framework functionality
+        - Skip testing trivial code, framework features, or library behavior
+        - Verify that all tests and linting passes
+        - Make sure the tests pass, and the program builds/runs
+    7. **Update documentation as specified** in the @plan.md prompts for this step
+    8. **CRITICAL** Update @todo.md and mark off the item that was completed
+    9. Ask the user if there is anything else they want you to do or review for this session.
+
+    ## Key Requirements:
+        - **NEVER** skip or reorder the numbered steps in plan.md
+        - **ALWAYS** use the exact file paths specified in the prompts
+        - **FOLLOW** the RED-GREEN-REFACTOR cycle as outlined in each step
+        - **COMPLETE** all documentation updates mentioned in the step
+        - **VERIFY** all application logic is tested (not framework/library code)
+        - Treat @plan.md prompts as **implementation instructions**, not suggestions
+    ```
+
+Now the next part is optional, depending on the complexity of the task and how paranoid you are.
+**Of course** you should review the code of each step before committing it.
+But whether you do this for each step and review every line as it comes or if you just review it in the end will depend on you.
+Personally, I find myself babysitting it a bit more and watching line by line, but I also just let it go sometimes.
+The reason I babysit it is so if it starts going off the rails, I can correct it early rather than let it generate a metric ton of slop and then have to wade through it later.
+Luckily, as the models and CC has gotten better the amount I need to intervene is constantly decreasing. 
+But there are days the model is just having a bad day and it needs its hand held.
+
+Another thing I'll do during this phase is if I'm babysitting it and see it struggling to implement or fix something, I'll often Google what the issue is, find the solution, stop CC from running and give it the link.
+This often yields great results and saves me time.
+
+Once it has finished implementing a step I follow the same process every time:
+
+1. Review the code again even if I reviewed it while it was running
+    1. Big picture view instead of narrow view
+2. I manually run the guardrails checks like testing and linting
+    1. CC has lied to me before, so I check
+3. Once I'm satisfied with the code I have it:
+    1. Write a new session summary to `.ai-sessions/`
+    1. Update the local `CLAUDE.md` with lessons learned. I often do this by just running `/init`
+    1. I double check to make sure that CC updated `todo.md` with the work it did. This is necessary for the next session.
+    1. Generate a commit message using `/git:commit-msg`
+    1. Commit the code
+4. Once it's time to move on to the next step, I run `/clear` like it's shift change and bring in the next session. I then run `/app-dev:execute-plan` again and we go again!
+
+And that's it. 
+Preheat the oven to 350 degrees and cook for 30 minutes until done. 
+If done _properly_ this yields high quality, maintainable results of an application that you understand.
+
+## Anticipating your responses
+
+I can hear them now, so let's squash the comment section now.
+
+### "That's a LOT of process for a simple fix isn't it?"
+
+Yea.
+It really is.
+And for a quick fix, I don't use this.
+I use the BPE loop for large projects, features being added, and something I'm going to spend actual time on.
+But for small little fixes or updates to repos, I just use raw prompts.
+
+For example, I'm constantly updating the [PyTexas 2026](https://pytexas.org/2026) website as the conference approaches.
+This site is just a static site generator project.
+Say I need to add a new sponsor to the sponsors page.
+I copy in the logo file into the base directory, then prompt CC to update the sponsors page and move the logo file to the right location.
+Works like a charm.
+
+So don't think you _must_ use a process like this for everything.
+It's a tool, not a silver bullet.
+But from my experience, the BPE loop is the best way to build and maintain larger projects.
+
+### "Do you really waste all your time watching it build?"
+
+I don't view it as wasting time.
+It's still generating at a rate far faster than I would. 
+And I'm _learning_ while it's doing this.
+I'm learning how to better tune my CC files.
+What gaps I have.
+What makes CC tick.
+But I'm also learning more about coding.
+CC will often do something and I'm like "Woa what is that?" so I stop it and ask it to explain it to me.
+I've actually learned more new features about Python and other frameworks from watching CC than I have in the past few years of self implementation.
+I tend to always grab for what I know.
+CC grabs for what is _best_ so I get to learn.
+And if I don't like it?
+I tell it to fuck off and do it the way I want it done.
+It's AI, not your mom.
+You can tell it what to do.
+
+### "This kinda takes the fun out of vibe coding."
+
+Eh. 
+Maybe.
+If you enjoy sitting down, providing one prompt and hoping to get to success then ya, it does.
+But if you're trying to build something meaningful that will survive the software engineering lifecycle for years to come, that style of "vibe coding" ain't gonna cut it.
+But you know that.
 
 ## "Doesn't this make you INSERT_NEGATIVE_EMOTION_HERE?"
-    * Fuck no
-    * I've never been more productive
-    * The bottle neck is no longer code, it's my attention span
-## Distractions We Need to Stop Focusing On
-    * One Shots
-        * Who the hell develops this way?
-    * Model of the Month
-        * Who cares? Really
-        * Looks like a Formula 1 race
-    * Feature of the Month
-        * This leads to analysis paralysis
-        * Focus on Minimum Viable Workflow
-        * Add features when you're ready, not because everyone else is
 
+Fuck no.
+
+I've never been more productive in my career!
+I'm having so much fun!
+The bottleneck on what I'm doing is no longer my ability to write code, but my attention span.
+Do I have mild existential dread about what this means for the job market?
+Also yes.
+That's why I'm leveling up on the tooling of the future.
+Change always happens.
+
+And let's be real?
+What will my outrage do?
+Will the big AI companies stop moving forward because a sad boy in Texas is upset with them?
+Not a snowball's chance in hell.
+So I see it one of two ways.
+Evolve or perish.
+I know which one I'm choosing.
+
+## Random Tips I Couldn't Fit Into This Narrative
+
+There's so many more random tips that I couldn't fit in here, but I would be remiss if I didn't share them.
+
+1. Run CC in `Explanatory` mode to get explanations while it's running so you build an understanding of the app and maybe even learn something new.
+    1. Use `/output-style` and change mode to `Explanatory`. Want to pair-program with CC? Change the mode to `Learning`.
+1. Load in known good samples or documentation for CC to use.
+    1. Don't just dump the entire docs or samples repo in your project folder. Pull it down on the same level as your project directory and use `/add-dir` to add it and look in there for good examples.
+1. Want to save the raw text of the session to share with someone or for archival purposes?
+    1. `/export`
+1. Did you close a session on accident and lose it? 
+    1. `/resume`
+1. Do you want `vim` keybindings for everything in your life?
+    1. `/vim`
+
+That's all I could think of.
+And no, I don't use `/vim` mode.
+I have enough mind goblins, I don't need `vim` creating more(1).
+{ .annotate }
+
+1. And this is coming from a recovering `vim` user. Don't come at me thinking I use `emacs`. `emacs` is a great operating system. Too bad they didn't implement a decent text editor.
+
+## Weird Shit That I Do That I Can't Explain but It Helps
+
+And now for the goofy shit that I can't explain but it works.
+
+![Gif of monty python and the ministry of silly walks](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbm42M3ZkNjZxaWlwMTVtYjRucHR2dGh0dXBxZ2tlc3VxenBubGJoMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qcgtyllMthBL2/giphy.gif)
+
+First, I have often said I get the best results from CC when I use my "teacher voice"(1).
+What this means is I'm typically over explanatory and treat it like a student who's doing well but needs correction.
+When it makes a mistake, I don't tell it "Hey, you messed up here", I ask it "Did you implement what was in the plan?"
+Or if the mistake is something that I know exists in my Skills or `CLAUDE.md`, I'll ask it "Did you follow the best practices we have laid out?" it will actually load those in and determine if it followed them or not.
+It often determines it hasn't and then goes back and fixes it, but sometimes it had a good reason and it explains why and I decide if that's a good enough reason to break the rules.
+Where I think this has real power is I often see this dialogue captured in the session summary portion in the lessons learned session.
+So on the next session it reads this in and learns from its mistakes.
+Also as I run `/init` to update the local `CLAUDE.md` it will put these in here, either by specific rule or a more broad "Be sure to load the Python Skill and follow it".
+This practice leads to my sessions getting better over time as the code base grows, not degrading. 
+{ .annotate }
+
+1. Turns out using millennia old teaching techniques works on children and AI. How neat.
+
+Secondly, I don't trust compaction at all.
+While the auto-compaction has gotten a _lot_ better over the last six months, I still don't trust it as far as I can throw my 110 chocolate chonk of a labrador(1).
+So much so that when I see the warning appear that compaction is near, I start paying extra attention to the outputs as I no longer trust them.
+And 9 times out of 10, if I see it start to compact, I actually stop the process and revert the entire session(2).
+{ .annotate }
+
+1. He used to _love_ getting thrown onto my bed as a baby. Now his fat ass can't figure out why daddy can't pick him up and throw him like I could when he was 10lbs. Daddy's back hurts Loki, jump up yourself.
+2. I use `git` as my rewind mechanism. Every task is a commit, and if I don't like it I revert.
+
+I actually see compaction as a code smell.
+It means I didn't break the task down into small enough chunks. 
+For me, 95% of the time I can perform a single task within the scope of a fresh context window.
+And for that other 5%, I either refactor the plan to break it down more or switch to a model with a larger context window for that task.
+
+And lastly, if you're working on documentation or text, telling CC to "copy this text and update it" tends to yield much more faithful outputs than if you ask it to "read it, update it, and write it to this file". 
+While the models have gotten better about not hallucinating when they do this, the larger the file the more likely this will happen.
+So if you are converting a quickstart guide from Python to Ruby, have it copy the file _then_ read it and update it. 
+The end result will be better. 
+
+## Distractions We Need to Stop Focusing On
+
+Ok, so I've listed all the things you _should_ do, but what about some things you **shouldn't** do?
+
+### One Shots
+
+This bugs the hell out of me.
+People trying give CC a prompt "build facebok" and then getting upset it didn't get it right on the first try.
+Really?
+Is that how _you_ develop?
+With no spec, no plan, and you get 20 minutes typing as fast as you can?
+No you don't.
+So stop expecting AI to do the same.
+Yes, it can get _very_ far without aide.
+But in my opinion this isn't a good thing.
+The further ahead it gets of you, the less you understand about the project.
+So ya, stop with the one shots.
+It's dumb.
+
+### Model of the Month
+
+I chose CC a while back because I appreciate Anthropic's mission statement.
+I never really gave other models a chance, and I don't really care to.
+Why?
+Because the differences between the flagship models of the large AI companies are never _really_ that big.
+And if there is a gulf, it won't be there long. 
+I view this as a Formula 1 race.
+Everyone's going really fast, all going for first, and who's in lead changes constantly.
+Today Anthropic is in the lead by an inch.
+Tomorrow it'll be OpenAI.
+Then Google.
+Then Anthropic pulls ahead again.
+And to spend what limited capacity my brain has to focus on this is pointless.
+If Anthropic isn't the best in the world I'm fine with that. 
+I'll wait a few weeks until it is again.
+
+### Feature of the Month
+
+This is a big one.
+I shout this from the rooftops in the communities I'm in.
+These AI companies are using AI to build AI.
+That means they are shipping features at a velocity we've never seen before.
+Honestly, I think this leads to "feature fatigue".
+This is where you just get exhausted from constantly having to try to keep up with what's going on ON TOP OF your other responsibilities.
+This happens to me all the time.
+I see a new feature and I'm like, I can't wait to try that when I have some free time in a few days!
+And by the time those few days pass, there's a new feature.
+So I try to keep up.
+But then what if I take a vacation and am gone for a few weeks?
+Shit there's like 8 new features when I get back!
+This actually happened to me, and it made kinda step back from AI for a while.
+I only stepped forward again when I built myself the following framework.
+
+1. I will focus on MVW - Minimum Viable Workflow
+2. I will only use new tools when I actually have a _need_ for them
+3. I will ignore most of the announcements, or at least spend no more than 20 minutes on them until I'm ready for them
+
+Are there a shit ton of _awesome_ CC features I want to try right now?
+Ya!
+Am I going to?
+Nope!
+Not until I need them. 
+Maybe I'll set aside some time to catch up eventually.
+But product adoption happens on my timeline, not Anthropic's.
+
+Do I feel left out on this?
+Honestly, no.
+Because for all these features, I am still producing at the rate I want, and I never see anyone gain any real serious ground by adopting them.
+I have a friend who uses vanilla claude code. 
+CLI and prompts.
+And his output and quality are vastly superior to mine.
+At the end of the day, a Stradivarius in the hands of a beginner is just a piece of wood.
+
+## Now Go Forth and Prosper!
+
+![Buddy the elf saying "You did it! Congratulations" gif](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGdqc3BvYWJ3eWdhbzA1ZmV6eGpiZnVpOGtzbHF4MjMzY3Bldm9zZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RIjVnmAtOD4l4c2Ert/giphy.gif)
+
+Thanks for hanging in there.
+I know this was long(1).
+Hopefully you learned something.
+If you read my other blogs, hopefully you're feeling optimistic about the future and not an overwhelming sense of dread.
+I promise you, you're going to love this.
+Seven months ago, I was staring at Claude Code the same way someone in 1972 might have stared at an HP-35 calculator.
+Now?
+That logarithm book is just a neat thing on a shelf(2).
+Everyone who I've got started on programming this way loves it.
+They feel inspired and ready to tackle the world.
+And I wish the same for you.
+{ .annotate }
+
+1. If you think it took you a long time to read, imagine how long it took me to write. The answer is about a month.
+2. Read [Part 1: We're Witnessing the Evolution of Software Engineering](014-software-engineering-evolution.md) for context if you haven't already.
 
 !!! abstract "Part 3 of 3 of my `Brain Dump Ramblings on AI` blog series"
 
@@ -737,5 +1293,6 @@ So this means you'll find yourself in a lot more greenfield projects than you no
 
 
 *[CC]: Claude Code
+*[BPE]: Brainstorm, Plan, Execute
 
 
