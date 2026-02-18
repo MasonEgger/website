@@ -23,6 +23,21 @@ Here's what I've learned so far.
 
 <!-- more -->
 
+!!! tip "TL;DR - Just Want the Workflow?"
+
+    **The BPE Loop (Brainstorm → Plan → Execute):**
+
+    1. `/app-dev:brainstorm` — Discuss your idea, creates `spec.md`
+    2. Review `spec.md` manually — fix any errors
+    3. `/app-dev:plan` — Creates `plan.md` and `todo.md`
+    4. Review `plan.md` manually — verify prompts make sense
+    5. `/app-dev:execute-plan` — Implements one step
+    6. Review code, commit, `/clear`, repeat step 5
+
+    **Quick setup:** See the [Claude Code Quickstart](/tutorials/posts/004-claude-code-quickstart/) tutorial.
+
+    **Want the full story?** Keep reading below.
+
 ## From AI Skeptic to AI Enthusiast
 
 So it's no secret, I, like many of my colleagues, was very much an AI skeptic when it was first introduced.
@@ -375,12 +390,14 @@ Prior to the release I was building out my own hacky version where I had Command
 Then Skills released and I threw that work away. 
 
 [Skills](https://code.claude.com/docs/en/skills) are collection of instructions, resources, and tools that CC can conditionally load when it determines you need to use that Skill.
-You provide a **short** top level `SKILL.md` with instructions, then various resources it can read when it needs to load more context around a specific task.
+For example, say I have specific rules, preferences, tools, etc. that I always want to use when I write Python code.
+I can then define a Python Skill with these preferences, which CC will then automatically load when it determines I'm writing Python code. 
 
-For example, say I have a `python` skill.
+The structure of the Skill is just directories with Markdown.
+You provide a **short** top level `SKILL.md` with instructions, then various resources it can read when it needs to load more context around a specific task.
 The top level `SKILL.md` should have the prime directives(1) for the Skill.
-So in my [Python Skill](https://github.com/MasonEgger/homedir/blob/main/.claude/skills/python/SKILL.md) I give it core requirements it **MUST** follow, then I provide it a list of references given certain scenarios (toolchain, writing a CLI, docstrings) that it can load _when it is actually working on those types of tasks_.
-You can also provide `scripts`, which are executable files that CC can use while working with this skill.
+So in my [Python Skill](https://github.com/MasonEgger/homedir/blob/main/.claude/skills/python/SKILL.md) I give it core requirements it **MUST** follow, then I provide it a list of references given certain scenarios (toolchain, writing a CLI, docstrings).
+You can also provide `scripts/`, which are executable files that CC can use while working with this skill.
 Have a specific template you want it to follow?
 Or some examples for it to follow?
 Add those to the Skill as well. 
@@ -390,7 +407,7 @@ The Skill is a container for what "correct" looks like to you and tools to help 
 1. I always wanted a reason to use that phrase in a blog. Yay!
 
 Now of course, this thing still misses sometimes.
-Skills don't always get invoked(1), hooray non-determistic systems(2)!
+Skills don't always get invoked(1). 
 I always watch very closely to ensure the Skill is invoked (it'll say this in the output of CC).
 If it's not, I stop it and manually invoke it.
 You can also implement a [Hook](https://code.claude.com/docs/en/hooks) to force it to invoke it on a per-project basis, or include it in the local `CLAUDE.md`.
@@ -399,7 +416,6 @@ They do a decent job, but you should still keep an eye on it.
 { .annotate }
 
 1. Which is just another point in my column when I say you **have to watch this shit as it cooks** or you're gonna have a bad day.
-2. I have a draft blog on this that I might post eventually.
 
 ### MCP Servers
 
