@@ -1020,7 +1020,7 @@ I use my `execute-plan` command, which in turn will read the `todo.md` to determ
 And that's it.
 Let it cook.
 
-??? abstract "`execute-plan` command
+??? abstract "`execute-plan` command"
 
     ```md
     # Execute Plan Command
