@@ -170,8 +170,10 @@ Essentially, the longer you chat with an AI, the worse the performance gets, so 
 1. If this is not the name of the company death metal band from Anthropic I'm going to be sad.
 
 Now the way I handle context is similar to an SRE adage "Cattle, not Pets".
+This practice dictates building of systems that can be easily replaced instead of babying a VPS.
+So you treat the server or container like livestock for slaughter, and if it goes down you kill it and start a new one.
+My context managing philosophy is the same.
 
-My philosophy is simple. 
 I use one session per task.
 I review the code, and ensure functionality was achieved.
 I update relevant context files like the local configuration files(1).
@@ -195,14 +197,15 @@ If my history is locked in a tool, I'm locked in as well.
 
 So I don't baby my context window.
 I just nuke it after every task and start over.
-I built this concept after having been an SRE for many years. 
-In the DevOps space there's a notion of "Cattle not pets" which essentially dictates building of systems that can be easily replaced instead of babying a VPS.
-In this instance, I treat my context windows as cattle, not pets.
+My context window is the cattle(1), not a pet. 
 This accomplishes two things.
 It maintains that minty freshness of the models at the beginning of a session we all love so much, and it requires me to be _very deliberate_ about how I manage context in my projects.
 This, in-turn, leads to better performance _regardless_ if the compaction gets better.
 I'm no longer dependent on the tool or the model.
 I control the context window.
+{ .annotate }
+
+1. Should be cow, cattle is plural. But I had to make that metaphor work.
 
 ## Principle \#4 - Prompts are Code, and Should Be Documented as Such
 

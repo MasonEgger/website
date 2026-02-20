@@ -1,7 +1,7 @@
 ---
 title: "How I Actually Use the Damn Thing"
 description: "Enough waxing poetic about AI, here's my actual Claude Code workflow."
-date: 2026-02-06
+date: 2026-02-07
 categories:
     - Software Engineering 
     - AI
