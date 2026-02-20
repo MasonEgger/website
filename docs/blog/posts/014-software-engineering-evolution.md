@@ -368,9 +368,10 @@ But the person who knows how to use AI might, if you don't.
 
 _How does this affect software engineering right now? Check out Part 2 of this blog series [Code is Now Cheap, Don't Devalue Yourself](015-code-is-cheap.md)._
 
-!!! abstract "Part 1 of 3 of my `Brain Dump Ramblings on AI` blog series"
+!!! abstract "Part 1 of 4 of my `Brain Dump Ramblings on AI` blog series"
 
     Check out the other parts of this series:
 
     * Part 2 - **[Code is Cheap, Don't Devalue Yourself](015-code-is-cheap.md)** discusses AI and it's impact on the software engineering discipline.
-    * Part 3 - **[How I Actually Use the Damn Thing](016-claude-code.md)** - My journey with Claude Code and my tips and tricks for getting started.
+    * Part 3 - **[First Principles of Using AI](016-ai-principles.md)** - The core foundations I've adopted when using AI tools.
+    * Part 4 - **[How I Actually Use the Damn Thing](017-claude-code.md)** - My journey with Claude Code and my tips and tricks for getting started.

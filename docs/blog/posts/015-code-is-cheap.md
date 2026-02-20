@@ -312,9 +312,10 @@ Because at the end of the day, the future belongs to those who show up for it.
 
 _Curious about my personal AI journey, how I got started, and all my tips and tricks? Come back tomorrow for the next part of the series._
 
-!!! abstract "Part 2 of 3 of my `Brain Dump Ramblings on AI` blog series"
+!!! abstract "Part 2 of 4 of my `Brain Dump Ramblings on AI` blog series"
 
     Check out the other parts of this series:
 
     * Part 1 - **[We're Witnessing the Evolution of Software Engineering](014-software-engineering-evolution.md)** discusses the historical context and ongoing evolution of software engineering up to the advent of AI.
-    * Part 3 - **[How I Actually Use the Damn Thing](016-claude-code.md)** - My journey with Claude Code and my tips and tricks for getting started.
+    * Part 3 - **[First Principles of Using AI](016-ai-principles.md)** - The core foundations I've adopted when using AI tools.
+    * Part 4 - **[How I Actually Use the Damn Thing](017-claude-code.md)** - My journey with Claude Code and my tips and tricks for getting started.
