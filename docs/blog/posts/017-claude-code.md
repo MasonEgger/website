@@ -1039,7 +1039,7 @@ And I wish the same for you.
 
     * Part 1 - **[We're Witnessing the Evolution of Software Engineering](014-software-engineering-evolution.md)** discusses the historical context and ongoing evolution of software engineering up to the advent of AI.
     * Part 2 - **[Code is Cheap, Don't Devalue Yourself](015-code-is-cheap.md)** discusses AI and it's impact on the software engineering discipline.
-    * Part 3 - **[First Principles of Using AI](016-ai-principles.md)** - The core foundations I've adopted when using AI tools.
+    * Part 3 - **[What I Found Actually Works with AI](016-ai-principles.md)** - The do's and don'ts that guide everything I do.
 
 
 *[CC]: Claude Code

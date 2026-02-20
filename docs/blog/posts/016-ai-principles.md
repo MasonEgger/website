@@ -1,5 +1,5 @@
 ---
-title: "First Principles of Using AI"
+title: "What I Found Actually Works with AI"
 description: "After playing with enough models, agents, etc. here are the core foundations I've adopted when using these tools."
 date: 2026-02-06
 categories:
@@ -21,12 +21,11 @@ Features ship faster than you can even imagine.
 But after months of experimenting with different AI tools and workflows, I noticed certain patterns kept appearing. 
 Strategies and principles that yielded good results regardless of which shiny new thing I was using. 
 And I found myself coming back to them time and time again.
-And it got me thinking, maybe there is a set of first principles that improve AI usage.
 
 
 <!-- more -->
 
-## Approaching AI from a First Principles Mindset
+## Cutting Through The Noise
 
 It's easy to get sucked into the AI vortex.
 You type in a question or give it a task and sit back and watch it cook.
@@ -37,20 +36,41 @@ No sweat.
 Want it to build your entire business and manage it for you?
 Believe it or not, that's happening **today**.
 It's hard to look at this and not be in awe.
-It feels like magic.
+It feels like magic(1).
+{ .annotate }
 
-However, just because it feels like magic, doesn't mean it is.
+1. And let's be honest, it fucking is. We took sand, hit it with the full force of Zeus, and it gives us _reasoned thought_. We cracked the Philosopher's Stone y'all. This is the closest thing to magic we have.
+
+So now we hold this _unbelievably_ powerful tool that contains the entire library of human knowledge and understanding, and we have to figure out what to do with it.
+Should we build a company?
+Find the cure to cancer?
+Bring about world peace?
+All of these boil down to a common theme.
+
+**Get shit done**.
+
+That's it.
+That's the goal.
+AI exists to help you deliver.
+Ship the feature.
+Fix the bug.
+Write the docs.
+Build the product.
+Whatever "done" looks like for you, AI is a tool to get you there faster.
+Some things distract us, some things unlock our ability to **get shit done** faster.
+
 And like all great high fantasy magic systems, there are rules that must be followed to achieve immense power!
-Here are the first principles of using AI that I have found and that guide everything I do.
+Here are the do's and don'ts of using AI that guide everything I do.
 
 ???+ info "This Blog's Intention"
 
     This blog is deliberately provider and model agnostic.
-    The point of first principles is they should apply to generative AI as a whole, not one specific provider.
+    These do's and don'ts apply to generative AI as a whole, not one specific provider.
     If you're looking for exact implementation details, check out the [next blog in this series](017-claude-code.md)
 
+## Principles That Accelerate
 
-## Principle \#1 - This is MY Code, Not AI Code
+### Principle \#1 - This is MY Code, Not AI Code
 
 I often hear people blame AI generated code for things.
 "AI put a security vulnerability in my code."
@@ -106,7 +126,7 @@ My colleagues trust that I produce good work.
 My open source communities trust that I don't provide them with buggy or worse vulnerable code.
 In this quickly accelerating world of AI generated code, don't tarnish your reputation because you're being lazy.
 
-## Principle \#2 - Rules for Thee, Not for Me
+### Principle \#2 - Rules for Thee, Not for Me
 
 The boundaries and rules we give our agents are called Guardrails.
 Imagine them like the bumpers in bowling that prevent you from rolling a gutter ball.
@@ -122,7 +142,7 @@ You guessed it, testing!
 
 While many developers bemoan testing, it turns out AI _loves_ structure.
 Any tool the agent can use to validate its goal enhances the capabilities of the agent and lowers the likelihood of failure.
-So make my LLM do **Test Driven Development**. 
+So I make my LLM do **Test Driven Development**. 
 I do(1).
 Have AI write the tests first, _then_ write the implementation.
 This works _remarkably_ well as it causes the agent to predict failure cases and "think" more about the different code paths.
@@ -159,7 +179,7 @@ What's the worst that can happen?
 You waste a few seconds?
 Seems like a fair trade to me.
 
-## Principle \#3 - ~~Cattle~~ Context, not Pets
+### Principle \#3 - ~~Cattle~~ Context, not Pets
 
 Next let's talk about context management.
 How AI manages context is one of the primary discussion points around improving AI performance and the tooling gets better every day.
@@ -177,13 +197,12 @@ My context managing philosophy is the same.
 I use one session per task.
 I review the code, and ensure functionality was achieved.
 I update relevant context files like the local configuration files(1).
-I create a summary of the session and store it in the repo(2).
+I create a summary of the session and store it in the repo.
 I commit the code to GitHub.
 Then I use `/clear` to clear the entire context window, and start with the next task.
 { .annotate }
 
-1. More on this in the next section. Don't get ahead of me.
-2. For example, a project level `CLAUDE.md`.
+1. For example, a project level `CLAUDE.md`.
 
 Every task is a new beginning.
 A new chance to get it right or fuck it all up.
@@ -207,7 +226,7 @@ I control the context window.
 
 1. Should be cow, cattle is plural. But I had to make that metaphor work.
 
-## Principle \#4 - Prompts are Code, and Should Be Documented as Such
+### Principle \#4 - Prompts are Code, and Should Be Documented as Such
 
 No surprise, if you're familiar with my work, that I think shit should be documented and documented well.
 I chose to die on this hill years ago.
@@ -251,12 +270,12 @@ I can use AI to look over them and generate some lessons learned and update its 
 ## Anti-patterns That Will Slow You Down
 
 Ok, so I've listed all the things you _should_ do, but what about some things you **shouldn't** do?
-These are the things that I am tired of reading about that, overall, I don't think add much value.
+These are the things that I am bored with, tired of, and pissed at.
 
-## Anti-pattern \#1 - One Shots
+### Anti-pattern \#1 - One Shots
 
 This bugs the hell out of me.
-People trying give an LLM the prompt "build facebok"(1) and then getting upset it didn't get it right on the first try.
+People try giving an LLM the prompt "build facebok"(1) and then getting upset it didn't get it right on the first try.
 Really?
 Is that how _you_ develop?
 With no spec, no plan, and you get 20 minutes typing as fast as you can?
@@ -271,7 +290,7 @@ It's dumb.
 
 1. Intentional misspelling to demonstrate the level of ignorance it takes to type this into an LLM.
 
-## Anti-pattern \#2 - Model of the Month
+### Anti-pattern \#2 - Model of the Month
 
 I chose Claude a while back because I appreciate Anthropic's mission statement.
 I never really gave other models a chance, and I don't really care to.
@@ -288,7 +307,7 @@ And to spend what limited capacity my brain has to focus on this is pointless.
 If Anthropic isn't the best in the world I'm fine with that. 
 I'll wait a few weeks until it is again.
 
-## Anti-pattern \#3 - Feature of the Month
+### Anti-pattern \#3 - Feature of the Month
 
 This is a big one.
 I shout this from the rooftops in the communities I'm in.
@@ -323,7 +342,7 @@ Because for all these features, I am still producing at the rate I want, and I n
 I have a friend who just prompts away in a CLI interface, and his output and quality are vastly superior to mine.
 At the end of the day, a Stradivarius in the hands of a beginner is just a piece of wood.
 
-## Anti-pattern \#4 - Worrying About What Others Are Doing
+### Anti-pattern \#4 - Worrying About What Others Are Doing
 
 If you spend any amount of time on a social media platform where developers congregate you'll see a _metric fuck tonne_ of posts about how everyone is using AI.
 This person used it to port their entire code base JS to Rust!
