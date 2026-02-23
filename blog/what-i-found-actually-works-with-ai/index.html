@@ -1,0 +1,1534 @@
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="After playing with enough models, agents, etc. here are the core foundations I've adopted when using these tools.">
+      
+      
+        <meta name="author" content="Mason Egger">
+      
+      
+        <link rel="canonical" href="https://mason.dev/blog/what-i-found-actually-works-with-ai/">
+      
+      
+        <link rel="prev" href="../code-is-now-cheap-dont-devalue-yourself/">
+      
+      
+      
+        
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../static/img/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>What I Found Actually Works with AI - Mason Egger</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-885F33V7K6"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-885F33V7K6",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-885F33V7K6",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  
+<meta property="og:type" content="website" />
+<meta property="og:title" content="What I Found Actually Works with AI - Mason Egger" />
+<meta property="og:description" content="After playing with enough models, agents, etc. here are the core foundations I've adopted when using these tools." />
+<meta property="og:image" content="https://mason.dev/assets/images/social/blog/what-i-found-actually-works-with-ai.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://mason.dev/blog/what-i-found-actually-works-with-ai/" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="What I Found Actually Works with AI - Mason Egger" />
+<meta property="twitter:description" content="After playing with enough models, agents, etc. here are the core foundations I've adopted when using these tools." />
+<meta property="twitter:image" content="https://mason.dev/assets/images/social/blog/what-i-found-actually-works-with-ai.png" />
+</head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="mme" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cutting-through-the-noise" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Mason Egger" class="md-header__button md-logo" aria-label="Mason Egger" data-md-component="logo">
+      
+  <img src="../../static/img/mmeg.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mason Egger
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              What I Found Actually Works with AI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="mme" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/masonegger/website" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    masonegger/website
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Blog
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../tutorials/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tutorials
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../speaking/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Speaking
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../uses/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Uses
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bio/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Bio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../extras/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Extras
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Mason Egger" class="md-nav__button md-logo" aria-label="Mason Egger" data-md-component="logo">
+      
+  <img src="../../static/img/mmeg.png" alt="logo">
+
+    </a>
+    Mason Egger
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/masonegger/website" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    masonegger/website
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorials
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../speaking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Speaking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extras/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Extras
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+  <div class="md-content md-content--post" data-md-component="content">
+
+    <!-- Sidebar -->
+    <div
+      class="md-sidebar md-sidebar--post"
+      data-md-component="sidebar"
+      data-md-type="navigation"
+    >
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav">
+
+            <!-- Back to overview link -->
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../" class=" md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Page authors -->
+            
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="https://github.com/masonegger.png" alt="Mason Egger" />
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>Mason Egger</strong><br />
+                      Developer, Educator, Community Organizer
+                    </span>
+                  </div>
+                
+              </div>
+            
+
+            <!-- Page metadata -->
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__title">
+                <div class="md-nav__link">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+              </li>
+
+              
+
+              
+
+              <!-- Page original publish date -->
+              <li class="md-nav__item">
+                <div class="md-nav__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                    <time datetime="2026-02-23" class="md-ellipsis">
+                    Published: February 23, 2026</time>
+                </div>
+              </li>  
+              <!-- Page categories -->
+              
+                <li class="md-nav__item">
+                  <div class="md-nav__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3zm3 2 4 13 3-1-4-13zM5 5v13h3V5zM3 19v2h18v-2z"/></svg>
+                    <span class="md-ellipsis">
+                      in
+                      
+                        <a href="../category/software-engineering/">Software Engineering</a>, 
+                        <a href="../category/ai/">AI</a>, 
+                        <a href="../category/productivity/">Productivity</a>, 
+                        <a href="../category/brain-dump-ramblings-on-ai-series/">Brain Dump Ramblings on AI Series</a></span>
+                  </div>
+                </li>
+              
+
+              <!-- Page readtime -->
+              
+            </ul>
+
+            <!-- Page links -->
+            
+          </nav>
+
+          <!-- Table of contents, if integrated -->
+          
+            
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cutting-through-the-noise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cutting Through The Noise
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#principles-that-accelerate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Principles That Accelerate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Principles That Accelerate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#principle-1-this-is-my-code-not-ai-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Principle #1 - This is MY Code, Not AI Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#principle-2-rules-for-thee-not-for-me" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Principle #2 - Rules for Thee, Not for Me
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#principle-3-cattle-context-not-pets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Principle #3 - Cattle Context, not Pets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#principle-4-prompts-are-code-and-should-be-documented-as-such" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Principle #4 - Prompts are Code, and Should Be Documented as Such
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anti-patterns-that-will-slow-you-down" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anti-patterns That Will Slow You Down
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anti-patterns That Will Slow You Down">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anti-pattern-1-one-shots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anti-pattern #1 - One Shots
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anti-pattern-2-model-of-the-month" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anti-pattern #2 - Model of the Month
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anti-pattern-3-feature-of-the-month" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anti-pattern #3 - Feature of the Month
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anti-pattern-4-worrying-about-what-others-are-doing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anti-pattern #4 - Worrying About What Others Are Doing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-method-to-my-madness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Method to My Madness
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Page content -->
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <span class="md-tag">LLMs</span>
+      
+    
+  </nav>
+
+
+  
+  
+
+
+  <h1>What I Found Actually Works with AI</h1>
+
+<p>Tools change.
+Models improve. 
+Features ship faster than you can even imagine. 
+But after months of experimenting with different AI tools and workflows, I noticed certain patterns kept appearing. 
+Strategies and principles that yielded good results regardless of which shiny new thing I was using. 
+And I found myself coming back to them time and time again.</p>
+<!-- more -->
+
+<h2 id="cutting-through-the-noise">Cutting Through The Noise<a class="headerlink" href="#cutting-through-the-noise" title="Permanent link">&para;</a></h2>
+<p class="annotate">It's easy to get sucked into the AI vortex.
+You type in a question or give it a task and sit back and watch it cook.
+Want a recipe for gluten free brownies?
+It's got you.
+Need help reviewing large complex legal documents?
+No sweat.
+Want it to build your entire business and manage it for you?
+Believe it or not, that's happening <strong>today</strong>.
+It's hard to look at this and not be in awe.
+It feels like magic(1).</p>
+<ol>
+<li>And let's be honest, it fucking is. We took sand, hit it with the full force of Zeus, and it gives us <em>reasoned thought</em>. We cracked the Philosopher's Stone y'all. This is the closest thing to magic we have.</li>
+</ol>
+<p>So now we hold this <em>unbelievably</em> powerful tool that contains the entire library of human knowledge and understanding, and we have to figure out what to do with it.
+Should we build a company?
+Find the cure to cancer?
+Bring about world peace?
+All of these boil down to a common theme.</p>
+<p><strong>Get shit done</strong>.</p>
+<p>That's it.
+That's the goal.
+AI exists to help you deliver.
+Ship the feature.
+Fix the bug.
+Write the docs.
+Build the product.
+Whatever "done" looks like for you, AI is a tool to get you there faster.
+Some things distract us, some things unlock our ability to <strong>get shit done</strong> faster.</p>
+<p>And like all great high fantasy magic systems, there are rules that must be followed to achieve immense power!
+Here are the do's and don'ts of using AI that guide everything I do.</p>
+<details class="info" open="open">
+<summary>This Blog's Intention</summary>
+<p>This blog is deliberately provider and model agnostic.
+These do's and don'ts apply to generative AI as a whole, not one specific provider.
+If you're looking for exact implementation details, stay tuned for the next blog in this series.</p>
+</details>
+<h2 id="principles-that-accelerate">Principles That Accelerate<a class="headerlink" href="#principles-that-accelerate" title="Permanent link">&para;</a></h2>
+<h3 id="principle-1-this-is-my-code-not-ai-code">Principle #1 - This is MY Code, Not AI Code<a class="headerlink" href="#principle-1-this-is-my-code-not-ai-code" title="Permanent link">&para;</a></h3>
+<p class="annotate">I often hear people blame AI generated code for things.
+"AI put a security vulnerability in my code."
+"AI submitted a trash pull request."
+"This function is shit because AI wrote it."
+And while I get the desire to shift blame onto an inanimate object that can't defend itself(1), this leads us down a dangerous road.</p>
+<ol>
+<li>Or just sycophantically apologize.</li>
+</ol>
+<p class="annotate">There is no "AI Code" vs. "Human Code".
+There is just Human code(1).
+While AI may have <em>generated</em> the code, at some point a human was involved to provoke it.
+Opus 4.6 didn't wake up one morning, yawn, stretch, and say "I'm going to rewrite the entire universe in Rust!".
+Someone had to start that process.
+And if you <em>start</em> that process, you're <strong>responsible</strong> for it.</p>
+<ol>
+<li>Until Skynet, but at that point it wont matter anymore.</li>
+</ol>
+<p class="annotate">Look at it this way.
+Say you're using a code project generator to generate starting boilerplate.
+Somewhere in that code there's a bug you miss and you commit it to a repository.
+It somehow slips through code review(1) and makes it to production.
+During regular production, a flaw is exploited causing the application to crash, costing the company money.
+Who's fault is it, the engineer or the project generator?
+Or maybe a better question, who can actually be punished for such an error?
+It's the same with AI code.</p>
+<ol>
+<li>If you even do those. I've seen orgs that don't....</li>
+</ol>
+<p class="annotate">Once the code becomes a pull request, it ceases being AI code and starts becoming <em>your</em> code.
+It's your name on the merge, release, feature, etc..
+You are responsible for it(1).
+Doesn't matter who or what wrote it, it's yours.
+Own it.</p>
+<ol>
+<li>Back to the $500 button from <a href="../code-is-now-cheap-dont-devalue-yourself/">Part 2: Code is Cheap, Don't Devalue Yourself</a>. Your value isn't in pushing the button, it's in knowing which damn button to push! AI can push a lot of buttons really fast, but it is your job to know which ones.</li>
+</ol>
+<p>But what happens if you <strong>don't</strong> do this?
+You start to rack up a cognitive debt.
+The more you let AI just cook without you reviewing or intervening, the less you will understand about the project.
+Why does this matter?
+Because if you can't reason about the mental model of your code, you will struggle to figure out where to take the project next, as Simon Willison recently wrote about on his <a href="https://simonwillison.net/2026/Feb/15/cognitive-debt/">blog</a>.</p>
+<p>It's for this reason that I <em>always</em> review any code that AI produces.
+<strong>If I don't understand it, it doesn't get committed.</strong>
+It's my name.
+We often forget that <strong>software has consequences</strong>.
+My colleagues trust that I produce good work.
+My open source communities trust that I don't provide them with buggy or worse vulnerable code.
+In this quickly accelerating world of AI generated code, don't tarnish your reputation because you're being lazy.</p>
+<h3 id="principle-2-rules-for-thee-not-for-me">Principle #2 - Rules for Thee, Not for Me<a class="headerlink" href="#principle-2-rules-for-thee-not-for-me" title="Permanent link">&para;</a></h3>
+<p class="annotate">The boundaries and rules we give our agents are called Guardrails.
+Imagine them like the bumpers in bowling that prevent you from rolling a gutter ball.
+They don't guarantee a strike, but they prevent the worst case scenarios.
+We have to provide guardrails to our agents as they write code to prevent them from going completely off the rail(1).
+Coding agents are often unpredictable.
+Sure they get better and better every day, but they sometimes go down a rabbit hole of nonsense and produce woefully inaccurate crap.
+Turns out, we already have the tools necessary, and it's the things most developers loathe.
+You guessed it, testing!</p>
+<ol>
+<li>See what I did there?</li>
+</ol>
+<p class="annotate">While many developers bemoan testing, it turns out AI <em>loves</em> structure.
+Any tool the agent can use to validate its goal enhances the capabilities of the agent and lowers the likelihood of failure.
+So I make my LLM do <strong>Test Driven Development</strong>. 
+I do(1).
+Have AI write the tests first, <em>then</em> write the implementation.
+This works <em>remarkably</em> well as it causes the agent to predict failure cases and "think" more about the different code paths.
+My success rate when I switched to doing this doubled.
+It seemed like I couldn't miss when writing code.
+Adding new features was simple because if the LLM rewrote something it shouldn't, the breakage was immediately apparent.
+<strong>AND</strong> my code was well tested and maintained. </p>
+<ol>
+<li>You can see it in my <a href="https://github.com/MasonEgger/homedir/blob/main/.claude/CLAUDE.md?plain=1#L13">global <code>CLAUDE.md</code> file</a>.</li>
+</ol>
+<p>Want to take it a step further?
+Check for coverage.
+Have the LLM aim for 100% test coverage of your code.
+You do have to keep an eye on this though, because sometimes AI likes to take initiative.
+And by that it will test <strong>everything</strong> when not everything needs to be tested.
+Like checking to see if an import from the standard library can be resolved.
+I've had to tweak my sessions to have AI only test the <em>logic</em> of my application and not if a library can be imported. 
+So while it can be a little excessive, I'd rather have it and not need it than need it and not have it.</p>
+<p>Still not satisfied?
+Add some linters!
+Mandate proper formatting!
+Are you writing in Python?
+Use type hints!
+Y'all know Python is my favorite language.
+I love the freedom and flexibility it gives me, but that comes with a cost.
+One of those costs is Python's typing.
+I think this function that I wrote takes a string, but the AI came through on a pass and messed it up, and now expects a 1998 Toyota Corolla.
+So use a type checker to make sure that what you expect is what is <em>actually</em> happening.</p>
+<p>So lint the fuck out of your project.
+What's the worst that can happen?
+You waste a few seconds?
+Seems like a fair trade to me.</p>
+<h3 id="principle-3-cattle-context-not-pets">Principle #3 - <del>Cattle</del> Context, not Pets<a class="headerlink" href="#principle-3-cattle-context-not-pets" title="Permanent link">&para;</a></h3>
+<p class="annotate">Next let's talk about context management.
+How AI manages context is one of the primary discussion points around improving AI performance and the tooling gets better every day.
+Mishandling of context leads to the "dreaded context rot"(1), where the performance of AI degrades the longer you interact within a certain session.
+Essentially, the longer you chat with an AI, the worse the performance gets, so we have to develop strategies for handling this.</p>
+<ol>
+<li>If this is not the name of the company death metal band from Anthropic I'm going to be sad.</li>
+</ol>
+<p>Now the way I handle context is similar to an SRE adage "Cattle, not Pets".
+This practice dictates building of systems that can be easily replaced instead of babying a dedicated server.
+So you treat the server or container like livestock for slaughter, and if it goes down you kill it and start a new one.
+My context managing philosophy is the same.</p>
+<p class="annotate">I use one session per task.
+I review the code, and ensure functionality was achieved.
+I update relevant context files like the local configuration files(1).
+I create a summary of the session and store it in the repo.
+I commit the code to GitHub.
+Then I use <code>/clear</code> to clear the entire context window, and start with the next task.</p>
+<ol>
+<li>For example, a project level <code>CLAUDE.md</code>.</li>
+</ol>
+<p>Every task is a new beginning.
+A new chance to get it right or fuck it all up.
+And whether it's successful or not will depend if I properly maintained the history and roadmap <strong>external to the agent</strong>.
+This is the true crux of it.
+While different tools have gotten a <strong>lot</strong> better at maintaining context, it wasn't always that way.
+And regressions can happen.
+Like most backend engineers, I reserve the right to fire my tools at any point.
+While I'm loving Claude Code now, that doesn't mean I wont eventually try out Codex.
+If my history is locked in a tool, I'm locked in as well.</p>
+<p class="annotate">So I don't baby my context window.
+I just nuke it after every task and start over.
+My context window is the cattle(1), not a pet. 
+This accomplishes two things.
+It maintains that minty freshness of the models at the beginning of a session we all love so much, and it requires me to be <em>very deliberate</em> about how I manage context in my projects.
+This, in-turn, leads to better performance <em>regardless</em> if the compaction gets better.
+I'm no longer dependent on the tool or the model.
+I control the context window.</p>
+<ol>
+<li>Should be cow, cattle is plural. But I had to make that metaphor work.</li>
+</ol>
+<h3 id="principle-4-prompts-are-code-and-should-be-documented-as-such">Principle #4 - Prompts are Code, and Should Be Documented as Such<a class="headerlink" href="#principle-4-prompts-are-code-and-should-be-documented-as-such" title="Permanent link">&para;</a></h3>
+<p class="annotate">No surprise, if you're familiar with my work, that I think shit should be documented and documented well.
+I chose to die on this hill years ago.
+I have my burial plot picked out(1).</p>
+<ol>
+<li>It's nice. Under an oak tree. And my headstone will read "Use the oxford comma you fools".</li>
+</ol>
+<p>Let's dive a little deeper into what a prompt is.
+Prompts are text you provide to the AI to achieve a task.
+They have inputs, outputs, and side effects.
+They can be buggy, inefficient, or elegant.
+A bad prompt produces slop, while a good prompt produces working, maintainable code.
+Sound familiar?
+That's because prompts <strong>are the code now.</strong>
+It's the new abstraction layer we're all learning to speak.
+Good prompts should be versioned, reviewed, and iterated on just like everything else.
+Why do you think I like my custom commands so much? 
+When I tweak a Command and it improves, I update it and commit it.</p>
+<details class="abstract">
+<summary>Example Session Summary from One of My Projects</summary>
+<div class="language-md highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gh"># Session Summary: YouTube Embed &amp; Toolchain Improvements</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="gs">**Date:**</span> 2026-02-22
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="gs">**Duration:**</span> ~12 minutes
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="gs">**Conversation Turns:**</span> 6 (user messages)
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="gs">**Model:**</span> Claude Opus 4.6
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="gs">**Total Cost:**</span> ~$3.50 (estimated)
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="gu">## Key Actions</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="gu">### 1. Step 6: YouTube Embed (Completed)</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="k">-</span><span class="w"> </span><span class="gs">**RED**</span>: Created <span class="sb">`tests/test_youtube.py`</span> with 10 tests across 3 classes:
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="k">-</span><span class="w"> </span><span class="sb">`TestYouTubeBasic`</span> (2 tests): iframe attributes, default 16/9 aspect ratio
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="k">-</span><span class="w"> </span><span class="sb">`TestYouTubeDimensions`</span> (5 tests): custom height+width, height-only, aspect ratio for default/square/custom dims
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="k">-</span><span class="w"> </span><span class="sb">`TestYouTubeEdgeCases`</span> (3 tests): not matched in paragraph, not matched in fence, URL encoding
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="k">-</span><span class="w"> </span>All 10 tests confirmed failing (RED validated)
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="k">-</span><span class="w"> </span><span class="gs">**GREEN**</span>: Created two new source files:
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="k">-</span><span class="w"> </span><span class="sb">`src/do_markdown/_util.py`</span>: <span class="sb">`reduce_fraction()`</span> using <span class="sb">`math.gcd`</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="k">-</span><span class="w"> </span><span class="sb">`src/do_markdown/youtube.py`</span>: <span class="sb">`YouTubePreprocessor`</span> (priority 20) + <span class="sb">`YouTubeExtension`</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="k">-</span><span class="w"> </span>All 10 tests passed on first implementation — zero debugging
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="k">-</span><span class="w"> </span>Fixed one ruff lint issue (unused <span class="sb">`pytest`</span> import)
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="gu">### 2. Coverage Analysis &amp; Gap Fix</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="k">-</span><span class="w"> </span>User asked about test coverage — ran <span class="sb">`pytest-cov`</span> (initially as ephemeral dep)
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Result**</span>: 99% coverage, 3 missing lines in <span class="sb">`fence.py:111-113`</span> (non-fence line path in preprocessor)
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="k">-</span><span class="w"> </span>Added <span class="sb">`test_text_surrounding_fence_preserved`</span> to <span class="sb">`TestNoDirectives`</span> class
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Result**</span>: 100% coverage across all 240 statements, 0 missing
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="gu">### 3. Toolchain Restructuring</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="k">-</span><span class="w"> </span>Added <span class="sb">`pytest-cov&gt;=7.0`</span> to dev dependencies in <span class="sb">`pyproject.toml`</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="k">-</span><span class="w"> </span>Restructured justfile commands:
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="k">-</span><span class="w"> </span><span class="sb">`just test`</span> — pytest with <span class="sb">`--cov=do_markdown --cov-report=term-missing`</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="k">-</span><span class="w"> </span><span class="sb">`just lint`</span> — ruff check + ruff format --check
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="k">-</span><span class="w"> </span><span class="sb">`just typecheck`</span> — mypy --strict
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="k">-</span><span class="w"> </span><span class="sb">`just check`</span> — composes <span class="sb">`test lint typecheck`</span> as just dependencies (not reimplemented)
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="k">-</span><span class="w"> </span>User corrected initial approach where <span class="sb">`just check`</span> manually listed all commands — pointed out it should just compose the other targets
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="k">-</span><span class="w"> </span>Updated <span class="sb">`CLAUDE.md`</span> and <span class="sb">`MEMORY.md`</span> to reflect new command structure
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="gu">## Main Prompts &amp; Commands</span>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>| # | User Prompt | Action Taken |
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>|---|------------|--------------|
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>| 1 | <span class="sb">`/app-dev:execute-plan`</span> | Read context, implemented Step 6 (YouTube embed) via TDD |
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a>| 2 | <span class="sb">`/meta:session-summary`</span> | Created initial session summary |
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>| 3 | <span class="sb">`/git:commit-msg`</span> | Wrote commit message to commit-msg.md |
+</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a>| 4 | &quot;What is the test coverage?&quot; | Ran pytest-cov, identified 3 uncovered lines in fence.py |
+</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a>| 5 | &quot;Add coverage for the test case&quot; | Added test, achieved 100% coverage |
+</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a>| 6 | &quot;Add coverage to dev packages...&quot; | Added pytest-cov dep, restructured justfile, updated CLAUDE.md |
+</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a>| 7 | User correction: &quot;just check should just run test lint typecheck&quot; | Simplified justfile to use just dependency composition |
+</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a>| 8 | <span class="sb">`/meta:session-summary`</span> | Created this session summary |
+</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a>
+</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a><span class="gu">## Efficiency Insights</span>
+</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a>
+</span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Excellent:**</span> YouTube embed implemented in one pass — 10/10 tests passed on first GREEN implementation
+</span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Excellent:**</span> Coverage gap identified and fixed with a single targeted test
+</span><span id="__span-0-56"><a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Good:**</span> Initial justfile restructuring was over-engineered (duplicated commands in <span class="sb">`check`</span>). User caught this and the fix was clean — <span class="sb">`check: test lint typecheck`</span> using just&#39;s dependency system
+</span><span id="__span-0-57"><a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Good:**</span> Also split <span class="sb">`lint`</span> to include both ruff check and format check (previously these were separate in the old <span class="sb">`check`</span> command)
+</span><span id="__span-0-58"><a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a>
+</span><span id="__span-0-59"><a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a><span class="gu">## Process Improvements</span>
+</span><span id="__span-0-60"><a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a>
+</span><span id="__span-0-61"><a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a><span class="k">1.</span> <span class="gs">**Use just dependency composition**</span>: When creating aggregate commands, use <span class="sb">`target: dep1 dep2 dep3`</span> syntax instead of repeating the underlying commands. This keeps things DRY and ensures the aggregate always matches the individual commands.
+</span><span id="__span-0-62"><a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a><span class="k">2.</span> <span class="gs">**Add coverage from the start**</span>: pytest-cov should have been in the initial scaffolding (Step 1). Having coverage visibility earlier would have caught the fence.py gap sooner.
+</span><span id="__span-0-63"><a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a><span class="k">3.</span> <span class="gs">**Coverage as part of `just test`**</span>: By embedding <span class="sb">`--cov`</span> flags in the default test command, coverage is always visible without extra effort.
+</span><span id="__span-0-64"><a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a>
+</span><span id="__span-0-65"><a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a><span class="gu">## Current Project State</span>
+</span><span id="__span-0-66"><a id="__codelineno-0-66" name="__codelineno-0-66" href="#__codelineno-0-66"></a>
+</span><span id="__span-0-67"><a id="__codelineno-0-67" name="__codelineno-0-67" href="#__codelineno-0-67"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Steps 1-6:**</span> Complete
+</span><span id="__span-0-68"><a id="__codelineno-0-68" name="__codelineno-0-68" href="#__codelineno-0-68"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Next:**</span> Step 7 — CodePen Embed
+</span><span id="__span-0-69"><a id="__codelineno-0-69" name="__codelineno-0-69" href="#__codelineno-0-69"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Files created this session:**</span>
+</span><span id="__span-0-70"><a id="__codelineno-0-70" name="__codelineno-0-70" href="#__codelineno-0-70"></a><span class="k">-</span><span class="w"> </span><span class="sb">`src/do_markdown/_util.py`</span> (reduce_fraction utility)
+</span><span id="__span-0-71"><a id="__codelineno-0-71" name="__codelineno-0-71" href="#__codelineno-0-71"></a><span class="k">-</span><span class="w"> </span><span class="sb">`src/do_markdown/youtube.py`</span> (YouTubePreprocessor + YouTubeExtension)
+</span><span id="__span-0-72"><a id="__codelineno-0-72" name="__codelineno-0-72" href="#__codelineno-0-72"></a><span class="k">-</span><span class="w"> </span><span class="sb">`tests/test_youtube.py`</span> (10 tests across 3 classes)
+</span><span id="__span-0-73"><a id="__codelineno-0-73" name="__codelineno-0-73" href="#__codelineno-0-73"></a><span class="k">-</span><span class="w"> </span><span class="sb">`.ai-sessions/session-20260222-1113-youtube-embed.md`</span> (mid-session summary)
+</span><span id="__span-0-74"><a id="__codelineno-0-74" name="__codelineno-0-74" href="#__codelineno-0-74"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Files modified this session:**</span>
+</span><span id="__span-0-75"><a id="__codelineno-0-75" name="__codelineno-0-75" href="#__codelineno-0-75"></a><span class="k">-</span><span class="w"> </span><span class="sb">`pyproject.toml`</span> (added pytest-cov dep)
+</span><span id="__span-0-76"><a id="__codelineno-0-76" name="__codelineno-0-76" href="#__codelineno-0-76"></a><span class="k">-</span><span class="w"> </span><span class="sb">`justfile`</span> (restructured all commands, added coverage, composed check)
+</span><span id="__span-0-77"><a id="__codelineno-0-77" name="__codelineno-0-77" href="#__codelineno-0-77"></a><span class="k">-</span><span class="w"> </span><span class="sb">`CLAUDE.md`</span> (updated command documentation)
+</span><span id="__span-0-78"><a id="__codelineno-0-78" name="__codelineno-0-78" href="#__codelineno-0-78"></a><span class="k">-</span><span class="w"> </span><span class="sb">`tests/test_fence.py`</span> (added 1 coverage test — 39 total fence tests)
+</span><span id="__span-0-79"><a id="__codelineno-0-79" name="__codelineno-0-79" href="#__codelineno-0-79"></a><span class="k">-</span><span class="w"> </span><span class="sb">`plan.md`</span> (Step 6 → Done)
+</span><span id="__span-0-80"><a id="__codelineno-0-80" name="__codelineno-0-80" href="#__codelineno-0-80"></a><span class="k">-</span><span class="w"> </span><span class="sb">`todo.md`</span> (items 6.1–6.6 checked)
+</span><span id="__span-0-81"><a id="__codelineno-0-81" name="__codelineno-0-81" href="#__codelineno-0-81"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Full verification (`just check`):**</span> All passing — 60 tests, 100% coverage, clean lint, clean types
+</span><span id="__span-0-82"><a id="__codelineno-0-82" name="__codelineno-0-82" href="#__codelineno-0-82"></a>
+</span><span id="__span-0-83"><a id="__codelineno-0-83" name="__codelineno-0-83" href="#__codelineno-0-83"></a><span class="gu">## Observations</span>
+</span><span id="__span-0-84"><a id="__codelineno-0-84" name="__codelineno-0-84" href="#__codelineno-0-84"></a>
+</span><span id="__span-0-85"><a id="__codelineno-0-85" name="__codelineno-0-85" href="#__codelineno-0-85"></a><span class="k">-</span><span class="w"> </span>The YouTube extension is the simplest extension so far — no postprocessor needed, just line-by-line replacement in a preprocessor. This validates the architecture decision to keep embeds as simple preprocessors.
+</span><span id="__span-0-86"><a id="__codelineno-0-86" name="__codelineno-0-86" href="#__codelineno-0-86"></a><span class="k">-</span><span class="w"> </span>100% statement coverage across all 240 statements. The only gap was a non-fence-line path that was trivially covered by adding surrounding text to an existing test.
+</span><span id="__span-0-87"><a id="__codelineno-0-87" name="__codelineno-0-87" href="#__codelineno-0-87"></a><span class="k">-</span><span class="w"> </span>The justfile restructuring is a nice quality-of-life improvement. Individual commands (<span class="sb">`test`</span>, <span class="sb">`lint`</span>, <span class="sb">`typecheck`</span>) are independently useful, and <span class="sb">`check`</span> composes them cleanly.
+</span></code></pre></div>
+</details>
+<p>So documenting prompts, I believe, is just as important as documenting the code.
+Why?
+Because documenting your code is something you do for the user.
+Historically, however, we've been <strong>REALLY BAD</strong> about documenting stuff for the implementer.
+And documenting your prompts does this.
+It captures the history of the project.
+How often do you look at a legacy codebase and just go "WHY?!?!"</p>
+<p><img alt="Sheldon cooper reading a paper and yelling WHY gif" src="../img/016-ai-principles/why.gif" /></p>
+<p>Well now, if the implementation is being done via agents, we have a much better way of at least stitching together the conversations that were being had and why things are the way they are.
+But this does beg the question, how <em>does</em> one document prompts?</p>
+<p>Every tool has some way of exporting sessions, but I don't think that's enough.
+I take it one step further and actually have a template for this that I have AI use to create a similar report after every session.
+This template contains a recap of key actions, the main prompts and commands, cost, efficiency insights, possible process improvements, and any other interesting observations or highlights.
+I then store these sessions in <code>.ai-sessions/</code> in the code repository and commit them.
+Now I have a history.
+I can use AI to look over them and generate some lessons learned and update its memory and context.</p>
+<h2 id="anti-patterns-that-will-slow-you-down">Anti-patterns That Will Slow You Down<a class="headerlink" href="#anti-patterns-that-will-slow-you-down" title="Permanent link">&para;</a></h2>
+<p>Ok, so I've listed all the things you <em>should</em> do, but what about some things you <strong>shouldn't</strong> do?
+These are the things that I am bored with, tired of, and pissed at.</p>
+<h3 id="anti-pattern-1-one-shots">Anti-pattern #1 - One Shots<a class="headerlink" href="#anti-pattern-1-one-shots" title="Permanent link">&para;</a></h3>
+<p class="annotate">This bugs the hell out of me.
+People try giving an LLM the prompt "build facebok"(1) and then getting upset it didn't get it right on the first try.
+Really?
+Is that how <em>you</em> develop?
+With no spec, no plan, and you get 20 minutes typing as fast as you can?
+No you don't.
+So stop expecting AI to do the same.
+Yes, it can get <em>very</em> far without aid.
+But in my opinion this isn't a good thing.
+The further ahead it gets of you, the less you understand about the project.
+So ya, stop with the one shots.
+It's dumb.</p>
+<ol>
+<li>Intentional misspelling to demonstrate the level of ignorance it takes to type this into an LLM.</li>
+</ol>
+<h3 id="anti-pattern-2-model-of-the-month">Anti-pattern #2 - Model of the Month<a class="headerlink" href="#anti-pattern-2-model-of-the-month" title="Permanent link">&para;</a></h3>
+<p>I chose Claude a while back because I appreciate Anthropic's mission statement.
+I never really gave other models a chance, and I don't really care to.
+Why?
+Because the differences between the flagship models of the large AI companies are never <em>really</em> that big.
+And if there is a gulf, it won't be there long. 
+I view this as a Formula 1 race.
+Everyone's going really fast, all going for first, and who's in lead changes constantly.
+Today Anthropic is in the lead by an inch.
+Tomorrow it'll be OpenAI.
+Then Google.
+Then Anthropic pulls ahead again.
+And to spend what limited capacity my brain has to focus on this is pointless.
+If Anthropic isn't the best in the world I'm fine with that. 
+I'll wait a few weeks until it is again.</p>
+<h3 id="anti-pattern-3-feature-of-the-month">Anti-pattern #3 - Feature of the Month<a class="headerlink" href="#anti-pattern-3-feature-of-the-month" title="Permanent link">&para;</a></h3>
+<p>This is a big one.
+I shout this from the rooftops in the communities I'm in.
+These AI companies are using AI to build AI.
+That means they are shipping features at a velocity we've never seen before.
+Honestly, I think this leads to "feature fatigue".
+This is where you just get exhausted from constantly having to try to keep up with what's going on ON TOP OF your other responsibilities.
+This happens to me all the time.
+I see a new feature and I'm like, I can't wait to try that when I have some free time in a few days!
+And by the time those few days pass, there's a new feature.
+So I try to keep up.
+But then what if I take a vacation and am gone for a few weeks?
+Shit there's like 8 new features when I get back!
+This actually happened to me, and it made kinda step back from AI for a while.
+I only stepped forward again when I built myself the following framework.</p>
+<ol>
+<li>I will focus on MVW - Minimum Viable Workflow</li>
+<li>I will only use new tools when I actually have a <em>need</em> for them</li>
+<li>I will ignore most of the announcements, or at least spend no more than 20 minutes on them until I'm ready for them</li>
+</ol>
+<p>Are there a shit ton of <em>awesome</em> features I want to try right now?
+Ya!
+Am I going to?
+Nope!
+Not until I need them. 
+Maybe I'll set aside some time to catch up eventually.
+But product adoption happens on my timeline, not Anthropic's.</p>
+<p>Do I feel left out on this?
+Honestly, no.
+Because for all these features, I am still producing at the rate I want, and I never see anyone gain any real serious ground by adopting them.
+I have a friend who just prompts away in a CLI interface, and his output and quality are vastly superior to mine.
+At the end of the day, a Stradivarius in the hands of a beginner is just a piece of wood.</p>
+<h3 id="anti-pattern-4-worrying-about-what-others-are-doing">Anti-pattern #4 - Worrying About What Others Are Doing<a class="headerlink" href="#anti-pattern-4-worrying-about-what-others-are-doing" title="Permanent link">&para;</a></h3>
+<p>If you spend any amount of time on a social media platform where developers congregate you'll see a <em>metric fuck tonne</em> of posts about how everyone is using AI.
+This person used it to port their entire code base JS to Rust!
+Another person used it to build a side business that's now generating passive income!
+This person over here learned the Elder Prompt and has ascended into the singularity!
+And if you refresh the page there's <strong>100,000,000</strong> more people saying the exact same thing a slightly different way!</p>
+<p>It's exhausting.
+And it's easy to let yourself feel like you're behind the 8 ball on this one.
+Trust me, you're not.
+More than half those people online are full of shit.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Person 1: &quot;I spent all weekend optimizing my Claude Code setup!&quot;
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Person 2: &quot;Oh cool! What did you build?&quot;
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>Person 1: &quot;I now have a custom command that reads all my commands and optimizes them and writes them out as a Skill!
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>Person 2: &quot;That&#39;s awesome! How will that help you build?&quot;
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>Person 1: &quot;Well next I&#39;m going to optimize...&quot;
+</span></code></pre></div>
+<p class="annotate">And the cycle just continues(1).
+So my best advice is to not let yourself get distracted by everyone else.
+The reality of life is there will always be someone better than you.
+As soon as I feel good about my AI setup and output, I read a blog that makes me feel like a beginner again.
+And that's a <strong>good thing</strong>!
+Because there is always something new to learn.</p>
+<ol>
+<li>And if you're looking at my blogs going "Hey wait aren't you doing the same thing?" No. Totally not. Hush. </li>
+</ol>
+<p>So don't let FOMO, or Fear of Missing Out, distract you on your journey. 
+Don't let others who are further on their journey discourage you.
+It's a marathon, not a sprint.
+And the race is just getting started.</p>
+<h2 id="a-method-to-my-madness">A Method to My Madness<a class="headerlink" href="#a-method-to-my-madness" title="Permanent link">&para;</a></h2>
+<p class="annotate">You may be wondering(1) why I'm focusing on things like this and not just jumping right into the implementation. 
+Developers are notorious for their "just show me the code" mentality. 
+And ya, I could have done that.
+But then you might miss the ramifications of what is happening. 
+AI isn't another library.
+It isn't a new framework or programming language or whatever the hell else you want to compare it to in our industry.
+It's a <strong>fundamental shift</strong> in how we work. </p>
+<ol>
+<li>Especially if you've read this entire series.</li>
+</ol>
+<p>A standard Computer Science curriculum has at least one course on Data Structures and Algorithms.
+In this course you learn how various algorithms are built, the core data structures in programming languages, performance analysis (Big O) and more.
+However, in your career it is <em>highly unlikely</em> you'll ever implement a merge sort by hand.
+So why do we take the time to learn this?</p>
+<p class="annotate">Because we want to gain an understanding of how the system works.
+Through this understanding, we learn how to properly implement solid solutions.
+Sure you don't <em>need</em> to learn this content.
+There are successful developers out there right now who never did.
+But those developers are likely missing(1) a key part of the mental model.
+This is the key differentiator between a craft and a discipline(2).
+The carpenter knows how to build the house, but the architect understands <em>why</em> it has to be his way and dismissed other solutions that weren't appropriate. </p>
+<ol>
+<li>Unless they learned about it after, either formally or through experience. </li>
+<li>Check out <a href="../were-witnessing-the-evolution-of-software-engineering/">Blog 1: We're Witnessing the Evolution of Software Engineering</a> for more details.</li>
+</ol>
+<p>I fear that those who say "just show me the code" with regards to using AI in this era are setting themselves up for failure down the road.
+It's not just enough to know the magic incantation to chant to the LLM.
+You have to understand why that incantation needs to be said.
+Otherwise who knows what Eldritch Terror you'll unleash.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qwTop2qs1tE?si=Fo0Pc0x_BaMey_Q5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p><em><a href="https://www.youtube.com/watch?v=qwTop2qs1tE">Video link</a></em></p>
+<hr />
+<p><em>Ready to see these principles in action? Stay tuned for the next part of this series, How I Actually Use the Damn Thing.</em></p>
+<div class="admonition abstract">
+<p class="admonition-title">Part 3 of 5 of my <code>Brain Dump Ramblings on AI</code> blog series</p>
+<p>Check out the other parts of this series:</p>
+<ul>
+<li>Part 1 - <strong><a href="../were-witnessing-the-evolution-of-software-engineering/">We're Witnessing the Evolution of Software Engineering</a></strong> discusses the historical context and ongoing evolution of software engineering up to the advent of AI.</li>
+<li>Part 2 - <strong><a href="../code-is-now-cheap-dont-devalue-yourself/">Code is Cheap, Don't Devalue Yourself</a></strong> discusses AI and it's impact on the software engineering discipline.</li>
+<li>Part 4 - <strong>How I Actually Use the Damn Thing</strong> - My journey with Claude Code and my tips and tricks for getting started. <em>Coming Soon</em></li>
+<li>Part 5 - <strong>Skills, Plugins, and MCP Oh My!</strong> - A deep dive into Claude Code's customization features. <em>Coming Soon</em></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2018-2026 - Mason Egger
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://twitter.com/masonegger" target="_blank" rel="noopener" title="Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"/></svg>
+    </a>
+  
+    
+    
+      
+    
+    
+    
+    <a href="https://fosstodon.org/@masonegger" target="_blank" rel="noopener me" title="Mastodon" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54-.6-4.6-.9-9.3-.9-13.9 85.6 20.9 158.7 9.1 178.7 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6V190.1c0-49.7-64-51.6-64 6.9v62.5H201V197c0-58.5-64-56.6-64-6.9v114.2H90.3c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://bsky.app/profile/mason.dev" target="_blank" rel="noopener" title="Bluesky" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M407.8 294.7c-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3M288 227.1c-26.1-50.7-97.1-145.2-163.1-191.8C61.6-9.4 37.5-1.7 21.6 5.5 3.3 13.8 0 41.9 0 58.4S9.1 194 15 213.9c19.5 65.7 89.1 87.9 153.2 80.7 3.3-.5 6.6-.9 10-1.4-3.3.5-6.6 1-10 1.4-93.9 14-177.3 48.2-67.9 169.9C220.6 589.1 265.1 437.8 288 361.1c22.9 76.7 49.2 222.5 185.6 103.4 102.4-103.4 28.1-156-65.8-169.9-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3 64.1 7.1 133.6-15.1 153.2-80.7C566.9 194 576 75 576 58.4s-3.3-44.7-21.6-52.9c-15.8-7.1-40-14.9-103.2 29.8C385.1 81.9 314.1 176.4 288 227.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/mason-egger" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/c/MasonEgger" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/MasonEgger" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="static/docs/MasonEgger-resume.pdf" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M176 48H64c-8.8 0-16 7.2-16 16v384c0 8.8 7.2 16 16 16h256c8.8 0 16-7.2 16-16V208h-88c-39.8 0-72-32.2-72-72zm140.1 112L224 67.9V136c0 13.3 10.7 24 24 24zM0 64C0 28.7 28.7 0 64 0h133.5c17 0 33.3 6.7 45.3 18.7l122.5 122.6c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="./feed_rss_created.xml" target="_blank" rel="noopener" title="RSS" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zm32 104c0-13.3 10.7-24 24-24 137 0 248 111 248 248 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-110.5-89.5-200-200-200-13.3 0-24-10.7-24-24m0 96c0-13.3 10.7-24 24-24 83.9 0 152 68.1 152 152 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-57.4-46.6-104-104-104-13.3 0-24-10.7-24-24m0 120a32 32 0 1 1 64 0 32 32 0 1 1-64 0"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.code.select", "content.tabs.link", "content.tooltips", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
