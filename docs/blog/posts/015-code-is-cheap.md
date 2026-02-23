@@ -310,7 +310,7 @@ Because at the end of the day, the future belongs to those who show up for it.
 
 ---
 
-_Curious about my personal AI journey, how I got started, and all my tips and tricks? Come back tomorrow for the next part of the series._
+_Curious about my personal AI journey, how I got started, and all my tips and tricks? Check out the next part of the series [What I Found Actually Works with AI](016-ai-principles.md)._
 
 !!! abstract "Part 2 of 5 of my `Brain Dump Ramblings on AI` blog series"
 
