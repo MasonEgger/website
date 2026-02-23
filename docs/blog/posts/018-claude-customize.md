@@ -114,7 +114,7 @@ My `CLAUDE.md` contains sections that define the relationship between me and CC(
 You can view my global [`CLAUDE.md` in my `homedir` repo](https://github.com/MasonEgger/homedir/blob/main/.claude/CLAUDE.md).
 { .annotate }
 
-1. There have been posts where people say if Claude "views you as a partner" it performs better. I have no idea if this is true, but again, it's working so I don't touch it.
+1. Oh this is a deep well of interesting. This is essentially role-playing prompting, which was really popular in the early days of LLMs. It fell off for a bit, but I never removed it. I felt it did still help, even if the model "got smart enough to figure it out". And look, now people are talking about a ["soul"](https://soul.md/).
 
 Now a days I don't tweak it as much.
 I think eventually you get familiar with the consistency of the output and you learn to work around whatever inefficiencies there are.
@@ -295,26 +295,33 @@ They do a decent job, but you should still keep an eye on it.
 
 _stored in various config files in your `.claude/` depending on scope_
 
-Oh joy, the favorite word of every tech bro in the valley for the last six months, MCP!
+There has been a lot of buzz around MCP for the last couple of months, which like most things is over-hyped anecdotes designed to confuse.
+Here's the basics(1).
 MCP stands for Model Context Protocol, and is just a fancy way for AI to communicate with AI enabled services.
-For example, CC doesn't natively know how to charge something to my personal PayPal account, but with the PayPal MCP connection I could give it access to my account and have it make purchases for me(1).
+For example, CC doesn't natively know how to update my issues in Jira, but with the Jira MCP connection I could give it access to my account and it can update tasks for me(1).
 Think REST API, but for AI.
 { .annotate }
 
-1. This _still_ sounds like a recipe for disaster. I do a good enough job burning my own money I don't need AIs help.
+1. And a quick review from my [previous blog post](017-claude-code.md#mcp-servers)
+2. That's right, we can now automate Jira. Do with this what you will.
 
 Where MCP is useful for CC is you can attach it to various tools to give it the ability to get "verified" knowledge and perform actions for you across multiple systems.
 Personally, I don't use MCP that much.
 For the longest time there was an issue with CC loading the entire MCP context into your session and blowing out the context window.
-And honestly, I have bash.
-I don't need MCP for 95% of things.
+And honestly, I don't need MCP for 95% of things.
+I have bash(1).
 However, there are a few MCP servers I enjoy.
 Temporal has a knowledge base MCP server that ties into their docs, community forums, and certain curated community slack messages where a good answer was provide.
 I also _love_ the Playwright MCP server for testing web UIs and all sorts of stuff.
-But personally, I'd rather use a Skill for knowledge or write a little tool(1) that CC can use.
+Like all new technologies, MCP got over sold and over used for things it never really was needed for(2). 
+That isn't to say MCP isn't useful.
+But like all technologies, it has its place.
+Personally, I'd rather use a Skill for knowledge or write a little tool(3) that CC can use when I can, and when I need to connect to someone's external system or complex library I'll consider using an MCP.
 { .annotate }
 
-1. And by "write a little tool" I mean "Ask CC to write it for me".
+1. And if you follow the discourse online, a _lot_ of people are waking up to this.
+2. Remember when people said **EVERYTHING** needed to be on the blockchain? Ya. Kinda like that.
+3. And by "write a little tool" I mean "Ask CC to write it for me".
 
 ### Subagents
 

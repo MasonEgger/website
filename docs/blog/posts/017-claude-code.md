@@ -677,9 +677,10 @@ You can tell it what to do.
 
 ### "This kinda takes the fun out of vibe coding."
 
-Eh. 
-Maybe.
-If you enjoy sitting down, providing one prompt and hoping to get to success then ya, it does.
+I disagree.
+The joy of vibe coding comes from building reliable software that solves a problem I have quickly.
+I still get that when using this process, and probably even more so because I know the results will be correct.
+But if you enjoy sitting down, providing one prompt, and hoping to get to success then ya, it does kinda kill the vibe.
 But if you're trying to build something meaningful that will survive the software engineering lifecycle for years to come, that style of "vibe coding" ain't gonna cut it.
 But you know that.
 
