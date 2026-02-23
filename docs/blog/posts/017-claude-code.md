@@ -1,17 +1,13 @@
 ---
 title: "How I Actually Use the Damn Thing"
 description: "Enough waxing poetic about AI, here's my actual Claude Code workflow."
-date: 2026-02-07
+date: 2026-02-24
 categories:
     - Software Engineering 
     - AI
     - Productivity
     - Brain Dump Ramblings on AI Series
 tags:
-    - Python
-    - Temporal
-    - Writing
-    - PyTexas
     - Claude Code
 authors:
     - masonegger
@@ -109,59 +105,19 @@ I'm about to deep dive into my entire workflow for CC.
 This is what works for me after I have spent _hours_ using the tool.
 So I want to put a few disclaimers/warnings before I proceed.
 
-### Your Mileage May Vary
-
 Before going any further, I will say that this is what has been successful **for me**.
-If you go on Twitter you'll see 465,279,346,727,844,684,918,549,865 posts(1) about AI, how it just destroyed some industry, and how if you use it _just this special way_ you'll become Supreme Overlord of Ganymede(2).
+If you go on Twitter you'll see 465,279,346,727,844,684,918,549,865 posts about AI, how it just destroyed some industry, and how if you use it _just this special way_ you'll become Supreme Overlord of Ganymede(1).
 It's a **lot** to keep up with and everyone has their own process for getting AI to accomplish their goals.
 And that's great!
-I'm writing this blog to share what I've learned through my journey using CC for half a year, following certain trends, ignoring others, and most importantly of all, because my manager asked me to(3).
+I'm writing this blog to share what I've learned through my journey using CC for half a year, following certain trends, ignoring others, and most importantly of all, because my manager asked me to.
 If your favorite tip or trick isn't mentioned in here, it doesn't mean it isn't good.
 Given the firehose of AI information out there, there is a 99% chance I just haven't seen it yet.
 { .annotate }
 
-1. Plus or minus 74,569,411.
-2. Jupiter's largest moon. Also the largest moon in the solar system for our Jeopardy fans out there.
-3. And of course, to add to the clutter. Here's to being the 465,279,346,727,844,684,918,549,866th post!
+1. Jupiter's largest moon. Also the largest moon in the solar system for our Jeopardy fans out there.
 
-So I hope you learn something from this! If not, I promise to make it entertaining at least.
 
-### You DO NOT Have to Start Out with Something This Complex
-
-There was a _hilarious_(1) tweet thread a few weeks ago where [Boris Cherny](https://x.com/bcherny)(2), the creator of CC, [detailed his _vanilla_ usage of CC](https://x.com/bcherny/status/2007179832300581177?lang=en) and then proceeded to drop one of the most complex setup that looked like it was trying to cover every feature of the tool.
-While I, an experienced CC user at the time of reading, got a lot of valuable information out of it, had I read this last summer when I was just learning how to use CC I would have rightfully shit my pants.
-{ .annotate }
-
-1. At least to me.
-2. All hail Boris Cherny.
-
-A **vanilla** setup of CC is installing the tool and then running the `claude` command.
-That's it.
-Out of box defaults.
-And I know **many** people who are **wildly successful** using AI in their daily work who use Claude this way.
-So don't think you _**need**_ this wild ass setup that I'm about to show you.
-You most certainly do not.
-
-My journey is that when I found that I was either struggling to accomplish a task with the current setup, I went looking for a new feature to solve **that problem.**
-Slowly over time as I attempted to tackle harder and harder problems I needed more customization and **then** went searching for new tooling.
-So my advice to you is straightforward: **Start out with the most minimal use of CC you can, and only dive into new features when you actually need them.**
-This will save you the flailing that is trying to keep up with everything that is constantly changing.
-
-### This Blog Will Be Outdated Within a Few Minutes of Publication
-
-Yes, this space _does_ move that fast.
-I've been working on this blog for months.
-What keeps slowing me down?
-Every time I get ready to publish **Anthropic changes shit again.**
-Seriously, Opus 4.6 came out the day I was set to publish this, and then I had to go back and make sure everything still worked the way I thought it did(1).
-So I'm finally just saying fuck it and publishing this thing.
-I've updated everything in here as of the date of publication, and I likely won't come back.
-I'll just write a new blog saying what I've changed and link to it from the bottom.
-{ .annotate }
-
-1. Spoiler alert, it didn't.
-
-Anyways, without any further ado, hold on to your butts.
+So I hope you learn something from this! If not, I promise to make it entertaining at least. Without any further ado, hold on to your butts.
 
 ![Hold on to your butts gif from Jurassic Park](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjE3MWVrMTRueTBscHMzaDB5bjR3dWY4M3o0dTcxM2lqaHRkcGpjbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/OCu7zWojqFA1W/giphy.gif)
 
@@ -187,321 +143,24 @@ When I want to resume working on a project, I just re-attach the session.
 And that's it.
 I don't use any AI task management tools like Beads or Gastown(1).
 I don't use OpenCode or another harness.
-This isn't for any deep reason, it's mostly that I don't find much value in switching between different provide models.
+This isn't for any deep reason, it's mostly that I don't find much value in switching between different provider models.
 { .annotate }
 
 1. The opinion on these is very mixed, and until I find myself absolutely needing them I wont add them.
 
 I've always been a minimalistic tool user, and my CC setup is no exception. 
 
-## Past Here There Be Dragons
-
-Ok, you made it this far.
-Congrats!
-If you're new to CC, I recommend you get used to playing with it in the configuration mentioned above for a few days/weeks to get accustomed to using the tool. 
-I know _many_ people who use vanilla CC and get remarkable amounts of work done. 
-Learn the tool, learn what you like about it and where it annoys you.
-Can you think of shortcuts that would make life easier?
-That's what eventually happened to me.
-I got tired of retyping prompts, so I went searching and found commands(1).
-And then it all kind of snowballed from here.
-{ .annotate }
-
-1. And now I spend countless hours reading docs, tweets, blogs, anything I can on new improvements. Hell I used it so hard I got added to the Claude Code Ambassador program. 
-
-![Alice falling down the rabbit hole](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWI3aTI0M2VqNWwyZXh6bGxiZ2NhaHFla3puamdmZ2JrOHM5bHdjdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/swtiK9jRfE0zS/giphy.gif)
-
-So I warn you, once you start down this path you'll become obsessed with it.
-You'll stay up at night reading blogs or creating custom sub-agents(1).
-This shit is **fun**.
-You're going to want **more**.
-And you'll eventually be filled with Lebensverantwortungsvedingteroboterassistentenbastelprojektverzichtstraurigkeit(2).
-**You've been warned.**
-{ .annotate }
-
-1. Or writing a multi-part blog series that will be labeled as "Exhibit A" when I finally snap and start trying to train chickens to cluck in four part harmony.
-2. My buddy and sometimes co-author [Steve Androulakis](https://www.linkedin.com/in/steveandroulakis/) and I discussed what a German word would be for "The sadness of wanting to work on projects with AI, but having to focus on one's real life priorities instead" and Claude came up with this, which roughly translates to "life-responsibility-conditioned robot-assistant tinkering-project renunciation sadness" which I think hits the nail on the head.
-
-## How I Tune My `CLAUDE.md` Files
-
-Let's start with the first thing a new CC user is likely to start tweaking, which is their `CLAUDE.md` file.
-
-`CLAUDE.md` is a file that helps manage Claude's memory.
-It is a markdown file that you write and maintain with various instructions, rules, and preferences you want Claude to "remember" every time you launch it. 
-However, there are various locations where a `CLAUDE.md` can live, and how they are loaded depends on where the file lives.
-The three main types to know about are your **global**, **project**, and **subdirectory** `CLAUDE.md` files.
-
-### Global
-
-A global `CLAUDE.md` file is exactly what it sounds like.
-It's global.
-It is loaded in at every session.
-This is where you put context that you want Claude to always know when you work with it.
-These are very abstract rules, such as coding style, communication style, and your core programming principles and beliefs.
-
-I spent many hours tuning my `CLAUDE.md` file when I first got started.
-I was initially inspired by [Harper Reed's Blog](https://harper.blog/2025/05/08/basic-claude-code/) detailing how he set his up, and took a lot of inspiration for mine. 
-My `CLAUDE.md` contains sections that define the relationship between me and CC(1), my general philosophy on how I want it to write code, and how it should ask for help when it's stuck.
-You can view my global [`CLAUDE.md` in my `homedir` repo](https://github.com/MasonEgger/homedir/blob/main/.claude/CLAUDE.md).
-{ .annotate }
-
-1. There have been posts where people say if Claude "views you as a partner" it performs better. I have no idea if this is true, but again, it's working so I don't touch it.
-
-Now a days I don't tweak it as much.
-I think eventually you get familiar with the consistency of the output and you learn to work around whatever inefficiencies there are. 
-And since there's no easy way to test changes to this, you kind of get stuck believing in something you don't know is actually working.
-For example, I'm not certain how much the "Our relationship" section actually matters.
-However, my CC sessions do rigorously follow Test Drive Development, so I know that _that_ section is working. 
-Either way, it is 100% worth experimenting with until your CC experience is where you want it to be.
-It will save you a ton of constantly re-explaining your core principles(1).
-{ .annotate }
-
-1. And please, steal mine and use it. I took it from Harper Reed. Hooray Open Source!
-
-### Project
-
-Next is your project level `CLAUDE.md`.
-This file contains project specific rules that CC follows when you launch the app in that directory.
-While you can write this by hand, I find that running `/init` religiously is the way to go.
-Depending on the state of my project, I follow two different flows for using `/init`.
-
-???+ info "What the hell is `/init`?"
-
-    Welcome to CC commands, also known as "slash-commands"!
-    These are commands you run in your CC terminal and act as shortcuts for various things.
-    There are default ones, or you can implement your own, which we'll cover later. 
-
-    `/init` is a slash-command that comes with CC that will read your project and write or update your `CLAUDE.md` file.
-
-If the project is brand new, I will run `/init` from the very beginning.
-This may generate a blank `CLAUDE.md` or something very minimal.
-That's fine, let's get it into the git history ASAP so we can track it over time(1).
-Then as I work on the project I run `/init` before every commit.
-This updates the `CLAUDE.md` file with the latest changes, readying it for commit.
-Always review this and make sure that it's up to date.
-Lies in your `CLAUDE.md` will make it into your code.
-{ .annotate }
-
-1. Yes! You should track this in a VCS!
-
-Even if the project is already established, I still run `/init`.
-This causes Claude to scan the project and understand what's going on.
-I use this as an opportunity to not only set up CC for success, but also to get an understanding of the project myself.
-I tend to critique this run of `/init` more, mostly because practices have already been established and I don't want to mess anything up.
-
-Once `/init` is done and a `CLAUDE.md` is created, I still manually edit it from time to time.
-Sometimes Claude just doesn't get it, or leaves out something I think is important.
-Or my code is so bad it got confused and now I need to clean it up, because an off-label use case of `/init` is to use it to critique your code.
-
-### `/init` is a Snitch
-
-Do you have a bunch of dead code in your project?
-Maybe you switched package managers but never cleaned up the old package files?(1)
-Are there functions that just absolutely heinous practice and you can't believe they are still in the codebase? 
-If there are, `/init` will find them and highlight them in your `CLAUDE.md` file.
-{ .annotate }
-
-1. Like I did when I moved from `requirements.txt` to `pyproject.toml`.
-
-Not intentionally mind you.
-It isn't trying to find bad code.
-But what it does is determine patterns, naming conventions, package management, run instructions, everything.
-If you have cruft in your codebase CC will identify this and try to put it in the `CLAUDE.md` so it knows how to deal with it.
-So that shitty function that goes against all your best practices may become enshrined in the instructions you feed to CC every time.
-And then Claude writes more shitty functions because that's what you have in your codebase so it must be what you want(1).
-**This is how you get slop.**
-{ .annotate }
-
-1. And as my dad likes to say "That's like wiping your ass on a wagon wheel. Shit just keeps coming around."
-
-So pay attention to those `CLAUDE.md` changes.
-Might save you a migraine later.
-
-### Subdirectory 
-
-Subdirectory `CLAUDE.md` files are files that exist within a project that already has a `CLAUDE.md` at the root level.
-These are useful for mono-repositories or adding more specific context to a subset of files.
-The neat thing is these aren't loaded at init time by CC, but rather conditionally loaded when CC has to do something with a file in that directory. 
-If you start putting these in all of your subdirectories, you may want to link to them from your project `CLAUDE.md` that is at the root level. 
-A standard Markdown link with a short description will work. 
-Once you go down this rabbit hole though, you may need to manually trim your top level `CLAUDE.md` and worry more about information architecture.
-
-Currently I don't have anything big enough to warrant the use of this feature.
-I tend to split things up into many repositories rather than use a monorepo. 
-That being said, I always do keep this in my back pocket on the off chance I need it in the future.
-
-## Let's Customize It Some More!
-
-Thought we were done?
-Nope.
-Still a ton to do. 
-For the first few weeks I used CC with a custom `CLAUDE.md` as my only change to great effect.
-But as I was working I found myself repeating various tasks and writing a variation of the same prompt over and over.
-So I dove a little deeper into the options for CC and found exactly what I was looking for, custom commands.
-
-**Already know the CC features and just want to see my workflows? [Jump to the BPE Loop section](#the-bpe-loop).**
-
-### Commands
-
-_stored in `commands/` in your `.claude/` directory, either global or local_
-
-I've always been a CLI person. 
-The fact that CC is a CLI interface sparks joy.
-And I've always loved writing CLI tools, so getting to add custom commands into CC made my day when I found out.
-
-Commands are custom prompts that you write that you can trigger from within a CC session.
-This allowed me to focus on prompt engineering and crafting reusable, portable prompts that I could incorporate into various workflows. 
-This greatly sped up my development process, and shifted my focus from "Hey Claude, do this in this repo" to creating a process to follow for agentic coding.
-
-They can also be used to conditionally load in context.
-Say you have a set of rules you want to follow when you're developing Python.
-You _could_ just put these in your global `CLAUDE.md` but now you're loading them for every single session. 
-This may be great if you only ever write Python, but if you do anything else it's a waste of the context.
-You _could_ put them in a `CLAUDE.md` that is local to the repository.
-There is some merit to this, as now everyone who uses CC on your codebase is following your rules, but now your rules are in _every_ repository you manage.
-That's a lot of duplicated work.
-What if you change your mind on variable naming convention?
-Now you have to update them everywhere.
-What I really want is to load those rules when you're _actually_ writing Python, either automatically or by me triggering them.
-I was just starting to get into this use case when CC introduced Skills.
-
-Commands are my primary way of interacting with CC.
-They run all of my workflows, and every time I come up with a new repeatable workflow my first instinct is to create a custom Command for it.
-Treat commands like hotkeys.
-Programmable tasks to accomplish a certain thing.
-You can view my ever changing list of commands on my [GitHub](https://github.com/MasonEgger/homedir/tree/main/.claude/commands)
-
-???+ Warning "Commands have merged with Skills" 
-
-    During the middle of writing this blog(1) Anthropic decided to merge Commands with Skills. 
-    They say this is because they sort of accomplish the same thing, which is the conditional context loading. 
-    While true, I find it partly true and discounts the common case of just repeating the same prompt on different inputs.
-    While I don't particularly agree with the reasoning, it doesn't really affect much as they preserved backwards compatibility and added features to address my concerns.
-    I'll probably eventually refactor my commands to be only user invocable Skills eventually, but it's not high on my priority list.
-    { .annotate }
-
-    1. This is the hell of writing about AI. They say that tech books were out of date the moment the ink dried. Well AI blogs are out of date as soon as the TCP handshake completes to the blog you're trying to read.
-
-### Skills
-
-_stored in `skills/` in your `.claude/` directory, either global or local_
-
-I've never been happier for a feature release in software than I was for Skills.
-Prior to the release I was building out my own hacky version where I had Commands `list-context` and `load-context` that would enumerate a directory of documents and let me conditionally load them instead of having to make a command for each one.
-Then Skills released and I threw that work away. 
-
-[Skills](https://code.claude.com/docs/en/skills) are collection of instructions, resources, and tools that CC can conditionally load when it determines you need to use that Skill.
-For example, say I have specific rules, preferences, tools, etc. that I always want to use when I write Python code.
-I can then define a Python Skill with these preferences, which CC will then automatically load when it determines I'm writing Python code. 
-
-The structure of the Skill is just directories with Markdown.
-You provide a **short** top level `SKILL.md` with instructions, then various resources it can read when it needs to load more context around a specific task.
-The top level `SKILL.md` should have the prime directives(1) for the Skill.
-These are things like you must do type hints, docstrings on all public interface, absolute imports.
-Then there's a `Reference Files` section` that contains information on more specific Python topics. 
-I have a reference for how I want CLI scripts built, what my toolchain is, how documentation should be written etc.
-Why not just put these in the `SKILL.md` and call it day?
-Because that is needlessly loading information that CC may not need to work on this specific task.
-CC reads the `SKILL.md` file and sees the links to the references with descriptions.
-It then determines which of _those_ files it should read based on its understanding of the task it's currently working on.
-You can see this in my [Python Skill](https://github.com/MasonEgger/homedir/blob/main/.claude/skills/python/SKILL.md).
-
-Skills don't just contain reference materials though.
-You can also provide `scripts/`, which are executable files that CC can use while working with this skill.
-Have a specific template you want it to follow?
-Or some examples for it to follow?
-Add those to the Skill as well. 
-The Skill is a container for what "correct" looks like to you and tools to help CC get there.
-
-Now of course, this thing still misses sometimes.
-Skills don't always get invoked(1). 
-I always watch very closely to ensure the Skill is invoked (it'll say this in the output of CC).
-If it's not, I stop it and manually invoke it.
-You can also implement a [Hook](https://code.claude.com/docs/en/hooks) to force it to invoke it on a per-project basis, or include it in the local `CLAUDE.md`.
-People are still figuring out how to make Skills invoke consistently.
-They do a decent job, but you should still keep an eye on it.
-{ .annotate }
-
-1. Which is just another point in my column when I say you **have to watch this shit as it cooks** or you're gonna have a bad day.
-
-### MCP Servers
-
-_stored in various config files in your `.claude/` depending on scope_
-
-Oh joy, the favorite word of every tech bro in the valley for the last six months, MCP!
-MCP stands for Model Context Protocol, and is just a fancy way for AI to communicate with AI enabled services.
-For example, CC doesn't natively know how to charge something to my personal PayPal account, but with the PayPal MCP connection I could give it access to my account and have it make purchases for me(1).
-Think REST API, but for AI.
-{ .annotate }
-
-1. This _still_ sounds like a recipe for disaster. I do a good enough job burning my own money I don't need AIs help.
-
-Where MCP is useful for CC is you can attach it to various tools to give it the ability to get "verified" knowledge and perform actions for you across multiple systems.
-Personally, I don't use MCP that much.
-For the longest time there was an issue with CC loading the entire MCP context into your session and blowing out the context window.
-And honestly, I have bash.
-I don't need MCP for 95% of things.
-However, there are a few MCP servers I enjoy.
-Temporal has a knowledge base MCP server that ties into their docs, community forums, and certain curated community slack messages where a good answer was provide. 
-I also _love_ the Playwright MCP server for testing web UIs and all sorts of stuff. 
-But personally, I'd rather use a Skill for knowledge or write a little tool(1) that CC can use.
-{ .annotate }
-
-1. And by "write a little tool" I mean "Ask CC to write it for me".
-
-### Subagents
-
-_stored in `agents/` in your `.claude/` directory, either global or local_
-
-Now to my least favorite feature, subagents.
-I know _maaaany_ people who swear by these things, but I'm still hung up on the whole "Just let it cook and eat the dinner" idea.
-With subagents you offload a task to what amounts to a CC child process with it's own context window, and it comes back when it's done.
-You don't have control over it, you don't get to review anything until it's done.
-
-Don't get me wrong, I can see how this is useful and why people love it, it's just **not** how I want to interact with AI.
-At least, not for primary code writing purposes.
-I have one subagent I've been working on that I want to use as a copy-editor using [`vale`](https://vale.sh/docs/cli).
-
-What's odd though, is I got early access to CC Teams (then called Swarms), and I like it for very specific tasks.
-Teams are multiple subagents running in parallel that have a shared task list, a team leader, and are able to communicate bi-directionally with both the team leader and each other. 
-While this sounds more chaotic than a single subagent(1), it's really useful for fanning out a project where the size of the context can't be held in a single agent.
-I tried out this feature to build a prototype of a Temporal Skill in all six programming languages spanning every feature in Temporal.
-The swarm read from over 40 GitHub repositories, crafted a plan, worked collaboratively and build a pretty damn good Skill.
-My work is being directly used in the official Temporal Skill, so I don't plan on updating it, but it made me realize there are use cases for subagents big and small.
-OpenClaw also has me curious, so I'll report back in a bit about my experience with them.
-{ .annotate }
-
-1. And based off the early access feedback chaos was common.
-
-### Plugins
-
-Wow!
-
-![That is one big pile of shit gif from Jurassic Park](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzAzaTV4ZzFpYzk3ZDZhdGY0N2EycDV6cW5raGdtanY5ajR2YmkyNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hwdr7pvte2yVW/giphy.gif)
-
-So many features and I guarantee you I missed some.
-Your `.claude` directory is looking more complex than your actual project.
-Luckily, there is a way to organize all of this, and that's with Plugins.
-
-[Plugins](https://code.claude.com/docs/en/plugins) are a collection of related Skills, Agents, Commands, MCP Servers, Hooks, resources, and more.
-It also provides namespacing for your command, something like `/dev:python`.
-Currently I haven't organized anything into a plugin, but I'm thinking about it.
-
-## Finally, the Damn Workflow
-
-![Get on with it Monty Python gif](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2sxcHBnNjkyb3N1MGRrNGQyaTVkanpleHB4cWp6YmlncGs4dW53OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oGAM2NfiX50ac/giphy.gif)
-
-Ok ok, let's talk about how I _actually_ use CC on a daily basis.
-And the answer is simpler than you think.
-Like, three steps simple.
-
 ## The BPE Loop
 
-The Brainstorm, Plan, Execute Loop(1) is probably not new, or something I invented.
+This is the foundation of my _entire workflow_.
+The Brainstorm, Plan, Execute Loop(1).
+And I'll be honest, this isn't anything new, or something I invented.
 I discovered it in [Harper Reed's Blog](https://harper.blog/2025/05/08/basic-claude-code/) during the early days of my CC adventure and have since iterated on it until I got it where I wanted it.
+But I'm constantly surprised how many people **don't** operate in this manner, so we're going to treat it like it's some _grand magical secret_ and not, you know, good software engineering practices(2).
 { .annotate }
 
 1. BPE for short
+2. Or maybe it was just my mom instilling in me "Do you have a plan? What's the plan? What's the backup plan?" from such an early age that I just plan out everything.
 
 The mechanics of the loop are straightforward:
 
@@ -527,16 +186,16 @@ Waterfall often gets a bad rap in the software engineering world because the pro
 It's actually funny that we hate it, when other engineering disciplines use something similar all the time.
 We can easily rewrite code to meet new requirements and not burn a fortune doing so.
 Ever seen a bridge built using Agile?
-No you have not.
+No you have not(1).
 But AI _greatly_ accelerates this.
 We can update a spec in a few minutes.
 Regenerate the plan if it's not working correctly.
 The issues with Waterfall that people disliked are a non-issue in the age of AI.
-This is another indicator that our industry is maturing(1).
+This is another indicator that our industry is maturing(2).
 { .annotate }
 
 1. A topic I discussed in length in the first part of this series [Part 1: We're Witnessing the Evolution of Software Engineering](014-software-engineering-evolution.md).
-
+2. I would love to see a TV show where we try to apply Agile to other engineering practices. "So a bug report came in that all the pedestrians fell off the bridge into the raging waters below because we forgot to implement guardrails! We're releasing that in the nightly patch where we deploy a group of workers at 3am to upgrade the bridge to version 0.3.9!"
 
 You may look at this and say "Damn that's a lot of process" for a fix that may take you five minutes.
 True, and I don't use this for _everything_.
@@ -615,9 +274,9 @@ Any mistake here will be amplified and propagated across the entire project.
 The upfront time here is worth it. 
 Otherwise you're going to be chasing bugs around the entire time.
 
-Finally, I use a [`/meta:session-summary`](https://github.com/MasonEgger/homedir/blob/main/.claude/commands/meta/session-summary.md) command to summarize what happened and create a record.
+Finally, I use my [`/meta:session-summary`](https://github.com/MasonEgger/homedir/blob/main/.claude/commands/meta/session-summary.md) command to summarize what happened and create a record.
 This command creates a session summary of what just happened and stores it in the `.ai-sessions/` directory of the code repo.
-Next I use `/git:commit-msg` to create the commit message.
+Next I use my [`/git:commit-msg`](https://github.com/MasonEgger/homedir/blob/main/.claude/commands/git/commit-msg.md) to create the commit message.
 I commit `spec.md` and the sessions summary to git and finally run `/clear` to wipe the context window.
 Now it's time to plan.
 
@@ -632,9 +291,14 @@ And `todo.md` file details _what_ has actually been implemented.
 
 Now `todo.md` isn't anything special(1).
 It's simply a todo list to keep track of what is being worked on.
-You may be wondering "Why not just use the todolist functionality built in to CC?"
-Because I `/clear` after every task, and `/clear` wipes the built-in todo along with everything else.
-If I want progress to persist across sessions, it has to live in a file.
+You may be wondering "Why not just use the todo list functionality built in to CC?"
+Well when I started, there was no plan mode 😝.
+But also I like mine more.
+A todo list persisted in git survives all sorts of crashes.
+Sometimes I wipe out my `.claude/` directory on a fresh install.
+Sometimes I work on a different machine.
+I want consistency across all of my environments.
+Oh, and I also think the way my `plan.md` and `todo.md` synchrony works better 🤷‍♂️.
 { .annotate }
 
 1. Sorry `todo.md`. You're special to me 💙
@@ -774,6 +438,7 @@ And then when I started exploring workflows and stumbled across the BPE loop, th
 So CC takes the spec, decomposes the requirements to atomic units of implementation that MUST follow test-driven development, writes the prompts to achieve this, and then stores this in `plan.md` so it can be implemented later.
 It pairs this plan with `todo.md`, which mirrors every step in `plan.md` to ensure we always have a checkpoint in the development process.
 
+
 Now do you think I review these files?
 
 ![Spongebob and Patrick thinking gif](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjhubXhwNjdjMmVoZmQwZjlhcjVwenozeG0wZXgzbXVpaXRmbGs3eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lKXEBR8m1jWso/giphy.gif)
@@ -856,11 +521,21 @@ Let it cook.
         - Treat @plan.md prompts as **implementation instructions**, not suggestions
     ```
 
+The fun thing about this loop is that it's _self correcting_. 
+It's doing TDD!
+So it will implement the tests first, write the code, and then run all the guardrail checks in the loop that's running.
+And it is _constantly_ finding mistakes and fixing them(1), thus leading to more accurate code at the end of each iteration.
+{ .annotate }
+
+1. This is probably what has completely eroded my faith in one-shots. The damn thing makes mistakes just 30s apart, yet you let it cook for hours? Nope. No thank you.
+
 Now the next part is optional, depending on the complexity of the task and how paranoid you are.
 **Of course** you should review the code of each step before committing it.
 But whether you do this for each step and review every line as it comes or if you just review it in the end will depend on you.
 Personally, I find myself babysitting it a bit more and watching line by line, but I also just let it go sometimes.
 The reason I babysit it is so if it starts going off the rails, I can correct it early rather than let it generate a metric ton of slop and then have to wade through it later.
+For example, I once caught it trying to test my Docker config by writing Python unit tests. 
+This is not what I wanted, but I was able to stop it before it went too far down the wrong path.
 Luckily, as the models and CC has gotten better the amount I need to intervene is constantly decreasing. 
 But there are days the model is just having a bad day and it needs its hand held.
 
@@ -871,10 +546,10 @@ Once it has finished implementing a step I follow the same process every time:
 
 1. Review the code again even if I reviewed it while it was running
     1. Big picture view instead of narrow view
-2. I manually run the guardrails checks like testing and linting
-    1. CC has lied to me before, so I check
+2. Manually run the guardrails checks like testing and linting _again_.
+    1. CC was running them during the building of the project, but it as has also lied to me before, so I check
 3. Once I'm satisfied with the code I have it:
-    1. Write a new session summary to `.ai-sessions/`
+    1. Write a new session summary to `.ai-sessions/` using `/meta:session-summary`
     1. Update the local `CLAUDE.md` with lessons learned. I often do this by just running `/init`
     1. I double check to make sure that CC updated `todo.md` with the work it did. This is necessary for the next session.
     1. Generate a commit message using `/git:commit-msg`
@@ -884,6 +559,81 @@ Once it has finished implementing a step I follow the same process every time:
 And that's it. 
 Preheat the oven to 350 degrees and cook for 30 minutes until done. 
 If done _properly_ this yields high quality, maintainable results of an application that you understand.
+
+## My CC Tool Belt
+
+Now while the BPE loop is the core of my AI workflow, there are many other tools on my CC tool belt that I use.
+And by the end of this you'll probably have this reaction.
+
+![Simpsons clip where Police officer asks Batman how he got out of the bind, Batman says he always carries his carousel reversal spray, and Krusty (the villain) says "What don't you have in that belt?"](img/017-claude-code/toolbelt.gif)
+
+??? warning "High level overview"
+
+    These next sections are just going to be a high level overview of the various tools and how I use them.
+    For an **even deeper dive** check out the next blog post in this series(1).
+    { .annotate }
+    
+    1. What have I done? 😭 This was supposed to be one blog and now I might need to contact a publisher...
+
+### `CLAUDE.md` Files
+
+`CLAUDE.md` is a markdown file of instructions, rules, and preferences you want Claude to "remember" every session.
+Most AI coding tools use something similar to this, often known as `AGENTS.md`.
+You can define a global level `CLAUDE.md` in `~/.claude/CLAUDE.md` for the context you want loaded for _every_ session.
+For example, mine contains sections defining the relationship between me and CC(1), my coding philosophy, and how it should ask for help.
+You can view my global [`CLAUDE.md` in my `homedir` repo](https://github.com/MasonEgger/homedir/blob/main/.claude/CLAUDE.md).
+{ .annotate }
+
+1. There have been posts where people say if Claude "views you as a partner" it performs better. I have no idea if this is true, but again, it's working so I don't touch it.
+
+There's also project level `CLAUDE.md` files, which store specific information at the root level of a project.
+It scans the codebase and updates the project `CLAUDE.md` with insights it finds about the project.
+How to run it, how to test it, what the project does, etc.
+For project-level files, I run `/init` religiously before every commit.
+Make sure it accurately reflects what the project is and _where it is going_.
+The project `CLAUDE.md` is the first thing Claude reads in every session.
+This will set the entire tone of your session.
+
+### Commands
+
+My primary way of interacting with CC is with commands.
+Commands are custom prompts you trigger from within a CC session.
+Every time I come up with a new repeatable workflow, my first instinct is to create a Command for it.
+Treat them like hotkeys.
+You can view my ever changing list of commands on my [GitHub](https://github.com/MasonEgger/homedir/tree/main/.claude/commands).
+
+### Skills
+
+[Skills](https://code.claude.com/docs/en/skills) are collections of instructions, resources, and tools that CC uses to conditionally load context when it determines you need them.
+So when I'm working on a Python project, CC determines that I'm working on Python and loads [Python Skill](https://github.com/MasonEgger/homedir/blob/main/.claude/skills/python/SKILL.md) .
+This skill defines my personal requirements for writing Python such as type hint requirements, toolchain preferences, and anti-patterns to avoid.
+
+You can either write your own Skills, or use Skills that people write and publish.
+I'm constantly looking around on GitHub for new Skills.
+
+### MCP Servers
+
+Oh joy, the favorite word of every tech bro in the valley for the last six months, MCP! 
+MCP stands for Model Context Protocol, and is just a fancy way for AI to communicate with AI enabled services. 
+For example, CC doesn't natively know how to charge something to my personal PayPal account, but with the PayPal MCP connection I could give it access to my account and have it make purchases for me(1). 
+Think REST API, but for AI.
+{ .annotate }
+
+1. This still sounds like a recipe for disaster. I do a good enough job burning my own money I don't need AIs help.
+ 
+
+Personally, I don't use MCP that much.
+I have bash, and that covers 95% of things.
+The ones I do enjoy: Temporal's knowledge base MCP server and the Playwright MCP server for testing web UIs.
+However, recent improvements in how CC uses MCP is making me take another look at this.
+
+### Subagents
+
+Now to my least favorite feature, subagents. I know maaaany people who swear by these things, but I'm still hung up on the whole "Just let it cook and eat the dinner" idea. 
+With subagents you offload a task to what amounts to a CC child process with it's own context window, and it comes back when it's done. 
+You don't have control over it, you don't get to review anything until it's done.
+That being said, I'm working on a copy-editor subagent using [`vale`](https://vale.sh/docs/cli), and CC Teams (Swarms) showed real potential for fan-out tasks.
+So watch my blog for future posts as I probably change my mind here in a few months.
 
 ## Anticipating your responses
 
@@ -953,66 +703,6 @@ So I see it one of two ways.
 Evolve or perish.
 I know which one I'm choosing.
 
-## Random Tips I Couldn't Fit Into This Narrative
-
-There's so many more random tips that I couldn't fit in here, but I would be remiss if I didn't share them.
-
-1. Run CC in `Explanatory` mode to get explanations while it's running so you build an understanding of the app and maybe even learn something new.
-    1. Use `/output-style` and change mode to `Explanatory`. Want to pair-program with CC? Change the mode to `Learning`.
-1. Load in known good samples or documentation for CC to use.
-    1. Don't just dump the entire docs or samples repo in your project folder. Pull it down on the same level as your project directory and use `/add-dir` to add it and look in there for good examples.
-1. Want to save the raw text of the session to share with someone or for archival purposes?
-    1. `/export`
-1. Did you close a session on accident and lose it? 
-    1. `/resume`
-1. Do you want `vim` keybindings for everything in your life?
-    1. `/vim`
-
-That's all I could think of.
-And no, I don't use `/vim` mode.
-I have enough mind goblins, I don't need `vim` creating more(1).
-{ .annotate }
-
-1. And this is coming from a recovering `vim` user. Don't come at me thinking I use `emacs`. `emacs` is a great operating system. Too bad they didn't implement a decent text editor.
-
-## Weird Shit That I Do That I Can't Explain but It Helps
-
-And now for the goofy shit that I can't explain but it works.
-
-![Gif of monty python and the ministry of silly walks](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbm42M3ZkNjZxaWlwMTVtYjRucHR2dGh0dXBxZ2tlc3VxenBubGJoMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qcgtyllMthBL2/giphy.gif)
-
-First, I have often said I get the best results from CC when I use my "teacher voice"(1).
-What this means is I'm typically over explanatory and treat it like a student who's doing well but needs correction.
-When it makes a mistake, I don't tell it "Hey, you messed up here", I ask it "Did you implement what was in the plan?"
-Or if the mistake is something that I know exists in my Skills or `CLAUDE.md`, I'll ask it "Did you follow the best practices we have laid out?" it will actually load those in and determine if it followed them or not.
-It often determines it hasn't and then goes back and fixes it, but sometimes it had a good reason and it explains why and I decide if that's a good enough reason to break the rules.
-Where I think this has real power is I often see this dialogue captured in the session summary portion in the lessons learned session.
-So on the next session it reads this in and learns from its mistakes.
-Also as I run `/init` to update the local `CLAUDE.md` it will put these in here, either by specific rule or a more broad "Be sure to load the Python Skill and follow it".
-This practice leads to my sessions getting better over time as the code base grows, not degrading. 
-{ .annotate }
-
-1. Turns out using millennia old teaching techniques works on children and AI. How neat.
-
-Secondly, I don't trust compaction at all.
-While the auto-compaction has gotten a _lot_ better over the last six months, I still don't trust it as far as I can throw my 110 chocolate chonk of a labrador(1).
-So much so that when I see the warning appear that compaction is near, I start paying extra attention to the outputs as I no longer trust them.
-And 9 times out of 10, if I see it start to compact, I actually stop the process and revert the entire session(2).
-{ .annotate }
-
-1. He used to _love_ getting thrown onto my bed as a baby. Now his fat ass can't figure out why daddy can't pick him up and throw him like I could when he was 10lbs. Daddy's back hurts Loki, jump up yourself.
-2. I use `git` as my rewind mechanism. Every task is a commit, and if I don't like it I revert.
-
-I actually see compaction as a code smell.
-It means I didn't break the task down into small enough chunks. 
-For me, 95% of the time I can perform a single task within the scope of a fresh context window.
-And for that other 5%, I either refactor the plan to break it down more or switch to a model with a larger context window for that task.
-
-And lastly, if you're working on documentation or text, telling CC to "copy this text and update it" tends to yield much more faithful outputs than if you ask it to "read it, update it, and write it to this file". 
-While the models have gotten better about not hallucinating when they do this, the larger the file the more likely this will happen.
-So if you are converting a quickstart guide from Python to Ruby, have it copy the file _then_ read it and update it. 
-The end result will be better. 
-
 ## Now Go Forth and Prosper!
 
 ![Buddy the elf saying "You did it! Congratulations" gif](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGdqc3BvYWJ3eWdhbzA1ZmV6eGpiZnVpOGtzbHF4MjMzY3Bldm9zZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RIjVnmAtOD4l4c2Ert/giphy.gif)
@@ -1033,13 +723,14 @@ And I wish the same for you.
 1. If you think it took you a long time to read, imagine how long it took me to write. The answer is about a month.
 2. Read [Part 1: We're Witnessing the Evolution of Software Engineering](014-software-engineering-evolution.md) for context if you haven't already.
 
-!!! abstract "Part 4 of 4 of my `Brain Dump Ramblings on AI` blog series"
+!!! abstract "Part 4 of 5 of my `Brain Dump Ramblings on AI` blog series"
 
     Check out the other parts of this series:
 
     * Part 1 - **[We're Witnessing the Evolution of Software Engineering](014-software-engineering-evolution.md)** discusses the historical context and ongoing evolution of software engineering up to the advent of AI.
     * Part 2 - **[Code is Cheap, Don't Devalue Yourself](015-code-is-cheap.md)** discusses AI and it's impact on the software engineering discipline.
     * Part 3 - **[What I Found Actually Works with AI](016-ai-principles.md)** - The do's and don'ts that guide everything I do.
+    * Part 5 - **[Skills, Plugins, and MCP Oh My!](018-claude-customize.md)** - A deep dive into Claude Code's customization features.
 
 
 *[CC]: Claude Code
