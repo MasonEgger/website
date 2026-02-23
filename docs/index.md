@@ -35,7 +35,10 @@ My recent **Brain Dump Ramblings on AI** series
 <ul class="content-list" markdown>
 <li markdown>[Part 1: We're Witnessing the Evolution of Software Engineering](blog/posts/014-software-engineering-evolution.md)</li>
 <li markdown>[Part 2: Code is Now Cheap, Don't Devalue Yourself](blog/posts/015-code-is-cheap.md)</li>
-<li markdown>Part 3: **Coming 2/23**</li>
+<li markdown>[Part 3: What I Found Actually Works with AI](blog/posts/016-ai-principles.md)</li>
+<li markdown>Part 4: How I Actually Use the Damn Thing - *Coming Soon*</li>
+<li markdown>Part 5: Skills, Plugins, and MCP Oh My! - *Coming Soon*</li>
+
 </ul>
 
 </div>

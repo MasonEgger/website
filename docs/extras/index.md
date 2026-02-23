@@ -16,6 +16,7 @@ If you find it useful too then that's alright too. lol :stuck_out_tongue_closed_
 * [*Maker's Schedule, Manager's Schedule* - Paul Graham](http://www.paulgraham.com/makersschedule.html)
 * [*Always be quitting* - Julio Merino](https://jmmv.dev/2021/04/always-be-quitting.html)
 * [*How to help a student get unstuck*](https://offbyone.us/posts/how-to-help-a-student-get-unstuck/)
+* [*My AI Adoption Journey* - Mitchell Hashimoto](https://mitchellh.com/writing/my-ai-adoption-journey)
 
 ### Books
 

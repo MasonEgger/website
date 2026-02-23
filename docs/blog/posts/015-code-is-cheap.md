@@ -310,11 +310,13 @@ Because at the end of the day, the future belongs to those who show up for it.
 
 ---
 
-_Curious about my personal AI journey, how I got started, and all my tips and tricks? Come back tomorrow for the next part of the series._
+_Curious about my personal AI journey, how I got started, and all my tips and tricks? Check out the next part of the series [What I Found Actually Works with AI](016-ai-principles.md)._
 
-!!! abstract "Part 2 of 3 of my `Brain Dump Ramblings on AI` blog series"
+!!! abstract "Part 2 of 5 of my `Brain Dump Ramblings on AI` blog series"
 
     Check out the other parts of this series:
 
     * Part 1 - **[We're Witnessing the Evolution of Software Engineering](014-software-engineering-evolution.md)** discusses the historical context and ongoing evolution of software engineering up to the advent of AI.
-    * Part 3 - **Coming Soon** - My journey with Claude Code and my tips and tricks for getting started.
+    * Part 3 - **[What I Found Actually Works with AI](016-ai-principles.md)** - The do's and don'ts that guide everything I do.
+    * Part 4 - **How I Actually Use the Damn Thing** - My journey with Claude Code and my tips and tricks for getting started. *Coming Soon*
+    * Part 5 - **Skills, Plugins, and MCP Oh My!** - A deep dive into Claude Code's customization features. *Coming Soon*
