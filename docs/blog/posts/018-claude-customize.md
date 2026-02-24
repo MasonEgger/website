@@ -1,6 +1,6 @@
 ---
 title: "Skills, Plugins, and MCP Oh My!"
-description: "Here's where it gets fun, a deep dive into Claude Code's customization features."
+description: "Here's where it gets fun, a peek behind the curtain at the dark magic I perform with Claude Code."
 date: 2026-02-25
 categories:
     - Software Engineering
