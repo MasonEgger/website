@@ -318,5 +318,5 @@ _Curious about my personal AI journey, how I got started, and all my tips and tr
 
     * Part 1 - **[We're Witnessing the Evolution of Software Engineering](014-software-engineering-evolution.md)** discusses the historical context and ongoing evolution of software engineering up to the advent of AI.
     * Part 3 - **[What I Found Actually Works with AI](016-ai-principles.md)** - The do's and don'ts that guide everything I do.
-    * Part 4 - **How I Actually Use the Damn Thing** - My journey with Claude Code and my tips and tricks for getting started. *Coming Soon*
+    * Part 4 - **[How I Actually Use the Damn Thing](017-claude-code.md)** - My journey with Claude Code and my tips and tricks for getting started.
     * Part 5 - **Skills, Plugins, and MCP Oh My!** - A deep dive into Claude Code's customization features. *Coming Soon*

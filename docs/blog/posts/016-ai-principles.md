@@ -64,7 +64,7 @@ Here are the do's and don'ts of using AI that guide everything I do.
 
     This blog is deliberately provider and model agnostic.
     These do's and don'ts apply to generative AI as a whole, not one specific provider.
-    If you're looking for exact implementation details, stay tuned for the next blog in this series.
+    If you're looking for exact implementation details, check out the [next blog in this series](017-claude-code.md)
 
 ## Principles That Accelerate
 
@@ -513,7 +513,7 @@ _[Video link](https://www.youtube.com/watch?v=qwTop2qs1tE)_
 
 ---
 
-_Ready to see these principles in action? Stay tuned for the next part of this series, How I Actually Use the Damn Thing._
+_Ready to see these principles in action? Check out the next part of this series [How I Actually Use the Damn Thing](017-claude-code.md)._
 
 !!! abstract "Part 3 of 5 of my `Brain Dump Ramblings on AI` blog series"
 
@@ -521,7 +521,7 @@ _Ready to see these principles in action? Stay tuned for the next part of this s
 
     * Part 1 - **[We're Witnessing the Evolution of Software Engineering](014-software-engineering-evolution.md)** discusses the historical context and ongoing evolution of software engineering up to the advent of AI.
     * Part 2 - **[Code is Cheap, Don't Devalue Yourself](015-code-is-cheap.md)** discusses AI and it's impact on the software engineering discipline.
-    * Part 4 - **How I Actually Use the Damn Thing** - My journey with Claude Code and my tips and tricks for getting started. *Coming Soon*
+    * Part 4 - **[How I Actually Use the Damn Thing](017-claude-code.md)** - My journey with Claude Code and my tips and tricks for getting started.
     * Part 5 - **Skills, Plugins, and MCP Oh My!** - A deep dive into Claude Code's customization features. *Coming Soon*
 
 
