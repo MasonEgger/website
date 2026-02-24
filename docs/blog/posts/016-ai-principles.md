@@ -520,7 +520,7 @@ _Ready to see these principles in action? Check out the next part of this series
     Check out the other parts of this series:
 
     * Part 1 - **[We're Witnessing the Evolution of Software Engineering](014-software-engineering-evolution.md)** discusses the historical context and ongoing evolution of software engineering up to the advent of AI.
-    * Part 2 - **[Code is Cheap, Don't Devalue Yourself](015-code-is-cheap.md)** discusses AI and it's impact on the software engineering discipline.
+    * Part 2 - **[Code is Cheap, Don't Devalue Yourself](015-code-is-cheap.md)** discusses AI and its impact on the software engineering discipline.
     * Part 4 - **[How I Actually Use the Damn Thing](017-claude-code.md)** - My journey with Claude Code and my tips and tricks for getting started.
     * Part 5 - **[Skills, Plugins, and MCP Oh My!](018-claude-customize.md)** - A deep dive into Claude Code's customization features.
 

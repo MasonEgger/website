@@ -32,6 +32,7 @@ Here's the magic behind customizing CC.
     In the first blog I briefly touched on the concepts I will now dive **much deeper** into.
     That means that you **really should** read my [previous blog _How I Actually Use the Damn Thing_](017-claude-code.md) before reading this one.
     I'll be referring to things in the previous blog with little explanation, so if you don't read it you may get lost.
+    To get **all** the references, you should read the entire [series](/#recent-series)
 
 ## Past Here There Be Dragons
 
@@ -166,7 +167,7 @@ Or my code is so bad it got confused and now I need to clean it up, because an o
 
 Do you have a bunch of dead code in your project?
 Maybe you switched package managers but never cleaned up the old package files?(1)
-Are there functions that just absolutely heinous practice and you can't believe they are still in the codebase?
+Are there functions that are just absolutely heinous practice and you can't believe they are still in the codebase?
 If there are, `/init` will find them and highlight them in your `CLAUDE.md` file.
 { .annotate }
 
@@ -243,8 +244,8 @@ You can view my ever changing list of commands on my [GitHub](https://github.com
     During the middle of writing this blog(1) Anthropic decided to merge Commands with Skills.
     They say this is because they sort of accomplish the same thing, which is the conditional context loading.
     While true, I find it partly true and discounts the common case of just repeating the same prompt on different inputs.
-    While I don't particularly agree with the reasoning, it doesn't really affect much as they preserved backwards compatibility and added features to address my concerns.
-    I'll probably eventually refactor my commands to be only user invocable Skills eventually, but it's not high on my priority list.
+    I don't particularly agree with the reasoning, but it doesn't really affect much as they preserved backwards compatibility and added features to address my concerns.
+    I'll refactor my commands to be only user invocable Skills eventually, but it's not high on the priority list and the backwards compatibility means it's not urgent.
     { .annotate }
 
     1. This is the hell of writing about AI. They say that tech books were out of date the moment the ink dried. Well AI blogs are out of date as soon as the TCP handshake completes to the blog you're trying to read.
@@ -298,7 +299,7 @@ _stored in various config files in your `.claude/` depending on scope_
 There has been a lot of buzz around MCP for the last couple of months, which like most things is over-hyped anecdotes designed to confuse.
 Here's the basics(1).
 MCP stands for Model Context Protocol, and is just a fancy way for AI to communicate with AI enabled services.
-For example, CC doesn't natively know how to update my issues in Jira, but with the Jira MCP connection I could give it access to my account and it can update tasks for me(1).
+For example, CC doesn't natively know how to update my issues in Jira, but with the Jira MCP connection I could give it access to my account and it can update tasks for me(2).
 Think REST API, but for AI.
 { .annotate }
 
@@ -329,7 +330,7 @@ _stored in `agents/` in your `.claude/` directory, either global or local_
 
 Now to my least favorite feature, subagents.
 I know _maaaany_ people who swear by these things, but I'm still hung up on the whole "Just let it cook and eat the dinner" idea.
-With subagents you offload a task to what amounts to a CC child process with it's own context window, and it comes back when it's done.
+With subagents you offload a task to what amounts to a CC child process with its own context window, and it comes back when it's done.
 You don't have control over it, you don't get to review anything until it's done.
 
 Don't get me wrong, I can see how this is useful and why people love it, it's just **not** how I want to interact with AI.
@@ -359,29 +360,144 @@ Luckily, there is a way to organize all of this, and that's with Plugins.
 
 [Plugins](https://code.claude.com/docs/en/plugins) are a collection of related Skills, Agents, Commands, MCP Servers, Hooks, resources, and more.
 It also provides namespacing for your command, something like `/dev:python`.
-Currently I haven't organized anything into a plugin, but I'm thinking about it.
 
-## Random Tips I Couldn't Fit Into This Narrative
-
-There's so many more random tips that I couldn't fit in here, but I would be remiss if I didn't share them.
-
-1. Run CC in `Explanatory` mode to get explanations while it's running so you build an understanding of the app and maybe even learn something new.
-    1. Use `/output-style` and change mode to `Explanatory`. Want to pair-program with CC? Change the mode to `Learning`.
-1. Load in known good samples or documentation for CC to use.
-    1. Don't just dump the entire docs or samples repo in your project folder. Pull it down on the same level as your project directory and use `/add-dir` to add it and look in there for good examples.
-1. Want to save the raw text of the session to share with someone or for archival purposes?
-    1. `/export`
-1. Did you close a session on accident and lose it? 
-    1. `/resume`
-1. Do you want `vim` keybindings for everything in your life?
-    1. `/vim`
-
-That's all I could think of.
-And no, I don't use `/vim` mode.
-I have enough mind goblins, I don't need `vim` creating more(1).
+The real value of a plugin is that it turns your pile of loose files into a single distributable, versionable package.
+Instead of telling a colleague "go clone my homedir repo and copy these 14 files into your `.claude/` directory,"(1) you hand them a plugin and they're set up.
+My entire CC setup, the BPE commands, the Python Skill, the session summary workflow, all of it, could probably be packaged as a plugin.
+Well why haven't I done it yet?
+Because my current ansible setup for my [home directory](https://github.com/MasonEgger/homedir) handles this all for me.
+And since as far as I know I'm the only one using this right now, there's no need.
+If enough people ask me though I might.
 { .annotate }
 
-1. And this is coming from a recovering `vim` user. Don't come at me thinking I use `emacs`. `emacs` is a great operating system. Too bad they didn't implement a decent text editor.
+1. Which I currently tell people to do now 🤣
+
+Where this is really useful is building Plugins for say, your company or large project.
+Being able to distribute guidance for CC through these removes the need for a documentation MCP server.
+So at Temporal we're building a Plugin that people can install that contains curated knowledge about Temporal, allowing for CC to write better Temporal applications.
+It'll likely have SDK language resources, scripts for debugging, MCP server connections, and more.
+So while most people likely won't build a plugin for their personal workflow, it may be worth exploring for your company's product.
+
+## Give Claude Code What It Needs to Succeed
+
+Context engineering is the hot topic currently and will likely remain that way for a while.
+And for good reason.
+How do we ensure we are giving CC the context it needs to achieve the task?
+While I covered some of this in my previous blog about keeping the context window clean, I didn't cover the silver bullet I use to ensure that CC has the context it needs to succeed.
+And that silver bullet is `/add-dir`(1).
+{ .annotate }
+
+1. So I'm _veeeerrrrrrry_ nervous to call anything a silver bullet. Typically silver bullets are myths. They don't exist. However, in this particular use case, the `/add-dir` command is the closest thing to a silver bullet I've ever seen. I don't miss with it.
+
+When you launch CC, it runs in the directory you started it in.
+It can't access any directories above it, without asking for explicit permission and that's just _hoping_ that the LLM knows there's something to look for, like a system file.
+The problem we're trying to solve for is this:
+
+1. I have a project I want to build
+2. I have external resources that I want CC to use when building this such as documentation, sample code, other applications I think are relevant
+3. How do I get this context into my CC session?
+
+One way you _could_ do this is by just cloning these repositories into your project repository.
+This is flawed for a few reasons.
+First, CC doesn't know that's a separate repo for reference, it thinks it's part of your app. 
+So when you run `/init` it will include information about that app in there.
+It may even try to modify those files to fit your use case.  
+I tried this method (before `/add-dir` was implemented) and it just led to a mess.
+
+`/add-dir` allows me to add another directory to the workspace and have CC reference it.
+Then when you run `/init`, CC doesn't include this data in your project `CLAUDE.md`.
+So now I can add all sorts of reference materials to the session and tell CC explicitly what is there and what to use it for.
+
+I use this pattern _often_.
+Say I have a repository with a config file setup I like.
+I don't copy it over!
+I use `/add-dir` and tell CC to take that and adapt it to my current project.
+I do this a _lot_ for PyTexas assets where I'm constantly creating new websites for the conference every year, and I forget how I set something up last year.
+So have CC read the git history and update the current site to where I need it to be in this current stage of the conference planning cycle.
+
+When I write Temporal applications, I provide it access to a `samples-LANG` repository that Temporal has.
+This repo (`samples-python`, `samples-java`, etc.) has sample implementations of every Temporal feature with explanations on when to use them. 
+Add this to a project with `/add-dir`, tell CC to reference it when performing the BPE loop, and tada! 
+CC is now a Temporal expert.
+
+Another _interesting_ use case I've used this for is porting Temporal education content between different programming languages.
+I worked on the education team for a while, and we have a catalog of courses that exist for every programming language Temporal supports.
+Porting Temporal 102 from Python to Ruby typically takes a good amount of time, as the author has to learn the languages, the nuances (is it function or method?), and how Temporal implemented the feature in that language.
+With `/add-dir` I can add the previous course, add the sdk repository with its detailed `README.md`, and add the `samples-ruby` repository as context for CC to use.
+Then I prompt it:
+
+> "I want to port the Temporal 102 from Python to Ruby. I've provided you with the 102 course in Python, the SDK repo for Ruby which has a detailed `README.md` explaining all of the features, and the `samples-ruby` repo that has implementations of all Temporal features. Copy over the Temporal 102 course and then update it to use Ruby. ONLY change the Ruby specific content, such as function -> method and the code samples. DO NOT change the narrative prose. If you identify features that only exist in Ruby and not Python, add them where you think they should be added but enclose them with `<CLAUDE_SUGGESTION>` tags so I can easily find and validate these."
+
+And with this prompt(1) I was able to port an entire course from Python to Ruby with 98% accuracy.
+The only thing it got wrong was something that wasn't covered in the SDK `README.md` or samples repository and even I didn't have an answer to yet. 
+But it did add this as a `<CLAUDE_SUGGESTION>` so I could find it.
+{ .annotate } 
+
+1. Or something similar, I don't recall the exact prompt.
+
+I could talk about use cases like this all day.
+`/add-dir` is by far one of my top CC tools.
+I wouldn't be half as productive as I am without it.
+
+## Ensure You're Still _Learning_ While Using Claude Code
+
+Ok, so a big fear of mine(1) is the fear of losing knowledge or project scope by using AI.
+It's _very_ tempting to just let CC cook and come back to a completed project.
+As tempting as this may be, I want to give you the same warning your elementary school teacher likely gave you, which is "Cheating only hurts yourself in the long run."
+What makes you stellar at using CC is your domain knowledge. 
+If you outsource that to an LLM, eventually you won't have it anymore and become irrelevant.
+{ .annotate }
+
+1. And anyone who's using AI **responsibly**.
+
+So there are many ways to ensure you're still understanding the code CC outputs.
+As I mentioned in my previous blog, I review the shit out of everything.
+**If I don't understand it, it doesn't get committed.**
+But while this potentially exposes me to new features, tools, and patterns, it doesn't explain them to me.
+So what do I do when I encounter something I don't understand?
+_I ask CC to explain it to me._
+
+> "I see you used a set here instead of a list. Explain why you made that decision." - Me, with my head hung low cause I can't figure it out myself
+
+That's the great thing about CC, it's **judgement free**.
+It doesn't care how "dumb" the question is(1).
+It will answer you until the end of time(2).
+So if you're even slightly curious, ask.
+Better to get ahead of this before it becomes a problem in production.
+{ .annotate }
+
+1. There are no dumb questions. Only dumb people who don't ask questions when they don't understand.
+2. Or you run out of tokens, whichever comes first.
+
+But there's more!
+
+![Billy Mays "But wait, there's more!"](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExempwMW5oYXUxamwxazFraGNxc3VxcTRob2tiNXI4c3V3eWRhcmVrbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9V1F9o1pBjsxFzHzBr/giphy.gif)
+
+CC has the `/output-style` command!
+This allows you to decide how CC responds to you during sessions.
+There are currently three options:
+
+| Style | Description |
+| -------- | -------- |
+| **Default** | Claude completes coding tasks efficiently and provides concise responses |
+| **Explanatory** | Claude explains its implementation choices and codebase patterns |
+| **Learning** | Claude pauses and asks you to write small pieces of code for hands-on practice |
+
+I always run my sessions in **Explanatory** mode. 
+I want that deep explanation of why it's doing something.
+This also makes watching it cook way more fun.
+You get to enjoy the ride and see what decisions are being made.
+And surprisingly, I _catch more bugs this way_.
+Why?
+Because I can see CC's logic and I can get ahead of it.
+
+Looking for something more interactive?
+Try **Learning** mode, where you can pair program with CC!
+It will leave things intentionally blank and then have you practice implementing them and then critique your implementation.
+I rarely use this one, but I always have a fun time when I do.
+
+Regardless of how you approach this, one thing is certain.
+**You** are responsible for **your code**, so it probably is wise to understand it.
 
 ## Weird Shit That I Do That I Can't Explain but It Helps
 
@@ -421,16 +537,35 @@ While the models have gotten better about not hallucinating when they do this, t
 So if you are converting a quickstart guide from Python to Ruby, have it copy the file _then_ read it and update it. 
 The end result will be better.
 
-## And That's Just What I've Done So Far
+## The End of This Series, but Not the End of the Story
 
-You made it to the end!
-Feeling a little light headed?
-Ya, CC can do that to you.
+So that's everything.
+Five blogs, countless annotations, two months of time, and more opinions than **anyone** asked for.
 
-This is everything I can think of on all the weird ass ways I make CC produce what I want it to.
-If I think of more, I'll write another blog.
-But now, after writing over 20,000 words on this topic, I'm going to hibernate.
-Hope you enjoyed.
+These workflows, tips, and tricks are what allow me to have 95-98% accuracy when using CC.
+When I sit down to code with it(1) I'm not worried about if AI will mess it up or write slop.
+Because I trust my tools and my process, and what I want comes out on the other side.
+{ .annotate }
+
+1. Translation: When I have _time_ to do so. I rarely do.
+
+It becomes more obvious to me every day that software engineering is changing.
+We're experiencing the same moments that Dorothy Vaughan experienced, or those engineers who used logarithmic lookup books(1).
+You often see self-help books in stores, or blogs from famous investors who figured it out giving away all their "secrets".
+And people often wonder "Why would they just tell everyone how they did it? Won't that affect them? Create competition?"
+The answer here is simply no.
+It won't.
+Why?
+Because 98% of those who read those books never take the next step of implementing the practices.
+{ .annotate }
+
+1. All the way back in [the first blog in this series](014-software-engineering-evolution.md)
+
+One of my favorite quotes comes from author [Michael W. Lucas](https://mwl.io/) from a throw away tweet long since deleted:
+
+> "The world belongs to those who finish things." - MWL
+
+So what'll it be?
 
 
 !!! abstract "Part 5 of 5 of my `Brain Dump Ramblings on AI` blog series"
@@ -438,7 +573,7 @@ Hope you enjoyed.
     Check out the other parts of this series:
 
     * Part 1 - **[We're Witnessing the Evolution of Software Engineering](014-software-engineering-evolution.md)** discusses the historical context and ongoing evolution of software engineering up to the advent of AI.
-    * Part 2 - **[Code is Cheap, Don't Devalue Yourself](015-code-is-cheap.md)** discusses AI and it's impact on the software engineering discipline.
+    * Part 2 - **[Code is Cheap, Don't Devalue Yourself](015-code-is-cheap.md)** discusses AI and its impact on the software engineering discipline.
     * Part 3 - **[What I Found Actually Works with AI](016-ai-principles.md)** - The do's and don'ts that guide everything I do.
     * Part 4 - **[How I Actually Use the Damn Thing](017-claude-code.md)** - My journey with Claude Code and my tips and tricks for getting started.
 

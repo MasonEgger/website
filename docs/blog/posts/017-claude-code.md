@@ -630,7 +630,7 @@ However, recent improvements in how CC uses MCP is making me take another look a
 ### Subagents
 
 Now to my least favorite feature, subagents. I know maaaany people who swear by these things, but I'm still hung up on the whole "Just let it cook and eat the dinner" idea. 
-With subagents you offload a task to what amounts to a CC child process with it's own context window, and it comes back when it's done. 
+With subagents you offload a task to what amounts to a CC child process with its own context window, and it comes back when it's done. 
 You don't have control over it, you don't get to review anything until it's done.
 That being said, I'm working on a copy-editor subagent using [`vale`](https://vale.sh/docs/cli), and CC Teams (Swarms) showed real potential for fan-out tasks.
 So watch my blog for future posts as I probably change my mind here in a few months.
@@ -729,7 +729,7 @@ And I wish the same for you.
     Check out the other parts of this series:
 
     * Part 1 - **[We're Witnessing the Evolution of Software Engineering](014-software-engineering-evolution.md)** discusses the historical context and ongoing evolution of software engineering up to the advent of AI.
-    * Part 2 - **[Code is Cheap, Don't Devalue Yourself](015-code-is-cheap.md)** discusses AI and it's impact on the software engineering discipline.
+    * Part 2 - **[Code is Cheap, Don't Devalue Yourself](015-code-is-cheap.md)** discusses AI and its impact on the software engineering discipline.
     * Part 3 - **[What I Found Actually Works with AI](016-ai-principles.md)** - The do's and don'ts that guide everything I do.
     * Part 5 - **[Skills, Plugins, and MCP Oh My!](018-claude-customize.md)** - A deep dive into Claude Code's customization features.
 
