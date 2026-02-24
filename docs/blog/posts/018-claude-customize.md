@@ -36,8 +36,10 @@ Here's the magic behind customizing CC.
 
 ## Past Here There Be Dragons
 
+![Smaug opening his eye](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXhzcmZ6ZmJhN3JlMXRzajNtbzYxZ2xqbnJ3MGhnemlucng3dmZ5cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2JTJ3jA3N6rDy/giphy.gif)
+
 Ok, you made it this far.
-Congrats!
+You're brave!
 If you're new to CC, I recommend you get used to playing with it in the configuration mentioned in my [previous blog _How I Actually Use the Damn Thing_](017-claude-code.md) for a few days/weeks to get accustomed to using the tool.
 I know _many_ people who use vanilla CC and get remarkable amounts of work done.
 Learn the tool, learn what you like about it and where it annoys you.
