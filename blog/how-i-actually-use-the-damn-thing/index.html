@@ -1,0 +1,1845 @@
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Enough waxing poetic about AI, here's my actual Claude Code workflow.">
+      
+      
+        <meta name="author" content="Mason Egger">
+      
+      
+        <link rel="canonical" href="https://mason.dev/blog/how-i-actually-use-the-damn-thing/">
+      
+      
+        <link rel="prev" href="../what-i-found-actually-works-with-ai/">
+      
+      
+      
+        
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../static/img/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>How I Actually Use the Damn Thing - Mason Egger</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-885F33V7K6"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-885F33V7K6",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-885F33V7K6",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  
+<meta property="og:type" content="website" />
+<meta property="og:title" content="How I Actually Use the Damn Thing - Mason Egger" />
+<meta property="og:description" content="Enough waxing poetic about AI, here's my actual Claude Code workflow." />
+<meta property="og:image" content="https://mason.dev/assets/images/social/blog/how-i-actually-use-the-damn-thing.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://mason.dev/blog/how-i-actually-use-the-damn-thing/" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="How I Actually Use the Damn Thing - Mason Egger" />
+<meta property="twitter:description" content="Enough waxing poetic about AI, here's my actual Claude Code workflow." />
+<meta property="twitter:image" content="https://mason.dev/assets/images/social/blog/how-i-actually-use-the-damn-thing.png" />
+</head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="mme" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#from-ai-skeptic-to-ai-enthusiast" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Mason Egger" class="md-header__button md-logo" aria-label="Mason Egger" data-md-component="logo">
+      
+  <img src="../../static/img/mmeg.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mason Egger
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              How I Actually Use the Damn Thing
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="mme" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/masonegger/website" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    masonegger/website
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Blog
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../tutorials/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tutorials
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../speaking/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Speaking
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../uses/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Uses
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bio/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Bio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../extras/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Extras
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Mason Egger" class="md-nav__button md-logo" aria-label="Mason Egger" data-md-component="logo">
+      
+  <img src="../../static/img/mmeg.png" alt="logo">
+
+    </a>
+    Mason Egger
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/masonegger/website" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    masonegger/website
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorials
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../speaking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Speaking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extras/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Extras
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+  <div class="md-content md-content--post" data-md-component="content">
+
+    <!-- Sidebar -->
+    <div
+      class="md-sidebar md-sidebar--post"
+      data-md-component="sidebar"
+      data-md-type="navigation"
+    >
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav">
+
+            <!-- Back to overview link -->
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../" class=" md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Page authors -->
+            
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="https://github.com/masonegger.png" alt="Mason Egger" />
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>Mason Egger</strong><br />
+                      Developer, Educator, Community Organizer
+                    </span>
+                  </div>
+                
+              </div>
+            
+
+            <!-- Page metadata -->
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__title">
+                <div class="md-nav__link">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+              </li>
+
+              
+
+              
+
+              <!-- Page original publish date -->
+              <li class="md-nav__item">
+                <div class="md-nav__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                    <time datetime="2026-02-24" class="md-ellipsis">
+                    Published: February 24, 2026</time>
+                </div>
+              </li>  
+              <!-- Page categories -->
+              
+                <li class="md-nav__item">
+                  <div class="md-nav__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3zm3 2 4 13 3-1-4-13zM5 5v13h3V5zM3 19v2h18v-2z"/></svg>
+                    <span class="md-ellipsis">
+                      in
+                      
+                        <a href="../category/software-engineering/">Software Engineering</a>, 
+                        <a href="../category/ai/">AI</a>, 
+                        <a href="../category/productivity/">Productivity</a>, 
+                        <a href="../category/brain-dump-ramblings-on-ai-series/">Brain Dump Ramblings on AI Series</a></span>
+                  </div>
+                </li>
+              
+
+              <!-- Page readtime -->
+              
+            </ul>
+
+            <!-- Page links -->
+            
+          </nav>
+
+          <!-- Table of contents, if integrated -->
+          
+            
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#from-ai-skeptic-to-ai-enthusiast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        From AI Skeptic to AI Enthusiast
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ya-but-what-have-you-actually-built-with-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Ya, but what have you actually built with AI?"
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warning-read-before-proceeding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WARNING: READ BEFORE PROCEEDING
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#my-environment-setup-vanilla-cc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        My Environment Setup - Vanilla CC
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-bpe-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The BPE Loop
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The BPE Loop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#brainstorm-app-devbrainstorm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Brainstorm - /app-dev:brainstorm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plan-app-devplan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plan - /app-dev:plan
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execute-app-devexecute-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Execute - /app-dev:execute-plan
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#my-cc-tool-belt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        My CC Tool Belt
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="My CC Tool Belt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#claudemd-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CLAUDE.md Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Commands
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skills
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mcp-servers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MCP Servers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subagents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subagents
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anticipating-your-responses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anticipating your responses
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anticipating your responses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thats-a-lot-of-process-for-a-simple-fix-isnt-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "That's a LOT of process for a simple fix isn't it?"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-you-really-waste-all-your-time-watching-it-build" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Do you really waste all your time watching it build?"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#this-kinda-takes-the-fun-out-of-vibe-coding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "This kinda takes the fun out of vibe coding."
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#doesnt-this-make-you-insert_negative_emotion_here" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Doesn't this make you INSERT_NEGATIVE_EMOTION_HERE?"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#now-go-forth-and-prosper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Now Go Forth and Prosper!
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Page content -->
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <span class="md-tag">Claude Code</span>
+      
+    
+  </nav>
+
+
+  
+  
+
+
+  <h1>How I Actually Use the Damn Thing</h1>
+
+<p>Ok.
+Enough waxing poetic about AI.
+Here's how I use Claude Code to build software.</p>
+<!-- more -->
+
+<details class="tip">
+<summary>TL;DR - Just Want the Workflow?</summary>
+<p><strong>The <abbr title="Brainstorm, Plan, Execute">BPE</abbr> Loop (Brainstorm → Plan → Execute):</strong></p>
+<ol>
+<li><code>/app-dev:brainstorm</code> — Discuss your idea, creates <code>spec.md</code></li>
+<li>Review <code>spec.md</code> manually — fix any errors</li>
+<li><code>/app-dev:plan</code> — Creates <code>plan.md</code> and <code>todo.md</code></li>
+<li>Review <code>plan.md</code> manually — verify prompts make sense</li>
+<li><code>/app-dev:execute-plan</code> — Implements one step</li>
+<li>Review code, commit, <code>/clear</code>, repeat step 5</li>
+</ol>
+<p><strong>Quick setup:</strong> See the <a href="/tutorials/posts/004-claude-code-quickstart/">Claude Code Quickstart</a> tutorial.</p>
+<p><strong>Want the full story?</strong> Keep reading below.</p>
+</details>
+<h2 id="from-ai-skeptic-to-ai-enthusiast">From AI Skeptic to AI Enthusiast<a class="headerlink" href="#from-ai-skeptic-to-ai-enthusiast" title="Permanent link">&para;</a></h2>
+<p class="annotate">So it's no secret, I, like many of my colleagues, was very much an AI skeptic when it was first introduced.
+The claims then (as they are now) were that this would "replace all Software Engineers" and people's eyes rolled so far back in their heads you could hear them pop. 
+And for good reason.
+Output of the early LLMs was questionable to say the least.
+But as time has gone on, results got better and it became more difficult to ignore.
+And like any curious person trying to avoid work on a Tuesday(1), I downloaded Claude Code(2) and tried it out.
+From that moment, I was hooked.
+I've always been a CLI person, and this was the UX I was looking for.
+My productivity skyrocketed.
+I dubbed 2025 "The Summer of Side Projects". 
+Finally, I could achieve the throughput necessary to work through my massive backlog of projects.
+I spent hours reading articles on optimizing <code>CLAUDE.md</code>, creating slash commands, everything I could to refine my process(3).
+This is by far the most fun I've had writing code in a long time.
+So much so that I couldn't contain my excitement.
+I showed anyone who would listen: people at work, friends, community members, random strangers on the street(4).
+Now I finally have the core process solidified enough that I can share what I've learned(5).</p>
+<ol>
+<li>You think this is an arbitrary day, but no, I looked up my commits, checked the date, then went back and found what day of the week it was. Buckle up. It's going to be one of <em>those</em> types of blogs.</li>
+<li>I will be abbreviating this to <abbr title="Claude Code">CC</abbr> for the rest of the article.</li>
+<li>One of the most impactful being <a href="https://harper.blog/2025/05/08/basic-claude-code/">Harper Reed's Blog</a>. I initially forked his <abbr title="Claude Code">CC</abbr> setup and have iterated on it from there.</li>
+<li>Most ran away screaming, but a few were interested.</li>
+<li>And I look forward to Anthropic dropping a new feature the day after I publish this and rendering it obsolete. Seriously. They've done that to me like twice already.</li>
+</ol>
+<p class="annotate">Oh, and my manager asked me to.
+So there's that.(1)</p>
+<ol>
+<li><img alt="👋" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f44b.svg" title=":wave:" /> Dallas</li>
+</ol>
+<h2 id="ya-but-what-have-you-actually-built-with-ai">"Ya, but what have you <em>actually</em> built with AI?"<a class="headerlink" href="#ya-but-what-have-you-actually-built-with-ai" title="Permanent link">&para;</a></h2>
+<p>Fair point.
+Many people see posts online of people touting their productivity gains via AI but no one shares their work.
+So here's what I've contributed to and built since I started using <abbr title="Claude Code">CC</abbr>.</p>
+<ul>
+<li><a href="https://github.com/MasonEgger/fountain-py/tree/init-version"><code>fountain-py</code></a><ul>
+<li>My first AI project. A Python library to parse <a href="https://fountain.io/">Fountain</a> syntax.</li>
+</ul>
+</li>
+<li>A <a href="https://github.com/MasonEgger/homedir"><code>homedir</code> repo</a><ul>
+<li>I have long wanted to automate setting up my personal environment using Ansible. <abbr title="Claude Code">CC</abbr> did it for me super quick.</li>
+<li>I also love writing Python CLI tools. Now <abbr title="Claude Code">CC</abbr> does that and installs them.</li>
+<li>I'm constantly iterating on this repo, and this is where all my <code>.claude</code> files are.</li>
+</ul>
+</li>
+<li>Knowledge Base via Obsidian<ul>
+<li>This one I obviously can't link to as it's my personal knowledge base, but I used <abbr title="Claude Code">CC</abbr> to organize my Obsidian vaults into a format I actually use. I also record myself ranting about my day and have it fill in my daily journal entry with the transcript.</li>
+<li>Also an <a href="https://github.com/napcs/mcp-knowledge-base">MCP Server</a> I want to try.</li>
+</ul>
+</li>
+<li>Temporal Course Ports - <a href="https://learn.temporal.io/courses/temporal_101/ruby/">Temporal 101 in Ruby</a><ul>
+<li>Porting courses at Temporal from one programming language to another is tedious. You have to learn the language, learn the subtle differences, change words from function to method or vice versa to sound idiomatic. With proper guidance, <abbr title="Claude Code">CC</abbr> could do this in a fraction of the time</li>
+<li>Other ports are in progress, and will be released soon</li>
+</ul>
+</li>
+<li>Temporal Workshop Code and Customer Demos<ul>
+<li>I had to build out a workshop to build a CI/CD pipeline using Temporal to build and deploy to K8s. <abbr title="Claude Code">CC</abbr> wrote all of it and helped me make exercises for it.</li>
+<li><a href="https://github.com/temporal-community/workshop-cicd-k8s-deployment">Check it out</a> The various exercises are in branches.</li>
+</ul>
+</li>
+<li>Various commits to <a href="https://github.com/pytexas">PyTexas</a><ul>
+<li>If you see a commit in these repos over the last 6 months, they weren't done by me, but AI. It's been great for automating monthly updates, creating schedules, run books, etc. for a community.</li>
+</ul>
+</li>
+</ul>
+<p class="annotate">And that's just what I can publicly talk about and I can remember off the top of my head.
+What's even <em>more</em> impressive is what I've seen others accomplish with AI.
+I recently watched the CTO of Temporal <a href="https://www.linkedin.com/in/fateev">Maxim Fateev</a> use Temporal's internal study break and <abbr title="Claude Code">CC</abbr> to accomplish in two weeks what would have taken teams of engineers months to do otherwise.(1)</p>
+<ol>
+<li>Read his thoughts on what AI means for software engineering in his <a href="https://temporal.io/blog/what-will-ai-do-to-your-career">recent blog</a>.</li>
+</ol>
+<p>So ya, people are building really cool shit with it.</p>
+<h2 id="warning-read-before-proceeding">WARNING: READ BEFORE PROCEEDING<a class="headerlink" href="#warning-read-before-proceeding" title="Permanent link">&para;</a></h2>
+<p>I'm about to deep dive into my entire workflow for <abbr title="Claude Code">CC</abbr>.
+This is what works for me after I have spent <em>hours</em> using the tool.
+So I want to put a few disclaimers/warnings before I proceed.</p>
+<p class="annotate">Before going any further, I will say that this is what has been successful <strong>for me</strong>.
+If you go on Twitter you'll see 465,279,346,727,844,684,918,549,865 posts about AI, how it just destroyed some industry, and how if you use it <em>just this special way</em> you'll become Supreme Overlord of Ganymede(1).
+It's a <strong>lot</strong> to keep up with and everyone has their own process for getting AI to accomplish their goals.
+And that's great!
+I'm writing this blog to share what I've learned through my journey using <abbr title="Claude Code">CC</abbr> for half a year, following certain trends, ignoring others, and most importantly of all, because my manager asked me to.
+If your favorite tip or trick isn't mentioned in here, it doesn't mean it isn't good.
+Given the firehose of AI information out there, there is a 99% chance I just haven't seen it yet.</p>
+<ol>
+<li>Jupiter's largest moon. Also the largest moon in the solar system for our Jeopardy fans out there.</li>
+</ol>
+<p>So I hope you learn something from this! If not, I promise to make it entertaining at least. Without any further ado, hold on to your butts.</p>
+<p><img alt="Hold on to your butts gif from Jurassic Park" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjE3MWVrMTRueTBscHMzaDB5bjR3dWY4M3o0dTcxM2lqaHRkcGpjbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/OCu7zWojqFA1W/giphy.gif" /></p>
+<h2 id="my-environment-setup-vanilla-cc">My Environment Setup - Vanilla <abbr title="Claude Code">CC</abbr><a class="headerlink" href="#my-environment-setup-vanilla-cc" title="Permanent link">&para;</a></h2>
+<p>So first let's start with the foundation. 
+I run <abbr title="Claude Code">CC</abbr> solely in the terminal, either on iTerm2 or the Windows Terminal, depending on if it's my work or personal machine.
+I use the <a href="https://code.claude.com/docs/en/overview">native installer for the OS now</a>, which is easier than maintaining an npm environment as I rarely touch JavaScript.
+This is also now the recommended way, so there's that.</p>
+<p>When developing I use the <a href="https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code">plugin for VSCode</a> to view the suggested diffs sometimes.
+It mostly depends on if I remember to run <code>/ide</code> and if it's working that day. 
+I do not use the VSCode plugin to run <abbr title="Claude Code">CC</abbr> commands in the side bar. 
+This gives too much of a Cursor vibe and I'm just not a fan of the UX.
+I live in the command line, so having one screen as my terminal and the other as my editor is what feels most natural for me.
+However, if you like having an all-in-one window with <abbr title="Claude Code">CC</abbr> in your VSCode, then this plugin is for you.</p>
+<p>And finally, I use <code>tmux</code> for managing different sessions and windows.
+I tend to have a <abbr title="Claude Code">CC</abbr> session running in one window, then multiple other windows for manually testing or tweaking things while working.
+I very often will start a project in one session, then either come to a stopping point or need to work on something else, and detach the session and start a new one.
+When I want to resume working on a project, I just re-attach the session. </p>
+<p class="annotate">And that's it.
+I don't use any AI task management tools like Beads or Gastown(1).
+I don't use OpenCode or another harness.
+This isn't for any deep reason, it's mostly that I don't find much value in switching between different provider models.</p>
+<ol>
+<li>The opinion on these is very mixed, and until I find myself absolutely needing them I wont add them.</li>
+</ol>
+<p>I've always been a minimalistic tool user, and my <abbr title="Claude Code">CC</abbr> setup is no exception. </p>
+<h2 id="the-bpe-loop">The <abbr title="Brainstorm, Plan, Execute">BPE</abbr> Loop<a class="headerlink" href="#the-bpe-loop" title="Permanent link">&para;</a></h2>
+<p class="annotate">This is the foundation of my <em>entire workflow</em>.
+The Brainstorm, Plan, Execute Loop(1).
+And I'll be honest, this isn't anything new, or something I invented.
+I discovered it in <a href="https://harper.blog/2025/05/08/basic-claude-code/">Harper Reed's Blog</a> during the early days of my <abbr title="Claude Code">CC</abbr> adventure and have since iterated on it until I got it where I wanted it.
+But I'm constantly surprised how many people <strong>don't</strong> operate in this manner, so we're going to treat it like it's some <em>grand magical secret</em> and not, you know, good software engineering practices(2).</p>
+<ol>
+<li><abbr title="Brainstorm, Plan, Execute">BPE</abbr> for short</li>
+<li>Or maybe it was just my mom instilling in me "Do you have a plan? What's the plan? What's the backup plan?" from such an early age that I just plan out everything.</li>
+</ol>
+<p>The mechanics of the loop are straightforward:</p>
+<ol>
+<li><strong>Brainstorm</strong> with the agent on your idea</li>
+<li>Create a step-by-step <strong>Plan</strong> for implementing the project using your agent</li>
+<li><strong>Execute</strong> each step in the plan until the project is implemented.</li>
+</ol>
+<p>Here's a visual representation of the Loop.</p>
+<pre class="mermaid"><code>flowchart LR
+    A[Brainstorm] --&gt; B[Plan]
+    B --&gt; C[Execute Plan]
+    C --&gt; D{Complete?}
+    D --&gt;|No| C
+    D --&gt;|Yes| E[Done]</code></pre>
+<p class="annotate">Look familiar?
+It should, it's basically fucking <a href="https://www.atlassian.com/agile/project-management/waterfall-methodology">Waterfall</a>.
+Now before you lose your lunch, hear me out.
+Waterfall often gets a bad rap in the software engineering world because the process is so <em>miserably</em> slow.
+It's actually funny that we hate it, when other engineering disciplines use something similar all the time.
+We can easily rewrite code to meet new requirements and not burn a fortune doing so.
+Ever seen a bridge built using Agile?
+No you have not(1).
+But AI <em>greatly</em> accelerates this.
+We can update a spec in a few minutes.
+Regenerate the plan if it's not working correctly.
+The issues with Waterfall that people disliked are a non-issue in the age of AI.
+This is another indicator that our industry is maturing(2).</p>
+<ol>
+<li>A topic I discussed in length in the first part of this series <a href="../were-witnessing-the-evolution-of-software-engineering/">Part 1: We're Witnessing the Evolution of Software Engineering</a>.</li>
+<li>I would love to see a TV show where we try to apply Agile to other engineering practices. "So a bug report came in that all the pedestrians fell off the bridge into the raging waters below because we forgot to implement guardrails! We're releasing that in the nightly patch where we deploy a group of workers at 3am to upgrade the bridge to version 0.3.9!"</li>
+</ol>
+<p>You may look at this and say "Damn that's a lot of process" for a fix that may take you five minutes.
+True, and I don't use this for <em>everything</em>.</p>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Prompts</th>
+<th><abbr title="Brainstorm, Plan, Execute">BPE</abbr> Loop</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Greenfield project</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Refactor or new feature on existing project</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>One off change or small task on existing project</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+<p>Each of these stages is a Command I've implemented, stored in my global <code>.claude/</code> directory so they're accessible in every session.
+You can see them defined <a href="https://github.com/MasonEgger/homedir/tree/main/.claude/commands/app-dev">in my GitHub</a>.</p>
+<h3 id="brainstorm-app-devbrainstorm">Brainstorm - <code>/app-dev:brainstorm</code><a class="headerlink" href="#brainstorm-app-devbrainstorm" title="Permanent link">&para;</a></h3>
+<p>The first step in the process is to brainstorm.
+What am I trying to build?
+What tools do I want to use?
+What did I not consider?
+The <a href="https://github.com/MasonEgger/homedir/blob/main/.claude/commands/app-dev/brainstorm.md">brainstorm command</a> basically plays 20 questions with me.
+I give it the details I have for an application to build, and then we focus in on what I want the app to do, features I may have forgotten, implementation details, etc.</p>
+<details class="abstract">
+<summary><code>brainstorm</code> Command</summary>
+<div class="language-md highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gh"># Brainstorm Command</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Ask me one question at a time so we can develop a thorough, step-by-step spec for this idea. Each question should build on my previous answers, and our end goal is to have a detailed specification I can hand off to a developer who will implement using good TDD practices.
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>Let&#39;s do this iteratively and dig into every relevant detail. Remember, only one question at a time.
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="gu">## Critical Focus Areas</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="gs">**TDD Implementation Ready**</span>: Ensure the spec includes requirements for YOUR application logic that can be converted into failing tests first. Focus on business rules, data validation, error handling, and custom algorithms that YOU will implement - not framework or library behavior. Think about what application-specific behaviors need verification.
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="gs">**Component Boundaries**</span>: Identify clear, testable components that can be implemented independently and then integrated together. Each component should have well-defined inputs, outputs, and responsibilities.
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="gs">**Global Claude Config Integration**</span>: Follow the established development patterns and preferences from the user&#39;s global Claude configuration (found in ~/.claude/CLAUDE.md and related files). Respect their preferred tools, coding standards, and project structure approaches.
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>Focus on getting the technical details and component boundaries clear enough that the resulting spec can be broken down into implementable, testable steps that follow the user&#39;s established development workflow.
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>The goal of this is NOT to implement the application or write a bunch of code, but to create a specification file that you will use later to create a plan. I will review this after and make manual changes. You may write <span class="ge">_some_</span> code to illustrate specific points, but do not focus on that. Instead focus on making the specification usable for you to consume and plan with later. 
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>Once we are done, save the spec as <span class="ni">@spec</span>.md
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>Here&#39;s the idea:
+</span></code></pre></div>
+</details>
+<p>This process can take a <strong>looooong</strong> time. 
+If you look in my <code>ai-sessions/</code> directories in repos I've used this on, you'll see from the session documentation that these can take anywhere from half an hour to a few hours, depending on how complex the problem is and how long it takes me to consider its suggestions.
+This isn't the AI churning away for a few hours on its own.
+This is a dialogue and sometimes it brings up <em>very cogent points</em> that I need to consider.</p>
+<p>However, there is a hidden trap in a step like this, which is scope creep.
+I often start planning out an idea and the brainstorming is churning along and then it asks a very useful question about a feature I hadn't considered.
+I like the idea so we add it in, and now we're discussing that feature and it brings up <em>another</em> totally valid point that adds <em>more</em> complexity.
+It's easy to trip down this rabbit hole and wind up with an application with <strong>way</strong> more features than you intended.
+Lately I've taken to telling it "Yes that's a good feature, put it in a future features section and let's focus on the MVP."
+This seems to fix the scope creep issue. </p>
+<p>Now once you're done with this step <abbr title="Claude Code">CC</abbr> will put all your responses together and create a specification file <code>spec.md</code>.
+This process can actually take several minutes.
+I've often taken a break and come back to the spec file being written. 
+I let it write it out and we're done right?</p>
+<p><img alt="Dwight Shrute from the office gif &quot;Let me put it this way....no&quot;" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXB4Nmh2czNtcHo1bTl0cDRuaWp3bWxxNTJpOGIwNW55MnptMDI5dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/daPCSjwus6UR2JxRX1/giphy.gif" /></p>
+<p>Nope!
+Not in the slightest.
+It's time to <strong>review</strong> the specification.
+I meticulously comb through every line and make sure it is what I expected and want.
+If it's wrong, I <em>manually</em> change it.
+It is <strong>crucial</strong> that this file is accurate.
+This is the foundation of everything that will come after.
+Any mistake here will be amplified and propagated across the entire project.
+The upfront time here is worth it. 
+Otherwise you're going to be chasing bugs around the entire time.</p>
+<p>Finally, I use my <a href="https://github.com/MasonEgger/homedir/blob/main/.claude/commands/meta/session-summary.md"><code>/meta:session-summary</code></a> command to summarize what happened and create a record.
+This command creates a session summary of what just happened and stores it in the <code>.ai-sessions/</code> directory of the code repo.
+Next I use my <a href="https://github.com/MasonEgger/homedir/blob/main/.claude/commands/git/commit-msg.md"><code>/git:commit-msg</code></a> to create the commit message.
+I commit <code>spec.md</code> and the sessions summary to git and finally run <code>/clear</code> to wipe the context window.
+Now it's time to plan.</p>
+<h3 id="plan-app-devplan">Plan - <code>/app-dev:plan</code><a class="headerlink" href="#plan-app-devplan" title="Permanent link">&para;</a></h3>
+<p>The next step is the planning stage. 
+This command ingests the spec file we created and creates two markdown files as a result, <code>plan.md</code> and <code>todo.md</code>.
+What is the difference between a plan and a spec?
+<code>spec.md</code> details <em>what</em> needs to be implemented.
+<code>plan.md</code> specifies <em>how</em> the implementation should be done.
+And <code>todo.md</code> file details <em>what</em> has actually been implemented. </p>
+<p class="annotate">Now <code>todo.md</code> isn't anything special(1).
+It's simply a todo list to keep track of what is being worked on.
+You may be wondering "Why not just use the todo list functionality built in to <abbr title="Claude Code">CC</abbr>?"
+Well when I started, there was no plan mode 😝.
+But also I like mine more.
+A todo list persisted in git survives all sorts of crashes.
+Sometimes I wipe out my <code>.claude/</code> directory on a fresh install.
+Sometimes I work on a different machine.
+I want consistency across all of my environments.
+Oh, and I also think the way my <code>plan.md</code> and <code>todo.md</code> synchrony works better 🤷‍♂️.</p>
+<ol>
+<li>Sorry <code>todo.md</code>. You're special to me 💙</li>
+</ol>
+<p class="annotate">But the <em>true</em> magic of this command is what happens in <code>plan.md</code>.
+When I first started my <abbr title="Claude Code">CC</abbr> journey(1) I was given probably the best advice I've received regarding AI so far from my good friend <a href="https://www.linkedin.com/in/moshezadka/">Moshe Zadka</a>. </p>
+<ol>
+<li>Like day 1. I was at PyCon US and sat down with Moshe to get him to "teach me the secrets of Claude"</li>
+</ol>
+<blockquote>
+<p>"Claude is a better prompt engineer than you. Ask Claude how Claude would have Claude do it." - Moshe Zadka</p>
+</blockquote>
+<p>This advice was mind blowing, and as it turns out, 100% right.
+And then when I started exploring workflows and stumbled across the <abbr title="Brainstorm, Plan, Execute">BPE</abbr> loop, the plan stage did exactly this.
+<strong>It breaks down the spec into bite sized chunks, then asks Claude to come up with the prompts to achieve each stage.</strong></p>
+<details class="abstract">
+<summary><code>plan</code> Command</summary>
+<div class="language-text highlight"><pre><span></span><code># Plan Command
+
+Draft a detailed, step-by-step blueprint for building this project. Then, once you have a solid plan, break it down into small, iterative chunks that build on each other. Look at these chunks and then go another round to break it into small steps. Review the results and make sure that the steps are small enough to be implemented safely with strong testing, but big enough to move the project forward. Iterate until you feel that the steps are right sized for this project.
+
+From here you should have the foundation to provide a series of prompts for a code-generation LLM that will implement each step in a test-driven manner. Prioritize best practices, incremental progress, and early testing, ensuring no big jumps in complexity at any stage. Make sure that each prompt builds on the previous prompts, and ends with wiring things together. There should be no hanging or orphaned code that isn&#39;t integrated into a previous step.
+
+## Testing Guidelines for Generated Prompts
+
+When specifying tests in RED phases, focus ONLY on application logic:
+
+**DO test:**
+- Business logic you&#39;re implementing
+- Data validation rules you define
+- Error handling you add
+- Custom algorithms or calculations
+- Integration between YOUR components
+
+**DO NOT test:**
+- Framework functionality (e.g., &quot;Django can connect to database&quot;)
+- Third-party library behavior (e.g., &quot;requests library makes HTTP calls&quot;)
+- Language features (e.g., &quot;Python dicts work correctly&quot;)
+- Configuration loading (unless complex custom logic)
+- Trivial code (simple getters, setters, pass-through methods)
+
+**Examples:**
+- ❌ BAD: &quot;Test that Django User model can be created&quot; (tests Django)
+- ✅ GOOD: &quot;Test that custom password validator rejects weak passwords&quot; (tests YOUR logic)
+- ❌ BAD: &quot;Test that database connection works&quot; (tests framework)
+- ✅ GOOD: &quot;Test that user registration creates audit log entry&quot; (tests YOUR logic)
+
+## Critical Requirements for Execute-Plan Compatibility
+
+**Each prompt must be structured as numbered sub-steps that execute-plan can follow sequentially:**
+
+### Format for Each Step Prompt:
+```
+### Step X: [Descriptive Title]
+
+**NOTE**: [Any important context about existing implementation]
+
+```text
+[Prompt for code-generation LLM with numbered instructions]:
+
+1. RED: Write [specific type] tests first:
+- Create/modify [exact file path]:
+    - Test [specific scenario 1]
+    - Test [specific scenario 2]
+    - Test [specific edge case]
+
+Example RED phase (GOOD):
+1. RED: Write validation tests first:
+    - Create tests/test_user_validation.py:
+        - Test that custom password validator rejects passwords without special chars
+        - Test that email validator rejects disposable email domains
+        - Test that username validator blocks profanity
+
+Example RED phase (BAD - Don&#39;t do this):
+1. RED: Write model tests first:
+    - Create tests/test_models.py:
+        - Test that User model can be created  ← Testing Django, not your code
+        - Test that database saves User correctly  ← Testing Django ORM
+        - Test that email field stores email  ← Testing Django field behavior
+
+2. Document [specific component]:
+    - Create/update [exact file path]
+    - Document [specific behavior/rules]
+    - Include [specific examples/configurations]
+
+3. GREEN: Write MINIMAL code to make tests pass:
+    - Create [exact file path]
+    - Implement [specific functionality]
+    - Use [specific patterns/libraries]
+    - Just enough to pass tests
+
+4. RED: Add integration tests:
+    - Test [specific integration scenario]
+    - Test [specific error conditions]
+
+5. GREEN: Wire up integration minimally
+
+6. REFACTOR: Improve [specific aspects]
+
+7. Update documentation with [specific updates]
+
+8. Verify meaningful test coverage of YOUR application logic and run `just check`
+```
+
+## Prompt Generation Requirements
+
+1. **Executable Instructions**: Each numbered sub-step must be a specific instruction that execute-plan can follow exactly, not general guidance
+
+2. **File Path Specificity**: Every prompt must specify exact file paths (e.g., &quot;tests/test_activities/test_validation.py&quot;, not &quot;test files&quot;)
+
+3. **Test Scenario Detail**: Each RED phase must list specific test scenarios to implement, not generic &quot;write tests&quot;
+
+4. **TDD Structure**: Every prompt must follow RED-GREEN-REFACTOR with clear phases
+
+5. **Sequential Dependencies**: Each prompt builds on previous prompts with no orphaned code
+
+6. **Integration Requirements**: Each prompt ends with wiring the new code into existing systems
+
+Make sure and separate each prompt section. Use markdown. Each prompt should be tagged as text using code tags. The goal is to output prompts that execute-plan can follow step-by-step, but context and architectural decisions are important as well.
+
+## Output Format
+
+Store the plan in @plan.md with:
+- Current Status section showing implementation progress
+- Each step as a detailed prompt with numbered sub-instructions
+- Implementation Guidelines section
+- Success Metrics section
+
+Also create a @todo.md that:
+- Mirrors the plan.md structure with checkboxes
+- Tracks completion of each numbered sub-step
+- Can be updated by execute-plan as work progresses
+
+The spec is in the file called @spec.md
+</code></pre></div>
+</details>
+<p>So <abbr title="Claude Code">CC</abbr> takes the spec, decomposes the requirements to atomic units of implementation that MUST follow test-driven development, writes the prompts to achieve this, and then stores this in <code>plan.md</code> so it can be implemented later.
+It pairs this plan with <code>todo.md</code>, which mirrors every step in <code>plan.md</code> to ensure we always have a checkpoint in the development process.</p>
+<p>Now do you think I review these files?</p>
+<p><img alt="Spongebob and Patrick thinking gif" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjhubXhwNjdjMmVoZmQwZjlhcjVwenozeG0wZXgzbXVpaXRmbGs3eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lKXEBR8m1jWso/giphy.gif" /></p>
+<p class="annotate"><strong>Of course!</strong>(1)
+Always 👏 review 👏 everything!👏
+"But you said that Claude is better at prompting than you are why review them?"
+That's actually a great question.
+I review these files <em>not</em> because I think I can write better prompts than Claude(2).
+I review them because if I missed anything in the spec, it will become <strong>glaringly apparent</strong> in <code>plan.md</code>.
+The prompt will ask for things to be done that just don't make sense. 
+<strong>OR</strong> it will expose holes in my skills, <code>CLAUDE.md</code> files, and other sources I asked it to look from.</p>
+<ol>
+<li>If you aren't seeing the pattern here yet pay closer attention. </li>
+<li>Although I am guilty of tweaking them. I can't help myself. </li>
+</ol>
+<p class="annotate">For example, if I see in the prompt that it's trying to implement code in <code>__init__.py</code>, which is a <strong>bad</strong> practice and should be avoided, I know then that it didn't load my Python Skill, because I explicitly call this out as an anti-pattern(1).
+If I catch this, I know that it'll be rampant in the rest of the plan.
+I then may decide to just delete those details from the plan itself, or I may manually load my Python Skill and have <abbr title="Claude Code">CC</abbr> go back over the spec file and make sure the specifications are to my standards.
+And then if they are, I rerun the plan command and explicitly tell it to mind my standards(2).
+So yes, check the plan.
+It'll save you at least $20 in alcohol after <abbr title="Claude Code">CC</abbr> keeps doing something you ask it not to and you opt to crack open the liquor cabinet(3).</p>
+<ol>
+<li>This is kind of akin to the professor who's been teaching for 30 years and has the most <strong>hyper specific rules</strong> in their syllabus. It's because at one point someone did that thing and pissed them off and now it's a rule. Same with putting this in <code>__init__.py</code>.</li>
+<li>In a perfect world they would just always load correctly, but if this is the worst thing that happens to me while using the magic box that accelerates me 50000000% I'll take it. </li>
+<li>Remember kids, don't drink and vibe!</li>
+</ol>
+<p>Once you're satisfied, create a session summary, commit the code, and clear that context window!
+It's time to let <abbr title="Claude Code">CC</abbr> implement the application.</p>
+<h3 id="execute-app-devexecute-plan">Execute - <code>/app-dev:execute-plan</code><a class="headerlink" href="#execute-app-devexecute-plan" title="Permanent link">&para;</a></h3>
+<p>And now we've arrived at the climax, the actual implementation of the project.
+It took a while to get here, but now the hard part is over.
+If you did the previous two steps properly, then having AI actually implement the project should be easy.</p>
+<p>This phase of the <abbr title="Brainstorm, Plan, Execute">BPE</abbr> Loop is actually the only part that consistently loops.
+I use my <code>execute-plan</code> command, which in turn will read the <code>todo.md</code> to determine what step in the plan is next, read the last session from <code>.ai-sessions/</code> for any relevant lessons learned that need to be carried over, read <code>plan.md</code> to get the prompt that needs to be executed, and begin execution.
+And that's it.
+Let it cook.</p>
+<details class="abstract">
+<summary><code>execute-plan</code> command</summary>
+<div class="language-md highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="gh"># Execute Plan Command</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">1.</span> Read <span class="ni">@plan</span>.md and <span class="ni">@todo</span>.md
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>These files complement each other. <span class="ni">@todo</span>.md should track the current state of the implementation of <span class="ni">@plan</span>.md
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">2.</span> Check to see if a directory named @.ai-sessions` exists
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="k">1.</span> If the directory doesn&#39;t exist, do nothing
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="k">2.</span> If the directory exists, list the files and find the most recent session summary and read it. This is a summary of the previous session and will contain detailed information about what work was completed, and lessons learned in the las session.
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="k">3.</span> Open <span class="ni">@todo</span>.md and select the first unchecked item to work on.
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="k">4.</span> <span class="gs">**CRITICAL**</span>: Open <span class="ni">@plan</span>.md and locate the specific step being implemented
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>Find the detailed numbered prompts for this step (e.g., &quot;1. RED: Write tests...&quot;, &quot;2. GREEN: Implement...&quot;)
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>Follow these prompts EXACTLY in the specified order
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>Do NOT deviate from the file paths, test scenarios, or implementation approach specified
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="k">5.</span> If you have any questions about the task at hand, ask the user.
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="k">6.</span> Implement the plan for this item as specified in <span class="ni">@plan</span>.md:
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span><span class="gs">**Follow the exact numbered sub-steps**</span> in the plan.md prompt
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span><span class="gs">**Use the specific file paths**</span> mentioned in the prompts
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span><span class="gs">**Implement the exact test scenarios**</span> described
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>Follow strict TDD procedures (RED-GREEN-REFACTOR as specified)
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>Write robust, well-documented code
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>Focus tests on YOUR application logic, not framework functionality
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>Skip testing trivial code, framework features, or library behavior
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>Verify that all tests and linting passes
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>Make sure the tests pass, and the program builds/runs
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="k">7.</span> <span class="gs">**Update documentation as specified**</span> in the <span class="ni">@plan</span>.md prompts for this step
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="k">8.</span> <span class="gs">**CRITICAL**</span> Update <span class="ni">@todo</span>.md and mark off the item that was completed
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="k">9.</span> Ask the user if there is anything else they want you to do or review for this session.
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="gu">## Key Requirements:</span>
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span><span class="gs">**NEVER**</span> skip or reorder the numbered steps in plan.md
+</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span><span class="gs">**ALWAYS**</span> use the exact file paths specified in the prompts
+</span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span><span class="gs">**FOLLOW**</span> the RED-GREEN-REFACTOR cycle as outlined in each step
+</span><span id="__span-2-32"><a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span><span class="gs">**COMPLETE**</span> all documentation updates mentioned in the step
+</span><span id="__span-2-33"><a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span><span class="gs">**VERIFY**</span> all application logic is tested (not framework/library code)
+</span><span id="__span-2-34"><a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>Treat <span class="ni">@plan</span>.md prompts as <span class="gs">**implementation instructions**</span>, not suggestions
+</span></code></pre></div>
+</details>
+<p class="annotate">The fun thing about this loop is that it's <em>self correcting</em>. 
+It's doing TDD!
+So it will implement the tests first, write the code, and then run all the guardrail checks in the loop that's running.
+And it is <em>constantly</em> finding mistakes and fixing them(1), thus leading to more accurate code at the end of each iteration.</p>
+<ol>
+<li>This is probably what has completely eroded my faith in one-shots. The damn thing makes mistakes just 30s apart, yet you let it cook for hours? Nope. No thank you.</li>
+</ol>
+<p>Now the next part is optional, depending on the complexity of the task and how paranoid you are.
+<strong>Of course</strong> you should review the code of each step before committing it.
+But whether you do this for each step and review every line as it comes or if you just review it in the end will depend on you.
+Personally, I find myself babysitting it a bit more and watching line by line, but I also just let it go sometimes.
+The reason I babysit it is so if it starts going off the rails, I can correct it early rather than let it generate a metric ton of slop and then have to wade through it later.
+For example, I once caught it trying to test my Docker config by writing Python unit tests. 
+This is not what I wanted, but I was able to stop it before it went too far down the wrong path.
+Luckily, as the models and <abbr title="Claude Code">CC</abbr> has gotten better the amount I need to intervene is constantly decreasing. 
+But there are days the model is just having a bad day and it needs its hand held.</p>
+<p>Another thing I'll do during this phase is if I'm babysitting it and see it struggling to implement or fix something, I'll often Google what the issue is, find the solution, stop <abbr title="Claude Code">CC</abbr> from running and give it the link.
+This often yields great results and saves me time.</p>
+<p>Once it has finished implementing a step I follow the same process every time:</p>
+<ol>
+<li>Review the code again even if I reviewed it while it was running<ol>
+<li>Big picture view instead of narrow view</li>
+</ol>
+</li>
+<li>Manually run the guardrails checks like testing and linting <em>again</em>.<ol>
+<li><abbr title="Claude Code">CC</abbr> was running them during the building of the project, but it as has also lied to me before, so I check</li>
+</ol>
+</li>
+<li>Once I'm satisfied with the code I have it:<ol>
+<li>Write a new session summary to <code>.ai-sessions/</code> using <code>/meta:session-summary</code></li>
+<li>Update the local <code>CLAUDE.md</code> with lessons learned. I often do this by just running <code>/init</code></li>
+<li>I double check to make sure that <abbr title="Claude Code">CC</abbr> updated <code>todo.md</code> with the work it did. This is necessary for the next session.</li>
+<li>Generate a commit message using <code>/git:commit-msg</code></li>
+<li>Commit the code</li>
+</ol>
+</li>
+<li>Once it's time to move on to the next step, I run <code>/clear</code> like it's shift change and bring in the next session. I then run <code>/app-dev:execute-plan</code> again and we go again!</li>
+</ol>
+<p>And that's it. 
+Preheat the oven to 350 degrees and cook for 30 minutes until done. 
+If done <em>properly</em> this yields high quality, maintainable results of an application that you understand.</p>
+<h2 id="my-cc-tool-belt">My <abbr title="Claude Code">CC</abbr> Tool Belt<a class="headerlink" href="#my-cc-tool-belt" title="Permanent link">&para;</a></h2>
+<p>Now while the <abbr title="Brainstorm, Plan, Execute">BPE</abbr> loop is the core of my AI workflow, there are many other tools on my <abbr title="Claude Code">CC</abbr> tool belt that I use.
+And by the end of this you'll probably have this reaction.</p>
+<p><img alt="Simpsons clip where Police officer asks Batman how he got out of the bind, Batman says he always carries his carousel reversal spray, and Krusty (the villain) says &quot;What don't you have in that belt?&quot;" src="../img/017-claude-code/toolbelt.gif" /></p>
+<details class="warning">
+<summary>High level overview</summary>
+<p class="annotate">These next sections are just going to be a high level overview of the various tools and how I use them.
+For an <strong>even deeper dive</strong> check out the next blog post in this series(1).</p>
+<ol>
+<li>What have I done? 😭 This was supposed to be one blog and now I might need to contact a publisher...</li>
+</ol>
+</details>
+<h3 id="claudemd-files"><code>CLAUDE.md</code> Files<a class="headerlink" href="#claudemd-files" title="Permanent link">&para;</a></h3>
+<p class="annotate"><code>CLAUDE.md</code> is a markdown file of instructions, rules, and preferences you want Claude to "remember" every session.
+Most AI coding tools use something similar to this, often known as <code>AGENTS.md</code>.
+You can define a global level <code>CLAUDE.md</code> in <code>~/.claude/CLAUDE.md</code> for the context you want loaded for <em>every</em> session.
+For example, mine contains sections defining the relationship between me and <abbr title="Claude Code">CC</abbr>(1), my coding philosophy, and how it should ask for help.
+You can view my global <a href="https://github.com/MasonEgger/homedir/blob/main/.claude/CLAUDE.md"><code>CLAUDE.md</code> in my <code>homedir</code> repo</a>.</p>
+<ol>
+<li>There have been posts where people say if Claude "views you as a partner" it performs better. I have no idea if this is true, but again, it's working so I don't touch it.</li>
+</ol>
+<p>There's also project level <code>CLAUDE.md</code> files, which store specific information at the root level of a project.
+It scans the codebase and updates the project <code>CLAUDE.md</code> with insights it finds about the project.
+How to run it, how to test it, what the project does, etc.
+For project-level files, I run <code>/init</code> religiously before every commit.
+Make sure it accurately reflects what the project is and <em>where it is going</em>.
+The project <code>CLAUDE.md</code> is the first thing Claude reads in every session.
+This will set the entire tone of your session.</p>
+<h3 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h3>
+<p>My primary way of interacting with <abbr title="Claude Code">CC</abbr> is with commands.
+Commands are custom prompts you trigger from within a <abbr title="Claude Code">CC</abbr> session.
+Every time I come up with a new repeatable workflow, my first instinct is to create a Command for it.
+Treat them like hotkeys.
+You can view my ever changing list of commands on my <a href="https://github.com/MasonEgger/homedir/tree/main/.claude/commands">GitHub</a>.</p>
+<h3 id="skills">Skills<a class="headerlink" href="#skills" title="Permanent link">&para;</a></h3>
+<p><a href="https://code.claude.com/docs/en/skills">Skills</a> are collections of instructions, resources, and tools that <abbr title="Claude Code">CC</abbr> uses to conditionally load context when it determines you need them.
+So when I'm working on a Python project, <abbr title="Claude Code">CC</abbr> determines that I'm working on Python and loads <a href="https://github.com/MasonEgger/homedir/blob/main/.claude/skills/python/SKILL.md">Python Skill</a> .
+This skill defines my personal requirements for writing Python such as type hint requirements, toolchain preferences, and anti-patterns to avoid.</p>
+<p>You can either write your own Skills, or use Skills that people write and publish.
+I'm constantly looking around on GitHub for new Skills.</p>
+<h3 id="mcp-servers">MCP Servers<a class="headerlink" href="#mcp-servers" title="Permanent link">&para;</a></h3>
+<p class="annotate">Oh joy, the favorite word of every tech bro in the valley for the last six months, MCP! 
+MCP stands for Model Context Protocol, and is just a fancy way for AI to communicate with AI enabled services. 
+For example, <abbr title="Claude Code">CC</abbr> doesn't natively know how to charge something to my personal PayPal account, but with the PayPal MCP connection I could give it access to my account and have it make purchases for me(1). 
+Think REST API, but for AI.</p>
+<ol>
+<li>This still sounds like a recipe for disaster. I do a good enough job burning my own money I don't need AIs help.</li>
+</ol>
+<p>Personally, I don't use MCP that much.
+I have bash, and that covers 95% of things.
+The ones I do enjoy: Temporal's knowledge base MCP server and the Playwright MCP server for testing web UIs.
+However, recent improvements in how <abbr title="Claude Code">CC</abbr> uses MCP is making me take another look at this.</p>
+<h3 id="subagents">Subagents<a class="headerlink" href="#subagents" title="Permanent link">&para;</a></h3>
+<p>Now to my least favorite feature, subagents. I know maaaany people who swear by these things, but I'm still hung up on the whole "Just let it cook and eat the dinner" idea. 
+With subagents you offload a task to what amounts to a <abbr title="Claude Code">CC</abbr> child process with it's own context window, and it comes back when it's done. 
+You don't have control over it, you don't get to review anything until it's done.
+That being said, I'm working on a copy-editor subagent using <a href="https://vale.sh/docs/cli"><code>vale</code></a>, and <abbr title="Claude Code">CC</abbr> Teams (Swarms) showed real potential for fan-out tasks.
+So watch my blog for future posts as I probably change my mind here in a few months.</p>
+<h2 id="anticipating-your-responses">Anticipating your responses<a class="headerlink" href="#anticipating-your-responses" title="Permanent link">&para;</a></h2>
+<p>I can hear them now, so let's squash the comment section now.</p>
+<h3 id="thats-a-lot-of-process-for-a-simple-fix-isnt-it">"That's a LOT of process for a simple fix isn't it?"<a class="headerlink" href="#thats-a-lot-of-process-for-a-simple-fix-isnt-it" title="Permanent link">&para;</a></h3>
+<p>Yea.
+It really is.
+And for a quick fix, I don't use this.
+I use the <abbr title="Brainstorm, Plan, Execute">BPE</abbr> loop for large projects, features being added, and something I'm going to spend actual time on.
+But for small little fixes or updates to repos, I just use raw prompts.</p>
+<p>For example, I'm constantly updating the <a href="https://pytexas.org/2026">PyTexas 2026</a> website as the conference approaches.
+This site is just a static site generator project.
+Say I need to add a new sponsor to the sponsors page.
+I copy in the logo file into the base directory, then prompt <abbr title="Claude Code">CC</abbr> to update the sponsors page and move the logo file to the right location.
+Works like a charm.</p>
+<p>So don't think you <em>must</em> use a process like this for everything.
+It's a tool, not a silver bullet.
+But from my experience, the <abbr title="Brainstorm, Plan, Execute">BPE</abbr> loop is the best way to build and maintain larger projects.</p>
+<h3 id="do-you-really-waste-all-your-time-watching-it-build">"Do you really waste all your time watching it build?"<a class="headerlink" href="#do-you-really-waste-all-your-time-watching-it-build" title="Permanent link">&para;</a></h3>
+<p>I don't view it as wasting time.
+It's still generating at a rate far faster than I would. 
+And I'm <em>learning</em> while it's doing this.
+I'm learning how to better tune my <abbr title="Claude Code">CC</abbr> files.
+What gaps I have.
+What makes <abbr title="Claude Code">CC</abbr> tick.
+But I'm also learning more about coding.
+<abbr title="Claude Code">CC</abbr> will often do something and I'm like "Woa what is that?" so I stop it and ask it to explain it to me.
+I've actually learned more new features about Python and other frameworks from watching <abbr title="Claude Code">CC</abbr> than I have in the past few years of self implementation.
+I tend to always grab for what I know.
+<abbr title="Claude Code">CC</abbr> grabs for what is <em>best</em> so I get to learn.
+And if I don't like it?
+I tell it to fuck off and do it the way I want it done.
+It's AI, not your mom.
+You can tell it what to do.</p>
+<h3 id="this-kinda-takes-the-fun-out-of-vibe-coding">"This kinda takes the fun out of vibe coding."<a class="headerlink" href="#this-kinda-takes-the-fun-out-of-vibe-coding" title="Permanent link">&para;</a></h3>
+<p>I disagree.
+The joy of vibe coding comes from building reliable software that solves a problem I have quickly.
+I still get that when using this process, and probably even more so because I know the results will be correct.
+But if you enjoy sitting down, providing one prompt, and hoping to get to success then ya, it does kinda kill the vibe.
+But if you're trying to build something meaningful that will survive the software engineering lifecycle for years to come, that style of "vibe coding" ain't gonna cut it.
+But you know that.</p>
+<h3 id="doesnt-this-make-you-insert_negative_emotion_here">"Doesn't this make you INSERT_NEGATIVE_EMOTION_HERE?"<a class="headerlink" href="#doesnt-this-make-you-insert_negative_emotion_here" title="Permanent link">&para;</a></h3>
+<p>Fuck no.</p>
+<p>I've never been more productive in my career!
+I'm having so much fun!
+The bottleneck on what I'm doing is no longer my ability to write code, but my attention span.
+Do I have mild existential dread about what this means for the job market?
+Also yes.
+That's why I'm leveling up on the tooling of the future.
+Change always happens.</p>
+<p>And let's be real?
+What will my outrage do?
+Will the big AI companies stop moving forward because a sad boy in Texas is upset with them?
+Not a snowball's chance in hell.
+So I see it one of two ways.
+Evolve or perish.
+I know which one I'm choosing.</p>
+<h2 id="now-go-forth-and-prosper">Now Go Forth and Prosper!<a class="headerlink" href="#now-go-forth-and-prosper" title="Permanent link">&para;</a></h2>
+<p><img alt="Buddy the elf saying &quot;You did it! Congratulations&quot; gif" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGdqc3BvYWJ3eWdhbzA1ZmV6eGpiZnVpOGtzbHF4MjMzY3Bldm9zZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RIjVnmAtOD4l4c2Ert/giphy.gif" /></p>
+<p class="annotate">Thanks for hanging in there.
+I know this was long(1).
+Hopefully you learned something.
+If you read my other blogs, hopefully you're feeling optimistic about the future and not an overwhelming sense of dread.
+I promise you, you're going to love this.
+Seven months ago, I was staring at Claude Code the same way someone in 1972 might have stared at an HP-35 calculator.
+Now?
+That logarithm book is just a neat thing on a shelf(2).
+Everyone who I've got started on programming this way loves it.
+They feel inspired and ready to tackle the world.
+And I wish the same for you.</p>
+<ol>
+<li>If you think it took you a long time to read, imagine how long it took me to write. The answer is about a month.</li>
+<li>Read <a href="../were-witnessing-the-evolution-of-software-engineering/">Part 1: We're Witnessing the Evolution of Software Engineering</a> for context if you haven't already.</li>
+</ol>
+<div class="admonition abstract">
+<p class="admonition-title">Part 4 of 5 of my <code>Brain Dump Ramblings on AI</code> blog series</p>
+<p>Check out the other parts of this series:</p>
+<ul>
+<li>Part 1 - <strong><a href="../were-witnessing-the-evolution-of-software-engineering/">We're Witnessing the Evolution of Software Engineering</a></strong> discusses the historical context and ongoing evolution of software engineering up to the advent of AI.</li>
+<li>Part 2 - <strong><a href="../code-is-now-cheap-dont-devalue-yourself/">Code is Cheap, Don't Devalue Yourself</a></strong> discusses AI and it's impact on the software engineering discipline.</li>
+<li>Part 3 - <strong><a href="../what-i-found-actually-works-with-ai/">What I Found Actually Works with AI</a></strong> - The do's and don'ts that guide everything I do.</li>
+<li>Part 5 - <strong>Skills, Plugins, and MCP Oh My!</strong> - A deep dive into Claude Code's customization features. <em>Coming Soon</em></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2018-2026 - Mason Egger
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://twitter.com/masonegger" target="_blank" rel="noopener" title="Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"/></svg>
+    </a>
+  
+    
+    
+      
+    
+    
+    
+    <a href="https://fosstodon.org/@masonegger" target="_blank" rel="noopener me" title="Mastodon" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54-.6-4.6-.9-9.3-.9-13.9 85.6 20.9 158.7 9.1 178.7 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6V190.1c0-49.7-64-51.6-64 6.9v62.5H201V197c0-58.5-64-56.6-64-6.9v114.2H90.3c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://bsky.app/profile/mason.dev" target="_blank" rel="noopener" title="Bluesky" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M407.8 294.7c-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3M288 227.1c-26.1-50.7-97.1-145.2-163.1-191.8C61.6-9.4 37.5-1.7 21.6 5.5 3.3 13.8 0 41.9 0 58.4S9.1 194 15 213.9c19.5 65.7 89.1 87.9 153.2 80.7 3.3-.5 6.6-.9 10-1.4-3.3.5-6.6 1-10 1.4-93.9 14-177.3 48.2-67.9 169.9C220.6 589.1 265.1 437.8 288 361.1c22.9 76.7 49.2 222.5 185.6 103.4 102.4-103.4 28.1-156-65.8-169.9-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3 64.1 7.1 133.6-15.1 153.2-80.7C566.9 194 576 75 576 58.4s-3.3-44.7-21.6-52.9c-15.8-7.1-40-14.9-103.2 29.8C385.1 81.9 314.1 176.4 288 227.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/mason-egger" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/c/MasonEgger" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/MasonEgger" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="static/docs/MasonEgger-resume.pdf" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M176 48H64c-8.8 0-16 7.2-16 16v384c0 8.8 7.2 16 16 16h256c8.8 0 16-7.2 16-16V208h-88c-39.8 0-72-32.2-72-72zm140.1 112L224 67.9V136c0 13.3 10.7 24 24 24zM0 64C0 28.7 28.7 0 64 0h133.5c17 0 33.3 6.7 45.3 18.7l122.5 122.6c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="./feed_rss_created.xml" target="_blank" rel="noopener" title="RSS" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zm32 104c0-13.3 10.7-24 24-24 137 0 248 111 248 248 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-110.5-89.5-200-200-200-13.3 0-24-10.7-24-24m0 96c0-13.3 10.7-24 24-24 83.9 0 152 68.1 152 152 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-57.4-46.6-104-104-104-13.3 0-24-10.7-24-24m0 120a32 32 0 1 1 64 0 32 32 0 1 1-64 0"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.code.select", "content.tabs.link", "content.tooltips", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
