@@ -6,6 +6,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a personal website for Mason Egger built with [MkDocs](https://www.mkdocs.org/) using a modified [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) theme. The site is deployed to Netlify.
 
+## Git Workflow (Repo-Specific Overrides)
+
+These rules override the global commit process in `~/.claude/CLAUDE.md` for this repository only.
+
+- **No `.ai-sessions/` in this repo.** Do not run `/bpe:session-summary` and do not create the directory. This is a content repo; session history belongs elsewhere.
+- **Commit with `--no-verify`.** The full sequence here is: `/bpe:commit-message` to generate `commit-msg.md`, then `git commit -S --no-verify -F commit-msg.md`.
+- `commit-msg.md` stays gitignored and is never staged.
+- The global boundaries still apply: never commit directly to `main`, never merge to `main`, and branch before committing.
+
 ## Development Commands
 
 ### Using `just` (Recommended)
