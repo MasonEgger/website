@@ -570,6 +570,72 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#cutting-through-the-slop-lessons-learned-from-a-year-of-claude-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cutting Through the Slop: Lessons Learned from a Year of Claude Code
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vibe-check-hot-takes-on-ai-skills-developer-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vibe Check: Hot Takes on AI Skills &amp; Developer Workflows
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#writing-pythonic-code-features-that-make-python-powerful" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Writing Pythonic Code: Features That Make Python Powerful
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#securing-ai-applications-with-tailscale-and-temporal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Securing AI Applications with Tailscale and Temporal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-temporal-nexus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction to Temporal Nexus
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#let-me-introduce-yall-to-yall" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Let Me Introduce Y'all to Y'all
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#temporal-replay-workshops" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -592,17 +658,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#python-102-beyond-the-basics" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Python 102: Beyond the Basics
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#devrel-show-episode-4-mason-egger-from-temporal" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -614,65 +669,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#i-cant-believe-its-not-real-data-an-intro-to-synthetic-data" class="md-nav__link">
+  <a href="#build-durable-applications-with-temporal" class="md-nav__link">
     <span class="md-ellipsis">
       
-        I Can't Believe It's Not Real Data! An Intro to Synthetic Data
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#digitalocean-tech-talks" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        DigitalOcean Tech Talks
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#a-year-without-pants-strategies-for-successful-remote-work" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        A Year Without Pants: Strategies for Successful Remote Work
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#theres-a-snake-in-the-birdhouse-building-a-python-culture-at-vrbo" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        There's a Snake in the Birdhouse! Building a Python Culture at Vrbo
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#slis-slas-and-sldohs-learning-about-service-uptime-from-homer-simpsons" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SLI's, SLA's and SL'D'OHS! Learning about Service Uptime from Homer Simpsons
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#building-docs-like-code-continuous-integration-for-documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Building Docs like Code: Continuous Integration for Documentation
+        Build Durable Applications with Temporal
       
     </span>
   </a>
@@ -792,6 +792,484 @@ and corresponding resources below.</p>
       </header>
 
       <!-- Posts -->
+      
+        <!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Post excerpt -->
+<article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+
+    <!-- Post authors -->
+    
+    <nav class="md-post__authors md-typeset">
+      
+      <span class="md-author">
+        <img src="https://github.com/masonegger.png" alt="Mason Egger" />
+      </span>
+      
+    </nav>
+    
+
+    <!-- Post metadata -->
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+
+        <!-- Post date -->
+        <li class="md-meta__item">
+          
+            <time datetime="2026-08-04">August 4, 2026
+            </time></li>
+
+        <!-- Post categories -->
+        
+        <li class="md-meta__item">
+          in
+          
+          <a href="category/meetup-talk/" class="md-meta__link">Meetup Talk</a></li>
+        
+
+        <!-- Post readtime -->
+        
+      </ul>
+
+      <!-- Draft marker -->
+      
+    </div>
+  </header>
+
+  <!-- Post content -->
+  <div class="md-post__content md-typeset">
+    <h2 id="cutting-through-the-slop-lessons-learned-from-a-year-of-claude-code"><a class="toclink" href="cutting-through-the-slop-lessons-learned-from-a-year-of-claude-code/">Cutting Through the Slop: Lessons Learned from a Year of Claude Code</a></h2>
+<p>Code is cheaper than it's ever been, and it will never be this expensive again.
+Here's what survived a year of building damn near everything with Claude Code.</p>
+
+
+    <!-- Continue reading link -->
+    <nav class="md-post__action">
+      <a href="cutting-through-the-slop-lessons-learned-from-a-year-of-claude-code/">
+        Continue reading
+      </a>
+    </nav>
+  </div>
+</article>
+      
+        <!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Post excerpt -->
+<article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+
+    <!-- Post authors -->
+    
+    <nav class="md-post__authors md-typeset">
+      
+      <span class="md-author">
+        <img src="https://github.com/masonegger.png" alt="Mason Egger" />
+      </span>
+      
+    </nav>
+    
+
+    <!-- Post metadata -->
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+
+        <!-- Post date -->
+        <li class="md-meta__item">
+          
+            <time datetime="2026-06-04">June 4, 2026
+            </time></li>
+
+        <!-- Post categories -->
+        
+        <li class="md-meta__item">
+          in
+          
+          <a href="category/webinar/" class="md-meta__link">Webinar</a></li>
+        
+
+        <!-- Post readtime -->
+        
+      </ul>
+
+      <!-- Draft marker -->
+      
+    </div>
+  </header>
+
+  <!-- Post content -->
+  <div class="md-post__content md-typeset">
+    <h2 id="vibe-check-hot-takes-on-ai-skills-developer-workflows"><a class="toclink" href="vibe-check-hot-takes-on-ai-skills--developer-workflows/">Vibe Check: Hot Takes on AI Skills &amp; Developer Workflows</a></h2>
+<p>Shy Ruparel and I went back and forth on what actually works when you build with AI, and what's just a vibe with a blog post attached.</p>
+
+
+    <!-- Continue reading link -->
+    <nav class="md-post__action">
+      <a href="vibe-check-hot-takes-on-ai-skills--developer-workflows/">
+        Continue reading
+      </a>
+    </nav>
+  </div>
+</article>
+      
+        <!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Post excerpt -->
+<article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+
+    <!-- Post authors -->
+    
+    <nav class="md-post__authors md-typeset">
+      
+      <span class="md-author">
+        <img src="https://github.com/masonegger.png" alt="Mason Egger" />
+      </span>
+      
+    </nav>
+    
+
+    <!-- Post metadata -->
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+
+        <!-- Post date -->
+        <li class="md-meta__item">
+          
+            <time datetime="2026-05-14">May 14, 2026
+            </time></li>
+
+        <!-- Post categories -->
+        
+        <li class="md-meta__item">
+          in
+          
+          <a href="category/workshop/" class="md-meta__link">Workshop</a></li>
+        
+
+        <!-- Post readtime -->
+        
+      </ul>
+
+      <!-- Draft marker -->
+      
+    </div>
+  </header>
+
+  <!-- Post content -->
+  <div class="md-post__content md-typeset">
+    <h2 id="writing-pythonic-code-features-that-make-python-powerful"><a class="toclink" href="python-102-beyond-the-basics/">Writing Pythonic Code: Features That Make Python Powerful</a></h2>
+<p>In this Workshop, you will go beyond the basics of Python and explore various language features that make Python <em>pythonic</em>.</p>
+
+
+    <!-- Continue reading link -->
+    <nav class="md-post__action">
+      <a href="python-102-beyond-the-basics/">
+        Continue reading
+      </a>
+    </nav>
+  </div>
+</article>
+      
+        <!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Post excerpt -->
+<article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+
+    <!-- Post authors -->
+    
+    <nav class="md-post__authors md-typeset">
+      
+      <span class="md-author">
+        <img src="https://github.com/masonegger.png" alt="Mason Egger" />
+      </span>
+      
+    </nav>
+    
+
+    <!-- Post metadata -->
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+
+        <!-- Post date -->
+        <li class="md-meta__item">
+          
+            <time datetime="2026-05-06">May 6, 2026
+            </time></li>
+
+        <!-- Post categories -->
+        
+        <li class="md-meta__item">
+          in
+          
+          <a href="category/workshop/" class="md-meta__link">Workshop</a></li>
+        
+
+        <!-- Post readtime -->
+        
+      </ul>
+
+      <!-- Draft marker -->
+      
+    </div>
+  </header>
+
+  <!-- Post content -->
+  <div class="md-post__content md-typeset">
+    <h2 id="securing-ai-applications-with-tailscale-and-temporal"><a class="toclink" href="securing-ai-applications-with-tailscale-and-temporal/">Securing AI Applications with Tailscale and Temporal</a></h2>
+<p>A joint Tailscale and Temporal workshop from Replay 2026, co-presented with Kartik Bharath of Tailscale.
+Attendees built a durable AI weather agent and put the whole thing on a tailnet.</p>
+
+
+    <!-- Continue reading link -->
+    <nav class="md-post__action">
+      <a href="securing-ai-applications-with-tailscale-and-temporal/">
+        Continue reading
+      </a>
+    </nav>
+  </div>
+</article>
+      
+        <!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Post excerpt -->
+<article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+
+    <!-- Post authors -->
+    
+    <nav class="md-post__authors md-typeset">
+      
+      <span class="md-author">
+        <img src="https://github.com/masonegger.png" alt="Mason Egger" />
+      </span>
+      
+    </nav>
+    
+
+    <!-- Post metadata -->
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+
+        <!-- Post date -->
+        <li class="md-meta__item">
+          
+            <time datetime="2026-05-05">May 5, 2026
+            </time></li>
+
+        <!-- Post categories -->
+        
+        <li class="md-meta__item">
+          in
+          
+          <a href="category/workshop/" class="md-meta__link">Workshop</a></li>
+        
+
+        <!-- Post readtime -->
+        
+      </ul>
+
+      <!-- Draft marker -->
+      
+    </div>
+  </header>
+
+  <!-- Post content -->
+  <div class="md-post__content md-typeset">
+    <h2 id="introduction-to-temporal-nexus"><a class="toclink" href="introduction-to-temporal-nexus/">Introduction to Temporal Nexus</a></h2>
+<p>Two teams, two Namespaces, and every painful workaround people use to get a call across that wall.
+A three and a half hour hands-on workshop from Replay 2026 on doing it properly.</p>
+
+
+    <!-- Continue reading link -->
+    <nav class="md-post__action">
+      <a href="introduction-to-temporal-nexus/">
+        Continue reading
+      </a>
+    </nav>
+  </div>
+</article>
+      
+        <!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Post excerpt -->
+<article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+
+    <!-- Post authors -->
+    
+    <nav class="md-post__authors md-typeset">
+      
+      <span class="md-author">
+        <img src="https://github.com/masonegger.png" alt="Mason Egger" />
+      </span>
+      
+    </nav>
+    
+
+    <!-- Post metadata -->
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+
+        <!-- Post date -->
+        <li class="md-meta__item">
+          
+            <time datetime="2025-02-09">February 9, 2025
+            </time></li>
+
+        <!-- Post categories -->
+        
+        <li class="md-meta__item">
+          in
+          
+          <a href="category/conference-talk/" class="md-meta__link">Conference Talk</a></li>
+        
+
+        <!-- Post readtime -->
+        
+      </ul>
+
+      <!-- Draft marker -->
+      
+    </div>
+  </header>
+
+  <!-- Post content -->
+  <div class="md-post__content md-typeset">
+    <h2 id="let-me-introduce-yall-to-yall"><a class="toclink" href="let-me-introduce-yall-to-yall/">Let Me Introduce Y'all to Y'all</a></h2>
+<p>English lost its plural you.
+A piece of Texan slang got it back, and it solves a problem communities actually have.</p>
+
+
+    <!-- Continue reading link -->
+    <nav class="md-post__action">
+      <a href="let-me-introduce-yall-to-yall/">
+        Continue reading
+      </a>
+    </nav>
+  </div>
+</article>
       
         <!--
   Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
@@ -995,85 +1473,6 @@ and corresponding resources below.</p>
         <!-- Post date -->
         <li class="md-meta__item">
           
-            <time datetime="2024-04-19">April 19, 2024
-            </time></li>
-
-        <!-- Post categories -->
-        
-        <li class="md-meta__item">
-          in
-          
-          <a href="category/workshop/" class="md-meta__link">Workshop</a></li>
-        
-
-        <!-- Post readtime -->
-        
-      </ul>
-
-      <!-- Draft marker -->
-      
-    </div>
-  </header>
-
-  <!-- Post content -->
-  <div class="md-post__content md-typeset">
-    <h2 id="python-102-beyond-the-basics"><a class="toclink" href="python-102-beyond-the-basics/">Python 102: Beyond the Basics</a></h2>
-<p>In this Workshop, you will go beyond the basics of Python and explore various language features that make Python <em>pythonic</em>. </p>
-
-
-    <!-- Continue reading link -->
-    <nav class="md-post__action">
-      <a href="python-102-beyond-the-basics/">
-        Continue reading
-      </a>
-    </nav>
-  </div>
-</article>
-      
-        <!--
-  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to
-  deal in the Software without restriction, including without limitation the
-  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-  sell copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in
-  all copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-  IN THE SOFTWARE.
--->
-
-<!-- Post excerpt -->
-<article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-
-    <!-- Post authors -->
-    
-    <nav class="md-post__authors md-typeset">
-      
-      <span class="md-author">
-        <img src="https://github.com/masonegger.png" alt="Mason Egger" />
-      </span>
-      
-    </nav>
-    
-
-    <!-- Post metadata -->
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-
-        <!-- Post date -->
-        <li class="md-meta__item">
-          
             <time datetime="2023-11-02">November 2, 2023
             </time></li>
 
@@ -1153,7 +1552,7 @@ and corresponding resources below.</p>
         <!-- Post date -->
         <li class="md-meta__item">
           
-            <time datetime="2022-06-08">June 8, 2022
+            <time datetime="2023-03-13">March 13, 2023
             </time></li>
 
         <!-- Post categories -->
@@ -1161,7 +1560,7 @@ and corresponding resources below.</p>
         <li class="md-meta__item">
           in
           
-          <a href="category/conference-talk/" class="md-meta__link">Conference Talk</a></li>
+          <a href="category/meetup-talk/" class="md-meta__link">Meetup Talk</a></li>
         
 
         <!-- Post readtime -->
@@ -1175,418 +1574,13 @@ and corresponding resources below.</p>
 
   <!-- Post content -->
   <div class="md-post__content md-typeset">
-    <h2 id="i-cant-believe-its-not-real-data-an-intro-to-synthetic-data"><a class="toclink" href="i-cant-believe-its-not-real-data-an-intro-to-synthetic-data/">I Can't Believe It's Not Real Data! An Intro to Synthetic Data</a></h2>
-<p>What is Synthetic Data? What can I use it for? Is it as good as real data? Find out the answers to those and more</p>
+    <h2 id="build-durable-applications-with-temporal"><a class="toclink" href="build-durable-applications-with-temporal/">Build Durable Applications with Temporal</a></h2>
+<p>An hour on why modern applications fail in boring, preventable ways, and what changes when your business logic can survive the process it's running in.</p>
 
 
     <!-- Continue reading link -->
     <nav class="md-post__action">
-      <a href="i-cant-believe-its-not-real-data-an-intro-to-synthetic-data/">
-        Continue reading
-      </a>
-    </nav>
-  </div>
-</article>
-      
-        <!--
-  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to
-  deal in the Software without restriction, including without limitation the
-  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-  sell copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in
-  all copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-  IN THE SOFTWARE.
--->
-
-<!-- Post excerpt -->
-<article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-
-    <!-- Post authors -->
-    
-    <nav class="md-post__authors md-typeset">
-      
-      <span class="md-author">
-        <img src="https://github.com/masonegger.png" alt="Mason Egger" />
-      </span>
-      
-    </nav>
-    
-
-    <!-- Post metadata -->
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-
-        <!-- Post date -->
-        <li class="md-meta__item">
-          
-            <time datetime="2022-02-22">February 22, 2022
-            </time></li>
-
-        <!-- Post categories -->
-        
-        <li class="md-meta__item">
-          in
-          
-          <a href="category/webinar/" class="md-meta__link">Webinar</a></li>
-        
-
-        <!-- Post readtime -->
-        
-      </ul>
-
-      <!-- Draft marker -->
-      
-    </div>
-  </header>
-
-  <!-- Post content -->
-  <div class="md-post__content md-typeset">
-    <h2 id="digitalocean-tech-talks"><a class="toclink" href="digitalocean-tech-talks/">DigitalOcean Tech Talks</a></h2>
-<p>During my time at DigitalOcean I presented multiple <em>Tech Talks</em> live for
-the community. This is the comprehensive list of talks I gave</p>
-
-
-    <!-- Continue reading link -->
-    <nav class="md-post__action">
-      <a href="digitalocean-tech-talks/">
-        Continue reading
-      </a>
-    </nav>
-  </div>
-</article>
-      
-        <!--
-  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to
-  deal in the Software without restriction, including without limitation the
-  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-  sell copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in
-  all copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-  IN THE SOFTWARE.
--->
-
-<!-- Post excerpt -->
-<article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-
-    <!-- Post authors -->
-    
-    <nav class="md-post__authors md-typeset">
-      
-      <span class="md-author">
-        <img src="https://github.com/masonegger.png" alt="Mason Egger" />
-      </span>
-      
-    </nav>
-    
-
-    <!-- Post metadata -->
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-
-        <!-- Post date -->
-        <li class="md-meta__item">
-          
-            <time datetime="2021-03-21">March 21, 2021
-            </time></li>
-
-        <!-- Post categories -->
-        
-        <li class="md-meta__item">
-          in
-          
-          <a href="category/conference-talk/" class="md-meta__link">Conference Talk</a></li>
-        
-
-        <!-- Post readtime -->
-        
-      </ul>
-
-      <!-- Draft marker -->
-      
-    </div>
-  </header>
-
-  <!-- Post content -->
-  <div class="md-post__content md-typeset">
-    <h2 id="a-year-without-pants-strategies-for-successful-remote-work"><a class="toclink" href="a-year-without-pants-strategies-for-successful-remote-work/">A Year Without Pants: Strategies for Successful Remote Work</a></h2>
-<p>Remote work can be challenging. In this talk I'll discuss different strategies for increasing your productivity and enjoyment of remote work.</p>
-
-
-    <!-- Continue reading link -->
-    <nav class="md-post__action">
-      <a href="a-year-without-pants-strategies-for-successful-remote-work/">
-        Continue reading
-      </a>
-    </nav>
-  </div>
-</article>
-      
-        <!--
-  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to
-  deal in the Software without restriction, including without limitation the
-  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-  sell copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in
-  all copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-  IN THE SOFTWARE.
--->
-
-<!-- Post excerpt -->
-<article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-
-    <!-- Post authors -->
-    
-    <nav class="md-post__authors md-typeset">
-      
-      <span class="md-author">
-        <img src="https://github.com/masonegger.png" alt="Mason Egger" />
-      </span>
-      
-    </nav>
-    
-
-    <!-- Post metadata -->
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-
-        <!-- Post date -->
-        <li class="md-meta__item">
-          
-            <time datetime="2020-10-25">October 25, 2020
-            </time></li>
-
-        <!-- Post categories -->
-        
-        <li class="md-meta__item">
-          in
-          
-          <a href="category/conference-talk/" class="md-meta__link">Conference Talk</a></li>
-        
-
-        <!-- Post readtime -->
-        
-      </ul>
-
-      <!-- Draft marker -->
-      
-    </div>
-  </header>
-
-  <!-- Post content -->
-  <div class="md-post__content md-typeset">
-    <h2 id="theres-a-snake-in-the-birdhouse-building-a-python-culture-at-vrbo"><a class="toclink" href="theres-a-snake-in-the-birdhouse-building-a-python-culture-at-vrbo/">There's a Snake in the Birdhouse! Building a Python Culture at Vrbo</a></h2>
-<p>We all love Python, but not everyone is fortunate enough to use it
-at their day job. Come and listen as I detail the journey I took to establish 
-Python as an onroad option at my company. Viewers will leave having learned 
-from my experiences—both successes and mistakes—and with a solid plan for 
-implementing Python at their job.</p>
-
-
-    <!-- Continue reading link -->
-    <nav class="md-post__action">
-      <a href="theres-a-snake-in-the-birdhouse-building-a-python-culture-at-vrbo/">
-        Continue reading
-      </a>
-    </nav>
-  </div>
-</article>
-      
-        <!--
-  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to
-  deal in the Software without restriction, including without limitation the
-  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-  sell copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in
-  all copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-  IN THE SOFTWARE.
--->
-
-<!-- Post excerpt -->
-<article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-
-    <!-- Post authors -->
-    
-    <nav class="md-post__authors md-typeset">
-      
-      <span class="md-author">
-        <img src="https://github.com/masonegger.png" alt="Mason Egger" />
-      </span>
-      
-    </nav>
-    
-
-    <!-- Post metadata -->
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-
-        <!-- Post date -->
-        <li class="md-meta__item">
-          
-            <time datetime="2020-06-30">June 30, 2020
-            </time></li>
-
-        <!-- Post categories -->
-        
-        <li class="md-meta__item">
-          in
-          
-          <a href="category/conference-talk/" class="md-meta__link">Conference Talk</a></li>
-        
-
-        <!-- Post readtime -->
-        
-      </ul>
-
-      <!-- Draft marker -->
-      
-    </div>
-  </header>
-
-  <!-- Post content -->
-  <div class="md-post__content md-typeset">
-    <h2 id="slis-slas-and-sldohs-learning-about-service-uptime-from-homer-simpsons"><a class="toclink" href="slis-slas-and-sldohs-learning-about-service-uptime-from-homer-simpsons/">SLI's, SLA's and SL'D'OHS! Learning about Service Uptime from Homer Simpsons</a></h2>
-<p>Measuring service uptime can be a daunting task, but not for the 
-Simpsons! Viewers will leave with a clearer understanding of how to account for 
-services, how SLxs can define and guide what to monitor, and how to implement 
-reliability targets and error budgets; all told by fabled Springfield wisdom</p>
-
-
-    <!-- Continue reading link -->
-    <nav class="md-post__action">
-      <a href="slis-slas-and-sldohs-learning-about-service-uptime-from-homer-simpsons/">
-        Continue reading
-      </a>
-    </nav>
-  </div>
-</article>
-      
-        <!--
-  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to
-  deal in the Software without restriction, including without limitation the
-  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-  sell copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in
-  all copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-  IN THE SOFTWARE.
--->
-
-<!-- Post excerpt -->
-<article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-
-    <!-- Post authors -->
-    
-    <nav class="md-post__authors md-typeset">
-      
-      <span class="md-author">
-        <img src="https://github.com/masonegger.png" alt="Mason Egger" />
-      </span>
-      
-    </nav>
-    
-
-    <!-- Post metadata -->
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-
-        <!-- Post date -->
-        <li class="md-meta__item">
-          
-            <time datetime="2020-04-22">April 22, 2020
-            </time></li>
-
-        <!-- Post categories -->
-        
-        <li class="md-meta__item">
-          in
-          
-          <a href="category/conference-talk/" class="md-meta__link">Conference Talk</a></li>
-        
-
-        <!-- Post readtime -->
-        
-      </ul>
-
-      <!-- Draft marker -->
-      
-    </div>
-  </header>
-
-  <!-- Post content -->
-  <div class="md-post__content md-typeset">
-    <h2 id="building-docs-like-code-continuous-integration-for-documentation"><a class="toclink" href="building-docs-like-code-continuous-integration-for-documentation/">Building Docs like Code: Continuous Integration for Documentation</a></h2>
-<p>This talk discusses why developers dislike writing documentation,
-what we can do to address this, and provides a ready to go pipeline for 
-automating your documtation</p>
-
-
-    <!-- Continue reading link -->
-    <nav class="md-post__action">
-      <a href="building-docs-like-code-continuous-integration-for-documentation/">
+      <a href="build-durable-applications-with-temporal/">
         Continue reading
       </a>
     </nav>
