@@ -112,6 +112,28 @@ Material theme CSS has high specificity. When custom styles don't apply, you may
 ### Template Inheritance
 Custom templates follow this chain: `blog.html` → `main.html` → `base.html` (Material theme). When modifying one template, check related templates for consistency.
 
+### Post URLs Are Derived From Titles
+
+All three blog instances set `post_url_format: "{slug}"`, and the slug is generated
+from the post **title**, not the filename. Retitling a post silently changes its URL.
+
+To retitle without breaking the link, pin the existing slug in the post's frontmatter:
+
+```yaml
+---
+date: 2026-05-14
+slug: python-102-beyond-the-basics   # load-bearing, do not change
+---
+```
+
+The blog plugin resolves `post.config.slug or self._slugify_post(post)`, so an
+explicit `slug:` always wins. `docs/speaking/posts/python-102.md` is the worked
+example: it is titled "Writing Pythonic Code" but still serves at
+`/speaking/python-102-beyond-the-basics/`.
+
+Renaming the *file* is safe; it does not affect the URL. Changing `date:` is also
+safe, since no section puts dates in its URLs; it only affects archive ordering.
+
 ### Plugin Configuration & Templates
 Template features must match plugin configuration. For example, if `pagination: false` is set in `mkdocs.yml` for a blog plugin, any template trying to use pagination macros will fail. The Jinja2 context only includes variables for enabled plugin features.
 
