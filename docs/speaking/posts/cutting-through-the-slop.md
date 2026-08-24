@@ -38,6 +38,8 @@ This talk was given at:
 
 * [PyTexas Meetup, August 2026](https://www.pytexas.org/meetup/)
 
+[Presentation Slides](docs/cutting-through-the-slop.pdf)
+
 ## Related Writing
 
 The talk grew out of my five-part *Brain Dump Ramblings on AI* series:
