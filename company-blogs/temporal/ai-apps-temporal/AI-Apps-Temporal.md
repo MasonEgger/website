@@ -285,8 +285,6 @@ So I stopped.
 I put my ego aside and let myself be a beginner again.
 And I've learned so much by doing it.
 
-_(If you're curious about how I do things, check out my [other blog series](https://mason.dev/blog/category/brain-dump-ramblings-on-ai-series/) or my [public Claude Code plugin](https://github.com/MasonEgger/bpe-claude-code-plugin).)_
-
 ## The Call Is Coming From Inside the House
 
 You can't open an empty repository, type "build me Facebook," walk away, and expect something you'd put in production.
@@ -297,7 +295,7 @@ It failed because **you** didn't give it the context or the guardrails it needed
 
 When the agent makes a mistake, don't berate it or just tell it that it was wrong.
 
-![Abe Simpson in a newspaper clipping headlined OLD MAN YELLS AT CLOUD, with the Claude logo pasted over the cloud](old-man-yells-at-claude.png)
+![Abe Simpson in a newspaper clipping headlined Old Man Yells At Cloud, with the Claude logo pasted over the cloud](old-man-yells-at-claude.png)
 
 Ask it `Did you follow the specification we agreed on for this?`
 And its response will reveal one of two things you got wrong.
@@ -350,3 +348,5 @@ I engineered it.
 Claude did the implementation.
 
 ![The interior of Bag End, a round doorway framing a hobbit kitchen with food laid out on the table and a fire in the hearth](bag-end.jpg)
+
+_(If you're curious about how I do things, check out my [other blog series](https://mason.dev/blog/category/brain-dump-ramblings-on-ai-series/) or my [public Claude Code plugin](https://github.com/MasonEgger/bpe-claude-code-plugin).)_
