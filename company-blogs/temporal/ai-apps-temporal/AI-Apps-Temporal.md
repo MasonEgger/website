@@ -1,5 +1,5 @@
 ---
-title: "Getting My Ducks in a Row: Making Agents Write Correct Temporal Applications"
+title: "Everything in Its Place: Making Agents Write Correct Temporal Applications"
 description: "The tools and habits I've found that lead to stable, production-ready Temporal Applications."
 date: 2026-08-07
 categories:
