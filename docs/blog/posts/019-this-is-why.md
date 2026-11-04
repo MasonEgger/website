@@ -17,9 +17,6 @@ When people ask me why I don't leave Texas, last night was the reason.
 
 <!-- more -->
 
-<CLAUDE_HELP>
-NOTE: Mechanics left alone per your instruction. If you want them: "regard them" to "regards them"; "hate filled" to "hate-filled"; "solely for the fact that it is just because" doubles up; "1 million reasons" is neither real nor absurd; "won by the skin of their teeth situation" wants quotes or hyphens; "55% of the state" to "of the vote"; "unplug" where your verb is "unfuck"; trailing spaces on a handful of lines. Delete this note before publishing.
-</CLAUDE_HELP>
 
 ## A Texas Sized Ass Whoopin
 
@@ -32,19 +29,13 @@ Every statewide office on the ballot went to the Democrats.
 In _fucking **TEXAS**_!
 That is by far the most _massive_ Texas sized ass whoopin I've ever seen in my life.
 And it was well deserved(1). 
-The President of the United States endorsed Ken Paxton, the most corrupt candidate in Texas history, over John Cornyn, a senator who has won four Senate races and none of them close.
-The primary voters followed him off the cliff like lemmings, and in return they got the public flogging they deserved.
-Cornyn would have made this race close.
-<CLAUDE_HELP>
-NOTE: Line above is your chat comment promoted to prose. Keep or cut. Line 72 below was also changed from "don't want" to "didn't want" since you're airing it now.
-</CLAUDE_HELP>
-I'm proud to say, I was part of the movement that squarely kicked the Republicans' ass out the fucking door.
-<CLAUDE_HELP>
-NOTE: Line above is the one jersey line in the post. Cut, re-aim at "the people running this state," or keep. Your call.
-</CLAUDE_HELP>
+The President of the United States endorsed Ken Paxton, the most corrupt candidate in Texas history, over a senator who has won four Senate races and none of them close, all because the stable candidate only voted 99.3% of the time(2). 
+The reward for this brilliant act was they got the public flogging they so very much deserved(3).
 { .annotate }
 
 1. As my Mom says "Order shit, eat shit."
+2. Which just wasn't enough loyalty for the President. Whelp, play stupid games, win stupid prizes.
+3. I'm proud to say, I was part of the movement that squarely kicked the Republicans' ass out the fucking door.
 
 
 But as I sit here and celebrate on this momentous occasion, something is quietly digging at the back of my mind.
@@ -80,7 +71,7 @@ Just a terse no,(1) and then a generalized dismissal of _our entire community_ b
 Now I'm not going to name this person because that's not who I am.
 But this is one of the highest ranking people in the entire Python ecosystem.
 This is someone that people in my community look up to.
-I have kept most of this quiet for almost a year now because I didn't want my community to know that this person, who they idolize, regard them with such contempt without ever having met them or experienced the community that we have built.
+I have kept most of this quiet for almost a year now because I didn't want my community to know that this person, who they idolize, regards them with such contempt without ever having met them or experienced the community that we have built.
 And to be frank, this has fueled a lot of my burnout for the last year.
 It was the proverbial straw that broke the camel's back.
 It has been so difficult some days to get up and continue my work with PyTexas not solely because of this, but this sure as shit didn't help.
@@ -94,10 +85,7 @@ Off the top of my head I can think of at least four other times I introduced mys
 
 - "Oh wow, ya I'd never go to your conference."
 - "You must not run an inclusive conference then."
-- And from one dumb fuck who had the audacity: "Oh wow, I'm sorry."
-<CLAUDE_HELP>
-NOTE: On the page "I'm sorry" still reads sincere. The sneer you heard needs one beat of context, and that beat is a joke, so it's yours to cast.
-</CLAUDE_HELP>
+- And from one dumb fuck who had the audacity to say "Oh wow, I'm sorry." as if me being from Texas was somehow an ailment of some kind.
 
 These always take me by surprise, no matter how many times I've had to deal with them, because it never occurs to me to openly judge someone based solely on where they live.
 Humans are so much more complicated than that and to experience it is really disappointing.
@@ -118,10 +106,8 @@ Because I knew at the end of the day that Texans are better than this, and last 
 
 ## People Are Not Politics
 
-<CLAUDE_HELP>
-It's very difficult to love something, and keep faith in something, that you know can do better.
-Something that keeps letting you down in ways that look nothing like the place you actually live in every day.
-</CLAUDE_HELP>
+It's very difficult to love something and have faith in something, that you know can do better.
+Something that keeps letting you down in ways that in no way represent your lived experience.
 This is exactly how Texas is.
 If you were to look at the way that our state is governed, you would think that Texas is filled with hate filled racist, bigoted people.
 And this is just simply not the case at all.
@@ -139,7 +125,7 @@ A large amount of people in this state absolutely despise the way the state is g
 And unfortunately, there are people who vote for those people who enact the very policies they despise.
 You may think this is bullshit and that nobody does this, but I have experienced it firsthand.
 I grew up in rural Texas.
-I have watched in the same breath as people have complained about the policies of Texas and then turn around and say they would never consider voting for the other party, solely for the fact that it is just because they're the other party.
+I have watched in the same breath as people have complained about the policies of Texas and then turn around and say they would never consider voting for the other party, solely for the fact that it's the other party.
 And I have spent many hours in my adult life, trying to open these people's eyes.
 Because the secret here is that a vast majority of these people do not think about politics 24 hours a day.
 They think about it when it becomes relevant in their life.
@@ -166,14 +152,14 @@ For the vast majority of people, this is not the reality.
 They have families here, they don't have the economic means to do so, they don't want to give up on their home, there are 1 million reasons why.
 And to just boil it down to "I don't like it in your state so you should move." is an insensitive and quite frankly asshole thing to say.
 
-<CLAUDE_HELP>
-If you actually want to help, here's what to say instead: "How can I help?"
+If you actually want to help, how about saying "How can I get involved?"
 And then mean it.
 Come speak at PyTexas.
-Come to Austin, eat a breakfast taco, and meet the people you've written off from 1,500 miles away.
-Give to the folks on the ground who've been doing this work for decades.
-That question would have gotten a very different answer out of me than "what are you doing about your Republicans."
-</CLAUDE_HELP>
+Come to Austin, eat some breakfast tacos, over induldge on BBQ, enjoy the live music, and then meet the people you've written off from across the country.
+Because do you think we(the organizers) don't know what our state is like?
+That we don't live this every day?
+Your bullshit answer is about as useful as "thoughts and prayers."
+
 
 ## Fighting the Good Fight
 
@@ -211,22 +197,12 @@ Because if they don't, then we're gonna see a swing right back to where we were.
 1. You don't have to like these industries, I'm not asking that of you. But if you're not a Texan you may not realize how much of these industries are our way of life. So before you put your "holier than thou" hat on, remember that for some people this is all they've ever known.
 2. As the son of an educator, you have no idea how much this pisses me off to no end. Texans used to be proud of their public schools. Texas used to be one of the best public school states in the nation. And over the last 30 years, we have let ourselves become the laughing stock. And this shit has to be fixed.
 
-This is a once in a generation opportunity for us to unplug a lot of things that have been just completely fucked up.
+This is a once in a generation opportunity for us to unfuck a lot of things that have been just completely fucked up.
 We cannot waste it.
 So don't forget you have work tomorrow.
 This isn't over.
 It's just the beginning.
 
-<CLAUDE_HELP>
-Option A:
-So the next time someone at a conference asks me when I'm finally leaving Texas, I'm not changing the subject.
-This is why.
-
-Option B:
-Somebody asked me what we're doing about the Republicans in our state.
-We stayed. We voted. We won. And we're sticking around to make sure the next bunch does their damn job.
-This is why I don't leave.
-</CLAUDE_HELP>
-
+And if you're ever wondering why I haven't left Texas, this is why.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3BaVb8LTooU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
