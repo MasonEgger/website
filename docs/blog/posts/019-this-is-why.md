@@ -30,12 +30,12 @@ Every statewide office on the ballot went to the Democrats.
 In _fucking **TEXAS**_!
 That is by far the most _massive_ Texas sized ass whoopin I've ever seen in my life.
 And it was well deserved(1).
-The President of the United States endorsed the most corrupt candidate in Texas history over a senator who has won four Senate races and none of them close, all because the stable candidate only voted 99.3% of the time(2).
-The reward for this brilliant act was a public flogging they had coming(3).
+The President of the United States endorsed the most corrupt candidate in Texas history over a senator who has won four Senate races and none of them close, all because the stable candidate only voted with him 99.3% of the time(2).
+The reward for this brilliant act was a public flogging the Republicans had coming(3).
 { .annotate }
 
-1. As my Mom says "Order shit, eat shit."
-2. Which just wasn't enough loyalty for the President. And that's [his own number](https://x.com/JohnCornyn/status/2056575999895069045), by the way. Welp, play stupid games, win stupid prizes.
+1. As my mom says, "Order shit, eat shit."
+2. Which just wasn't enough loyalty for the President. And that's [the senator's own number](https://x.com/JohnCornyn/status/2056575999895069045), by the way. Welp, play stupid games, win stupid prizes.
 3. I'm proud to say, I was part of the movement that squarely kicked the Republicans' ass out the fucking door.
 
 
@@ -58,11 +58,11 @@ And to be honest, this question is exhausting.
 PyTexas 2026 was the 20th year of the conference.
 PyTexas is the oldest North American regional Python conference and one of the oldest in the world.
 We were excited to celebrate our 20th, and decided to reach out to some rather well known people in the Python community to see if they would like to keynote our conference to celebrate with us.
-Very quickly however, our moods were dampened by this response we received from one of the people we invited.
+Very quickly, however, our moods were dampened by this response we received from one of the people we invited.
 
 > I'm sorry, I won't be able to attend. Separately, what are you doing to counter your state's republicans?
 
-No thank you for the invitation.
+No "thank you" for the invitation.
 Just a terse no(1), and then a generalized dismissal of _our entire community_ because of our geographic location.
 { .annotate }
 
@@ -116,17 +116,17 @@ Texans are some of the nicest people I've ever met in my entire life.
 When my husband moved here, he was unbelievably shocked by how friendly everyone was.
 How the person behind the counter at the grocery store asked us how our day was going, and then we'd converse for a few minutes.
 How people would stop and say hello in the middle of the street.
-How when a funeral procession passes on a rural country road that everyone pulls over and puts on their hazards to pay their respect to a person they don't even know.
+How when a funeral procession passes on a rural country road, everyone pulls over and puts on their hazards to pay their respect to a person they don't even know.
 That is who Texans are.
 And if you just listen to the news, or your own little echo chamber, you would never experience this.
 
 People are not politics.
-A large amount of people in this state absolutely despise the way the state is governed.
+A large number of people in this state absolutely despise the way the state is governed.
 And unfortunately, there are people who vote for those people who enact the very policies they despise.
 You may think this is bullshit and that nobody does this, but I have experienced it firsthand.
 I grew up in rural Texas.
 I have watched in the same breath as people have complained about the policies of Texas and then turn around and say they would never consider voting for the other party, solely for the fact that it's the other party.
-And I have spent many hours in my adult life, trying to open these people's eyes.
+And I have spent many hours in my adult life trying to open these people's eyes.
 Because the secret here is that a vast majority of these people do not think about politics 24 hours a day.
 They think about it when it becomes relevant in their life.
 And more often than not, this will occur at a gas station or grocery store.
@@ -192,8 +192,8 @@ These were the things that got Democrats elected, and these are the things that 
 Because if they don't, then we're gonna see a swing right back to where we were.
 { .annotate }
 
-1. You don't have to like these industries, I'm not asking that of you. But if you're not a Texan you may not realize how much of these industries are our way of life. So before you put your "holier than thou" hat on, remember that for some people this is all they've ever known.
-2. As the son of an educator, you have no idea how much this pisses me off to no end. Texans used to be proud of their public schools. Texas used to be one of the best public school states in the nation. And over the last 30 years, we have let ourselves become the laughing stock. And this shit has to be fixed.
+1. You don't have to like these industries, I'm not asking that of you. But if you're not a Texan you may not realize how much these industries are our way of life. So before you put your "holier than thou" hat on, remember that for some people this is all they've ever known.
+2. I'm the son of an educator, and you have no idea how much this pisses me off to no end. Texans used to be proud of their public schools. Texas used to be one of the best public school states in the nation. And over the last 30 years, we have let ourselves become the laughing stock. And this shit has to be fixed.
 
 This is a once in a generation opportunity for us to unfuck a lot of things that have been just completely fucked up.
 We cannot waste it.
