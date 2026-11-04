@@ -14,7 +14,7 @@ authors:
 On November 3rd, 2026, something happened in Texas that hasn't been seen in a generation.
 Texas flipped blue.
 And it proved a point I've been making for a long time.
-When people ask me why I don't leave Texas, election night is the reason.
+When people ask me why I don't leave Texas, this, and everything leading up to it, was the reason.
 
 <!-- more -->
 
@@ -28,7 +28,7 @@ As of writing this, James Talarico won 55% of the vote against Ken Paxton's 43%.
 Gina Hinojosa ousted Republican governor Greg Abbott by seven points.
 Every statewide office on the ballot went to the Democrats.
 In _fucking **TEXAS**_!
-That is the most _massive_ Texas sized ass whoopin I've ever seen.
+That is by far the most _massive_ Texas sized ass whoopin I've ever seen in my life.
 And it was well deserved(1).
 The President of the United States endorsed the most corrupt candidate in Texas history over a senator who has won four Senate races and none of them close, all because the stable candidate only voted with him 99.3% of the time(2).
 The reward for this brilliant act was a public flogging the Republicans had coming(3).
@@ -58,7 +58,7 @@ This question is exhausting.
 PyTexas 2026 was the 20th year of the conference.
 PyTexas is the oldest North American regional Python conference and one of the oldest in the world.
 We were excited to celebrate our 20th, and decided to reach out to some well known people in the Python community to see if they would like to keynote our conference to celebrate with us.
-Then I opened this response from one of the people we invited.
+Then my speaker chair shared with me this response from one of the people we invited.
 
 > I'm sorry, I won't be able to attend. Separately, what are you doing to counter your state's republicans?
 
@@ -68,21 +68,20 @@ Just a terse no(1), and then a generalized dismissal of _our entire community_ b
 
 1. Which is fine, if you don't care about maintaining professionalism.
 
-I'm not going to name this person because that's not who I am.
+Now, I'm not going to name this person because that's not who I am.
 But this is one of the highest ranking people in the entire Python ecosystem.
 This is someone that people in my community look up to.
 I have kept most of this quiet for almost a year now because I didn't want my community to know that this person, who they idolize, regards them with such contempt without ever having met them or experienced the community that we have built.
-This has fueled a lot of my burnout for the last year.
-Some days it has been hard to get up and keep doing the PyTexas work.
-That isn't all because of this.
-But this sure as shit didn't help.
+And to be transparent with y'all, this has fueled a lot of my burnout for the last year.
+Many days it has been hard to get up and continue my PyTexas work.
+Now this isn't the sole reason, but this sure as shit didn't help.
 
 To that person who probably will not read this blog, but if you do, and you know who you are, **this is what Texans did about the Republicans in our state.**
 
-### Four More, Off the Top of My Head
+### This is a Recurring Thing
 
 Now I wish this was the first time I've experienced this within the Python community, but alas, it isn't.
-Off the top of my head I can think of at least four other times I introduced myself at a Python event, said I lead PyTexas, and got either an odd look or one of these:
+Off the top of my head I can think of many other times I introduced myself at a Python event, said I lead PyTexas, and got either an odd look or one of these:
 
 - "Oh wow, ya I'd never go to your conference."
 - "You must not run an inclusive conference then."
@@ -107,7 +106,7 @@ Because I knew at the end of the day that Texans are better than this, and on el
 
 ## People Are Not Politics
 
-It's hard to love something, and keep faith in something, that you know can do better.
+It's very difficult to love something and have faith in something that you know can do better.
 Harder still when the people running it keep letting you down in ways that look nothing like the people living in it.
 This is exactly how Texas is.
 If you were to look at the way that our state is governed, you would think that Texas is filled with hate filled racist, bigoted people.
@@ -123,7 +122,7 @@ And if you just listen to the news, or your own little echo chamber, you would n
 
 People are not politics.
 A large number of people in this state absolutely despise the way the state is governed.
-And unfortunately, some of them vote for the politicians who enact the very policies they despise.
+And unfortunately, many of them vote for the politicians who enact the very policies they despise.
 You may think this is bullshit and that nobody does this, but I have experienced it firsthand.
 I grew up in rural Texas.
 I have watched people complain about the policies of Texas and, in the same breath, say they would never consider voting for the other party, solely because it's the other party.
@@ -163,7 +162,7 @@ Come to Austin, eat some breakfast tacos, overindulge on BBQ, enjoy the live mus
 
 ## Stay If You Can
 
-I do not begrudge anybody who left.
+That being said, I do not begrudge anybody who left.
 I get it.
 There have been many times when I have considered leaving Texas.
 It is exhausting to get up every day being considered a second class citizen.
@@ -179,8 +178,7 @@ We'll let you know when it's safe to return.
 
 So fucking celebrate!
 Holy shit, have we earned it!
-I've been sending my friends memes about this moment.
-I made them a decade ago.
+I've been sending my friends memes about this moment that I made over a decade ago.
 I woke up the morning after with the biggest smile on my face.
 
 Texas Republicans have held the governor's mansion since I was in diapers and every statewide office since I was in the first grade.
