@@ -2,6 +2,7 @@
 title: "This Is Why"
 description: "I often get asked why I don't leave Texas. The November 2026 election was the answer."
 date: 2026-11-04
+slug: this-is-why
 categories:
     - Politics
     - Texas
@@ -54,15 +55,14 @@ And to be honest, this question is exhausting.
 
 ### A Keynote Invitation
 
-PyTexas 2026 was the 20th anniversary of the conference.
+PyTexas 2026 was the 20th year of the conference.
 PyTexas is the oldest North American regional Python conference and one of the oldest in the world.
 We were excited to celebrate our 20th, and decided to reach out to some rather well known people in the Python community to see if they would like to keynote our conference to celebrate with us.
-Very quickly however, our moods were dampened by this response we received from someone we invited from our first round pick.
+Very quickly however, our moods were dampened by this response we received from one of the people we invited.
 
 > I'm sorry, I won't be able to attend. Separately, what are you doing to counter your state's republicans?
 
 No thank you for the invitation.
-No feigned regret for not being able to come.
 Just a terse no(1), and then a generalized dismissal of _our entire community_ because of our geographic location.
 { .annotate }
 
@@ -76,7 +76,7 @@ And to be frank, this has fueled a lot of my burnout for the last year.
 It was the proverbial straw that broke the camel's back.
 It has been so difficult some days to get up and continue my work with PyTexas not solely because of this, but this sure as shit didn't help.
 
-To that person who probably will not read this blog, but if you do, and you know who you are, **This is what we're doing about the Republicans in our state.**
+To that person who probably will not read this blog, but if you do, and you know who you are, **this is what Texas did about the Republicans in our state.**
 
 ### But It Doesn't End There
 
@@ -85,7 +85,7 @@ Off the top of my head I can think of at least four other times I introduced mys
 
 - "Oh wow, ya I'd never go to your conference."
 - "You must not run an inclusive conference then."
-- And from one dumb fuck who had the audacity to say "Oh wow, I'm sorry," as if me being from Texas was somehow an ailment of some kind.
+- And from some poor soul who had the audacity to say "Oh wow, I'm sorry," as if me being from Texas was somehow an ailment of some kind.
 
 These always take me by surprise, no matter how many times I've had to deal with them, because it never occurs to me to openly judge someone based solely on where they live.
 Humans are so much more complicated than that and to experience it is really disappointing.
@@ -139,15 +139,14 @@ And I wholeheartedly agree.
 But there is a difference between what I want and reality.
 I have spent my time focusing on trying to improve reality.
 
-## Check Your Fucking Privilege
+## Reality Check
 
 The thing that has irritated me the most throughout all of this is the people that just say "oh I would just leave."
 This is the most ignorant thing anyone can ever say.
 And it usually comes from non-Texan people in tech.
 
-Look, I'm glad that you don't have ties anywhere.
-I'm glad that you have enough money and capacity to pick up and relocate your entire family because you don't agree with the politics of a place.
-But it comes off so fucking privileged to be able to say you should just move for this.
+Look, I get that moving is an option for you.
+But "just leave" is advice that only works if you have no ties, money to burn, and nothing holding you here.
 For the vast majority of people, this is not the reality.
 They have families here, they don't have the economic means to do so, they don't want to give up on their home, there are 1 million reasons why.
 And to just boil it down to "I don't like it in your state so you should move." is an insensitive and quite frankly asshole thing to say.
@@ -186,7 +185,7 @@ I'm glad they're getting pushed out of the way to let somebody else drive for a 
 But now the ball is in the Democrats' court.
 They have to perform.
 They have to bring the change, the promises, the things that actually matter to everyday Texans.
-Gas has been fucking awful for a long time now, almost a dollar higher than it was a year ago, and it isn't getting better.
+Gas is a dollar higher than it was a year ago.
 Our beef and agriculture industries are struggling(1).
 Our public schools are being actively dismantled in front of us(2).
 These were the things that got Democrats elected, and these are the things that need to be delivered on.
