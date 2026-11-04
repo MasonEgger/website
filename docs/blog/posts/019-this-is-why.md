@@ -11,10 +11,10 @@ authors:
     - masonegger
 ---
 
-On November 3, 2026, something happened in Texas that hasn't been seen for a generation.
+On November 3rd, 2026, something happened in Texas that hasn't been seen for a generation.
 Texas flipped blue.
 And it proved a point I've been making for a long time.
-When people ask me why I don't leave Texas, last night was the reason.
+When people ask me why I don't leave Texas, election night was the reason.
 
 <!-- more -->
 
@@ -41,7 +41,7 @@ The reward for this brilliant act was a public flogging they had coming(3).
 
 But as I sit here and celebrate on this momentous occasion, something is quietly digging at the back of my mind.
 And it's a question that I get asked more times than I would like.
-And after last night, I can finally _elaborate_ on my answer.
+And after election night, I can finally _elaborate_ on my answer.
 
 ## A Tired Question
 
