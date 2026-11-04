@@ -6,7 +6,6 @@ categories:
     - Politics
     - Texas
     - Community
-    - Python
 authors:
     - masonegger
 ---
@@ -18,19 +17,31 @@ When people ask me why I don't leave Texas, last night was the reason.
 
 <!-- more -->
 
+<CLAUDE_HELP>
+NOTE: Mechanics left alone per your instruction. If you want them: "regard them" to "regards them"; "hate filled" to "hate-filled"; "solely for the fact that it is just because" doubles up; "1 million reasons" is neither real nor absurd; "won by the skin of their teeth situation" wants quotes or hyphens; "55% of the state" to "of the vote"; "unplug" where your verb is "unfuck"; trailing spaces on a handful of lines. Delete this note before publishing.
+</CLAUDE_HELP>
+
 ## A Texas Sized Ass Whoopin
 
 So the world woke up today to Texas turning blue.
 And not by like, a little blue.
 It wasn't a won by the skin of their teeth situation.
 As of writing this, James Talarico won 55% of the state against Ken Paxton's 43%.
-Gina Hinojosa did similarly well and ousted Republican governor Greg Abbott. 
-The entire down ballot state elections went to the Democrats.
+Gina Hinojosa ousted Republican governor Greg Abbott by seven points.
+Every statewide office on the ballot went to the Democrats.
 In _fucking **TEXAS**_!
 That is by far the most _massive_ Texas sized ass whoopin I've ever seen in my life.
 And it was well deserved(1). 
-The President of the United States decided to primary out John Cornyn, a very popular Texas senator, to endorse the most corrupt candidate in Texas history and in return they got the public flogging that they rightfully deserved.
+The President of the United States endorsed Ken Paxton, the most corrupt candidate in Texas history, over John Cornyn, a senator who has won four Senate races and none of them close.
+The primary voters followed him off the cliff like lemmings, and in return they got the public flogging they deserved.
+Cornyn would have made this race close.
+<CLAUDE_HELP>
+NOTE: Line above is your chat comment promoted to prose. Keep or cut. Line 72 below was also changed from "don't want" to "didn't want" since you're airing it now.
+</CLAUDE_HELP>
 I'm proud to say, I was part of the movement that squarely kicked the Republicans' ass out the fucking door.
+<CLAUDE_HELP>
+NOTE: Line above is the one jersey line in the post. Cut, re-aim at "the people running this state," or keep. Your call.
+</CLAUDE_HELP>
 { .annotate }
 
 1. As my Mom says "Order shit, eat shit."
@@ -52,7 +63,7 @@ And to be honest, this question is exhausting.
 
 ### A Keynote Invitation
 
-Last year was the 20th anniversary of the PyTexas conference. 
+PyTexas 2026 was the 20th anniversary of the conference.
 PyTexas is the oldest North American regional Python conference and one of the oldest in the world.
 We were excited to celebrate our 20th, and decided to reach out to some rather well known people in the Python community to see if they would like to keynote our conference to celebrate with us. 
 Very quickly however, our moods were dampened by this response we received from someone we invited from our first round pick.
@@ -69,7 +80,7 @@ Just a terse no,(1) and then a generalized dismissal of _our entire community_ b
 Now I'm not going to name this person because that's not who I am.
 But this is one of the highest ranking people in the entire Python ecosystem.
 This is someone that people in my community look up to.
-I have kept most of this quiet for almost a year now because I don't want my community to know that this person, who they idolize, regard them with such contempt without ever having met them or experienced the community that we have built.
+I have kept most of this quiet for almost a year now because I didn't want my community to know that this person, who they idolize, regard them with such contempt without ever having met them or experienced the community that we have built.
 And to be frank, this has fueled a lot of my burnout for the last year.
 It was the proverbial straw that broke the camel's back.
 It has been so difficult some days to get up and continue my work with PyTexas not solely because of this, but this sure as shit didn't help.
@@ -79,7 +90,14 @@ To that person who probably will not read this blog, but if you do, and you know
 ### But It Doesn't End There
 
 Now I wish this was the first time I've experienced this within the Python community, but alas, it isn't. 
-I can think off the top of my head at least 4 other scenarios where when introducing myself at various Python events when I say I lead PyTexas I am given odd looks or in some instances, flat out told "Oh wow, ya I'd never go to your conference." or "You must not run an inclusive conference then." or one dumb fuck even had the audacity to go "Oh wow, I'm sorry."
+Off the top of my head I can think of at least four other times I introduced myself at a Python event, said I lead PyTexas, and got either an odd look or one of these:
+
+- "Oh wow, ya I'd never go to your conference."
+- "You must not run an inclusive conference then."
+- And from one dumb fuck who had the audacity: "Oh wow, I'm sorry."
+<CLAUDE_HELP>
+NOTE: On the page "I'm sorry" still reads sincere. The sneer you heard needs one beat of context, and that beat is a joke, so it's yours to cast.
+</CLAUDE_HELP>
 
 These always take me by surprise, no matter how many times I've had to deal with them, because it never occurs to me to openly judge someone based solely on where they live.
 Humans are so much more complicated than that and to experience it is really disappointing.
@@ -100,8 +118,10 @@ Because I knew at the end of the day that Texans are better than this, and last 
 
 ## People Are Not Politics
 
-It's very difficult to love something and have faith in something that you know can do better.
-Something that continues to disappoint you, but in this does not represent how you have experienced the thing.
+<CLAUDE_HELP>
+It's very difficult to love something, and keep faith in something, that you know can do better.
+Something that keeps letting you down in ways that look nothing like the place you actually live in every day.
+</CLAUDE_HELP>
 This is exactly how Texas is.
 If you were to look at the way that our state is governed, you would think that Texas is filled with hate filled racist, bigoted people.
 And this is just simply not the case at all.
@@ -126,7 +146,9 @@ They think about it when it becomes relevant in their life.
 And more often than not, this will occur at a gas station or grocery store.
 
 I know some of you will absolutely hate that.
-That people shouldn't be so close minded that they only care about it when it affects them.
+
+> "But Mason, people shouldn't be so closed minded that they only care about politics when it affects them."
+
 And I wholeheartedly agree.
 But there is a difference between what I want and reality.
 I have spent my time focusing on trying to improve reality.
@@ -144,6 +166,15 @@ For the vast majority of people, this is not the reality.
 They have families here, they don't have the economic means to do so, they don't want to give up on their home, there are 1 million reasons why.
 And to just boil it down to "I don't like it in your state so you should move." is an insensitive and quite frankly asshole thing to say.
 
+<CLAUDE_HELP>
+If you actually want to help, here's what to say instead: "How can I help?"
+And then mean it.
+Come speak at PyTexas.
+Come to Austin, eat a breakfast taco, and meet the people you've written off from 1,500 miles away.
+Give to the folks on the ground who've been doing this work for decades.
+That question would have gotten a very different answer out of me than "what are you doing about your Republicans."
+</CLAUDE_HELP>
+
 ## Fighting the Good Fight
 
 I want to be clear, I do not begrudge anybody who left.
@@ -151,7 +182,7 @@ I get it.
 There have been many times when I have considered leaving Texas.
 It is exhausting to get up every day being considered a second class citizen.
 Some of y'all don't even feel safe in your own home.
-I'm fortunate enough that the current (as of Nov. 1, 2026) legislation hasn't made me feel unsafe yet.
+I'm fortunate enough that the legislation on the books as of this post hasn't made me feel unsafe yet.
 So I will remain.
 I will continue to fight the fight for as long as I can.
 And if you have the energy, then I humbly ask that you consider doing the same.
@@ -165,12 +196,13 @@ Holy shit, have we earned it!
 I've had memes saved on my computer that I created a decade ago that I'm sending to my friends about this moment.
 I woke up with the biggest smile on my face and so much hope in my heart for the future.
 
-Texas Republicans have been in control of the state since before I was born, I'm glad they're getting pushed out of the way to let somebody else drive for a change.
+Texas Republicans have held the governor's mansion since I was in diapers and every statewide office since I was in the first grade.
+I'm glad they're getting pushed out of the way to let somebody else drive for a change.
 But now the ball is in the Democrats' court.
 They have to perform.
 They have to bring the change, the promises, the things that actually matter to everyday Texans.
-Gas is the highest that I've ever seen it in Texas.
-Our beef and oil industries are struggling(1).
+Gas has been fucking awful for a long time now, almost a dollar higher than it was a year ago, and it isn't getting better.
+Our beef and agriculture industries are struggling(1).
 Our public schools are being actively dismantled in front of us(2).
 These were the things that got Democrats elected, and these are the things that need to be delivered on.
 Because if they don't, then we're gonna see a swing right back to where we were.
@@ -185,5 +217,16 @@ So don't forget you have work tomorrow.
 This isn't over.
 It's just the beginning.
 
+<CLAUDE_HELP>
+Option A:
+So the next time someone at a conference asks me when I'm finally leaving Texas, I'm not changing the subject.
+This is why.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3BaVb8LTooU?si=cVpG6y7sYnlEzx5G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Option B:
+Somebody asked me what we're doing about the Republicans in our state.
+We stayed. We voted. We won. And we're sticking around to make sure the next bunch does their damn job.
+This is why I don't leave.
+</CLAUDE_HELP>
+
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3BaVb8LTooU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
