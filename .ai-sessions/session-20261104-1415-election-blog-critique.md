@@ -2,8 +2,8 @@
 
 **Date**: 2026-11-04
 **Duration**: ~1.5 hours
-**Conversation Turns**: 6
-**Estimated Cost**: ~$6 (long fact-check fan-out with ~15 web lookups plus two strict builds)
+**Conversation Turns**: 10
+**Estimated Cost**: ~$9 (fact-check fan-out with ~16 web lookups, five strict builds, two commits)
 **Model**: Claude Fable 5.1
 
 ## Key Actions
@@ -23,7 +23,11 @@
 | ultrathink and review my draft blog | Critique mode, full fact-check fan-out, strict build, Vale, banned-word scan | Findings in three severity tiers with a fact table and sources |
 | Point-by-point rulings on every finding | Edit mode: 13 approved edits applied, suggestions drafted, landing and title and song options offered | Build clean, changes uncommitted |
 | Put suggestions in the post with tags; skip the opener; Les Mis? | Inserted three tagged passages; recommended keeping Dolly | Build clean |
-| Commit these up | Added four tagged decision notes, ran commit process | In progress |
+| Commit these up | Added four tagged decision notes, ran commit process | Commit 14327e0 pushed |
+| Resolved all tags, review again | Second critique: unnamed Cornyn, 99.3% framing, "thoughts and prayers," grammar, new typos | Findings ruled on point by point |
+| Point-by-point rulings, round two | Nine edits: Paxton de-named to match intent, flogging grammar, Cornyn link in footnote, "thoughts and prayers" cut on delegated judgment, colon on landing | Build clean |
+| Line 110 pick plus mechanics rulings | Three wording fixes, trailing whitespace stripped, three mechanics left alone by ruling | Build clean |
+| Commit, then adversarial subagent review | Ran commit process, dispatched fresh voice-loaded reviewer | See chat |
 
 ## Efficiency Insights
 
@@ -38,12 +42,16 @@
 
 **Course corrections:**
 - Suggested opener restructure was rejected as "not me"; dropped without argument.
+- Mason delegated the "thoughts and prayers" call ("if it's too harsh remove it"); removed on the cruel-by-accident test.
+- Mason pushed back on the repeated links finding ("Get over this"); dropped as a topic.
 
 ## Process Improvements
 
 - When a critique produces more than ~8 findings, number them so the author can rule by number. Mason did this himself and it made the edit pass mechanical.
 - For politically dated posts, pin the "as of" date to publication, not drafting ("as of this post"), so the sentence does not rot.
-- Inline `<CLAUDE_HELP>` tags inside the draft work well as a handoff to the author's own editor; chat-only flags got lost between devices.
+- Inline `<CLAUDE_HELP>` tags inside the draft work well as a handoff to the author's own editor; chat-only flags got lost between devices. Confirmed in round two: "If it wasn't in claude help I didn't look for it."
+- Raise a finding once. If the author rules against it, it is decided; the links point was raised twice and earned a "get over this."
+- When the author says they removed something for ambiguity, grep for it. Paxton was still in the sentence Mason believed he had scrubbed.
 
 ## Observations
 

@@ -23,18 +23,18 @@ When people ask me why I don't leave Texas, last night was the reason.
 So the world woke up today to Texas turning blue.
 And not by like, a little blue.
 It wasn't a won by the skin of their teeth situation.
-As of writing this, James Talarico won 55% of the state against Ken Paxton's 43%.
+As of writing this, James Talarico won 55% of the vote against Ken Paxton's 43%.
 Gina Hinojosa ousted Republican governor Greg Abbott by seven points.
 Every statewide office on the ballot went to the Democrats.
 In _fucking **TEXAS**_!
 That is by far the most _massive_ Texas sized ass whoopin I've ever seen in my life.
-And it was well deserved(1). 
-The President of the United States endorsed Ken Paxton, the most corrupt candidate in Texas history, over a senator who has won four Senate races and none of them close, all because the stable candidate only voted 99.3% of the time(2). 
-The reward for this brilliant act was they got the public flogging they so very much deserved(3).
+And it was well deserved(1).
+The President of the United States endorsed the most corrupt candidate in Texas history over a senator who has won four Senate races and none of them close, all because the stable candidate only voted 99.3% of the time(2).
+The reward for this brilliant act was a public flogging they had coming(3).
 { .annotate }
 
 1. As my Mom says "Order shit, eat shit."
-2. Which just wasn't enough loyalty for the President. Whelp, play stupid games, win stupid prizes.
+2. Which just wasn't enough loyalty for the President. And that's [his own number](https://x.com/JohnCornyn/status/2056575999895069045), by the way. Welp, play stupid games, win stupid prizes.
 3. I'm proud to say, I was part of the movement that squarely kicked the Republicans' ass out the fucking door.
 
 
@@ -56,14 +56,14 @@ And to be honest, this question is exhausting.
 
 PyTexas 2026 was the 20th anniversary of the conference.
 PyTexas is the oldest North American regional Python conference and one of the oldest in the world.
-We were excited to celebrate our 20th, and decided to reach out to some rather well known people in the Python community to see if they would like to keynote our conference to celebrate with us. 
+We were excited to celebrate our 20th, and decided to reach out to some rather well known people in the Python community to see if they would like to keynote our conference to celebrate with us.
 Very quickly however, our moods were dampened by this response we received from someone we invited from our first round pick.
 
 > I'm sorry, I won't be able to attend. Separately, what are you doing to counter your state's republicans?
 
 No thank you for the invitation.
 No feigned regret for not being able to come.
-Just a terse no,(1) and then a generalized dismissal of _our entire community_ because of our geographic location.
+Just a terse no(1), and then a generalized dismissal of _our entire community_ because of our geographic location.
 { .annotate }
 
 1. Which is fine, if you don't care about maintaining professionalism.
@@ -80,12 +80,12 @@ To that person who probably will not read this blog, but if you do, and you know
 
 ### But It Doesn't End There
 
-Now I wish this was the first time I've experienced this within the Python community, but alas, it isn't. 
+Now I wish this was the first time I've experienced this within the Python community, but alas, it isn't.
 Off the top of my head I can think of at least four other times I introduced myself at a Python event, said I lead PyTexas, and got either an odd look or one of these:
 
 - "Oh wow, ya I'd never go to your conference."
 - "You must not run an inclusive conference then."
-- And from one dumb fuck who had the audacity to say "Oh wow, I'm sorry." as if me being from Texas was somehow an ailment of some kind.
+- And from one dumb fuck who had the audacity to say "Oh wow, I'm sorry," as if me being from Texas was somehow an ailment of some kind.
 
 These always take me by surprise, no matter how many times I've had to deal with them, because it never occurs to me to openly judge someone based solely on where they live.
 Humans are so much more complicated than that and to experience it is really disappointing.
@@ -106,8 +106,8 @@ Because I knew at the end of the day that Texans are better than this, and last 
 
 ## People Are Not Politics
 
-It's very difficult to love something and have faith in something, that you know can do better.
-Something that keeps letting you down in ways that in no way represent your lived experience.
+It's very difficult to love something and have faith in something that you know can do better.
+Something that keeps letting you down in ways that look nothing like the place you actually live in.
 This is exactly how Texas is.
 If you were to look at the way that our state is governed, you would think that Texas is filled with hate filled racist, bigoted people.
 And this is just simply not the case at all.
@@ -139,9 +139,9 @@ And I wholeheartedly agree.
 But there is a difference between what I want and reality.
 I have spent my time focusing on trying to improve reality.
 
-## Check Your Fucking Privilege 
+## Check Your Fucking Privilege
 
-The thing that has irritated me the most throughout all of this is the people that just say "oh I would just leave." 
+The thing that has irritated me the most throughout all of this is the people that just say "oh I would just leave."
 This is the most ignorant thing anyone can ever say.
 And it usually comes from non-Texan people in tech.
 
@@ -155,10 +155,9 @@ And to just boil it down to "I don't like it in your state so you should move." 
 If you actually want to help, how about saying "How can I get involved?"
 And then mean it.
 Come speak at PyTexas.
-Come to Austin, eat some breakfast tacos, over induldge on BBQ, enjoy the live music, and then meet the people you've written off from across the country.
-Because do you think we(the organizers) don't know what our state is like?
+Come to Austin, eat some breakfast tacos, overindulge on BBQ, enjoy the live music, and then meet the people you've written off from across the country.
+Now, do you think we (the organizers) don't know what our state is like?
 That we don't live this every day?
-Your bullshit answer is about as useful as "thoughts and prayers."
 
 
 ## Fighting the Good Fight
@@ -203,6 +202,6 @@ So don't forget you have work tomorrow.
 This isn't over.
 It's just the beginning.
 
-And if you're ever wondering why I haven't left Texas, this is why.
+And if you're ever wondering why I haven't left Texas: this is why.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3BaVb8LTooU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
