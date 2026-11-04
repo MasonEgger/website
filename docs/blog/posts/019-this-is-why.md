@@ -11,7 +11,7 @@ authors:
     - masonegger
 ---
 
-Last night, November 3, 2026, something happened in Texas that hasn't been seen for a generation.
+On November 3, 2026, something happened in Texas that hasn't been seen for a generation.
 Texas flipped blue.
 And it proved a point I've been making for a long time.
 When people ask me why I don't leave Texas, last night was the reason.
@@ -21,7 +21,7 @@ When people ask me why I don't leave Texas, last night was the reason.
 
 ## A Texas Sized Ass Whoopin
 
-So the world woke up today to Texas turning blue.
+So the world woke up on November 4th to Texas turning blue.
 And not by like, a little blue.
 It wasn't a won by the skin of their teeth situation.
 As of writing this, James Talarico won 55% of the vote against Ken Paxton's 43%.
@@ -76,7 +76,7 @@ And to be frank, this has fueled a lot of my burnout for the last year.
 It was the proverbial straw that broke the camel's back.
 It has been so difficult some days to get up and continue my work with PyTexas not solely because of this, but this sure as shit didn't help.
 
-To that person who probably will not read this blog, but if you do, and you know who you are, **this is what Texas did about the Republicans in our state.**
+To that person who probably will not read this blog, but if you do, and you know who you are, **this is what Texans did about the Republicans in our state.**
 
 ### But It Doesn't End There
 
@@ -95,14 +95,14 @@ As my dad always says, "it's better to be thought a fool than to open your mouth
 ## Eight Generations and I'm Not Fucking Leaving
 
 Now you may be wondering "so what's the point of all this?"
-And the point of this is to say that Texas is my home.
+The point is that Texas is my home.
 Texas is my parents' home, my grandparents' home, my great grandparents' home, my great great grandparents' home, and however many fucking times it has to go up until basically the formation of Texas.
 I am an eighth generation Texan, whose family settled this state long before it was even part of the United States.
 
 And I'm not fucking leaving.
 I'm not yielding this state and its wonderful culture and people to a bunch of radical jackasses who seek to do me and people like me harm.
 I'm staying and fighting.
-Because I knew at the end of the day that Texans are better than this, and last night, I was proven right.
+Because I knew at the end of the day that Texans are better than this, and on election night, I was proven right.
 
 ## People Are Not Politics
 
@@ -175,10 +175,10 @@ We'll let you know when it's safe to return.
 
 ## Don't Forget You Have Work Tomorrow
 
-Fucking celebrate!
+So fucking celebrate!
 Holy shit, have we earned it!
 I've had memes saved on my computer that I created a decade ago that I'm sending to my friends about this moment.
-I woke up with the biggest smile on my face and so much hope in my heart for the future.
+I woke up the morning after with the biggest smile on my face and so much hope in my heart for the future.
 
 Texas Republicans have held the governor's mansion since I was in diapers and every statewide office since I was in the first grade.
 I'm glad they're getting pushed out of the way to let somebody else drive for a change.
