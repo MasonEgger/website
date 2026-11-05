@@ -597,3 +597,12 @@
     border: none;
     margin: 3rem 0;
 }
+
+/* Centered single-column series block below the two-column layout */
+.series-section {
+    max-width: 720px;
+}
+
+.series-section > p {
+    text-align: center;
+}
