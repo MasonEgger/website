@@ -26,7 +26,6 @@ When people ask me why I don't leave Texas, this, and everything leading up to i
 
 <!-- more -->
 
-
 ## A Texas Sized Ass Whoopin
 
 So the world woke up on November 4th to Texas turning blue.
@@ -47,7 +46,7 @@ The reward for this brilliant act was a public flogging the Republicans had comi
 3. I'm proud to say, I was part of the movement that squarely kicked the Republicans' ass out the fucking door.
 
 I woke up the morning after with the biggest smile on my face.
-I’ve been sending my friends memes about this moment that I made over a decade ago.
+I've been sending my friends memes about this moment that I made over a decade ago.
 
 But as I sit here celebrating, something is quietly digging at the back of my mind.
 A question that I get asked more times than I would like.
@@ -87,13 +86,12 @@ Many days it has been hard to get up and continue my PyTexas work.
 Now this isn't the sole reason, but this sure as shit didn't help.
 
 So my response to that email is now "**This is what Texans did about the Republicans in our state.**"
-And PyTexas 2026 went off _spectacularly_. 
+And PyTexas 2026 went off _spectacularly_.
 Dawn Wages and Hynek Schlawack gave phenomenal keynotes.
-We were able to get more space, adding new rooms with open spaces, tutorials, and even held our networking event on the roof of the Austin Central Public Library.
+We were able to get more space, adding new rooms with open spaces, tutorials, and even held our networking event on the roof of the Austin Central Library.
 We sold out tickets, opened more tickets, and sold those out too.
 And we unveiled our newest mascot, Davey Quackett!
 ![picture of davey quackett](img/019-dawn-on-a-blue-texas/davey-quackett.webp)
-
 
 ### This Is a Recurring Thing
 
@@ -122,7 +120,7 @@ If given the chance, they'd nullify my marriage.
 In fact, their own party platform is calling for the nullification of Obergefell.
 And they continue to attempt to erase us as they allow judges to refuse to marry same-sex couples and ban schools from sponsoring any student club based on sexual orientation or gender identity.
 And that's just what affects me!
-  
+
 So, I decided a long time ago I'm not letting this shit fly.
 I'm staying and fighting.
 Because I knew, deep in my heart, that Texans are _better_ than this.
@@ -163,14 +161,14 @@ Why?
 Because out here voting red **isn't a conscious decision**.
 It's the default.
 And it's been the default for so long no one questions it anymore.
-These are folks who had a mono-party legislature for **decades** and still blamed the Democrats, which simple logic would indicate have never been able to affect any real change in Texas, for everything wrong with the state.
+These are folks who had a mono-party legislature for **decades** and still blamed the Democrats, which simple logic would indicate have never been able to effect any real change in Texas, for everything wrong with the state.
 This is fact.
-I have these conversations every holiday when I see my family. 
-This isn't something you explain away in an afternoon. 
+I have these conversations every holiday when I see my family.
+This isn't something you explain away in an afternoon.
 It takes _time_.
 You don't convince someone that something is bad by screaming it at them.
 You come to them with understanding.
-That problems they face are real, and they've been trained to think that the government getting involved will only make it worse(1).
+That the problems they face are real, and they've been trained to think that the government getting involved will only make it worse(1).
 When people complain about something, ask them what caused it.
 Let _them_ figure it out.
 And if they go off track, slightly correct them.
@@ -181,7 +179,7 @@ He listened, he was humble, he didn't cast aside the voters who didn't agree wit
 And that's why he, a Democrat, won Texas by over 10 points.
 { .annotate }
 
-1. Ronald Reagan solidified this with his "The nine most terrifying words in the English language are: I’m from the government, and I’m here to help." fear campaign.
+1. Ronald Reagan solidified this with his "The nine most terrifying words in the English language are: I'm from the government, and I'm here to help." fear campaign.
 
 ## Reality Check
 
@@ -199,8 +197,8 @@ Here's the part that people seem to forget.
 Once you leave, you can't _vote_ here anymore.
 Every time you tell someone to just pack up and move, you are surrendering.
 You're signaling that the place is a lost cause, and we're better off without it.
-And I'm sorry, I just can't dismiss the world's 8th largest economy and 31 million people like that. 
-If everyone who _could_ have left did, we might not have won on election night. 
+And I'm sorry, I just can't dismiss the world's 8th largest economy and 31 million people like that.
+If everyone who _could_ have left did, we might not have won on election night.
 The people you keep so casually telling to leave just **flipped Texas blue**.
 
 Do you think we (the organizers) don't know what our state is like?
@@ -221,9 +219,9 @@ Some of y'all don't even feel safe in your own homes.
 I'm fortunate enough that the legislation on the books as of this post hasn't made me feel unsafe yet.
 
 But for those of you who stayed, who put yourselves in harm's way, and fought.
-For those who showed up year after year, casting a vote that felt pointless. 
+For those who showed up year after year, casting a vote that felt pointless.
 For those who braved holidays and had the tough conversations anyway.
-November 3rd 2026, was your reward.
+November 3rd, 2026, was your reward.
 
 So if you still have the energy, I ask you to keep going.
 Because our work here is not done.
@@ -264,12 +262,11 @@ This is a once in a generation opportunity for us to unfuck a lot of things that
 We cannot waste it.
 But don't forget you have work tomorrow.
 
-
 So, to anyone who avoids or pities us simply for living here, I welcome you with open arms to come visit.
 The state motto of Texas is friendship(1), and you'll always have a friend here in Texas.
 Because that's who Texas is.
-It's the cashier who sees your down and asks if you're ok.
-It's the stranger on the street that holds the door for you.
+It's the cashier who sees you're down and asks if you're OK.
+It's the stranger on the street who holds the door for you.
 It's the people on that dusty country road pulling over for a stranger's funeral procession, paying respects to a person they'll never know.
 It's the people who have been voting for this change for decades, and finally get their reward.
 { .annotate }
@@ -279,6 +276,6 @@ It's the people who have been voting for this change for decades, and finally ge
 So if you're ever wondering why I haven't left Texas: this is why(1).
 { .annotate }
 
-1. Enjoy the celebratory [playlist](https://open.spotify.com/playlist/7b28lRTu6DnYCCDCh5OYaA?si=a6bb0906c09e4974) my brother and I made.
+1. Enjoy the celebratory [playlist](https://open.spotify.com/playlist/7b28lRTu6DnYCCDCh5OYaA) my brother and I made.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3BaVb8LTooU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
