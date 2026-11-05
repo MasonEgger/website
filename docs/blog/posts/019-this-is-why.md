@@ -83,7 +83,7 @@ Dawn Wages and Hynek Schlawack gave phenomenal keynotes.
 We were able to get more space, adding new rooms with open spaces, tutorials, and even held our networking event on the roof of the Austin Central Library.
 We sold out tickets, opened more tickets, and sold those out too.
 And we unveiled our newest mascot, Davey Quackett!
-![picture of davey quackett](img/019-dawn-on-a-blue-texas/davey-quackett.webp)
+![Davey Quackett, a yellow rubber duck wearing a brown cowboy hat and a Texas flag bandana, with the PyTexas logo on his chest](img/019-dawn-on-a-blue-texas/davey-quackett.webp)
 
 ### This Is a Recurring Thing
 
