@@ -57,7 +57,7 @@ uv run mkdocs build
 ### Content Organization
 The site content is organized into distinct sections, each using its own instance of the MkDocs Material blog plugin:
 
-- `docs/blog/posts/` - Personal blog posts (numbered 000-011+)
+- `docs/blog/posts/` - Personal blog posts (numbered 000-019+); post images live in `docs/blog/posts/img/<slug>/`
 - `docs/tutorials/posts/` - Technical tutorials
 - `docs/speaking/posts/` - Conference talks and presentations
 - `docs/speaking/docs/` - PDF slides for download
@@ -78,8 +78,9 @@ The homepage (`docs/index.md`) uses custom CSS classes for layout:
 
 - `.hero-section` - Compact hero with profile image, name, tagline, and bio
 - `.two-column-container` - Flexbox container for side-by-side sections on large screens, stacks vertically on mobile (≤768px)
-- `.content-column` - Child of two-column-container, used for Recent Content and Featured Content sections
-- `.content-section` - Standard full-width content section (used for "What I'm Working On")
+- `.content-column` - Child of two-column-container, used for the Latest Posts (three most recent blog posts, newest first) and Featured Content sections
+- `.content-section` - Standard full-width content section (used for "Recent Series" and "What I'm Working On")
+- `.series-section` - Modifier on `.content-section` for the Recent Series block: caps width at 720px and centers its intro paragraph
 - `.content-list` - Styled list items with terracotta left border
 
 ### Plugin Configuration
