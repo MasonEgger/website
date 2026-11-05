@@ -1,7 +1,7 @@
 ---
 title: "This Is Why"
 description: "I often get asked why I don't leave Texas. The November 2026 election was the answer."
-date: 2026-11-04
+date: 2026-11-05
 slug: this-is-why
 categories:
     - Politics
