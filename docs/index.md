@@ -28,22 +28,14 @@ I'm a technical educator, software developer, and community organizer currently 
 
 <div class="content-column" markdown>
 
-## Latest Post
+## Latest Posts
+
+The three most recent things I've written.
 
 <ul class="content-list" markdown>
 <li markdown>[Dawn on a Blue Texas](blog/posts/019-this-is-why.md)</li>
-</ul>
-
-## Recent Series
-
-My recent **Brain Dump Ramblings on AI** series
-
-<ul class="content-list" markdown>
-<li markdown>[Part 1: We're Witnessing the Evolution of Software Engineering](blog/posts/014-software-engineering-evolution.md)</li>
-<li markdown>[Part 2: Code is Now Cheap, Don't Devalue Yourself](blog/posts/015-code-is-cheap.md)</li>
-<li markdown>[Part 3: What I Found Actually Works with AI](blog/posts/016-ai-principles.md)</li>
-<li markdown>[Part 4: How I Actually Use the Damn Thing](blog/posts/017-claude-code.md)</li>
-<li markdown>[Part 5: Skills, Plugins, and MCP Oh My!](blog/posts/018-claude-customize.md)</li>
+<li markdown>[Skills, Plugins, and MCP Oh My!](blog/posts/018-claude-customize.md)</li>
+<li markdown>[How I Actually Use the Damn Thing](blog/posts/017-claude-code.md)</li>
 </ul>
 
 </div>
@@ -61,6 +53,22 @@ Writings y'all tell me you like.
 </ul>
 
 </div>
+
+</div>
+
+<div class="content-section series-section" markdown>
+
+## Recent Series
+
+My recent **Brain Dump Ramblings on AI** series
+
+<ul class="content-list" markdown>
+<li markdown>[Part 1: We're Witnessing the Evolution of Software Engineering](blog/posts/014-software-engineering-evolution.md)</li>
+<li markdown>[Part 2: Code is Now Cheap, Don't Devalue Yourself](blog/posts/015-code-is-cheap.md)</li>
+<li markdown>[Part 3: What I Found Actually Works with AI](blog/posts/016-ai-principles.md)</li>
+<li markdown>[Part 4: How I Actually Use the Damn Thing](blog/posts/017-claude-code.md)</li>
+<li markdown>[Part 5: Skills, Plugins, and MCP Oh My!](blog/posts/018-claude-customize.md)</li>
+</ul>
 
 </div>
 
