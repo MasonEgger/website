@@ -11,17 +11,9 @@ authors:
     - masonegger
 ---
 
-<CLAUDE_HELP priority="high" topic="title and the promise the opener makes">
-You said you may retitle to the playlist name. The slug is pinned, so the URL survives a retitle; the description line would need to change with it.
-Your title formula is [hook]: [dead-straight subtitle] or a two-beat punch. The dawn phrase is the hook; the subtitle slot is open and should say plainly what the post is (the answer to "why don't you leave").
-The opener currently promises vindication ("proved a point", "was the reason"). If the post lands on hope, decide whether the opener promises the dawn instead, or stays as is and lets the ending turn it.
-You told me to leave the opener alone earlier; this is flagged only because the frame moved under it. Your law: write the actual opening last.
-If the title becomes the dawn, decide what happens to "this is why" at the very end: it stays as the button, or the dawn takes over the callback.
-</CLAUDE_HELP>
-
 On November 3rd, 2026, something happened in Texas that hasn't been seen in a generation.
 Texas flipped blue.
-And it proved a point I've been making for a long time.
+And it proved a point I've been making for a long time, even on the days when it was hard to.
 When people ask me why I don't leave Texas, this, and everything leading up to it, was the reason.
 
 <!-- more -->
