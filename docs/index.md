@@ -28,6 +28,12 @@ I'm a technical educator, software developer, and community organizer currently 
 
 <div class="content-column" markdown>
 
+## Latest Post
+
+<ul class="content-list" markdown>
+<li markdown>[Dawn on a Blue Texas](blog/posts/019-this-is-why.md)</li>
+</ul>
+
 ## Recent Series
 
 My recent **Brain Dump Ramblings on AI** series
