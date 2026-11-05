@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edit checklist: AI-Apps-Temporal (review round 2)</title>
+<style>
+  :root {
+    --cream: #FEFAE0;
+    --green: #283618;
+    --green-soft: #3d5220;
+    --orange: #BC6C25;
+    --orange-soft: #e9d8b8;
+    --ink: #2b2b22;
+    --muted: #6b6b5a;
+    --card: #fffdf3;
+    --border: #e2dcc0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 44px 24px 96px; }
+  header.page { border-bottom: 4px solid var(--orange); padding-bottom: 18px; margin-bottom: 26px; }
+  h1 { color: var(--green); font-size: 1.85rem; margin: 0 0 6px; line-height: 1.2; }
+  .sub { color: var(--muted); font-size: 1rem; margin: 0; }
+  h2 { color: var(--green); font-size: 1.3rem; margin: 40px 0 4px; border-left: 6px solid var(--orange); padding-left: 12px; }
+  h2 .count { color: var(--muted); font-size: 0.85rem; font-weight: 400; }
+  p.note { color: var(--muted); margin: 4px 0 14px; font-size: 0.95rem; }
+  code { background: #efe9cf; padding: 1px 6px; border-radius: 4px; font: 0.85em "SF Mono", ui-monospace, Menlo, Consolas, monospace; color: #6a4416; }
+  ul.items { list-style: none; margin: 0; padding: 0; }
+  ul.items li {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--orange);
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin: 10px 0;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  ul.items input { margin-top: 5px; width: 18px; height: 18px; accent-color: var(--orange); flex: 0 0 auto; }
+  .body { flex: 1; }
+  .lines { display: inline-block; background: var(--orange); color: #fff; font: 700 0.72rem/1 "SF Mono", ui-monospace, Menlo, monospace; padding: 4px 8px; border-radius: 5px; margin-right: 8px; white-space: nowrap; }
+  .what { color: var(--ink); }
+  .what b { color: var(--green); }
+  section.keep ul.items li { border-left-color: #b6c99a; background: #f2f5e8; }
+  section.keep .lines { background: #7d9256; }
+  section.input ul.items li { border-left-color: var(--green); }
+  section.input .lines { background: var(--green); }
+  .quote { font-style: italic; color: var(--green-soft); }
+  footer { margin-top: 52px; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--border); padding-top: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="page">
+  <h1>Edit checklist: <code>AI-Apps-Temporal.md</code></h1>
+  <p class="sub">Your verdicts from the round-2 walk-through. Check them off as you edit. The file was not touched.</p>
+</header>
+
+<h2>Approved rewrites <span class="count">(judgment calls you said yes to)</span></h2>
+<ul class="items">
+  <li><input type="checkbox"><div class="body"><span class="lines">38-40</span><span class="what"><b>Three pillars in the thesis.</b> Name planning up front alongside context and guardrails, so "Measure Twice, Cut Once" doesn't read as a surprise third thing.</span></div></li>
+  <li><input type="checkbox"><div class="body"><span class="lines">73</span><span class="what"><b>Cut the 50/70 numbers.</b> Keep the claim qualitative ("customers tell us it noticeably cut both dev time and production failures"). No unsourced figures.</span></div></li>
+  <li><input type="checkbox"><div class="body"><span class="lines">19</span><span class="what"><b>"99%" becomes "almost all."</b></span></div></li>
+  <li><input type="checkbox"><div class="body"><span class="lines">26</span><span class="what"><b>Cut "within the first 3 minutes."</b></span></div></li>
+  <li><input type="checkbox"><div class="body"><span class="lines">49</span><span class="what"><b>"three tiered approach" becomes "three-part approach."</b> Drops the false hierarchy.</span></div></li>
+  <li><input type="checkbox"><div class="body"><span class="lines">147</span><span class="what"><b>Swap the bowling metaphor for a kitchen one.</b> Reframe guardrails as tasting / working the pass so the prose metaphor rhymes with the images instead of importing bowling.</span></div></li>
+  <li><input type="checkbox"><div class="body"><span class="lines">back half</span><span class="what"><b>Extend the image motif.</b> Add stills for testing (tasting), guardrails (the pass / quality), and the close (plating / serving) so the culinary throughline runs the whole piece instead of stopping at Gordon Ramsay.</span></div></li>
+</ul>
+
+<h2>Objective fixes <span class="count">(no debate)</span></h2>
+<ul class="items">
+  <li><input type="checkbox"><div class="body"><span class="lines">59</span><span class="what">Dropped word: <span class="quote">"that the  decides"</span> becomes "that the <b>agent</b> decides."</span></div></li>
+  <li><input type="checkbox"><div class="body"><span class="lines">88-89</span><span class="what">Dedupe: <span class="quote">"the idea of a 'programming cookbook' has been around for a long time"</span> appears twice in adjacent sentences. Keep one.</span></div></li>
+  <li><input type="checkbox"><div class="body"><span class="lines">34</span><span class="what">Rewrite the garbled sentence: <span class="quote">"when they are I'll explain the concept rather than the exact tooling as well."</span> Try: "and when a tip is harness-specific, I'll explain the concept rather than the exact tooling."</span></div></li>
+  <li><input type="checkbox"><div class="body"><span class="lines">29</span><span class="what">"let's <b>setup</b>" becomes "let's <b>set up</b>."</span></div></li>
+  <li><input type="checkbox"><div class="body"><span class="lines">26</span><span class="what">"digging <b>in to</b>" becomes "digging <b>into</b>."</span></div></li>
+  <li><input type="checkbox"><div class="body"><span class="lines">52</span><span class="what">Heading "The Temporal Developer <b>Skills</b>" becomes singular "Skill" to match the product and the link anchor.</span></div></li>
+  <li><input type="checkbox"><div class="body"><span class="lines">96</span><span class="what">"<b>crucial</b>" is on your banned list (and it's bolded). Change to "important" or delete.</span></div></li>
+  <li><input type="checkbox"><div class="body"><span class="lines">133</span><span class="what">"amazing support" is vague filler. Say what it does (returns the answer plus the source link the LLM can then read).</span></div></li>
+  <li><input type="checkbox"><div class="body"><span class="lines">64,67,69,95,105,119,132</span><span class="what">Strip trailing whitespace.</span></div></li>
+</ul>
+
+<section class="keep">
+<h2>Keeping as-is <span class="count">(your calls, listed so nobody re-flags them)</span></h2>
+<ul class="items">
+  <li><span class="body"><span class="lines">81, 79, 118</span><span class="what">Guy Fieri GIF and the in-prose food puns. Deliberate.</span></span></li>
+  <li><span class="body"><span class="lines">21,110,129</span><span class="what">"just about every feature," "fully executable, verified, and tested," "better than foundational models." Staying.</span></span></li>
+  <li><span class="body"><span class="lines">163</span><span class="what">"iterating a map" non-determinism phrasing. Punchy, staying.</span></span></li>
+  <li><span class="body"><span class="lines">182</span><span class="what"><code>temporal server start-dev</code> with no local-dev caveat. Staying.</span></span></li>
+  <li><span class="body"><span class="lines">60,84,101</span><span class="what">Provenance ("built and vetted by Temporal") repeated per subsection. Intentional reinforcement.</span></span></li>
+  <li><span class="body"><span class="lines">208</span><span class="what">The Fable aside. Deliberate keep.</span></span></li>
+  <li><span class="body"><span class="lines">intro</span><span class="what">Intro structure. Credibility-first, not a buried lede. The "lead with the pain" idea is dropped.</span></span></li>
+</ul>
+</section>
+
+<section class="input">
+<h2>Needs your input <span class="count">(content / verification, only you can do)</span></h2>
+<ul class="items">
+  <li><input type="checkbox"><div class="body"><span class="lines">2</span><span class="what">Set the title (still <code>TODO: title later</code>).</span></div></li>
+  <li><input type="checkbox"><div class="body"><span class="lines">231</span><span class="what">Write the CTA (still <code>&lt;!-- TODO: CTA here --&gt;</code>).</span></div></li>
+  <li><input type="checkbox"><div class="body"><span class="lines">157</span><span class="what">Real link for <code>[LINK: Temporal testing docs]</code>.</span></div></li>
+  <li><input type="checkbox"><div class="body"><span class="lines">64</span><span class="what">Verify the Cloud Skill link. The <code>skill-install=npx</code> query param looks copy-pasted from the npx sample; confirm it resolves to the general Cloud Skill section.</span></div></li>
+  <li><input type="checkbox"><div class="body"><span class="lines">back half</span><span class="what">Choose the actual images for the tasting / the pass / serving beats (pairs with the "extend the motif" item above).</span></div></li>
+</ul>
+</section>
+
+<footer>
+  From the round-2 adversarial review and our one-by-one walk-through. Say the word if you want me to apply any subset after all, or run another review pass once you've edited.
+</footer>
+
+</div>
+</body>
+</html>

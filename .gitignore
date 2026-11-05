@@ -8,3 +8,4 @@ site/*
 website.egg-info/*
 .lycheecache
 commit-msg.md
+**/.playwright-mcp/
