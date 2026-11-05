@@ -1,0 +1,1252 @@
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="I often get asked why I don't leave Texas. The November 2026 election was the answer.">
+      
+      
+        <meta name="author" content="Mason Egger">
+      
+      
+        <link rel="canonical" href="https://mason.dev/blog/dawn-on-a-blue-texas/">
+      
+      
+        <link rel="prev" href="../skills-plugins-and-mcp-oh-my/">
+      
+      
+      
+        
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../static/img/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Dawn on a Blue Texas - Mason Egger</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-885F33V7K6"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-885F33V7K6",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-885F33V7K6",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Dawn on a Blue Texas - Mason Egger" />
+<meta property="og:description" content="I often get asked why I don't leave Texas. The November 2026 election was the answer." />
+<meta property="og:image" content="https://mason.dev/assets/images/social/blog/dawn-on-a-blue-texas.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://mason.dev/blog/dawn-on-a-blue-texas/" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="Dawn on a Blue Texas - Mason Egger" />
+<meta property="twitter:description" content="I often get asked why I don't leave Texas. The November 2026 election was the answer." />
+<meta property="twitter:image" content="https://mason.dev/assets/images/social/blog/dawn-on-a-blue-texas.png" />
+</head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="mme" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#a-texas-sized-ass-whoopin" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Mason Egger" class="md-header__button md-logo" aria-label="Mason Egger" data-md-component="logo">
+      
+  <img src="../../static/img/mmeg.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mason Egger
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Dawn on a Blue Texas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="mme" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/masonegger/website" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    masonegger/website
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Blog
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../tutorials/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tutorials
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../speaking/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Speaking
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../uses/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Uses
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bio/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Bio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../extras/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Extras
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Mason Egger" class="md-nav__button md-logo" aria-label="Mason Egger" data-md-component="logo">
+      
+  <img src="../../static/img/mmeg.png" alt="logo">
+
+    </a>
+    Mason Egger
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/masonegger/website" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    masonegger/website
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorials
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../speaking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Speaking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extras/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Extras
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+  <div class="md-content md-content--post" data-md-component="content">
+
+    <!-- Sidebar -->
+    <div
+      class="md-sidebar md-sidebar--post"
+      data-md-component="sidebar"
+      data-md-type="navigation"
+    >
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav">
+
+            <!-- Back to overview link -->
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../" class=" md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Page authors -->
+            
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="https://github.com/masonegger.png" alt="Mason Egger" />
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>Mason Egger</strong><br />
+                      Developer, Educator, Community Organizer
+                    </span>
+                  </div>
+                
+              </div>
+            
+
+            <!-- Page metadata -->
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__title">
+                <div class="md-nav__link">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+              </li>
+
+              
+
+              
+
+              <!-- Page original publish date -->
+              <li class="md-nav__item">
+                <div class="md-nav__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                    <time datetime="2026-11-05" class="md-ellipsis">
+                    Published: November 5, 2026</time>
+                </div>
+              </li>  
+              <!-- Page categories -->
+              
+                <li class="md-nav__item">
+                  <div class="md-nav__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3zm3 2 4 13 3-1-4-13zM5 5v13h3V5zM3 19v2h18v-2z"/></svg>
+                    <span class="md-ellipsis">
+                      in
+                      
+                        <a href="../category/politics/">Politics</a>, 
+                        <a href="../category/texas/">Texas</a>, 
+                        <a href="../category/community/">Community</a></span>
+                  </div>
+                </li>
+              
+
+              <!-- Page readtime -->
+              
+            </ul>
+
+            <!-- Page links -->
+            
+          </nav>
+
+          <!-- Table of contents, if integrated -->
+          
+            
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-texas-sized-ass-whoopin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Texas Sized Ass Whoopin
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-tired-question" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Tired Question
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A Tired Question">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-keynote-invitation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Keynote Invitation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#this-is-a-recurring-thing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        This Is a Recurring Thing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eight-generations-and-im-not-fucking-leaving" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eight Generations and I'm Not Fucking Leaving
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#people-are-not-politics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        People Are Not Politics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reality-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reality Check
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stay-if-you-can" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stay If You Can
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-forget-you-have-work-tomorrow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Don't Forget You Have Work Tomorrow
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Page content -->
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+
+
+
+  
+  
+
+
+  <h1>Dawn on a Blue Texas</h1>
+
+<p>On November 3<sup>rd</sup>, 2026, something happened in Texas that hasn't been seen in a generation.
+Texas flipped blue.
+And it proved a point I've been making for a long time, even on the days when it was hard to.
+When people ask me why I don't leave Texas, this, and everything leading up to it, was the reason.</p>
+<!-- more -->
+
+<h2 id="a-texas-sized-ass-whoopin">A Texas Sized Ass Whoopin<a class="headerlink" href="#a-texas-sized-ass-whoopin" title="Permanent link">&para;</a></h2>
+<p class="annotate">So the world woke up on November 4<sup>th</sup> to Texas turning blue.
+And not by, like, a little blue.
+It wasn't a won by the skin of their teeth situation.
+As of writing this, James Talarico won 55% of the vote against Ken Paxton's 43%.
+Gina Hinojosa ousted Republican governor Greg Abbott by seven points.
+Every statewide office on the ballot went to the Democrats.
+In <em>fucking <strong>TEXAS</strong></em>!
+That is by far the most <em>massive</em> Texas sized ass whoopin I've ever seen in my life.
+And it was well deserved(1).
+The President of the United States endorsed the most corrupt candidate in Texas history over a senator who has won four Senate races and none of them close, all because the stable candidate only voted with him 99.3% of the time(2).
+The reward for this brilliant act was a public flogging the Republicans had coming(3).</p>
+<ol>
+<li>As my mom says, "Order shit, eat shit."</li>
+<li>Which just wasn't enough loyalty for the President. And that's <a href="https://x.com/JohnCornyn/status/2056575999895069045">the senator's own number</a>, by the way. Welp, play stupid games, win stupid prizes.</li>
+<li>I'm proud to say, I was part of the movement that squarely kicked the Republicans' ass out the fucking door.</li>
+</ol>
+<p>I woke up the morning after with the biggest smile on my face.
+I've been sending my friends memes about this moment that I made over a decade ago.</p>
+<p>But as I sit here celebrating, something is quietly digging at the back of my mind.
+A question that I get asked more times than I would like.
+And after election night, I can finally <em>elaborate</em> on my answer.</p>
+<h2 id="a-tired-question">A Tired Question<a class="headerlink" href="#a-tired-question" title="Permanent link">&para;</a></h2>
+<p>Every time I travel to a tech conference, I wind up talking to people about who I am and what I do, which eventually leads to me saying I'm from Texas.
+And then some form of this conversation takes place:</p>
+<blockquote>
+<p>"You're from Texas? I could never live there. Are you planning on leaving? You should leave, it's terrible."</p>
+</blockquote>
+<p>And then I, having had my flabbers gasted once again, have to smile politely and try to change the subject.
+This question is exhausting.</p>
+<h3 id="a-keynote-invitation">A Keynote Invitation<a class="headerlink" href="#a-keynote-invitation" title="Permanent link">&para;</a></h3>
+<p>PyTexas 2026 was the 20<sup>th</sup> year of the conference.
+PyTexas is the oldest North American regional Python conference and one of the oldest in the world.
+We were excited to celebrate our 20<sup>th</sup>, and decided to reach out to some well known people in the Python community to see if they would like to keynote our conference to celebrate with us.
+Then my speaker chair shared with me this response from one of the people we invited.</p>
+<blockquote>
+<p>I'm sorry, I won't be able to attend. Separately, what are you doing to counter your state's republicans?</p>
+</blockquote>
+<p class="annotate">No "thank you" for the invitation.
+Just a terse no(1), and then a generalized dismissal of <em>our entire community</em> because of our geographic location.</p>
+<ol>
+<li>Which is fine, if you don't care about maintaining professionalism.</li>
+</ol>
+<p>Now, I'm not going to name this person because that's not who I am.
+But this is one of the highest ranking people in the entire Python ecosystem.
+This is someone that people in my community look up to.
+I have kept most of this quiet for almost a year now because I didn't want my community to know that this person, who they idolize, regards them with such contempt without ever having met them or experienced the community that we have built.
+And to be transparent with y'all, this has fueled a lot of my burnout for the last year.
+Many days it has been hard to get up and continue my PyTexas work.
+Now this isn't the sole reason, but this sure as shit didn't help.</p>
+<p>So my response to that email is now "<strong>This is what Texans did about the Republicans in our state.</strong>"
+And PyTexas 2026 went off <em>spectacularly</em>.
+Dawn Wages and Hynek Schlawack gave phenomenal keynotes.
+We were able to get more space, adding new rooms with open spaces, tutorials, and even held our networking event on the roof of the Austin Central Library.
+We sold out tickets, opened more tickets, and sold those out too.
+And we unveiled our newest mascot, Davey Quackett!
+<img alt="picture of davey quackett" src="../img/019-dawn-on-a-blue-texas/davey-quackett.webp" /></p>
+<h3 id="this-is-a-recurring-thing">This Is a Recurring Thing<a class="headerlink" href="#this-is-a-recurring-thing" title="Permanent link">&para;</a></h3>
+<p>Now I wish this was the first time I've experienced this within the Python community, but alas, it isn't.
+Off the top of my head I can think of many other times I introduced myself at a Python event, said I lead PyTexas, and got either an odd look or one of these:</p>
+<ul>
+<li>"Oh wow, ya I'd never go to your conference."</li>
+<li>"You must not run an inclusive conference then."</li>
+<li>And from some poor soul who had the audacity to say "Oh wow, I'm sorry," as if me being from Texas was somehow an ailment of some kind.</li>
+</ul>
+<p>These always take me by surprise, no matter how many times I've had to deal with them, because it never occurs to me to openly judge someone based solely on where they live.
+Humans are so much more complicated than that and to experience it is really disappointing.
+And to be frank, I don't really give a shit.
+As my dad always says, "it's better to be thought a fool than to open your mouth and remove all doubt."</p>
+<h2 id="eight-generations-and-im-not-fucking-leaving">Eight Generations and I'm Not Fucking Leaving<a class="headerlink" href="#eight-generations-and-im-not-fucking-leaving" title="Permanent link">&para;</a></h2>
+<p>Now you may be wondering "so what's the point of all this?"
+The point is that Texas is my home.
+Texas is my parents' home, my grandparents' home, my great grandparents' home, my great great grandparents' home, and however many fucking times it has to go up until basically the formation of Texas.
+I am an eighth generation Texan, whose family settled this state long before it was even part of the United States.</p>
+<p>And I'm not fucking leaving.
+I'm not yielding this state and its wonderful culture and people to a bunch of radical Republican jackasses who seek to do me and people like me harm.
+If given the chance, they'd nullify my marriage.
+In fact, their own party platform is calling for the nullification of Obergefell.
+And they continue to attempt to erase us as they allow judges to refuse to marry same-sex couples and ban schools from sponsoring any student club based on sexual orientation or gender identity.
+And that's just what affects me!</p>
+<p>So, I decided a long time ago I'm not letting this shit fly.
+I'm staying and fighting.
+Because I knew, deep in my heart, that Texans are <em>better</em> than this.
+And on election night, they did what I <strong>always knew they could do</strong>.
+They stood up.
+They said "Fuck this. Enough is enough."
+Then they proceeded to drop kick the government out the front door with such force and conviction it shocked the entire world.
+And if that isn't the most <em><strong>Texas</strong></em> fucking thing I've ever seen in my life, I don't know what is.
+Guess the legislature wasn't up to date on their Texas history.</p>
+<h2 id="people-are-not-politics">People Are Not Politics<a class="headerlink" href="#people-are-not-politics" title="Permanent link">&para;</a></h2>
+<p>It's very difficult to love something and have faith in something that you know can do better.
+Harder still when the people running it keep letting you down in ways that look nothing like the people living in it.
+This is exactly how Texas is.
+If you were to look at the way that our state is governed, you would think that Texas is filled with hate filled racist, bigoted people.
+And that is simply not the case.</p>
+<p>Texans are some of the nicest people I've ever met.
+When my husband moved here, he was unbelievably shocked by how friendly everyone was.
+How the person behind the counter at the grocery store asked us how our day was going, and then we'd talk for a few minutes.
+How people would stop and say hello in the middle of the street.
+How when a funeral procession passes on a country road, everyone pulls over and puts on their hazards to pay their respect to a person they don't even know.
+That is who Texans are.
+And if you just listen to the news, or your own little echo chamber, you would never experience this.</p>
+<p>People are not politics.
+A large number of people in this state absolutely despise the way the state is governed.
+And unfortunately, many of them vote for the politicians who enact the very policies they despise.
+You may think this is bullshit and that nobody does this, but I have experienced it firsthand.
+I grew up in rural Texas.
+I have watched people complain about the policies of Texas and, in the same breath, say they would never consider voting for the other party, solely because it's the other party.
+Because the secret here is that the vast majority of these people do not think about politics 24 hours a day.
+They think about it when it becomes relevant in their life.
+And more often than not, this will occur at a gas station or grocery store.</p>
+<p class="annotate">Why?
+Because out here voting red <strong>isn't a conscious decision</strong>.
+It's the default.
+And it's been the default for so long no one questions it anymore.
+These are folks who had a mono-party legislature for <strong>decades</strong> and still blamed the Democrats, which simple logic would indicate have never been able to effect any real change in Texas, for everything wrong with the state.
+This is fact.
+I have these conversations every holiday when I see my family.
+This isn't something you explain away in an afternoon.
+It takes <em>time</em>.
+You don't convince someone that something is bad by screaming it at them.
+You come to them with understanding.
+That the problems they face are real, and they've been trained to think that the government getting involved will only make it worse(1).
+When people complain about something, ask them what caused it.
+Let <em>them</em> figure it out.
+And if they go off track, slightly correct them.
+This is actually a teaching technique.
+Because the conclusions you come to yourself are <em>far</em> more powerful than the conclusions other people feed you.
+And you know what, this is <em>exactly</em> what James Talarico did.
+He listened, he was humble, he didn't cast aside the voters who didn't agree with him.
+And that's why he, a Democrat, won Texas by over 10 points.</p>
+<ol>
+<li>Ronald Reagan solidified this with his "The nine most terrifying words in the English language are: I'm from the government, and I'm here to help." fear campaign.</li>
+</ol>
+<h2 id="reality-check">Reality Check<a class="headerlink" href="#reality-check" title="Permanent link">&para;</a></h2>
+<p>The thing that has irritated me the most throughout all of this is the people that just say "oh I would just leave."
+This is the most ignorant thing anyone can ever say.
+And it usually comes from non-Texan people in tech.</p>
+<p>Look, I get that moving is an option for you.
+But "just leave" is advice that only works if you have no ties and money to burn.
+For the vast majority of people, this is not the reality.
+They have families here, they don't have the economic means to do so, they don't want to give up on their home, there are 1 million reasons why.
+And to just boil it down to "I don't like it in your state so you should move." is an insensitive, asshole thing to say.</p>
+<p>Here's the part that people seem to forget.
+Once you leave, you can't <em>vote</em> here anymore.
+Every time you tell someone to just pack up and move, you are surrendering.
+You're signaling that the place is a lost cause, and we're better off without it.
+And I'm sorry, I just can't dismiss the world's 8<sup>th</sup> largest economy and 31 million people like that.
+If everyone who <em>could</em> have left did, we might not have won on election night.
+The people you keep so casually telling to leave just <strong>flipped Texas blue</strong>.</p>
+<p>Do you think we (the organizers) don't know what our state is like?
+That we don't live this every day?</p>
+<p>If you actually want to help, how about saying "How can I get involved?"
+And then mean it.
+Come speak at PyTexas.
+Come to Austin, eat some breakfast tacos, overindulge on BBQ, enjoy the live music, and then meet the people you've written off from across the country.</p>
+<h2 id="stay-if-you-can">Stay If You Can<a class="headerlink" href="#stay-if-you-can" title="Permanent link">&para;</a></h2>
+<p>That being said, I do not begrudge anybody who left.
+I get it.
+There have been many times when I have considered leaving Texas.
+It is exhausting to get up every day being considered a second class citizen.
+Some of y'all don't even feel safe in your own homes.
+I'm fortunate enough that the legislation on the books as of this post hasn't made me feel unsafe yet.</p>
+<p>But for those of you who stayed, who put yourselves in harm's way, and fought.
+For those who showed up year after year, casting a vote that felt pointless.
+For those who braved holidays and had the tough conversations anyway.
+November 3<sup>rd</sup>, 2026, was your reward.</p>
+<p>So if you still have the energy, I ask you to keep going.
+Because our work here is not done.
+But if you don't have it in you anymore, please do what's best for you and your family.
+We'll let you know when it's safe to return.
+We're closer than we've ever been.</p>
+<h2 id="dont-forget-you-have-work-tomorrow">Don't Forget You Have Work Tomorrow<a class="headerlink" href="#dont-forget-you-have-work-tomorrow" title="Permanent link">&para;</a></h2>
+<p>So fucking celebrate!
+Holy shit, have we earned it!</p>
+<p class="annotate">Because it was a <em>long</em> fucking night.
+Texas Republicans have held the governor's mansion since I was in diapers and every statewide office since I was in the first grade.
+No one my age or younger has ever known anything different.
+They've been telling us for years that "this year is our year" and it never was.
+I made my memes back in 2014, and they've been sitting in a folder gathering dust.
+Now, as dawn breaks over a new Texas, I finally get to use them(1).</p>
+<ol>
+<li>To be fair, <em>some</em> of them. The meme game has dramatically changed since 2014. We were so simple back then.</li>
+</ol>
+<p class="annotate">So, as you can tell, I'm overjoyed they're getting pushed out of the way to let somebody else drive for a change.
+But now the ball is in the Democrats' court.
+They have to perform.
+They have to deliver the change they promised, the things that matter to everyday Texans.
+Gas is a dollar higher than it was a year ago.
+Our beef and agriculture industries are struggling(1).
+Our public schools are being actively dismantled in front of us(2).
+These were the things that got Democrats elected, and these are the things that need to be delivered on.
+Because if they don't, then we're gonna see a swing right back to where we were.</p>
+<ol>
+<li>You don't have to like these industries, I'm not asking that of you. But if you're not a Texan you may not realize how much these industries are our way of life. So before you put your "holier than thou" hat on, remember that for some people this is all they've ever known.</li>
+<li>I'm the son of an educator, and you have no idea how much this pisses me off no end. Texans used to be proud of their public schools. Texas used to be one of the best public school states in the nation. And over the last 30 years, we have let ourselves become the laughing stock. And this shit has to be fixed.</li>
+</ol>
+<p>This is a once in a generation opportunity for us to unfuck a lot of things that have been just completely fucked up.
+We cannot waste it.
+But don't forget you have work tomorrow.</p>
+<p class="annotate">So, to anyone who avoids or pities us simply for living here, I welcome you with open arms to come visit.
+The state motto of Texas is friendship(1), and you'll always have a friend here in Texas.
+Because that's who Texas is.
+It's the cashier who sees you're down and asks if you're OK.
+It's the stranger on the street who holds the door for you.
+It's the people on that dusty country road pulling over for a stranger's funeral procession, paying respects to a person they'll never know.
+It's the people who have been voting for this change for decades, and finally get their reward.</p>
+<ol>
+<li>From the Caddo "táysha" via Spanish "Tejas," from which Texas gets its name.</li>
+</ol>
+<p class="annotate">So if you're ever wondering why I haven't left Texas: this is why(1).</p>
+<ol>
+<li>Enjoy the celebratory <a href="https://open.spotify.com/playlist/7b28lRTu6DnYCCDCh5OYaA">playlist</a> my brother and I made.</li>
+</ol>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3BaVb8LTooU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2018-2026 - Mason Egger
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://twitter.com/masonegger" target="_blank" rel="noopener" title="Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"/></svg>
+    </a>
+  
+    
+    
+      
+    
+    
+    
+    <a href="https://fosstodon.org/@masonegger" target="_blank" rel="noopener me" title="Mastodon" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54-.6-4.6-.9-9.3-.9-13.9 85.6 20.9 158.7 9.1 178.7 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6V190.1c0-49.7-64-51.6-64 6.9v62.5H201V197c0-58.5-64-56.6-64-6.9v114.2H90.3c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://bsky.app/profile/mason.dev" target="_blank" rel="noopener" title="Bluesky" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M407.8 294.7c-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3M288 227.1c-26.1-50.7-97.1-145.2-163.1-191.8C61.6-9.4 37.5-1.7 21.6 5.5 3.3 13.8 0 41.9 0 58.4S9.1 194 15 213.9c19.5 65.7 89.1 87.9 153.2 80.7 3.3-.5 6.6-.9 10-1.4-3.3.5-6.6 1-10 1.4-93.9 14-177.3 48.2-67.9 169.9C220.6 589.1 265.1 437.8 288 361.1c22.9 76.7 49.2 222.5 185.6 103.4 102.4-103.4 28.1-156-65.8-169.9-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3 64.1 7.1 133.6-15.1 153.2-80.7C566.9 194 576 75 576 58.4s-3.3-44.7-21.6-52.9c-15.8-7.1-40-14.9-103.2 29.8C385.1 81.9 314.1 176.4 288 227.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/mason-egger" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/c/MasonEgger" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/MasonEgger" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="static/docs/MasonEgger-resume.pdf" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M176 48H64c-8.8 0-16 7.2-16 16v384c0 8.8 7.2 16 16 16h256c8.8 0 16-7.2 16-16V208h-88c-39.8 0-72-32.2-72-72zm140.1 112L224 67.9V136c0 13.3 10.7 24 24 24zM0 64C0 28.7 28.7 0 64 0h133.5c17 0 33.3 6.7 45.3 18.7l122.5 122.6c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="./feed_rss_created.xml" target="_blank" rel="noopener" title="RSS" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zm32 104c0-13.3 10.7-24 24-24 137 0 248 111 248 248 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-110.5-89.5-200-200-200-13.3 0-24-10.7-24-24m0 96c0-13.3 10.7-24 24-24 83.9 0 152 68.1 152 152 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-57.4-46.6-104-104-104-13.3 0-24-10.7-24-24m0 120a32 32 0 1 1 64 0 32 32 0 1 1-64 0"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.code.select", "content.tabs.link", "content.tooltips", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
